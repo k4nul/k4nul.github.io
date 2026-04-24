@@ -1,0 +1,45 @@
+ko:
+  title: "처음 방문했다면 여기부터"
+  intro: "글이 올라온 순서보다 읽는 순서가 중요한 글을 모았다. Rust, 하네스 엔지니어링, 문서형 악성코드 분석의 시작점이다."
+  items:
+    - translation_key: rust-install-hello-world
+      title: "Rust 입문: 설치와 Hello World"
+      description: "Rust를 처음 여는 독자가 rustup, rustc, cargo의 역할을 잡는 시작 글."
+    - translation_key: rust-build-a-small-cli-project
+      title: "Rust 실전 연결: 작은 CLI 프로젝트"
+      description: "기초 문법을 word counter CLI로 묶어 시리즈를 이어 읽게 하는 글."
+    - translation_key: what-is-harness-engineering
+      title: "하네스 엔지니어링 개념 잡기"
+      description: "AI 주변의 도구, 권한, 검증 구조를 하나의 운영 관점으로 정리한 대표 글."
+    - translation_key: why-token-management-matters-in-harness-engineering
+      title: "토큰 관리와 하네스 안정성"
+      description: "토큰을 비용보다 문맥 제어와 안정성의 문제로 보는 시리즈 출발점."
+    - translation_key: macro-malware
+      title: "매크로 문서형 악성코드 분석"
+      description: "DOCM 샘플의 진입점, 난독화, CustomXML 페이로드, 실행 체인을 따라가는 분석."
+    - translation_key: rtf-malware
+      title: "RTF 문서형 악성코드 분석"
+      description: "RTF/OLE 구조와 Equation Editor exploit 흐름을 근거 중심으로 추적한 분석."
+
+en:
+  title: "Start Here"
+  intro: "These links favor a reading path over publish order. They introduce the Rust, harness engineering, and malware analysis tracks."
+  items:
+    - translation_key: rust-install-hello-world
+      title: "Rust entry point: install and Hello World"
+      description: "A first Rust guide for separating the roles of rustup, rustc, and cargo."
+    - translation_key: rust-build-a-small-cli-project
+      title: "Rust practice: build a small CLI project"
+      description: "A bridge from Rust fundamentals to a small word-counter CLI with tests."
+    - translation_key: what-is-harness-engineering
+      title: "Harness engineering: the core idea"
+      description: "A representative explanation of tools, permissions, and verification around AI systems."
+    - translation_key: why-token-management-matters-in-harness-engineering
+      title: "Token management as a harness concern"
+      description: "A starting point for treating tokens as context control and system stability, not only cost."
+    - translation_key: macro-malware
+      title: "Macro document malware analysis"
+      description: "A DOCM sample walkthrough covering macro entry, obfuscation, CustomXML payloads, and execution flow."
+    - translation_key: rtf-malware
+      title: "RTF document malware analysis"
+      description: "A focused analysis of RTF/OLE structure and the Equation Editor exploit path."

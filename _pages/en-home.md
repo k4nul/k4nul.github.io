@@ -20,3 +20,5 @@ translation_key: home
     <li><a href="/en/development/ai/">AI Tooling and Harness Engineering</a></li>
   </ul>
 </div>
+
+{% include home-featured.html lang=page.lang %}

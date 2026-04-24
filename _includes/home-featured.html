@@ -1,0 +1,33 @@
+{% assign current_lang = include.lang | default: page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
+{% assign featured = site.data.home_featured[current_lang] %}
+
+{% if featured and featured.items %}
+  <section class="home-featured" aria-labelledby="home-featured-title">
+    <h2 id="home-featured-title" class="home-intro__title">{{ featured.title }}</h2>
+    {% if featured.intro %}
+      <p class="home-featured__intro">{{ featured.intro }}</p>
+    {% endif %}
+
+    <ul class="home-featured__list">
+      {% for item in featured.items %}
+        {% assign item_url = item.url | default: "" %}
+        {% if item.translation_key %}
+          {% assign matched_posts = site.posts | where: "translation_key", item.translation_key | where: "lang", current_lang %}
+          {% assign matched_post = matched_posts | first %}
+          {% if matched_post %}
+            {% assign item_url = matched_post.url %}
+          {% endif %}
+        {% endif %}
+
+        {% if item_url != "" %}
+          <li class="home-featured__item">
+            <a class="home-featured__link" href="{{ item_url | relative_url }}">{{ item.title | default: matched_post.title }}</a>
+            {% if item.description %}
+              <span class="home-featured__description">{{ item.description }}</span>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
