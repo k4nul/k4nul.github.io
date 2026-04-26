@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "jenkins-plugins-credentials-tools-management-en",
+  "source": {
+    "path": "content/posts/non-ai/058-jenkins-plugins-credentials-tools-management-en/source.md",
+    "source_sha256": "888c77fd9f8d4edfac64a8ec1b9bb83cefe092c73b38a9adf167e3c08ad7f0ee",
+    "source_updated_at": "2026-04-25T13:13:24.253476+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-22T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/058-jenkins-plugins-credentials-tools-management-en/variants/tistory.md",
+    "source_sha256": "888c77fd9f8d4edfac64a8ec1b9bb83cefe092c73b38a9adf167e3c08ad7f0ee",
+    "variant_sha256": "24efe3bd41c304b73105db55c25606c3f5c97eb0717c1888cce9776a93a285ca",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 58,
+    "planned_publish_date": "2026-06-22",
+    "planned_publish_at": "2026-06-22T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/058-jenkins-plugins-credentials-tools-management-en/variants/naver.md",
+    "source_sha256": "888c77fd9f8d4edfac64a8ec1b9bb83cefe092c73b38a9adf167e3c08ad7f0ee",
+    "variant_sha256": "aeabe8c3dbc8ffc9b8855ddb7ca78e96c31638d7c47dafcfc5c0c84a2fc4b80a",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 58,
+    "planned_publish_date": "2026-06-22",
+    "planned_publish_at": "2026-06-22T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/058-jenkins-plugins-credentials-tools-management-en",
+    "source_path": "content/posts/non-ai/058-jenkins-plugins-credentials-tools-management-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 58,
+    "planned_publish_date": "2026-06-22",
+    "planned_publish_at": "2026-06-22T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

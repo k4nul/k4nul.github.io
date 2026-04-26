@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "when-to-use-codex-subagents",
+  "source": {
+    "path": "content/posts/ai/049-when-to-use-codex-subagents/source.md",
+    "source_sha256": "34b8a0a4fabb02b4f8fe553dd6c965f83f52b48a0ce6a0ca440b9aab2ef54f02",
+    "source_updated_at": "2026-04-25T13:13:23.964694+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-04T00:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/049-when-to-use-codex-subagents/variants/tistory.md",
+    "source_sha256": "34b8a0a4fabb02b4f8fe553dd6c965f83f52b48a0ce6a0ca440b9aab2ef54f02",
+    "variant_sha256": "575995d0d47f61338621622a1e2aff49f23fdc3485e5633e1d72f8d20516b104",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 25,
+    "planned_publish_date": "2026-05-20",
+    "planned_publish_at": "2026-05-20T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/049-when-to-use-codex-subagents/variants/naver.md",
+    "source_sha256": "34b8a0a4fabb02b4f8fe553dd6c965f83f52b48a0ce6a0ca440b9aab2ef54f02",
+    "variant_sha256": "3fe29e78992fea15a052fd693db00b24dcc9b7d5d8bdfcf123e5cbab60be1405",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 25,
+    "planned_publish_date": "2026-05-20",
+    "planned_publish_at": "2026-05-20T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/049-when-to-use-codex-subagents",
+    "source_path": "content/posts/ai/049-when-to-use-codex-subagents/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 25,
+    "planned_publish_date": "2026-05-20",
+    "planned_publish_at": "2026-05-20T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "approval-boundaries-and-guardrails-en",
+  "source": {
+    "path": "content/posts/ai/018-approval-boundaries-and-guardrails-en/source.md",
+    "source_sha256": "20c8bd5d4c7be4e3d83301ad1d9a347b7c15cc6354db2e47dc9ce28baba51939",
+    "source_updated_at": "2026-04-25T13:13:23.326591+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/018-approval-boundaries-and-guardrails-en/variants/tistory.md",
+    "source_sha256": "20c8bd5d4c7be4e3d83301ad1d9a347b7c15cc6354db2e47dc9ce28baba51939",
+    "variant_sha256": "459aacaf9d4b29b93e47fe706dff6064f420e2e2fa3b1ca63f85ba604fc7545f",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 18,
+    "planned_publish_date": "2026-05-13",
+    "planned_publish_at": "2026-05-13T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/018-approval-boundaries-and-guardrails-en/variants/naver.md",
+    "source_sha256": "20c8bd5d4c7be4e3d83301ad1d9a347b7c15cc6354db2e47dc9ce28baba51939",
+    "variant_sha256": "6b84c9a6bc6704b005e88240b4e4c2b6602e3ce5e8b7487f05fac4a1d65569fa",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 18,
+    "planned_publish_date": "2026-05-13",
+    "planned_publish_at": "2026-05-13T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/018-approval-boundaries-and-guardrails-en",
+    "source_path": "content/posts/ai/018-approval-boundaries-and-guardrails-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 18,
+    "planned_publish_date": "2026-05-13",
+    "planned_publish_at": "2026-05-13T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

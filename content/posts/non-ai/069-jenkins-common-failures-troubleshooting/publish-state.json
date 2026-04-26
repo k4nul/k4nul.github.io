@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "jenkins-common-failures-troubleshooting",
+  "source": {
+    "path": "content/posts/non-ai/069-jenkins-common-failures-troubleshooting/source.md",
+    "source_sha256": "58fd588e4d35e391b5f5f79a4b8827c9867d87297332a3aa267eee42cb4e4749",
+    "source_updated_at": "2026-04-25T13:13:24.335302+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-02T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/069-jenkins-common-failures-troubleshooting/variants/tistory.md",
+    "source_sha256": "58fd588e4d35e391b5f5f79a4b8827c9867d87297332a3aa267eee42cb4e4749",
+    "variant_sha256": "bf9aeb79f1ac4da459a96305d27769e97d9a4aece8867191655ef6ace27ed886",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 35,
+    "planned_publish_date": "2026-05-30",
+    "planned_publish_at": "2026-05-30T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/069-jenkins-common-failures-troubleshooting/variants/naver.md",
+    "source_sha256": "58fd588e4d35e391b5f5f79a4b8827c9867d87297332a3aa267eee42cb4e4749",
+    "variant_sha256": "38266ed39a9eabd0db15212a2a1291a04d89454f9a444d99ccc52f4c6c396574",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 35,
+    "planned_publish_date": "2026-05-30",
+    "planned_publish_at": "2026-05-30T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/069-jenkins-common-failures-troubleshooting",
+    "source_path": "content/posts/non-ai/069-jenkins-common-failures-troubleshooting/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 35,
+    "planned_publish_date": "2026-05-30",
+    "planned_publish_at": "2026-05-30T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

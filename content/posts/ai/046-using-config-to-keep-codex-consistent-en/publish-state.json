@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "using-config-to-keep-codex-consistent-en",
+  "source": {
+    "path": "content/posts/ai/046-using-config-to-keep-codex-consistent-en/source.md",
+    "source_sha256": "c2c6c3f9241be4201d79ae7098892e42f136537fccd4fe39961e756531d304d0",
+    "source_updated_at": "2026-04-25T13:13:23.892316+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-02T00:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/046-using-config-to-keep-codex-consistent-en/variants/tistory.md",
+    "source_sha256": "c2c6c3f9241be4201d79ae7098892e42f136537fccd4fe39961e756531d304d0",
+    "variant_sha256": "8d2eef8e08ca7ffa373b0fa19391140af3bb204cd936ec828288b5ea0482e828",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 46,
+    "planned_publish_date": "2026-06-10",
+    "planned_publish_at": "2026-06-10T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/046-using-config-to-keep-codex-consistent-en/variants/naver.md",
+    "source_sha256": "c2c6c3f9241be4201d79ae7098892e42f136537fccd4fe39961e756531d304d0",
+    "variant_sha256": "d32818355670b7f6fe648d87d86acfb071b5af65d848237756250a798f0c89c6",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 46,
+    "planned_publish_date": "2026-06-10",
+    "planned_publish_at": "2026-06-10T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/046-using-config-to-keep-codex-consistent-en",
+    "source_path": "content/posts/ai/046-using-config-to-keep-codex-consistent-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 46,
+    "planned_publish_date": "2026-06-10",
+    "planned_publish_at": "2026-06-10T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "jenkins-to-kubernetes-deployment-boundary",
+  "source": {
+    "path": "content/posts/non-ai/071-jenkins-to-kubernetes-deployment-boundary/source.md",
+    "source_sha256": "b054b81106488aee3137ffe0be952bdd1f3e4d9a3d54722abc9b15378272933c",
+    "source_updated_at": "2026-04-25T13:13:24.359313+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-04T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/071-jenkins-to-kubernetes-deployment-boundary/variants/tistory.md",
+    "source_sha256": "b054b81106488aee3137ffe0be952bdd1f3e4d9a3d54722abc9b15378272933c",
+    "variant_sha256": "bc75623515aa91c364efc3e5c348675d20cfaf09d42d78e72acd412efb039990",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 36,
+    "planned_publish_date": "2026-05-31",
+    "planned_publish_at": "2026-05-31T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/071-jenkins-to-kubernetes-deployment-boundary/variants/naver.md",
+    "source_sha256": "b054b81106488aee3137ffe0be952bdd1f3e4d9a3d54722abc9b15378272933c",
+    "variant_sha256": "a89fb88008695ec3482378d9c720dac6c945067129be851b807b4b95bb9397ca",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 36,
+    "planned_publish_date": "2026-05-31",
+    "planned_publish_at": "2026-05-31T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/071-jenkins-to-kubernetes-deployment-boundary",
+    "source_path": "content/posts/non-ai/071-jenkins-to-kubernetes-deployment-boundary/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 36,
+    "planned_publish_date": "2026-05-31",
+    "planned_publish_at": "2026-05-31T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

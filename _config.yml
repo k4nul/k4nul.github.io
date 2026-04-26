@@ -183,6 +183,9 @@ exclude:
   - /project-docs
   - /templates
   - /skills
+  - /content
+  - /doc
+  - /scripts
   - /_posts/AGENTS.md
 keep_files:
   - .git

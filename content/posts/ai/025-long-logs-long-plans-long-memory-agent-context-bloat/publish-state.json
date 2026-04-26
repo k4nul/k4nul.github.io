@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "long-logs-long-plans-long-memory-agent-context-bloat",
+  "source": {
+    "path": "content/posts/ai/025-long-logs-long-plans-long-memory-agent-context-bloat/source.md",
+    "source_sha256": "882b4aebea9b24d5dfc4e8dcf27f6e94e4348ff3c22f587e23891c0a7e0bb9e3",
+    "source_updated_at": "2026-04-25T13:13:23.604287+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/025-long-logs-long-plans-long-memory-agent-context-bloat/variants/tistory.md",
+    "source_sha256": "882b4aebea9b24d5dfc4e8dcf27f6e94e4348ff3c22f587e23891c0a7e0bb9e3",
+    "variant_sha256": "c75ca5219a009ee513383cb748e17fdc5cb9b6c72929fcb810bfddb54415ae06",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 13,
+    "planned_publish_date": "2026-05-08",
+    "planned_publish_at": "2026-05-08T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/025-long-logs-long-plans-long-memory-agent-context-bloat/variants/naver.md",
+    "source_sha256": "882b4aebea9b24d5dfc4e8dcf27f6e94e4348ff3c22f587e23891c0a7e0bb9e3",
+    "variant_sha256": "419b3531e12aa67b0f9da1662d1528807c20bc3db98512d497ea6c7922a5c7fc",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 13,
+    "planned_publish_date": "2026-05-08",
+    "planned_publish_at": "2026-05-08T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/025-long-logs-long-plans-long-memory-agent-context-bloat",
+    "source_path": "content/posts/ai/025-long-logs-long-plans-long-memory-agent-context-bloat/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 13,
+    "planned_publish_date": "2026-05-08",
+    "planned_publish_at": "2026-05-08T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

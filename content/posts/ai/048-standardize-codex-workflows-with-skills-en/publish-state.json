@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "standardize-codex-workflows-with-skills-en",
+  "source": {
+    "path": "content/posts/ai/048-standardize-codex-workflows-with-skills-en/source.md",
+    "source_sha256": "4bf2088a89ab61f085ea3774fa4519cb7e286e69fc71b1a313e34c31709d8883",
+    "source_updated_at": "2026-04-25T13:13:23.917685+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-03T00:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/048-standardize-codex-workflows-with-skills-en/variants/tistory.md",
+    "source_sha256": "4bf2088a89ab61f085ea3774fa4519cb7e286e69fc71b1a313e34c31709d8883",
+    "variant_sha256": "eb92a0e1f576532997f493dfcebfc0caf4ecd9666854914d1a482a85896941d0",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 48,
+    "planned_publish_date": "2026-06-12",
+    "planned_publish_at": "2026-06-12T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/048-standardize-codex-workflows-with-skills-en/variants/naver.md",
+    "source_sha256": "4bf2088a89ab61f085ea3774fa4519cb7e286e69fc71b1a313e34c31709d8883",
+    "variant_sha256": "e27ea90144a6eac8c70599c39af2003a7cf45a5811eaa717af3bec826c817454",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 48,
+    "planned_publish_date": "2026-06-12",
+    "planned_publish_at": "2026-06-12T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/048-standardize-codex-workflows-with-skills-en",
+    "source_path": "content/posts/ai/048-standardize-codex-workflows-with-skills-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 48,
+    "planned_publish_date": "2026-06-12",
+    "planned_publish_at": "2026-06-12T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

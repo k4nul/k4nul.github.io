@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-modules-smart-pointers-concurrency-async-en",
+  "source": {
+    "path": "content/posts/non-ai/014-rust-modules-smart-pointers-concurrency-async-en/source.md",
+    "source_sha256": "3f51141efd421927f80cc186fd49f3968901b2e86fa6aee111f36dcb33be6056",
+    "source_updated_at": "2026-04-25T13:13:23.157966+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/014-rust-modules-smart-pointers-concurrency-async-en/variants/tistory.md",
+    "source_sha256": "3f51141efd421927f80cc186fd49f3968901b2e86fa6aee111f36dcb33be6056",
+    "variant_sha256": "af02f44cc120273dba107705b5c71668b059d73ac4d9a329432800ca275e049a",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 14,
+    "planned_publish_date": "2026-05-09",
+    "planned_publish_at": "2026-05-09T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/014-rust-modules-smart-pointers-concurrency-async-en/variants/naver.md",
+    "source_sha256": "3f51141efd421927f80cc186fd49f3968901b2e86fa6aee111f36dcb33be6056",
+    "variant_sha256": "df3a8e6b19ae68fd85ceb7c2aaf2b2a9d9fd19295955f6e35dcb3ee8f0843cf8",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 14,
+    "planned_publish_date": "2026-05-09",
+    "planned_publish_at": "2026-05-09T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/014-rust-modules-smart-pointers-concurrency-async-en",
+    "source_path": "content/posts/non-ai/014-rust-modules-smart-pointers-concurrency-async-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 14,
+    "planned_publish_date": "2026-05-09",
+    "planned_publish_at": "2026-05-09T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

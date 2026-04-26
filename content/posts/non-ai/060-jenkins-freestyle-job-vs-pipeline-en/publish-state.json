@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "jenkins-freestyle-job-vs-pipeline-en",
+  "source": {
+    "path": "content/posts/non-ai/060-jenkins-freestyle-job-vs-pipeline-en/source.md",
+    "source_sha256": "3762dd4c76e98a5c89b008feea46a4938cfa3138697d99e4a7de63dea6de265a",
+    "source_updated_at": "2026-04-25T13:13:24.266492+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-24T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/060-jenkins-freestyle-job-vs-pipeline-en/variants/tistory.md",
+    "source_sha256": "3762dd4c76e98a5c89b008feea46a4938cfa3138697d99e4a7de63dea6de265a",
+    "variant_sha256": "92a9acd6e12ce23d0bab56315a1a618c06db590f5b049c933ad9bd005284b9aa",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 60,
+    "planned_publish_date": "2026-06-24",
+    "planned_publish_at": "2026-06-24T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/060-jenkins-freestyle-job-vs-pipeline-en/variants/naver.md",
+    "source_sha256": "3762dd4c76e98a5c89b008feea46a4938cfa3138697d99e4a7de63dea6de265a",
+    "variant_sha256": "84b1d4a08b3b04f886ad0da5bed859a86a81bf3ba9f0d1e6bc4571da7a3f1cd7",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 60,
+    "planned_publish_date": "2026-06-24",
+    "planned_publish_at": "2026-06-24T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/060-jenkins-freestyle-job-vs-pipeline-en",
+    "source_path": "content/posts/non-ai/060-jenkins-freestyle-job-vs-pipeline-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 60,
+    "planned_publish_date": "2026-06-24",
+    "planned_publish_at": "2026-06-24T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

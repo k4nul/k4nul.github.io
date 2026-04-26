@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-file-io-and-cli-input-en",
+  "source": {
+    "path": "content/posts/non-ai/022-rust-file-io-and-cli-input-en/source.md",
+    "source_sha256": "9f46bb048397a516f95d2157c1db2df402106b7f4dd7c51ca37d696aed31f9c1",
+    "source_updated_at": "2026-04-25T13:13:23.348962+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/022-rust-file-io-and-cli-input-en/variants/tistory.md",
+    "source_sha256": "9f46bb048397a516f95d2157c1db2df402106b7f4dd7c51ca37d696aed31f9c1",
+    "variant_sha256": "e82f8bfc061725124f25b9e5bcc870328e2d029846c3d03c8ef902bc274fdaa6",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 22,
+    "planned_publish_date": "2026-05-17",
+    "planned_publish_at": "2026-05-17T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/022-rust-file-io-and-cli-input-en/variants/naver.md",
+    "source_sha256": "9f46bb048397a516f95d2157c1db2df402106b7f4dd7c51ca37d696aed31f9c1",
+    "variant_sha256": "b0e6b9e02b5557937da4afe900a718e573265d392e117cfa632344674dd98615",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 22,
+    "planned_publish_date": "2026-05-17",
+    "planned_publish_at": "2026-05-17T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/022-rust-file-io-and-cli-input-en",
+    "source_path": "content/posts/non-ai/022-rust-file-io-and-cli-input-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 22,
+    "planned_publish_date": "2026-05-17",
+    "planned_publish_at": "2026-05-17T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

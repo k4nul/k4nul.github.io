@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "git-status-diff-add-commit-log-en",
+  "source": {
+    "path": "content/posts/non-ai/040-git-status-diff-add-commit-log-en/source.md",
+    "source_sha256": "f1bd9286327dee818d1705086f72970b88c670782b5084c0fb3dc297a2bdeeb6",
+    "source_updated_at": "2026-04-25T13:13:23.938471+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-04T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/040-git-status-diff-add-commit-log-en/variants/tistory.md",
+    "source_sha256": "f1bd9286327dee818d1705086f72970b88c670782b5084c0fb3dc297a2bdeeb6",
+    "variant_sha256": "d5aa087de40f67c0cb8134d050b229698cba1ab975d4a8cb79433734f75d1efe",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 40,
+    "planned_publish_date": "2026-06-04",
+    "planned_publish_at": "2026-06-04T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/040-git-status-diff-add-commit-log-en/variants/naver.md",
+    "source_sha256": "f1bd9286327dee818d1705086f72970b88c670782b5084c0fb3dc297a2bdeeb6",
+    "variant_sha256": "7be906d1ee3121988f7cf1ea505eb8e5720c4a77c01e05e9f7d49329be2f086a",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 40,
+    "planned_publish_date": "2026-06-04",
+    "planned_publish_at": "2026-06-04T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/040-git-status-diff-add-commit-log-en",
+    "source_path": "content/posts/non-ai/040-git-status-diff-add-commit-log-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 40,
+    "planned_publish_date": "2026-06-04",
+    "planned_publish_at": "2026-06-04T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "docker-images-layers-tags-digests",
+  "source": {
+    "path": "content/posts/non-ai/029-docker-images-layers-tags-digests/source.md",
+    "source_sha256": "09a623b63fe86572478ba4febc0c5e59042b73b6a46576f08d00f6678cb06d2e",
+    "source_updated_at": "2026-04-25T13:13:23.587779+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/029-docker-images-layers-tags-digests/variants/tistory.md",
+    "source_sha256": "09a623b63fe86572478ba4febc0c5e59042b73b6a46576f08d00f6678cb06d2e",
+    "variant_sha256": "46c43a6a785b6c607f1f4247969c1da81d324b668447248b842cc378bde57aaf",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 15,
+    "planned_publish_date": "2026-05-10",
+    "planned_publish_at": "2026-05-10T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/029-docker-images-layers-tags-digests/variants/naver.md",
+    "source_sha256": "09a623b63fe86572478ba4febc0c5e59042b73b6a46576f08d00f6678cb06d2e",
+    "variant_sha256": "db3ce0627c84bc2dfcec94fffc4a99ed125c586c82732213fce87bf1752dc621",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 15,
+    "planned_publish_date": "2026-05-10",
+    "planned_publish_at": "2026-05-10T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/029-docker-images-layers-tags-digests",
+    "source_path": "content/posts/non-ai/029-docker-images-layers-tags-digests/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 15,
+    "planned_publish_date": "2026-05-10",
+    "planned_publish_at": "2026-05-10T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

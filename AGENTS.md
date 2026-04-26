@@ -16,6 +16,9 @@
 - 기술 글은 화려함보다 검증 가능성을 우선한다. 독자가 근거와 재현 가능성을 판단할 수 있어야 한다.
 - 기존 글을 수정할 때는 본문-근거 연결, `검증 기준일`, 환경/버전, 한계와 예외를 우선 보강한다.
 - 루트 파일에 모든 규칙을 넣지 않는다. 포스트 작성과 수정은 `_posts/AGENTS.md`를 먼저 보고, 더 가까운 `AGENTS.md`와 상세 문서를 우선 따른다.
+- GitHub 블로그 원문 포스팅 규칙과 네이버/티스토리 파생 포스팅 규칙은 섞지 않는다.
+- `_posts` 아래 원문 작성/수정에는 `_posts/AGENTS.md`, `docs/blog-style.md`, `templates/post-template.md`만 우선 적용한다.
+- `content/posts` 아래 네이버/티스토리 파생본 작성/수정에는 `doc/channel-posting/` 아래 문서만 우선 적용한다.
 - 향후 시리즈, 허브, 주제 로드맵은 루트 `AGENTS.md`에 장문으로 쌓지 않고 `project-docs/plans/` 아래 별도 계획 문서로 분리한다.
 
 ## Git 작업 규칙
@@ -34,6 +37,12 @@
 - 포스트 작성과 수정: `_posts/AGENTS.md`, `docs/blog-style.md`, `templates/post-template.md`
 - 포스트 작성과 수정은 시작 전에 `_posts/AGENTS.md`를 먼저 확인한다.
 - `_posts/AGENTS.md`는 새 글 기본 구조, 기존 글 보강 우선순위, 튜토리얼/비교/분석 글의 최소 기준을 다루는 기본 진입점이다.
+- 외부 채널 파생 포스팅 규칙: `doc/channel-posting/README.md`
+- 네이버 파생본 작성/수정: `doc/channel-posting/naver.md`, `doc/channel-posting/channels.md`, `doc/channel-posting/state.md`
+- 티스토리 파생본 작성/수정: `doc/channel-posting/tistory.md`, `doc/channel-posting/channels.md`, `doc/channel-posting/state.md`
+- 외부 채널 파생본 작업 흐름과 프롬프트: `doc/channel-posting/workflows.md`, `doc/channel-posting/prompts.md`
+- 외부 채널 파생본 저장 위치: `content/posts/<slug>/variants/`
+- 외부 채널 파생본 본문(`variants/naver.md`, `variants/tistory.md`)은 로컬 작업 산출물로만 관리하고 GitHub에 올리지 않는다.
 - 사이트 구조와 운영 경로: `docs/site-operations.md`
 - 향후 시리즈/허브 계획 인덱스: `project-docs/plans/README.md`
 - DevOps 연재 로드맵: `project-docs/plans/ROADMAP_DEVOPS_CURRICULUM.md`

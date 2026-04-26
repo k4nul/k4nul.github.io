@@ -29,6 +29,14 @@ codekit-config.json
 _asset_bundler_cache
 _site
 
+# External channel derivative drafts are local-only publishing artifacts.
+# Keep generated Naver/Tistory post bodies out of GitHub.
+content/posts/**/variants/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
 # Repository cleanup: upstream/demo files not needed for the deployed blog
 .github/
 !.github/

@@ -1,6 +1,7 @@
 # AGENTS.md
 
 - 이 파일은 `_posts` 바로 아래의 기술 블로그 글에 적용한다.
+- 네이버/티스토리 파생 포스팅에는 이 파일을 직접 적용하지 않는다. 외부 채널 파생본은 `doc/channel-posting/` 아래 규칙을 따른다.
 - 새 글이나 개정 글은 `templates/post-template.md`를 기본 골격으로 쓰고, 상세 기준은 `docs/blog-style.md`를 따른다.
 
 ## 필수 front matter

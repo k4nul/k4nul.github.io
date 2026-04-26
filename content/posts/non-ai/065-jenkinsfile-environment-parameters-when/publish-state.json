@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "jenkinsfile-environment-parameters-when",
+  "source": {
+    "path": "content/posts/non-ai/065-jenkinsfile-environment-parameters-when/source.md",
+    "source_sha256": "dc617e94c25721645f5cb3b3db4463216577719718451e67c4b6bb5343fbfd0a",
+    "source_updated_at": "2026-04-25T13:13:24.299284+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-29T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/065-jenkinsfile-environment-parameters-when/variants/tistory.md",
+    "source_sha256": "dc617e94c25721645f5cb3b3db4463216577719718451e67c4b6bb5343fbfd0a",
+    "variant_sha256": "f169a993eda7cacd5e7af0bf0f0b7f57b4e4390ae5db07bef05a40feac83d9e7",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 33,
+    "planned_publish_date": "2026-05-28",
+    "planned_publish_at": "2026-05-28T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/065-jenkinsfile-environment-parameters-when/variants/naver.md",
+    "source_sha256": "dc617e94c25721645f5cb3b3db4463216577719718451e67c4b6bb5343fbfd0a",
+    "variant_sha256": "7afcc8f89dc5e925b70548cb91e2e7ba1642150adebbc7f050ad6450b63a0dcd",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 33,
+    "planned_publish_date": "2026-05-28",
+    "planned_publish_at": "2026-05-28T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/065-jenkinsfile-environment-parameters-when",
+    "source_path": "content/posts/non-ai/065-jenkinsfile-environment-parameters-when/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 33,
+    "planned_publish_date": "2026-05-28",
+    "planned_publish_at": "2026-05-28T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

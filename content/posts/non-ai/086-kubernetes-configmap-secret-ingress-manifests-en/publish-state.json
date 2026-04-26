@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "kubernetes-configmap-secret-ingress-manifests-en",
+  "source": {
+    "path": "content/posts/non-ai/086-kubernetes-configmap-secret-ingress-manifests-en/source.md",
+    "source_sha256": "446753c5de08831be7a0968645bacc80e14acf8a9ee5b1d02b68de5d57994954",
+    "source_updated_at": "2026-04-25T13:13:24.500164+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-19T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/086-kubernetes-configmap-secret-ingress-manifests-en/variants/tistory.md",
+    "source_sha256": "446753c5de08831be7a0968645bacc80e14acf8a9ee5b1d02b68de5d57994954",
+    "variant_sha256": "4552804465f2868666018b64d5979bc141aa8486d67b9780da78a8f777c80d2b",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 86,
+    "planned_publish_date": "2026-07-20",
+    "planned_publish_at": "2026-07-20T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/086-kubernetes-configmap-secret-ingress-manifests-en/variants/naver.md",
+    "source_sha256": "446753c5de08831be7a0968645bacc80e14acf8a9ee5b1d02b68de5d57994954",
+    "variant_sha256": "82a86d1590ba76a3a7f2f14a49dae51c0b14f8e8b0da0217e052a60c8d4bb0f0",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 86,
+    "planned_publish_date": "2026-07-20",
+    "planned_publish_at": "2026-07-20T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/086-kubernetes-configmap-secret-ingress-manifests-en",
+    "source_path": "content/posts/non-ai/086-kubernetes-configmap-secret-ingress-manifests-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 86,
+    "planned_publish_date": "2026-07-20",
+    "planned_publish_at": "2026-07-20T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "from-prose-to-schema-turning-handoff-into-a-contract",
+  "source": {
+    "path": "content/posts/ai/007-from-prose-to-schema-turning-handoff-into-a-contract/source.md",
+    "source_sha256": "d7b461d25e50d7c0922f191eb0880d78e163d267f9c6a70717858e7d45187e24",
+    "source_updated_at": "2026-04-25T13:13:23.096757+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/007-from-prose-to-schema-turning-handoff-into-a-contract/variants/tistory.md",
+    "source_sha256": "d7b461d25e50d7c0922f191eb0880d78e163d267f9c6a70717858e7d45187e24",
+    "variant_sha256": "b469a5449ea33d61331a9f4729ca17bcd771cb04d2e3206e8c539f9120d78d02",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 4,
+    "planned_publish_date": "2026-04-29",
+    "planned_publish_at": "2026-04-29T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/007-from-prose-to-schema-turning-handoff-into-a-contract/variants/naver.md",
+    "source_sha256": "d7b461d25e50d7c0922f191eb0880d78e163d267f9c6a70717858e7d45187e24",
+    "variant_sha256": "ad8ccaa76f3ee89d474e6e0ee95483b0258407f6cf5a0d3b49ac4632eacaf9c0",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 4,
+    "planned_publish_date": "2026-04-29",
+    "planned_publish_at": "2026-04-29T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/007-from-prose-to-schema-turning-handoff-into-a-contract",
+    "source_path": "content/posts/ai/007-from-prose-to-schema-turning-handoff-into-a-contract/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 4,
+    "planned_publish_date": "2026-04-29",
+    "planned_publish_at": "2026-04-29T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

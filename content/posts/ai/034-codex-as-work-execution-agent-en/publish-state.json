@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "codex-as-work-execution-agent-en",
+  "source": {
+    "path": "content/posts/ai/034-codex-as-work-execution-agent-en/source.md",
+    "source_sha256": "e8166ffcb6ec7e7d13008c955d3291703aeb55902ea125afcbddbd44fc5b35d3",
+    "source_updated_at": "2026-04-25T13:13:23.761436+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-04-26T00:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/034-codex-as-work-execution-agent-en/variants/tistory.md",
+    "source_sha256": "e8166ffcb6ec7e7d13008c955d3291703aeb55902ea125afcbddbd44fc5b35d3",
+    "variant_sha256": "60a9d9a4372968ac4d891aa7c73f7fdc26c9bf1ad22aafc3fbabdddfb1fcf8a0",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 34,
+    "planned_publish_date": "2026-05-29",
+    "planned_publish_at": "2026-05-29T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/034-codex-as-work-execution-agent-en/variants/naver.md",
+    "source_sha256": "e8166ffcb6ec7e7d13008c955d3291703aeb55902ea125afcbddbd44fc5b35d3",
+    "variant_sha256": "45fc05d0739bd7ee88f0c4e153efca6aee2d6f7abcfeacdaea771a92014c523c",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 34,
+    "planned_publish_date": "2026-05-29",
+    "planned_publish_at": "2026-05-29T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/034-codex-as-work-execution-agent-en",
+    "source_path": "content/posts/ai/034-codex-as-work-execution-agent-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 34,
+    "planned_publish_date": "2026-05-29",
+    "planned_publish_at": "2026-05-29T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

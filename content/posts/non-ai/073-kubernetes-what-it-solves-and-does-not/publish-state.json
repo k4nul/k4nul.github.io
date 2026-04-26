@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "kubernetes-what-it-solves-and-does-not",
+  "source": {
+    "path": "content/posts/non-ai/073-kubernetes-what-it-solves-and-does-not/source.md",
+    "source_sha256": "19ead66abd93ceb9a05dd2342c692e8b7dedebd2fc67aa1fbab398506f952739",
+    "source_updated_at": "2026-04-25T13:13:24.380903+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-06T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/073-kubernetes-what-it-solves-and-does-not/variants/tistory.md",
+    "source_sha256": "19ead66abd93ceb9a05dd2342c692e8b7dedebd2fc67aa1fbab398506f952739",
+    "variant_sha256": "1dd1e2a0d6bca17eed84f70379d5c978d7211e344f4d5c6cc5d4d75e879a7311",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 37,
+    "planned_publish_date": "2026-06-01",
+    "planned_publish_at": "2026-06-01T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/073-kubernetes-what-it-solves-and-does-not/variants/naver.md",
+    "source_sha256": "19ead66abd93ceb9a05dd2342c692e8b7dedebd2fc67aa1fbab398506f952739",
+    "variant_sha256": "df675bb52f51836c82b48e659b0a93fc47b99eb2d1cef8de99f446ade26ab01d",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 37,
+    "planned_publish_date": "2026-06-01",
+    "planned_publish_at": "2026-06-01T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/073-kubernetes-what-it-solves-and-does-not",
+    "source_path": "content/posts/non-ai/073-kubernetes-what-it-solves-and-does-not/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 37,
+    "planned_publish_date": "2026-06-01",
+    "planned_publish_at": "2026-06-01T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

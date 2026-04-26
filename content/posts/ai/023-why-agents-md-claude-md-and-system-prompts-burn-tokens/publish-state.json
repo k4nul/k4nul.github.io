@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "why-agents-md-claude-md-and-system-prompts-burn-tokens",
+  "source": {
+    "path": "content/posts/ai/023-why-agents-md-claude-md-and-system-prompts-burn-tokens/source.md",
+    "source_sha256": "d86ccf7789954a3044e27be710e28d7adad2acb884077554d1d07aef9b4c0a08",
+    "source_updated_at": "2026-04-25T13:13:23.501306+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/023-why-agents-md-claude-md-and-system-prompts-burn-tokens/variants/tistory.md",
+    "source_sha256": "d86ccf7789954a3044e27be710e28d7adad2acb884077554d1d07aef9b4c0a08",
+    "variant_sha256": "23116ec201b16b5230e1639045bb4d56d832de6588b5a77d84759f38bee77772",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 12,
+    "planned_publish_date": "2026-05-07",
+    "planned_publish_at": "2026-05-07T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/023-why-agents-md-claude-md-and-system-prompts-burn-tokens/variants/naver.md",
+    "source_sha256": "d86ccf7789954a3044e27be710e28d7adad2acb884077554d1d07aef9b4c0a08",
+    "variant_sha256": "f60a60abba553ce49034c6171379ba7b66843530344c1836f816e3684785f830",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 12,
+    "planned_publish_date": "2026-05-07",
+    "planned_publish_at": "2026-05-07T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/023-why-agents-md-claude-md-and-system-prompts-burn-tokens",
+    "source_path": "content/posts/ai/023-why-agents-md-claude-md-and-system-prompts-burn-tokens/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 12,
+    "planned_publish_date": "2026-05-07",
+    "planned_publish_at": "2026-05-07T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

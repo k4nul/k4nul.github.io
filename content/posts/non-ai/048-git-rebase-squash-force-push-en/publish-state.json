@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "git-rebase-squash-force-push-en",
+  "source": {
+    "path": "content/posts/non-ai/048-git-rebase-squash-force-push-en/source.md",
+    "source_sha256": "5f90330f3e69d3afc6fabfdeb812710b2095160720abf799e603597e68f74c81",
+    "source_updated_at": "2026-04-25T13:13:24.124429+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-12T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/048-git-rebase-squash-force-push-en/variants/tistory.md",
+    "source_sha256": "5f90330f3e69d3afc6fabfdeb812710b2095160720abf799e603597e68f74c81",
+    "variant_sha256": "0ee08c28b6122268d83faeca1efd7d3a346d8cf0820cf515a1a2272868fda654",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 48,
+    "planned_publish_date": "2026-06-12",
+    "planned_publish_at": "2026-06-12T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/048-git-rebase-squash-force-push-en/variants/naver.md",
+    "source_sha256": "5f90330f3e69d3afc6fabfdeb812710b2095160720abf799e603597e68f74c81",
+    "variant_sha256": "3967b184a09a12c0fb6357357ae647a93a4d777f0794a1e460d6aa6cc1512af8",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 48,
+    "planned_publish_date": "2026-06-12",
+    "planned_publish_at": "2026-06-12T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/048-git-rebase-squash-force-push-en",
+    "source_path": "content/posts/non-ai/048-git-rebase-squash-force-push-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 48,
+    "planned_publish_date": "2026-06-12",
+    "planned_publish_at": "2026-06-12T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "kubernetes-first-manifests-pod-deployment-service",
+  "source": {
+    "path": "content/posts/non-ai/083-kubernetes-first-manifests-pod-deployment-service/source.md",
+    "source_sha256": "d1c3cba88a81f98f402b6d1121197268e0a97119677d86ca3c02b4a4ec34408c",
+    "source_updated_at": "2026-04-25T13:13:24.482139+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-16T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/083-kubernetes-first-manifests-pod-deployment-service/variants/tistory.md",
+    "source_sha256": "d1c3cba88a81f98f402b6d1121197268e0a97119677d86ca3c02b4a4ec34408c",
+    "variant_sha256": "bacb3f73121b2e09400f9abd4f30f2be6e610d2a654b144d73efbb73a6f23c03",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 42,
+    "planned_publish_date": "2026-06-06",
+    "planned_publish_at": "2026-06-06T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/083-kubernetes-first-manifests-pod-deployment-service/variants/naver.md",
+    "source_sha256": "d1c3cba88a81f98f402b6d1121197268e0a97119677d86ca3c02b4a4ec34408c",
+    "variant_sha256": "7dd2cb68b5054f40194d64923dba9b34bb5d72e51dbcd033efb554e64d5fd6a4",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 42,
+    "planned_publish_date": "2026-06-06",
+    "planned_publish_at": "2026-06-06T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/083-kubernetes-first-manifests-pod-deployment-service",
+    "source_path": "content/posts/non-ai/083-kubernetes-first-manifests-pod-deployment-service/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 42,
+    "planned_publish_date": "2026-06-06",
+    "planned_publish_at": "2026-06-06T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

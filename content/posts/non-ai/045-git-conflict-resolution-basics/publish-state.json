@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "git-conflict-resolution-basics",
+  "source": {
+    "path": "content/posts/non-ai/045-git-conflict-resolution-basics/source.md",
+    "source_sha256": "ce8b4ad7f358b83805f85d4139b00e1ffda32c23e518de4ae4a98845bc0753c1",
+    "source_updated_at": "2026-04-25T13:13:24.055537+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-09T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/045-git-conflict-resolution-basics/variants/tistory.md",
+    "source_sha256": "ce8b4ad7f358b83805f85d4139b00e1ffda32c23e518de4ae4a98845bc0753c1",
+    "variant_sha256": "892a020437e41f2b27a47cf0c6bf4a2abeccb8c8c69a2438ac818a9bba7bb245",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 23,
+    "planned_publish_date": "2026-05-18",
+    "planned_publish_at": "2026-05-18T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/045-git-conflict-resolution-basics/variants/naver.md",
+    "source_sha256": "ce8b4ad7f358b83805f85d4139b00e1ffda32c23e518de4ae4a98845bc0753c1",
+    "variant_sha256": "04f96f20cece209f6384a51e039832832896b2337f15642cdd55ac8494356a72",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 23,
+    "planned_publish_date": "2026-05-18",
+    "planned_publish_at": "2026-05-18T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/045-git-conflict-resolution-basics",
+    "source_path": "content/posts/non-ai/045-git-conflict-resolution-basics/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 23,
+    "planned_publish_date": "2026-05-18",
+    "planned_publish_at": "2026-05-18T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

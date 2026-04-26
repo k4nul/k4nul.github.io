@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "fix-claude-code-boundaries-with-settings-and-permissions",
+  "source": {
+    "path": "content/posts/ai/057-fix-claude-code-boundaries-with-settings-and-permissions/source.md",
+    "source_sha256": "a599ebe6cdc75924b57091683e5ae153c566e376ea63600de17cd1cfc31301cf",
+    "source_updated_at": "2026-04-25T13:13:24.072286+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-10T00:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/057-fix-claude-code-boundaries-with-settings-and-permissions/variants/tistory.md",
+    "source_sha256": "a599ebe6cdc75924b57091683e5ae153c566e376ea63600de17cd1cfc31301cf",
+    "variant_sha256": "8bcc8477fcaddbd4ca573cc9fe444b3d75827adb69ce06e9804a608b4d068c04",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 31,
+    "planned_publish_date": "2026-05-26",
+    "planned_publish_at": "2026-05-26T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/057-fix-claude-code-boundaries-with-settings-and-permissions/variants/naver.md",
+    "source_sha256": "a599ebe6cdc75924b57091683e5ae153c566e376ea63600de17cd1cfc31301cf",
+    "variant_sha256": "578544b445f47fd3333336d3421e5d72bffcce13ff1422c1339a88fece7cadc5",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 31,
+    "planned_publish_date": "2026-05-26",
+    "planned_publish_at": "2026-05-26T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/057-fix-claude-code-boundaries-with-settings-and-permissions",
+    "source_path": "content/posts/ai/057-fix-claude-code-boundaries-with-settings-and-permissions/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 31,
+    "planned_publish_date": "2026-05-26",
+    "planned_publish_at": "2026-05-26T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

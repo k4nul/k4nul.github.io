@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-generics-error-handling-closures-iterators-en",
+  "source": {
+    "path": "content/posts/non-ai/012-rust-generics-error-handling-closures-iterators-en/source.md",
+    "source_sha256": "11317c6746084b48ed5dd107d2d50ce84b9eec2ee206d01a747361411aaaf693",
+    "source_updated_at": "2026-04-25T13:13:23.107721+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/012-rust-generics-error-handling-closures-iterators-en/variants/tistory.md",
+    "source_sha256": "11317c6746084b48ed5dd107d2d50ce84b9eec2ee206d01a747361411aaaf693",
+    "variant_sha256": "491911b7f461193b58683ef1a90abc98ee935f285f9143f2bef887eca1c1a4e8",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 12,
+    "planned_publish_date": "2026-05-07",
+    "planned_publish_at": "2026-05-07T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/012-rust-generics-error-handling-closures-iterators-en/variants/naver.md",
+    "source_sha256": "11317c6746084b48ed5dd107d2d50ce84b9eec2ee206d01a747361411aaaf693",
+    "variant_sha256": "b87f8bc6412b2ddcc9e74af51f921d6ed901e16863ec31efc0fc5316a4a0cf30",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 12,
+    "planned_publish_date": "2026-05-07",
+    "planned_publish_at": "2026-05-07T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/012-rust-generics-error-handling-closures-iterators-en",
+    "source_path": "content/posts/non-ai/012-rust-generics-error-handling-closures-iterators-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 12,
+    "planned_publish_date": "2026-05-07",
+    "planned_publish_at": "2026-05-07T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

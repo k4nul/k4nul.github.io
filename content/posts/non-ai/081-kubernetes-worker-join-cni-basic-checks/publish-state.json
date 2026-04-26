@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "kubernetes-worker-join-cni-basic-checks",
+  "source": {
+    "path": "content/posts/non-ai/081-kubernetes-worker-join-cni-basic-checks/source.md",
+    "source_sha256": "11668e169919cd1ca0ee897142bb95a8e9df7bce127661c5f9a388fabb41adab",
+    "source_updated_at": "2026-04-25T13:13:24.445214+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-14T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/081-kubernetes-worker-join-cni-basic-checks/variants/tistory.md",
+    "source_sha256": "11668e169919cd1ca0ee897142bb95a8e9df7bce127661c5f9a388fabb41adab",
+    "variant_sha256": "d2cfe0a3fd0823f5253f28829e7c95a19ca351cf2de1fe12a5758d384fd2ec33",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 41,
+    "planned_publish_date": "2026-06-05",
+    "planned_publish_at": "2026-06-05T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/081-kubernetes-worker-join-cni-basic-checks/variants/naver.md",
+    "source_sha256": "11668e169919cd1ca0ee897142bb95a8e9df7bce127661c5f9a388fabb41adab",
+    "variant_sha256": "4798eb9bf5c7579317ab5ce245a2acae275ba03f8ab4aa762e30f2ab026de887",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 41,
+    "planned_publish_date": "2026-06-05",
+    "planned_publish_at": "2026-06-05T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/081-kubernetes-worker-join-cni-basic-checks",
+    "source_path": "content/posts/non-ai/081-kubernetes-worker-join-cni-basic-checks/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 41,
+    "planned_publish_date": "2026-06-05",
+    "planned_publish_at": "2026-06-05T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

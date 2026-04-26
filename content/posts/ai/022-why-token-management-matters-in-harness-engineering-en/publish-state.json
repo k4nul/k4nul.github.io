@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "why-token-management-matters-in-harness-engineering-en",
+  "source": {
+    "path": "content/posts/ai/022-why-token-management-matters-in-harness-engineering-en/source.md",
+    "source_sha256": "1a489fd715b586ff83c45ba1249b8bc593e8b890fb9d69900537ee8a63a45c21",
+    "source_updated_at": "2026-04-25T13:13:23.442032+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/022-why-token-management-matters-in-harness-engineering-en/variants/tistory.md",
+    "source_sha256": "1a489fd715b586ff83c45ba1249b8bc593e8b890fb9d69900537ee8a63a45c21",
+    "variant_sha256": "be2c437d7dd96e0777682bf01a36fefec5f35068a68ce1d9ce16c557ea5fff86",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 22,
+    "planned_publish_date": "2026-05-17",
+    "planned_publish_at": "2026-05-17T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/022-why-token-management-matters-in-harness-engineering-en/variants/naver.md",
+    "source_sha256": "1a489fd715b586ff83c45ba1249b8bc593e8b890fb9d69900537ee8a63a45c21",
+    "variant_sha256": "b82170073238ba4b581f6a9c9df1c992861a8a1469e6992f877b55beadd4a3b0",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 22,
+    "planned_publish_date": "2026-05-17",
+    "planned_publish_at": "2026-05-17T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/022-why-token-management-matters-in-harness-engineering-en",
+    "source_path": "content/posts/ai/022-why-token-management-matters-in-harness-engineering-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 22,
+    "planned_publish_date": "2026-05-17",
+    "planned_publish_at": "2026-05-17T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

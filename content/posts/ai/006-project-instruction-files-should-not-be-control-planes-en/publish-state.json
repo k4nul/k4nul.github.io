@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "project-instruction-files-should-not-be-control-planes-en",
+  "source": {
+    "path": "content/posts/ai/006-project-instruction-files-should-not-be-control-planes-en/source.md",
+    "source_sha256": "f760b92b039a70958d576417925716b3aca1e446a4734e24caa30b18fde69662",
+    "source_updated_at": "2026-04-25T13:13:23.034230+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/006-project-instruction-files-should-not-be-control-planes-en/variants/tistory.md",
+    "source_sha256": "f760b92b039a70958d576417925716b3aca1e446a4734e24caa30b18fde69662",
+    "variant_sha256": "bbd3068337a927594055d6adba127ff1fc1f51e62815fb2fcf568b10db296ef1",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 6,
+    "planned_publish_date": "2026-05-01",
+    "planned_publish_at": "2026-05-01T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/006-project-instruction-files-should-not-be-control-planes-en/variants/naver.md",
+    "source_sha256": "f760b92b039a70958d576417925716b3aca1e446a4734e24caa30b18fde69662",
+    "variant_sha256": "2d789af5a0beec6b63412073622ff7a976e2c1494d6febd85c976c1de79e4573",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 6,
+    "planned_publish_date": "2026-05-01",
+    "planned_publish_at": "2026-05-01T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/006-project-instruction-files-should-not-be-control-planes-en",
+    "source_path": "content/posts/ai/006-project-instruction-files-should-not-be-control-planes-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 6,
+    "planned_publish_date": "2026-05-01",
+    "planned_publish_at": "2026-05-01T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

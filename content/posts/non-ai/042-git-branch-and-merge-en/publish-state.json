@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "git-branch-and-merge-en",
+  "source": {
+    "path": "content/posts/non-ai/042-git-branch-and-merge-en/source.md",
+    "source_sha256": "9811cde39c96127661f28c636e711afc496371a0d28d7de05ba9596611622efd",
+    "source_updated_at": "2026-04-25T13:13:24.009058+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-06T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/042-git-branch-and-merge-en/variants/tistory.md",
+    "source_sha256": "9811cde39c96127661f28c636e711afc496371a0d28d7de05ba9596611622efd",
+    "variant_sha256": "552e3f20c1fe636dab65d4fa68586a141c36858e46c2895f372de38fc5a6e07b",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 42,
+    "planned_publish_date": "2026-06-06",
+    "planned_publish_at": "2026-06-06T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/042-git-branch-and-merge-en/variants/naver.md",
+    "source_sha256": "9811cde39c96127661f28c636e711afc496371a0d28d7de05ba9596611622efd",
+    "variant_sha256": "19f9956c9cfa124a32226424918f60448ed8deefa8496dd8f84da411ed2ab58f",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 42,
+    "planned_publish_date": "2026-06-06",
+    "planned_publish_at": "2026-06-06T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/042-git-branch-and-merge-en",
+    "source_path": "content/posts/non-ai/042-git-branch-and-merge-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 42,
+    "planned_publish_date": "2026-06-06",
+    "planned_publish_at": "2026-06-06T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

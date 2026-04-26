@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "git-pr-mr-collaboration-review",
+  "source": {
+    "path": "content/posts/non-ai/051-git-pr-mr-collaboration-review/source.md",
+    "source_sha256": "486ad0fcb23f49194beecf2d28a77ff0f3cfd2e606c1129e8005c1adc5d93429",
+    "source_updated_at": "2026-04-25T13:13:24.175240+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-15T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/051-git-pr-mr-collaboration-review/variants/tistory.md",
+    "source_sha256": "486ad0fcb23f49194beecf2d28a77ff0f3cfd2e606c1129e8005c1adc5d93429",
+    "variant_sha256": "2d6dd0643e08e882098030ddc382ec8a2b09226eecfbec502f25ca3ed2624548",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 26,
+    "planned_publish_date": "2026-05-21",
+    "planned_publish_at": "2026-05-21T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/051-git-pr-mr-collaboration-review/variants/naver.md",
+    "source_sha256": "486ad0fcb23f49194beecf2d28a77ff0f3cfd2e606c1129e8005c1adc5d93429",
+    "variant_sha256": "5c623ce683935d1ce2d1d07294591695453a7175f0a4c998a2b8e3fb61ae05d3",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 26,
+    "planned_publish_date": "2026-05-21",
+    "planned_publish_at": "2026-05-21T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/051-git-pr-mr-collaboration-review",
+    "source_path": "content/posts/non-ai/051-git-pr-mr-collaboration-review/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 26,
+    "planned_publish_date": "2026-05-21",
+    "planned_publish_at": "2026-05-21T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

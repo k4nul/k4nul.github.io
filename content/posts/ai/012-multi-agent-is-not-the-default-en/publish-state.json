@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "multi-agent-is-not-the-default-en",
+  "source": {
+    "path": "content/posts/ai/012-multi-agent-is-not-the-default-en/source.md",
+    "source_sha256": "ac89e4b79d90556cb04b13108d1143c0a4f9d96a79be7f845c2a18ed189301f7",
+    "source_updated_at": "2026-04-25T13:13:23.183981+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/012-multi-agent-is-not-the-default-en/variants/tistory.md",
+    "source_sha256": "ac89e4b79d90556cb04b13108d1143c0a4f9d96a79be7f845c2a18ed189301f7",
+    "variant_sha256": "f3af616147eac00b3ff64c5b1c60203e4580f1e0481608a639872358a95ae997",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 12,
+    "planned_publish_date": "2026-05-07",
+    "planned_publish_at": "2026-05-07T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/012-multi-agent-is-not-the-default-en/variants/naver.md",
+    "source_sha256": "ac89e4b79d90556cb04b13108d1143c0a4f9d96a79be7f845c2a18ed189301f7",
+    "variant_sha256": "2ff9cdd0156bcc3f986c6b15358d0b37f75c680e3dbe5be1d6a4172d6b8b9bd5",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 12,
+    "planned_publish_date": "2026-05-07",
+    "planned_publish_at": "2026-05-07T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/012-multi-agent-is-not-the-default-en",
+    "source_path": "content/posts/ai/012-multi-agent-is-not-the-default-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 12,
+    "planned_publish_date": "2026-05-07",
+    "planned_publish_at": "2026-05-07T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

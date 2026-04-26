@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-ownership-borrowing-lifetimes-en",
+  "source": {
+    "path": "content/posts/non-ai/008-rust-ownership-borrowing-lifetimes-en/source.md",
+    "source_sha256": "861544b566a7e0a11b1eaddb70cae13d7832a2d2c69fd7a11f529deeda4dd33d",
+    "source_updated_at": "2026-04-25T13:13:22.957147+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/008-rust-ownership-borrowing-lifetimes-en/variants/tistory.md",
+    "source_sha256": "861544b566a7e0a11b1eaddb70cae13d7832a2d2c69fd7a11f529deeda4dd33d",
+    "variant_sha256": "c0a0f0c9d50b3385b53e831f527542e8ef75b8d7af1a6ddc3eaddf38195edf3e",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 8,
+    "planned_publish_date": "2026-05-03",
+    "planned_publish_at": "2026-05-03T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/008-rust-ownership-borrowing-lifetimes-en/variants/naver.md",
+    "source_sha256": "861544b566a7e0a11b1eaddb70cae13d7832a2d2c69fd7a11f529deeda4dd33d",
+    "variant_sha256": "feefb8568df0fbee9b9042423099b9d769062cfc84f9f0729676c052df94cb0d",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 8,
+    "planned_publish_date": "2026-05-03",
+    "planned_publish_at": "2026-05-03T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/008-rust-ownership-borrowing-lifetimes-en",
+    "source_path": "content/posts/non-ai/008-rust-ownership-borrowing-lifetimes-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 8,
+    "planned_publish_date": "2026-05-03",
+    "planned_publish_at": "2026-05-03T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

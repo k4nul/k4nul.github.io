@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-install-hello-world-en",
+  "source": {
+    "path": "content/posts/non-ai/002-rust-install-hello-world-en/source.md",
+    "source_sha256": "19aa2cf16818066c501e4f9efaf7044d2d17fad70b63238548682eddbdb467da",
+    "source_updated_at": "2026-04-25T13:13:22.872871+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/002-rust-install-hello-world-en/variants/tistory.md",
+    "source_sha256": "19aa2cf16818066c501e4f9efaf7044d2d17fad70b63238548682eddbdb467da",
+    "variant_sha256": "993b2fd3dc375f08bc1c18c7721e8bda371ca0623dcba528c3a06160d18db86e",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 2,
+    "planned_publish_date": "2026-04-27",
+    "planned_publish_at": "2026-04-27T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "excluded_translation_mirror",
+    "reason": "translation_mirror_not_for_external_channels",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/002-rust-install-hello-world-en/variants/naver.md",
+    "source_sha256": "19aa2cf16818066c501e4f9efaf7044d2d17fad70b63238548682eddbdb467da",
+    "variant_sha256": "af7233a38e2ab8d43ae25be6feb934da3c80d060b0719ee760ad87ad31d35df1",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-26T16:57:55+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 2,
+    "planned_publish_date": "2026-04-27",
+    "planned_publish_at": "2026-04-27T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/002-rust-install-hello-world-en",
+    "source_path": "content/posts/non-ai/002-rust-install-hello-world-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 2,
+    "planned_publish_date": "2026-04-27",
+    "planned_publish_at": "2026-04-27T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}
