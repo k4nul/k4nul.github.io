@@ -5,6 +5,12 @@ security:
     title_en: Malware Analysis
     description_ko: 문서형 악성코드와 드로퍼 등 실제 샘플 분석 글을 모아둔 분류다.
     description_en: A focused archive for hands-on malware analysis posts, including document-based samples and droppers.
+  - key: security-engineering
+    slug: security-engineering
+    title_ko: 보안 엔지니어링
+    title_en: Security Engineering
+    description_ko: 공급망 보안, 클라우드 보안, secure coding, AI 보조 코드 리뷰, DevSecOps, 취약점 우선순위화처럼 운영 가능한 보안 주제를 모아둔 분류다.
+    description_en: A focused archive for practical security engineering topics such as supply chain security, cloud security, secure coding, AI-assisted code review, DevSecOps, and vulnerability prioritization.
 
 development:
   - key: ai
@@ -25,5 +31,11 @@ development:
     title_en: Rust
     description_ko: Rust 학습 기록, 실습, 문법 정리, 디버깅 관련 글을 모아둔 분류다.
     description_en: A focused archive for Rust learning notes, practice posts, syntax walkthroughs, and debugging guides.
+  - key: devops
+    slug: devops
+    title_ko: DevOps
+    title_en: DevOps
+    description_ko: Docker, Git, Jenkins, Kubernetes와 운영 자동화 흐름을 단계적으로 정리하는 분류다.
+    description_en: A focused archive for Docker, Git, Jenkins, Kubernetes, and practical operations automation workflows.
 
 life: []

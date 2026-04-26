@@ -15,6 +15,14 @@ topic_description: "Archive of posts about AI tooling, harness engineering, perm
 
 This topic archive focuses on how AI coding tools actually operate inside a larger system: permissions, handoff structure, validation flow, and control boundaries. The goal is to examine the harness around the model, not just the prompt itself.
 
+## Series Flow
+
+- Harness Engineering: the conceptual layer for execution environments, validation, and permission boundaries around AI tools
+- Token Management: the operational layer for long instructions, logs, state summaries, and context pressure
+- Practical Codex: the hands-on layer for operating Codex as a project work-execution agent
+- Practical Claude Code: the operational layer for Claude Code memory, settings, hooks, MCP, and subagents
+- AI Agent Operations and Security: the follow-up layer for trace, guardrails, MCP trust boundaries, evaluation, prompt injection, and supply chain security
+
 ## Recommended Posts
 
 - [What Is Harness Engineering?](/en/ai/what-is-harness-engineering/)

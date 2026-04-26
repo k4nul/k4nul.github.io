@@ -16,6 +16,7 @@ This section collects hands-on analysis notes for document-based malware, droppe
 
 ## Featured Posts
 
+- [Security Engineering Archive](/en/security/security-engineering/)
 - [Document Malware Analysis Archive](/en/security/malware-analysis/)
 - [Analysis of a Macro-Based Malware Sample](/en/malware/macro-malware/)
 - [Analysis of an RTF-Based Malware Sample](/en/malware/rtf-malware/)

@@ -18,6 +18,7 @@ This section combines Rust learning guides with operational writing about AI too
 
 - [Rust Learning Guides](/en/development/rust/)
 - [AI Tooling and Harness Engineering](/en/development/ai/)
+- [DevOps Operations Flow](/en/development/devops/)
 
 ## Suggested Reading
 
@@ -25,3 +26,4 @@ This section combines Rust learning guides with operational writing about AI too
 - [Debugging with rust-analyzer and CodeLLDB](/en/rust/debugging-with-rust-analyzer-and-codelldb/)
 - [Why Do AI Coding Tools Produce Different Results?](/en/ai/why-do-results-change-when-you-switch-ai-coding-tools/)
 - [What Is Harness Engineering?](/en/ai/what-is-harness-engineering/)
+- [What Is Different Between Containers and VMs?](/en/devops/docker-containers-vs-vms/)

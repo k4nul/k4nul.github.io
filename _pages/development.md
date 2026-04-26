@@ -18,6 +18,7 @@ Rust 설치와 디버깅, 언어 기초, ownership과 async 같은 학습 흐름
 
 - [Rust 학습 가이드](/development/rust/)
 - [AI 도구와 하네스 엔지니어링](/development/ai/)
+- [DevOps 운영 흐름](/development/devops/)
 
 ## 먼저 읽기 좋은 글
 
@@ -25,3 +26,4 @@ Rust 설치와 디버깅, 언어 기초, ownership과 async 같은 학습 흐름
 - [rust-analyzer와 CodeLLDB로 디버깅하기](/rust/rust-debugging-with-rust-analyzer/)
 - [AI 코딩 도구를 바꾸면 결과가 달라지는 이유](/ai/why-ai-tools-produce-different-results/)
 - [하네스 엔지니어링이란 무엇인가](/ai/what-is-harness-engineering/)
+- [Docker 컨테이너와 VM은 무엇이 다른가](/devops/docker-containers-vs-vms/)
