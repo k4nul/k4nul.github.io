@@ -2,6 +2,7 @@
 title: "Search"
 layout: search
 permalink: /en/search/
+description: "Search K4NUL posts"
 author_profile: true
 sidebar:
   nav: "sections"

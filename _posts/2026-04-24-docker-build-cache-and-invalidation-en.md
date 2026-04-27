@@ -7,6 +7,11 @@ lang: en
 translation_key: docker-build-cache-and-invalidation
 section: development
 topic_key: devops
+featured: true
+track: devops
+repo:
+demo:
+references:
 categories: DevOps
 tags: [docker, build-cache, dockerfile, buildkit, cache-invalidation]
 author_profile: false

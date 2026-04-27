@@ -1,0 +1,71 @@
+ko:
+  intro: "처음 방문한 독자가 글 발행 순서 대신 주제별 흐름으로 읽을 수 있도록 정리한 경로다. 각 링크는 현재 사이트에 실제로 빌드되는 글만 사용한다."
+  sparse_note: "공개된 글이 아직 적은 트랙이다. 새 글이 공개되면 이 경로에 추가한다."
+  tracks:
+    - key: security
+      title: "Security Track"
+      description: "문서형 악성코드 분석과 취약점 악용 흐름을 근거 중심으로 읽는 경로다."
+      items:
+        - macro-malware
+        - rtf-malware
+    - key: ai-engineering
+      title: "AI Engineering Track"
+      description: "Codex, Claude Code, 하네스 엔지니어링, 토큰 관리, agent workflow를 운영 구조로 보는 경로다."
+      items:
+        - what-is-harness-engineering
+        - why-ai-tools-produce-different-results
+        - project-instruction-files-should-not-be-control-planes
+        - why-token-management-matters-in-harness-engineering
+        - why-codex-needs-a-harness
+    - key: rust
+      title: "Rust Track"
+      description: "설치, ownership/borrowing, error handling, CLI 프로젝트까지 이어지는 Rust 학습 경로다."
+      items:
+        - rust-install-hello-world
+        - rust-ownership-borrowing-lifetimes
+        - rust-generics-error-handling-closures-iterators
+        - rust-build-a-small-cli-project
+    - key: devops
+      title: "DevOps Track"
+      description: "Docker 이미지, build cache, registry 흐름을 시작점으로 운영 자동화로 확장하는 경로다."
+      items:
+        - docker-containers-vs-vms
+        - dockerfile-basics-and-build-context
+        - docker-build-cache-and-invalidation
+        - docker-registry-push-and-image-management
+
+en:
+  intro: "This page gives first-time readers a topic-first path instead of a publish-order archive. Every link points to a post that is currently present in the built site."
+  sparse_note: "This track has only a small number of public posts so far. New public posts will be added here as they are published."
+  tracks:
+    - key: security
+      title: "Security Track"
+      description: "A path for evidence-oriented document malware analysis and exploit-chain reading."
+      items:
+        - macro-malware
+        - rtf-malware
+    - key: ai-engineering
+      title: "AI Engineering Track"
+      description: "A path for Codex, Claude Code, harness engineering, token management, and agent workflows."
+      items:
+        - what-is-harness-engineering
+        - why-ai-tools-produce-different-results
+        - project-instruction-files-should-not-be-control-planes
+        - why-token-management-matters-in-harness-engineering
+        - why-codex-needs-a-harness
+    - key: rust
+      title: "Rust Track"
+      description: "A Rust learning path from setup through ownership, error handling, and a small CLI project."
+      items:
+        - rust-install-hello-world
+        - rust-ownership-borrowing-lifetimes
+        - rust-generics-error-handling-closures-iterators
+        - rust-build-a-small-cli-project
+    - key: devops
+      title: "DevOps Track"
+      description: "A path from Docker images, build cache, and registry flow toward operations automation."
+      items:
+        - docker-containers-vs-vms
+        - dockerfile-basics-and-build-context
+        - docker-build-cache-and-invalidation
+        - docker-registry-push-and-image-management

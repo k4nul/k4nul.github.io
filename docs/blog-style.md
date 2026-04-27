@@ -19,6 +19,9 @@
 필요 시 추가한다.
 
 - `topic_key`: 같은 허브나 시리즈로 묶일 때
+- `featured`: 홈과 Start Here에서 대표 글로 노출할 때만 `true`
+- `track`: `security`, `ai-engineering`, `rust`, `devops` 중 하나
+- `repo`, `demo`, `references`: 실제 존재하는 연결 대상이 있을 때만 사용
 - `permalink`: 영어 미러 글에서 필수
 - `sidebar.nav: "sections"`: `POSTS` 사이드바 유지가 필요할 때
 
@@ -26,14 +29,18 @@
 
 기술 글은 아래 헤더를 그대로 유지하는 것을 기본으로 한다. 헤더를 고정하면 리뷰와 후속 개정이 쉬워진다.
 
-1. `## 요약`
-2. `## 문서 정보`
-3. `## 문제 정의`
-4. `## 확인된 사실`
-5. `## 직접 재현한 결과`
-6. `## 해석 / 의견`
-7. `## 한계와 예외`
-8. `## 참고자료`
+1. `## Summary / 요약`
+2. `## Document Info / Environment`
+3. `## Problem Statement / 문제 정의`
+4. `## Verified Facts / 확인된 사실`
+5. `## Reproduction Steps / 재현 순서`
+6. `## Observations / 관찰 결과`
+7. `## Interpretation / 해석`
+8. `## Limitations / 한계`
+9. `## References / 참고자료`
+10. `## Change Log / 변경 이력`
+
+기존 글은 예전 한국어 헤더를 유지할 수 있다. 새 글은 `templates/post-template.md`를 우선 사용한다.
 
 `## 문서 정보`에는 아래 항목을 빠짐없이 넣는다.
 
@@ -117,7 +124,7 @@
 
 ## 검토 체크리스트
 
-- 필수 섹션 8개가 모두 있는가
+- 필수 섹션이 모두 있는가
 - `문서 정보` 5개 항목이 모두 채워져 있는가
 - 핵심 주장마다 근거가 연결되어 있는가
 - 사실과 의견이 섞여 있지 않은가

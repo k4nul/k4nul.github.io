@@ -7,6 +7,12 @@ layout: archive
 {% if current_lang == "en" %}
   {% assign ui_locale = "en" %}
 {% endif %}
+{% assign recent_label = "최근 글" %}
+{% assign full_label = "전체 글" %}
+{% if current_lang == "en" %}
+  {% assign recent_label = "Recent Posts" %}
+  {% assign full_label = "All Posts" %}
+{% endif %}
 {% assign filtered_posts = site.posts | where: "lang", current_lang %}
 {% assign category_names = filtered_posts | map: "categories" | join: "|" | split: "|" | uniq | sort %}
 
@@ -17,9 +23,13 @@ layout: archive
     {% if category_name != "" %}
       {% assign category_posts = filtered_posts | where_exp: "post", "post.categories contains category_name" %}
       {% if category_posts.size > 0 %}
+        {% assign latest_post = category_posts | first %}
         <li>
           <a href="#{{ category_name | slugify }}">
             <strong>{{ category_name }}</strong> <span class="taxonomy__count">{{ category_posts.size }}</span>
+            {% if latest_post %}
+              <span class="taxonomy__latest">{{ latest_post.title }}</span>
+            {% endif %}
           </a>
         </li>
       {% endif %}
@@ -34,6 +44,13 @@ layout: archive
     {% if category_posts.size > 0 %}
       <section id="{{ category_name | slugify | downcase }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ category_name }}</h2>
+        <h3 class="archive__subtitle">{{ recent_label }}</h3>
+        <ul class="taxonomy__recent">
+          {% for post in category_posts limit: 5 %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <h3 class="archive__subtitle">{{ full_label }}</h3>
         <div class="entries-{{ entries_layout }}">
           {% for post in category_posts %}
             {% include archive-single.html type=entries_layout %}

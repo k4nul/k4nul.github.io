@@ -20,7 +20,7 @@ title                    : "K4NUL"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "K4NUL"
-description              : "K4NUL's Blog."
+description              : "Security analysis, Rust, AI Engineering, and DevOps notes by K4NUL."
 url                      : "https://www.k4nul.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

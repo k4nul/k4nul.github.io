@@ -7,6 +7,11 @@ translation_key: why-token-management-matters-in-harness-engineering
 date: 2026-04-20 00:00:00 +0900
 section: development
 topic_key: token-management
+featured: true
+track: ai-engineering
+repo:
+demo:
+references:
 categories: AI
 tags: [ai, llm, codex, claude-code, harness-engineering, token-management, context-window]
 author_profile: false

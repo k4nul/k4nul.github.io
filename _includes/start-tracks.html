@@ -1,0 +1,36 @@
+{% assign current_lang = include.lang | default: page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
+{% assign start_data = site.data.start_tracks[current_lang] %}
+
+{% if start_data %}
+  <p class="start-tracks__intro">{{ start_data.intro }}</p>
+
+  <div class="start-tracks">
+    {% for track in start_data.tracks %}
+      {% assign displayed_count = 0 %}
+      <section class="start-track" aria-labelledby="start-track-{{ track.key }}">
+        <h2 id="start-track-{{ track.key }}">{{ track.title }}</h2>
+        <p class="start-track__description">{{ track.description }}</p>
+
+        <ol class="start-track__list">
+          {% for item_key in track.items %}
+            {% assign matched_posts = site.posts | where: "translation_key", item_key | where: "lang", current_lang %}
+            {% assign start_post = matched_posts | first %}
+            {% if start_post %}
+              {% assign displayed_count = displayed_count | plus: 1 %}
+              <li>
+                <a href="{{ start_post.url | relative_url }}">{{ start_post.title }}</a>
+                {% if start_post.description %}
+                  <span>{{ start_post.description }}</span>
+                {% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+
+        {% if displayed_count < 3 %}
+          <p class="start-track__note">{{ start_data.sparse_note }}</p>
+        {% endif %}
+      </section>
+    {% endfor %}
+  </div>
+{% endif %}

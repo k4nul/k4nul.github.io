@@ -2,6 +2,7 @@
 title: "문의"
 layout: single
 permalink: /contact/
+description: "K4NUL 블로그 연락 방법"
 author_profile: true
 sidebar:
   nav: "sections"

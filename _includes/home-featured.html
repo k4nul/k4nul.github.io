@@ -1,7 +1,42 @@
 {% assign current_lang = include.lang | default: page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
 {% assign featured = site.data.home_featured[current_lang] %}
+{% assign featured_posts = site.posts | where: "lang", current_lang | where: "featured", true %}
 
-{% if featured and featured.items %}
+{% if featured_posts.size > 0 %}
+  <section class="home-featured" aria-labelledby="home-featured-title">
+    {% if current_lang == "en" %}
+      <h2 id="home-featured-title" class="home-intro__title">Featured Posts</h2>
+      <p class="home-featured__intro">Representative posts from the Security, AI Engineering, Rust, and DevOps tracks.</p>
+    {% else %}
+      <h2 id="home-featured-title" class="home-intro__title">대표 글</h2>
+      <p class="home-featured__intro">Security, AI Engineering, Rust, DevOps 트랙을 대표하는 글입니다.</p>
+    {% endif %}
+
+    <ul class="home-featured__list">
+      {% for post in featured_posts limit: 8 %}
+        {% assign track_label = post.track %}
+        {% if post.track == "ai-engineering" %}
+          {% assign track_label = "AI Engineering" %}
+        {% elsif post.track == "security" %}
+          {% assign track_label = "Security" %}
+        {% elsif post.track == "rust" %}
+          {% assign track_label = "Rust" %}
+        {% elsif post.track == "devops" %}
+          {% assign track_label = "DevOps" %}
+        {% endif %}
+        <li class="home-featured__item">
+          <a class="home-featured__link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% if post.track %}
+            <span class="home-featured__track">{{ track_label }}</span>
+          {% endif %}
+          {% if post.description %}
+            <span class="home-featured__description">{{ post.description }}</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% elsif featured and featured.items %}
   <section class="home-featured" aria-labelledby="home-featured-title">
     <h2 id="home-featured-title" class="home-intro__title">{{ featured.title }}</h2>
     {% if featured.intro %}

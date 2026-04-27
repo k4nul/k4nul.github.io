@@ -1,31 +1,51 @@
 # main links
 main:
+  - title: "Home"
+    url: /
   - title: "Security"
     url: /security/
-  - title: "Development"
-    url: /development/
-  - title: "Life"
-    url: /life/
+  - title: "AI Engineering"
+    url: /development/ai/
+  - title: "Rust"
+    url: /development/rust/
+  - title: "DevOps"
+    url: /development/devops/
+  - title: "Start Here"
+    url: /start/
+  - title: "About"
+    url: /about/
 
 main_en:
+  - title: "Home"
+    url: /en/
   - title: "Security"
     url: /en/security/
-  - title: "Development"
-    url: /en/development/
-  - title: "Life"
-    url: /en/life/
+  - title: "AI Engineering"
+    url: /en/development/ai/
+  - title: "Rust"
+    url: /en/development/rust/
+  - title: "DevOps"
+    url: /en/development/devops/
+  - title: "Start Here"
+    url: /en/start/
+  - title: "About"
+    url: /about/
 
 sections:
   - title: "POSTS"
     children:
       - title: "전체"
         url: /
-      - title: "보안"
+      - title: "Security"
         url: /security/
-      - title: "개발"
-        url: /development/
-      - title: "일상"
-        url: /life/
+      - title: "AI Engineering"
+        url: /development/ai/
+      - title: "Rust"
+        url: /development/rust/
+      - title: "DevOps"
+        url: /development/devops/
+      - title: "Start Here"
+        url: /start/
       - title: "카테고리"
         url: /categories/
       - title: "태그"
@@ -46,10 +66,14 @@ sections_en:
         url: /en/
       - title: "Security"
         url: /en/security/
-      - title: "Development"
-        url: /en/development/
-      - title: "Life"
-        url: /en/life/
+      - title: "AI Engineering"
+        url: /en/development/ai/
+      - title: "Rust"
+        url: /en/development/rust/
+      - title: "DevOps"
+        url: /en/development/devops/
+      - title: "Start Here"
+        url: /en/start/
       - title: "Categories"
         url: /en/categories/
       - title: "Tags"

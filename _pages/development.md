@@ -1,18 +1,18 @@
 ---
-title: "Rust와 AI 중심 개발 노트"
+title: "Rust, AI Engineering, DevOps 개발 노트"
 layout: section-archive
 permalink: /development/
-description: "Rust, AI 도구, 하네스 엔지니어링, 트러블슈팅 글을 정리하는 개발 아카이브"
+description: "Rust, AI Engineering, DevOps, 트러블슈팅 글을 정리하는 개발 아카이브"
 author_profile: true
 sidebar:
   nav: "sections"
 lang: ko
 translation_key: section-development
 section_key: development
-section_description: "Rust, AI 도구, 하네스 엔지니어링, 트러블슈팅 글을 정리하는 개발 아카이브다."
+section_description: "Rust, AI Engineering, DevOps, 트러블슈팅 글을 정리하는 개발 아카이브다."
 ---
 
-Rust 설치와 디버깅, 언어 기초, ownership과 async 같은 학습 흐름을 정리하고, AI 도구와 하네스 엔지니어링처럼 운영 관점의 글도 함께 모아둡니다. 시리즈형 글을 따라가기 쉽게 주제별 허브를 같이 운영합니다.
+Rust 설치와 디버깅, 언어 기초, ownership과 async 같은 학습 흐름을 정리하고, AI Engineering과 DevOps 운영 관점의 글도 함께 모아둡니다. 시리즈형 글을 따라가기 쉽게 주제별 허브를 같이 운영합니다.
 
 ## 대표 주제
 

@@ -1,18 +1,18 @@
 ---
-title: "Development Notes for Rust and AI Tooling"
+title: "Development Notes for Rust, AI Engineering, and DevOps"
 layout: section-archive
 permalink: /en/development/
-description: "Archive of development posts covering Rust learning guides, AI tooling, harness engineering, and practical troubleshooting."
+description: "Archive of development posts covering Rust learning guides, AI Engineering, DevOps, and practical troubleshooting."
 author_profile: true
 sidebar:
   nav: "sections"
 lang: en
 translation_key: section-development
 section_key: development
-section_description: "Archive of development posts covering Rust learning guides, AI tooling, harness engineering, and practical troubleshooting."
+section_description: "Archive of development posts covering Rust learning guides, AI Engineering, DevOps, and practical troubleshooting."
 ---
 
-This section combines Rust learning guides with operational writing about AI tooling and harness engineering. The goal is to keep setup notes, language fundamentals, debugging guides, and system-design essays easy to discover by topic.
+This section combines Rust learning guides with operational writing about AI Engineering and DevOps. The goal is to keep setup notes, language fundamentals, debugging guides, and system-design essays easy to discover by topic.
 
 ## Core Topics
 
