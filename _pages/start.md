@@ -1,7 +1,7 @@
 ---
 title: "Start Here"
 layout: single
-permalink: /start/
+permalink: /start-here/
 description: "처음 방문한 독자를 위한 Security, AI Engineering, Rust, DevOps 읽기 경로"
 author_profile: true
 sidebar:

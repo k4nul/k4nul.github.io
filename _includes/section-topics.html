@@ -20,6 +20,15 @@
         {% assign topic_title = topic.title_en | default: topic.title_ko %}
       {% endif %}
       {% assign topic_url = section_url | append: topic.slug | append: "/" %}
+      {% if current_lang == "ko" and page.section_key == "development" %}
+        {% if topic.key == "ai" %}
+          {% assign topic_url = "/ai-engineering/" %}
+        {% elsif topic.key == "rust" %}
+          {% assign topic_url = "/rust/" %}
+        {% elsif topic.key == "devops" %}
+          {% assign topic_url = "/devops/" %}
+        {% endif %}
+      {% endif %}
       <a class="section-topics__link{% if page.topic_key == topic.key %} is-active{% endif %}" href="{{ topic_url | relative_url }}">{{ topic_title }}</a>
     {% endfor %}
   </div>

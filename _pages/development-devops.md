@@ -1,7 +1,7 @@
 ---
 title: "DevOps 운영 흐름"
 layout: section-archive
-permalink: /development/devops/
+permalink: /devops/
 description: "Docker, Git, Jenkins, Kubernetes와 운영 자동화 흐름을 단계적으로 정리하는 DevOps 아카이브"
 author_profile: true
 sidebar:

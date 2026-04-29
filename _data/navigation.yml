@@ -5,13 +5,13 @@ main:
   - title: "Security"
     url: /security/
   - title: "AI Engineering"
-    url: /development/ai/
+    url: /ai-engineering/
   - title: "Rust"
-    url: /development/rust/
+    url: /rust/
   - title: "DevOps"
-    url: /development/devops/
+    url: /devops/
   - title: "Start Here"
-    url: /start/
+    url: /start-here/
   - title: "About"
     url: /about/
 
@@ -29,7 +29,7 @@ main_en:
   - title: "Start Here"
     url: /en/start/
   - title: "About"
-    url: /about/
+    url: /en/about/
 
 sections:
   - title: "POSTS"
@@ -39,13 +39,13 @@ sections:
       - title: "Security"
         url: /security/
       - title: "AI Engineering"
-        url: /development/ai/
+        url: /ai-engineering/
       - title: "Rust"
-        url: /development/rust/
+        url: /rust/
       - title: "DevOps"
-        url: /development/devops/
+        url: /devops/
       - title: "Start Here"
-        url: /start/
+        url: /start-here/
       - title: "카테고리"
         url: /categories/
       - title: "태그"
@@ -57,7 +57,7 @@ sections:
       - title: "문의"
         url: /contact/
       - title: "개인정보 처리방침"
-        url: /privacy-policy/
+        url: /privacy/
 
 sections_en:
   - title: "POSTS"
@@ -81,8 +81,8 @@ sections_en:
       - title: "Search"
         url: /en/search/
       - title: "About"
-        url: /about/
+        url: /en/about/
       - title: "Contact"
-        url: /contact/
+        url: /en/contact/
       - title: "Privacy Policy"
-        url: /privacy-policy/
+        url: /en/privacy/

@@ -1,7 +1,7 @@
 ---
 title: "개인정보 처리방침"
 layout: single
-permalink: /privacy-policy/
+permalink: /privacy/
 description: "K4NUL 블로그에서 사용하는 GitHub Pages, Google Analytics, Disqus, 외부 CDN 관련 개인정보와 쿠키 안내"
 author_profile: true
 sidebar:

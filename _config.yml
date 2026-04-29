@@ -142,7 +142,7 @@ footer:
       url: "/contact/"
     - label: "Privacy Policy"
       icon: "fas fa-fw fa-user-shield"
-      url: "/privacy-policy/"
+      url: "/privacy/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   # url:

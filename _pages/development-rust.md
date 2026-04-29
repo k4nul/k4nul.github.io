@@ -1,7 +1,7 @@
 ---
 title: "Rust 학습 가이드"
 layout: section-archive
-permalink: /development/rust/
+permalink: /rust/
 description: "설치, 디버깅, 문법, ownership, concurrency까지 다루는 Rust 학습 시리즈"
 author_profile: true
 sidebar:

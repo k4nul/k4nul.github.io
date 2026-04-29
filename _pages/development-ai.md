@@ -1,7 +1,7 @@
 ---
 title: "AI 도구와 하네스 엔지니어링"
 layout: section-archive
-permalink: /development/ai/
+permalink: /ai-engineering/
 description: "AI 코딩 도구, 하네스 엔지니어링, 운영 규칙, 검증 흐름을 다루는 아카이브"
 author_profile: true
 sidebar:
