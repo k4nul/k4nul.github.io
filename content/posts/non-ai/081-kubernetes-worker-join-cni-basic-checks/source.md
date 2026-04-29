@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 05. worker join, CNI 구성, 클러스터 기본 확인"
 description: "kubeadm join으로 worker node를 붙이고 CNI와 기본 cluster 상태를 확인하는 흐름을 정리한 글."
-date: 2026-06-14 09:00:00 +0900
+date: 2026-07-07 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-worker-join-cni-basic-checks
 section: development

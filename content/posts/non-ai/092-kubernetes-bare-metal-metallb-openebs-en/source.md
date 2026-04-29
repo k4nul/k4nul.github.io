@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 10. Bare-metal addendum: when MetalLB and OpenEBS are useful"
 description: "An overview of MetalLB and OpenEBS as options for bare-metal Kubernetes load balancer and persistent storage gaps."
-date: 2026-06-25 09:00:00 +0900
+date: 2026-07-18 09:00:00 +0900
 lang: en
 translation_key: kubernetes-bare-metal-metallb-openebs
 section: development

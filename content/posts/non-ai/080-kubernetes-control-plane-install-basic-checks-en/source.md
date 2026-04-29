@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 04. Control Plane Installation and Basic Checks"
 description: "A kubeadm control plane checklist covering kubeconfig, Pod network installation, and basic control plane verification."
-date: 2026-06-13 09:00:00 +0900
+date: 2026-07-06 09:00:00 +0900
 lang: en
 translation_key: kubernetes-control-plane-install-basic-checks
 section: development

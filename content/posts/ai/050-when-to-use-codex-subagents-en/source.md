@@ -4,7 +4,7 @@ description: "Explains when Codex subagents are worth using and when a single-ag
 title: "Practical Codex 09. When Should You Use Codex Subagents?"
 lang: en
 translation_key: when-to-use-codex-subagents
-date: 2026-05-04 00:00:00 +0900
+date: 2026-05-11 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

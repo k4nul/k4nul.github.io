@@ -4,7 +4,7 @@ description: "Claude Code를 기능 목록이 아니라 CLAUDE.md, rules, skills
 title: "Claude Code 실전 활용 01. Claude Code를 기능이 아니라 운영 구조로 이해하기"
 lang: ko
 translation_key: claude-code-as-operating-structure
-date: 2026-05-06 00:00:00 +0900
+date: 2026-05-14 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

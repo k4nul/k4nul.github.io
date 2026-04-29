@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 09. Common Jenkins Failures and Root Cause Separation"
 description: "A Jenkins troubleshooting guide that separates controller, agent, queue, credential, plugin, and Pipeline code failures."
-date: 2026-06-03 09:00:00 +0900
+date: 2026-06-26 09:00:00 +0900
 lang: en
 translation_key: jenkins-common-failures-troubleshooting
 section: development

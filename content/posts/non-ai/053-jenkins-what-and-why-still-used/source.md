@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 01. Jenkins는 무엇이고 왜 아직도 많이 쓰이는가"
 description: "Jenkins를 Git, Docker 이후의 CI/CD 자동화 도구로 이해하고 controller, agent, plugin, Pipeline의 역할을 정리한 글."
-date: 2026-05-17 09:00:00 +0900
+date: 2026-06-09 09:00:00 +0900
 lang: ko
 translation_key: jenkins-what-and-why-still-used
 section: development

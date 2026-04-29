@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 03. 온프렘 기준 Kubernetes 설치 전략과 kubeadm 선택 이유"
 description: "온프렘 Kubernetes 학습에서 kubeadm을 기준선으로 삼는 이유와 설치 전 확인해야 할 조건을 정리한 글."
-date: 2026-06-10 09:00:00 +0900
+date: 2026-07-03 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-kubeadm-installation-strategy-on-prem
 section: development

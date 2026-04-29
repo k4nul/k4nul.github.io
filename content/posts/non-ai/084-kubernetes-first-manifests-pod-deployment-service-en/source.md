@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 06. Writing First Manifests: Pod, Deployment, Service"
 description: "A beginner Kubernetes manifest guide covering basic fields and first Pod, Deployment, and Service examples."
-date: 2026-06-17 09:00:00 +0900
+date: 2026-07-10 09:00:00 +0900
 lang: en
 translation_key: kubernetes-first-manifests-pod-deployment-service
 section: development

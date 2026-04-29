@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 02. Jenkins Installation and Initial Setup"
 description: "A checklist-style Jenkins installation guide covering Java requirements, JENKINS_HOME, initial password, and first plugin choices."
-date: 2026-05-20 09:00:00 +0900
+date: 2026-06-12 09:00:00 +0900
 lang: en
 translation_key: jenkins-installation-initial-setup
 section: development

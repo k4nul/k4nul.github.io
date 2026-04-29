@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 04. Freestyle Job vs Pipeline"
 description: "A comparison of Jenkins Freestyle Job and Pipeline from the perspective of UI configuration and code-based automation."
-date: 2026-05-24 09:00:00 +0900
+date: 2026-06-16 09:00:00 +0900
 lang: en
 translation_key: jenkins-freestyle-job-vs-pipeline
 section: development

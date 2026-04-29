@@ -4,7 +4,7 @@ description: "Codex에서 반복되는 작성, 리뷰, 릴리스 절차를 skill
 title: "Codex 실전 활용 08. skill로 Codex 반복 작업 표준화하기"
 lang: ko
 translation_key: standardize-codex-workflows-with-skills
-date: 2026-05-03 00:00:00 +0900
+date: 2026-05-08 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

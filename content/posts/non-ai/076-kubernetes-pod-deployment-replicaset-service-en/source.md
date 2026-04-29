@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 02. Understanding Pod, Deployment, ReplicaSet, and Service as an Operations Flow"
 description: "A Kubernetes guide that connects Pod, Deployment, ReplicaSet, and Service as one operating flow instead of isolated definitions."
-date: 2026-06-09 09:00:00 +0900
+date: 2026-07-02 09:00:00 +0900
 lang: en
 translation_key: kubernetes-pod-deployment-replicaset-service
 section: development

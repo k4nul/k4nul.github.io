@@ -13,16 +13,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-20T09:00:00+09:00"
-source_sha256: "74b0166f9b7e050e7e3997b5b21a372586b0e6d1a0a070bfcc7c546ff5729d96"
-source_updated_at: "2026-04-25T13:13:23.413163+09:00"
+source_sha256: "5370a570aae73cc78b4b1d299ef63dafb5c2633f6b301100bb4afcbea81ed6a8"
+source_updated_at: "2026-04-28T00:00:00+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/026-rust-build-a-small-cli-project-en"
 source_path: "content/posts/non-ai/026-rust-build-a-small-cli-project-en/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 26
-planned_publish_date: "2026-05-21"
-planned_publish_at: "2026-05-21T18:00:00+09:00"
-publish_slot: "non_ai_daily"
-schedule_base_date: "2026-04-26"
+external_publish_sequence: null
+planned_publish_date: null
+planned_publish_at: null
+publish_slot: "translation_mirror_excluded"
+schedule_base_date: "2026-04-28"

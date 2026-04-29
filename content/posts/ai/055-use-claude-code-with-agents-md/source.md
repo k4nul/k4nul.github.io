@@ -4,7 +4,7 @@ description: "AGENTS.md를 이미 쓰는 저장소에서 Claude Code의 CLAUDE.m
 title: "Claude Code 실전 활용 03. AGENTS.md가 있는 저장소에서 Claude Code를 함께 쓰는 법"
 lang: ko
 translation_key: use-claude-code-with-agents-md
-date: 2026-05-08 00:00:00 +0900
+date: 2026-05-16 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

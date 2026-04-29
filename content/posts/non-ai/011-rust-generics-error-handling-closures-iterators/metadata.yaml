@@ -13,16 +13,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-13T10:00:00+09:00"
-source_sha256: "9ed8df756cd7f2fc9f20bf3e46197f3b1bd97c11a94168278013cfb92f2e703c"
-source_updated_at: "2026-04-25T13:13:23.123445+09:00"
+source_sha256: "837cb2e5944d567f8598f6480c90ecd91dc57ae5cb03a5c22d3a4c59afd22056"
+source_updated_at: "2026-04-28T00:00:00+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/011-rust-generics-error-handling-closures-iterators"
 source_path: "content/posts/non-ai/011-rust-generics-error-handling-closures-iterators/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 6
-planned_publish_date: "2026-05-01"
-planned_publish_at: "2026-05-01T18:00:00+09:00"
-publish_slot: "non_ai_daily"
-schedule_base_date: "2026-04-26"
+external_publish_sequence: 12
+planned_publish_date: "2026-05-09"
+planned_publish_at: "2026-05-09T09:00:00+09:00"
+publish_slot: "external_daily"
+schedule_base_date: "2026-04-28"

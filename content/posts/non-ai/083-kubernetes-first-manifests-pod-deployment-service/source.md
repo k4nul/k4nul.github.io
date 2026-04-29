@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 06. 첫 manifest 작성 Pod, Deployment, Service"
 description: "Kubernetes manifest의 기본 필드와 Pod, Deployment, Service 예제를 처음 쓰는 순서로 정리한 글."
-date: 2026-06-16 09:00:00 +0900
+date: 2026-07-09 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-first-manifests-pod-deployment-service
 section: development

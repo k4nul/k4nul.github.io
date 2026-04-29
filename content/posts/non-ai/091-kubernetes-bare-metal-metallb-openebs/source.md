@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 10. 온프렘 번외 MetalLB와 OpenEBS는 언제 필요한가"
 description: "온프렘 Kubernetes에서 LoadBalancer와 persistent storage 공백을 이해하기 위해 MetalLB와 OpenEBS의 역할을 정리한 글."
-date: 2026-06-24 09:00:00 +0900
+date: 2026-07-17 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-bare-metal-metallb-openebs
 section: development

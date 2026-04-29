@@ -4,7 +4,7 @@ description: "Explains when to move repeated writing, review, and release proced
 title: "Practical Codex 08. Standardize Repeated Codex Workflows with Skills"
 lang: en
 translation_key: standardize-codex-workflows-with-skills
-date: 2026-05-03 00:00:00 +0900
+date: 2026-05-09 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

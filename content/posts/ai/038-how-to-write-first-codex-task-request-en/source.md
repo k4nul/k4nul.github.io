@@ -4,7 +4,7 @@ description: "Shows how to write a first Codex task request with goal, scope, co
 title: "Practical Codex 03. How to Write Your First Codex Task Request"
 lang: en
 translation_key: how-to-write-first-codex-task-request
-date: 2026-04-28 00:00:00 +0900
+date: 2026-04-29 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

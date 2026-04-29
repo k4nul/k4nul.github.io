@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 03. Kubernetes Installation Strategy for On-Prem and Why kubeadm"
 description: "A Kubernetes installation strategy post explaining why kubeadm is a useful baseline for learning on-prem cluster setup."
-date: 2026-06-11 09:00:00 +0900
+date: 2026-07-04 09:00:00 +0900
 lang: en
 translation_key: kubernetes-kubeadm-installation-strategy-on-prem
 section: development

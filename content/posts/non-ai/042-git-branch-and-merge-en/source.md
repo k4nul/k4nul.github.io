@@ -2,7 +2,7 @@
 layout: single
 title: "Git 03. When and How to Use branch and merge"
 description: "An explanation of Git branch and merge as development flow and history connection, not folder copying."
-date: 2026-05-06 09:00:00 +0900
+date: 2026-05-29 09:00:00 +0900
 lang: en
 translation_key: git-branch-and-merge
 section: development

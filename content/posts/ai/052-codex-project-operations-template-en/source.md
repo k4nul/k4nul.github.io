@@ -4,7 +4,7 @@ description: "A practical operating template that combines Codex task requests, 
 title: "Practical Codex 10. A Project Operations Template for Codex"
 lang: en
 translation_key: codex-project-operations-template
-date: 2026-05-05 00:00:00 +0900
+date: 2026-05-13 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

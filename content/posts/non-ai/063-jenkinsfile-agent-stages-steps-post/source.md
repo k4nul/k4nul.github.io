@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 06. Jenkinsfile 기본 문법 agent, stages, steps, post"
 description: "Jenkinsfile의 핵심 블록인 agent, stages, steps, post를 초급자 관점에서 정리한 글."
-date: 2026-05-27 09:00:00 +0900
+date: 2026-06-19 09:00:00 +0900
 lang: ko
 translation_key: jenkinsfile-agent-stages-steps-post
 section: development

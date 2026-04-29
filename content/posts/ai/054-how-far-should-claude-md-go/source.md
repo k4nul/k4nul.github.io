@@ -4,7 +4,7 @@ description: "Claude Code의 CLAUDE.md에 무엇을 넣고 무엇을 rules, skil
 title: "Claude Code 실전 활용 02. CLAUDE.md는 어디까지 써야 하는가"
 lang: ko
 translation_key: how-far-should-claude-md-go
-date: 2026-05-07 00:00:00 +0900
+date: 2026-05-15 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

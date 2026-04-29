@@ -13,16 +13,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-17T09:00:00+09:00"
-source_sha256: "a372aebbb1715cc5982bcac2eddee3e3120f11961ce6821e7abe2eddefe3a138"
-source_updated_at: "2026-04-25T13:13:23.294182+09:00"
+source_sha256: "3729f0afe8d274935484a06531aa9dd51361c82cdd8682bc2ba5ead6101bd941"
+source_updated_at: "2026-04-28T00:00:00+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/019-rust-testing-basics"
 source_path: "content/posts/non-ai/019-rust-testing-basics/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 10
-planned_publish_date: "2026-05-05"
-planned_publish_at: "2026-05-05T18:00:00+09:00"
-publish_slot: "non_ai_daily"
-schedule_base_date: "2026-04-26"
+external_publish_sequence: 20
+planned_publish_date: "2026-05-17"
+planned_publish_at: "2026-05-17T09:00:00+09:00"
+publish_slot: "external_daily"
+schedule_base_date: "2026-04-28"

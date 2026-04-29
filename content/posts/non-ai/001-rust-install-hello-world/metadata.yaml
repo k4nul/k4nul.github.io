@@ -14,16 +14,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-07T09:00:00+09:00"
-source_sha256: "da16981074de784150707b7bee4214635e4e92da14d2cde9a1f0bdf8ce11490a"
-source_updated_at: "2026-04-25T13:13:22.888899+09:00"
+source_sha256: "5536e981a2a47a1f4708364991fd7820fa5c6e491599bd4c7d09edd6507c9beb"
+source_updated_at: "2026-04-28T00:00:00+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/001-rust-install-hello-world"
 source_path: "content/posts/non-ai/001-rust-install-hello-world/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 1
-planned_publish_date: "2026-04-26"
-planned_publish_at: "2026-04-26T18:00:00+09:00"
-publish_slot: "non_ai_daily"
-schedule_base_date: "2026-04-26"
+external_publish_sequence: 2
+planned_publish_date: "2026-04-29"
+planned_publish_at: "2026-04-29T09:00:00+09:00"
+publish_slot: "external_daily"
+schedule_base_date: "2026-04-28"

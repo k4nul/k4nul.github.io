@@ -2,7 +2,7 @@
 layout: single
 title: "Git 06. rebase, squash, force push를 조심해서 다뤄야 하는 이유"
 description: "Git rebase와 squash가 history를 어떻게 바꾸는지, force push를 언제 조심해야 하는지 정리한 글."
-date: 2026-05-11 09:00:00 +0900
+date: 2026-06-03 09:00:00 +0900
 lang: ko
 translation_key: git-rebase-squash-force-push
 section: development

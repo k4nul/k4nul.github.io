@@ -4,7 +4,7 @@ description: "Explains why model, permission, sandbox, and MCP defaults should b
 title: "Practical Codex 07. Use Config to Keep Codex Work Consistent"
 lang: en
 translation_key: using-config-to-keep-codex-consistent
-date: 2026-05-02 00:00:00 +0900
+date: 2026-05-07 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

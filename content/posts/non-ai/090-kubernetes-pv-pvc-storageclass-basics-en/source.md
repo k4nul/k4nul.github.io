@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 09. Understanding PV, PVC, and StorageClass"
 description: "A practical explanation of Kubernetes persistent storage through PersistentVolume, PersistentVolumeClaim, and StorageClass."
-date: 2026-06-23 09:00:00 +0900
+date: 2026-07-16 09:00:00 +0900
 lang: en
 translation_key: kubernetes-pv-pvc-storageclass-basics
 section: development

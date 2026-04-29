@@ -2,7 +2,7 @@
 layout: single
 title: "Git 02. Understanding Change Flow with status, diff, add, commit, and log"
 description: "A beginner-focused walkthrough of Git's basic change flow using status, diff, add, commit, and log."
-date: 2026-05-04 09:00:00 +0900
+date: 2026-05-27 09:00:00 +0900
 lang: en
 translation_key: git-status-diff-add-commit-log
 section: development

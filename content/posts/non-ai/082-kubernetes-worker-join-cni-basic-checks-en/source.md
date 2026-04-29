@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 05. Worker Join, CNI Setup, and Basic Cluster Checks"
 description: "A Kubernetes kubeadm guide for joining worker nodes, checking CNI status, and validating basic cluster readiness."
-date: 2026-06-15 09:00:00 +0900
+date: 2026-07-08 09:00:00 +0900
 lang: en
 translation_key: kubernetes-worker-join-cni-basic-checks
 section: development

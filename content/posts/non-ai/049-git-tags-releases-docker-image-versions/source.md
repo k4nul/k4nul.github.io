@@ -2,7 +2,7 @@
 layout: single
 title: "Git 07. tag와 release로 Docker 이미지 버전과 배포 이력 연결하기"
 description: "Git tag, GitHub release, Docker image tag를 구분하고 배포 이력으로 연결하는 기준을 정리한 글."
-date: 2026-05-13 09:00:00 +0900
+date: 2026-06-05 09:00:00 +0900
 lang: ko
 translation_key: git-tags-releases-docker-image-versions
 section: development

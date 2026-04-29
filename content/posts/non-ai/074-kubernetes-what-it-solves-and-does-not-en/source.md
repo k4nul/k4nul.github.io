@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 01. What Kubernetes Solves and What It Does Not"
 description: "An introductory Kubernetes guide that frames Kubernetes as a cluster desired-state system rather than just a container runner."
-date: 2026-06-07 09:00:00 +0900
+date: 2026-06-30 09:00:00 +0900
 lang: en
 translation_key: kubernetes-what-it-solves-and-does-not
 section: development

@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 08. Why requests, limits, and probes should be reviewed together"
 description: "An explanation of Kubernetes resource requests, limits, and liveness/readiness/startup probes as one operational set."
-date: 2026-06-21 09:00:00 +0900
+date: 2026-07-14 09:00:00 +0900
 lang: en
 translation_key: kubernetes-requests-limits-probes
 section: development

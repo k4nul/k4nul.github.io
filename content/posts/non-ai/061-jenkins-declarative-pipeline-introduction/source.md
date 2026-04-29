@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 05. Declarative Pipeline 입문"
 description: "Jenkins Declarative Pipeline을 Scripted Pipeline과 구분하고 초급자가 먼저 익혀야 할 이유를 설명한 글."
-date: 2026-05-25 09:00:00 +0900
+date: 2026-06-17 09:00:00 +0900
 lang: ko
 translation_key: jenkins-declarative-pipeline-introduction
 section: development

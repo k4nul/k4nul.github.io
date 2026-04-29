@@ -2,7 +2,7 @@
 layout: single
 title: "Git 02. status, diff, add, commit, log로 변경 흐름 이해하기"
 description: "Git의 기본 변경 흐름을 status, diff, add, commit, log 명령으로 나눠 초급자 관점에서 정리한 글."
-date: 2026-05-03 09:00:00 +0900
+date: 2026-05-26 09:00:00 +0900
 lang: ko
 translation_key: git-status-diff-add-commit-log
 section: development

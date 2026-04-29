@@ -4,7 +4,7 @@ description: "Explains how to write a Codex AGENTS.md with repository purpose, i
 title: "Practical Codex 04. How to Write AGENTS.md for Codex"
 lang: en
 translation_key: how-to-write-agents-md-for-codex
-date: 2026-04-29 00:00:00 +0900
+date: 2026-05-01 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

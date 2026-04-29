@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 04. control plane 설치와 기본 점검"
 description: "kubeadm init 이후 kubeconfig, Pod network, control plane 상태를 어떤 순서로 확인해야 하는지 정리한 글."
-date: 2026-06-12 09:00:00 +0900
+date: 2026-07-05 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-control-plane-install-basic-checks
 section: development

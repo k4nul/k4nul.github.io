@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 08. Jenkins에서 Docker 이미지 빌드와 레지스트리 푸시"
 description: "Jenkins Pipeline에서 Docker 이미지를 빌드하고 registry로 push할 때 tag, credential, agent 경계를 정리한 글."
-date: 2026-05-31 09:00:00 +0900
+date: 2026-06-23 09:00:00 +0900
 lang: ko
 translation_key: jenkins-docker-image-build-registry-push
 section: development

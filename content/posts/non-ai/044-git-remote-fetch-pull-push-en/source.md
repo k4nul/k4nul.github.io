@@ -2,7 +2,7 @@
 layout: single
 title: "Git 04. Separating remote, fetch, pull, and push"
 description: "A beginner-focused explanation of remote repository flow through remote, fetch, pull, and push."
-date: 2026-05-08 09:00:00 +0900
+date: 2026-05-31 09:00:00 +0900
 lang: en
 translation_key: git-remote-fetch-pull-push
 section: development

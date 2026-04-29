@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 10. Drawing the Boundary Between Jenkins and Kubernetes Deployment"
 description: "A CI/CD boundary guide that separates Jenkins image build responsibilities from Kubernetes desired-state reconciliation."
-date: 2026-06-05 09:00:00 +0900
+date: 2026-06-28 09:00:00 +0900
 lang: en
 translation_key: jenkins-to-kubernetes-deployment-boundary
 section: development

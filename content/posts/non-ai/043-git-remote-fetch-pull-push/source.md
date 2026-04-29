@@ -2,7 +2,7 @@
 layout: single
 title: "Git 04. remote, fetch, pull, push를 분리해서 이해하기"
 description: "Git 원격 저장소 흐름을 remote, fetch, pull, push 명령의 역할별로 나눠 정리한 글."
-date: 2026-05-07 09:00:00 +0900
+date: 2026-05-30 09:00:00 +0900
 lang: ko
 translation_key: git-remote-fetch-pull-push
 section: development

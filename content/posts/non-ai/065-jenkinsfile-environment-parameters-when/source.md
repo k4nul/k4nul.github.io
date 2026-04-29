@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 07. Jenkinsfile 실전 environment, parameters, when"
 description: "Jenkinsfile에서 환경 변수, 사용자 입력값, 조건부 stage 실행을 다루는 기본 기준을 정리한 글."
-date: 2026-05-29 09:00:00 +0900
+date: 2026-06-21 09:00:00 +0900
 lang: ko
 translation_key: jenkinsfile-environment-parameters-when
 section: development

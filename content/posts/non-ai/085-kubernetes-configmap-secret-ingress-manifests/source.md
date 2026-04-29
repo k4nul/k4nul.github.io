@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 07. 실무형 manifest 작성 ConfigMap, Secret, Ingress"
 description: "Kubernetes manifest에서 설정, 민감 정보, 외부 HTTP 진입점을 분리해서 작성하는 기본 흐름을 정리한 글."
-date: 2026-06-18 09:00:00 +0900
+date: 2026-07-11 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-configmap-secret-ingress-manifests
 section: development

@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 08. Building Docker Images and Pushing to a Registry in Jenkins"
 description: "A Jenkins Pipeline guide for Docker image builds, registry pushes, tag rules, credentials, and agent boundaries."
-date: 2026-06-01 09:00:00 +0900
+date: 2026-06-24 09:00:00 +0900
 lang: en
 translation_key: jenkins-docker-image-build-registry-push
 section: development

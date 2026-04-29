@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 10. Jenkins에서 Kubernetes 배포로 연결할 때 경계는 어디에 두는가"
 description: "Jenkins가 Docker 이미지를 만들고 Kubernetes가 원하는 상태를 맞추는 구조로 CI/CD 경계를 나누는 글."
-date: 2026-06-04 09:00:00 +0900
+date: 2026-06-27 09:00:00 +0900
 lang: ko
 translation_key: jenkins-to-kubernetes-deployment-boundary
 section: development

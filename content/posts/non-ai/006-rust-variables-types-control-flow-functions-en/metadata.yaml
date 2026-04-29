@@ -14,16 +14,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-09T09:00:00+09:00"
-source_sha256: "1015f56b8cfc2c5193f8101ed9cd429f013e60c7694c87b41b989d44b15d5416"
-source_updated_at: "2026-04-25T13:13:22.929608+09:00"
+source_sha256: "1ee46e7c8d5bae50a14960fde77ff78fe92753504e951c39afb21444b674763f"
+source_updated_at: "2026-04-28T00:00:00+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/006-rust-variables-types-control-flow-functions-en"
 source_path: "content/posts/non-ai/006-rust-variables-types-control-flow-functions-en/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 6
-planned_publish_date: "2026-05-01"
-planned_publish_at: "2026-05-01T18:00:00+09:00"
-publish_slot: "non_ai_daily"
-schedule_base_date: "2026-04-26"
+external_publish_sequence: null
+planned_publish_date: null
+planned_publish_at: null
+publish_slot: "translation_mirror_excluded"
+schedule_base_date: "2026-04-28"

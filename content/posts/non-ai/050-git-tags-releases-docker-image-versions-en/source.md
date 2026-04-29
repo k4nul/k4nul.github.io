@@ -2,7 +2,7 @@
 layout: single
 title: "Git 07. Connecting tags, releases, and Docker Image Versions"
 description: "A guide to separating Git tags, GitHub releases, and Docker image tags while connecting them into deployment history."
-date: 2026-05-14 09:00:00 +0900
+date: 2026-06-06 09:00:00 +0900
 lang: en
 translation_key: git-tags-releases-docker-image-versions
 section: development

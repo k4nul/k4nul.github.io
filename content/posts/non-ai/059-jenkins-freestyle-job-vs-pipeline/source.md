@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 04. Freestyle Job과 Pipeline은 무엇이 다른가"
 description: "Jenkins Freestyle Job과 Pipeline을 UI 설정과 코드 기반 자동화라는 관점에서 비교한 글."
-date: 2026-05-23 09:00:00 +0900
+date: 2026-06-15 09:00:00 +0900
 lang: ko
 translation_key: jenkins-freestyle-job-vs-pipeline
 section: development

@@ -4,7 +4,7 @@ description: "Explains why a long AGENTS.md increases token cost, duplicate inst
 title: "Practical Codex 05. Why a Good AGENTS.md Should Be Short"
 lang: en
 translation_key: why-good-agents-md-should-be-short
-date: 2026-04-30 00:00:00 +0900
+date: 2026-05-03 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

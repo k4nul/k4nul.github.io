@@ -13,16 +13,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-14T11:00:00+09:00"
-source_sha256: "3f51141efd421927f80cc186fd49f3968901b2e86fa6aee111f36dcb33be6056"
-source_updated_at: "2026-04-25T13:13:23.157966+09:00"
+source_sha256: "e9768383dda369a9e9057037f23a3d3835c1607fbb6ccbc491acbe0df6349c44"
+source_updated_at: "2026-04-28T00:00:00+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/014-rust-modules-smart-pointers-concurrency-async-en"
 source_path: "content/posts/non-ai/014-rust-modules-smart-pointers-concurrency-async-en/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 14
-planned_publish_date: "2026-05-09"
-planned_publish_at: "2026-05-09T18:00:00+09:00"
-publish_slot: "non_ai_daily"
-schedule_base_date: "2026-04-26"
+external_publish_sequence: null
+planned_publish_date: null
+planned_publish_at: null
+publish_slot: "translation_mirror_excluded"
+schedule_base_date: "2026-04-28"

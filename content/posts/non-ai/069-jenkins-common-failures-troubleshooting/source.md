@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 09. Jenkins 운영에서 자주 만나는 장애와 원인 분리"
 description: "Jenkins 장애를 controller, agent, queue, credential, plugin, Pipeline 코드 관점으로 나눠 보는 글."
-date: 2026-06-02 09:00:00 +0900
+date: 2026-06-25 09:00:00 +0900
 lang: ko
 translation_key: jenkins-common-failures-troubleshooting
 section: development

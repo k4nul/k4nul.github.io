@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 05. Introduction to Declarative Pipeline"
 description: "An introductory Jenkins post explaining why beginners should start with Declarative Pipeline before moving into advanced Pipeline patterns."
-date: 2026-05-26 09:00:00 +0900
+date: 2026-06-18 09:00:00 +0900
 lang: en
 translation_key: jenkins-declarative-pipeline-introduction
 section: development

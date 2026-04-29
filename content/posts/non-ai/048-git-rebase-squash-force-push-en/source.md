@@ -2,7 +2,7 @@
 layout: single
 title: "Git 06. Why rebase, squash, and force push Need Care"
 description: "An explanation of how Git rebase and squash rewrite history, and why force push should be handled carefully."
-date: 2026-05-12 09:00:00 +0900
+date: 2026-06-04 09:00:00 +0900
 lang: en
 translation_key: git-rebase-squash-force-push
 section: development

@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 08. requests, limits, probe를 왜 같이 봐야 하는가"
 description: "Kubernetes에서 resource requests, limits, liveness/readiness/startup probe를 함께 이해해야 하는 이유를 정리한 글."
-date: 2026-06-20 09:00:00 +0900
+date: 2026-07-13 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-requests-limits-probes
 section: development

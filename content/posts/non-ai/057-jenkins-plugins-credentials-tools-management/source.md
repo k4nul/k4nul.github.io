@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 03. 플러그인, credentials, tools를 어떻게 관리해야 하는가"
 description: "Jenkins plugin, credentials, tools를 편의 기능이 아니라 운영 표면으로 보고 관리 기준을 정리한 글."
-date: 2026-05-21 09:00:00 +0900
+date: 2026-06-13 09:00:00 +0900
 lang: ko
 translation_key: jenkins-plugins-credentials-tools-management
 section: development

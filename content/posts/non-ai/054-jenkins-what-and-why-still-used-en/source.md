@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 01. What Jenkins Is and Why It Is Still Used"
 description: "An introductory Jenkins guide that connects Git, Docker, CI/CD automation, controller, agent, plugin, and Pipeline concepts."
-date: 2026-05-18 09:00:00 +0900
+date: 2026-06-10 09:00:00 +0900
 lang: en
 translation_key: jenkins-what-and-why-still-used
 section: development

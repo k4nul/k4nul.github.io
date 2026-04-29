@@ -4,7 +4,7 @@ description: "Explains how to run complex Codex tasks plan-first by clarifying s
 title: "Practical Codex 06. Operating Codex Plan-First"
 lang: en
 translation_key: operating-codex-plan-first
-date: 2026-05-01 00:00:00 +0900
+date: 2026-05-05 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

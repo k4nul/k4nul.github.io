@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 02. Jenkins 설치와 초기 설정"
 description: "Jenkins 설치 방식을 고르기 전에 Java 요구사항, JENKINS_HOME, 초기 비밀번호, plugin 선택을 점검하는 글."
-date: 2026-05-19 09:00:00 +0900
+date: 2026-06-11 09:00:00 +0900
 lang: ko
 translation_key: jenkins-installation-initial-setup
 section: development

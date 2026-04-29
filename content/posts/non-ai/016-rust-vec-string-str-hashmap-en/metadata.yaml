@@ -13,16 +13,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-15T09:00:00+09:00"
-source_sha256: "403414f066fb5e3fff12284a6654f96c7a667644cbc97156a14adbd77e2e5726"
-source_updated_at: "2026-04-25T13:13:23.205505+09:00"
+source_sha256: "b5e8850af9e3eb35f5d5ddbf1e01e5d561a364a69d6c98e7e126d5c4ce49bb51"
+source_updated_at: "2026-04-28T00:00:00+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/016-rust-vec-string-str-hashmap-en"
 source_path: "content/posts/non-ai/016-rust-vec-string-str-hashmap-en/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 16
-planned_publish_date: "2026-05-11"
-planned_publish_at: "2026-05-11T18:00:00+09:00"
-publish_slot: "non_ai_daily"
-schedule_base_date: "2026-04-26"
+external_publish_sequence: null
+planned_publish_date: null
+planned_publish_at: null
+publish_slot: "translation_mirror_excluded"
+schedule_base_date: "2026-04-28"

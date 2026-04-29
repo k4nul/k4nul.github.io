@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 07. Practical Jenkinsfile: environment, parameters, when"
 description: "A practical Jenkinsfile guide covering environment variables, user parameters, and conditional stage execution."
-date: 2026-05-30 09:00:00 +0900
+date: 2026-06-22 09:00:00 +0900
 lang: en
 translation_key: jenkinsfile-environment-parameters-when
 section: development

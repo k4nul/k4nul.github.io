@@ -4,7 +4,7 @@ description: "Codex를 실제 프로젝트에 적용할 때 작업 요청, AGENT
 title: "Codex 실전 활용 10. Codex 프로젝트 적용용 운영 템플릿"
 lang: ko
 translation_key: codex-project-operations-template
-date: 2026-05-05 00:00:00 +0900
+date: 2026-05-12 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

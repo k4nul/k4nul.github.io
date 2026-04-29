@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 09. PV, PVC, StorageClass를 어떻게 이해해야 하는가"
 description: "Kubernetes persistent storage의 기본 object인 PV, PVC, StorageClass의 관계를 운영 흐름으로 설명한 글."
-date: 2026-06-22 09:00:00 +0900
+date: 2026-07-15 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-pv-pvc-storageclass-basics
 section: development

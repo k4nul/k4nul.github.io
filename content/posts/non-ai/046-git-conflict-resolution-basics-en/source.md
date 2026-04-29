@@ -2,7 +2,7 @@
 layout: single
 title: "Git 05. Reproducing and Resolving a Basic Conflict"
 description: "A beginner-focused guide to why Git merge conflicts happen and how to resolve them with status, file edits, add, and commit."
-date: 2026-05-10 09:00:00 +0900
+date: 2026-06-02 09:00:00 +0900
 lang: en
 translation_key: git-conflict-resolution-basics
 section: development

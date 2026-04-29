@@ -4,7 +4,7 @@ description: "Claude Code를 프로젝트에 적용할 때 CLAUDE.md, AGENTS.md,
 title: "Claude Code 실전 활용 10. Claude Code 프로젝트 적용용 운영 템플릿"
 lang: ko
 translation_key: claude-code-project-operations-template
-date: 2026-05-15 00:00:00 +0900
+date: 2026-05-23 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

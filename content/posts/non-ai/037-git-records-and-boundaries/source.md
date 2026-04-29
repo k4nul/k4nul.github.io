@@ -2,7 +2,7 @@
 layout: single
 title: "Git 01. Git은 무엇을 기록하고 무엇을 기록하지 않는가"
 description: "Git이 commit, index, working tree를 어떻게 다루는지와 Git이 자동으로 보장하지 않는 영역을 초급자 관점에서 정리한 글."
-date: 2026-05-01 09:00:00 +0900
+date: 2026-05-24 09:00:00 +0900
 lang: ko
 translation_key: git-records-and-boundaries
 section: development

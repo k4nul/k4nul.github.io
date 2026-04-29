@@ -2,7 +2,7 @@
 layout: single
 title: "Git 08. PR/MR Collaboration Flow and Review Criteria"
 description: "A guide to understanding pull requests and merge requests on top of Git branch collaboration, with practical review criteria."
-date: 2026-05-16 09:00:00 +0900
+date: 2026-06-08 09:00:00 +0900
 lang: en
 translation_key: git-pr-mr-collaboration-review
 section: development

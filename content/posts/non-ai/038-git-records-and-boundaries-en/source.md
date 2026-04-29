@@ -2,7 +2,7 @@
 layout: single
 title: "Git 01. What Git Records and What It Does Not Record"
 description: "A beginner-focused explanation of how Git treats commits, the index, and the working tree, and what Git does not automatically guarantee."
-date: 2026-05-02 09:00:00 +0900
+date: 2026-05-25 09:00:00 +0900
 lang: en
 translation_key: git-records-and-boundaries
 section: development

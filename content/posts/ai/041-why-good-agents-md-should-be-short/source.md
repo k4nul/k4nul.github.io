@@ -4,7 +4,7 @@ description: "좋은 AGENTS.md가 길어지면 왜 토큰 비용, 중복 지시,
 title: "Codex 실전 활용 05. 좋은 AGENTS.md는 왜 짧아야 하는가"
 lang: ko
 translation_key: why-good-agents-md-should-be-short
-date: 2026-04-30 00:00:00 +0900
+date: 2026-05-02 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

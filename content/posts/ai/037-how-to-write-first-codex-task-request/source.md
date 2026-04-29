@@ -4,7 +4,7 @@ description: "Codex 첫 작업 요청에 목표, 범위, 제약, 완료 기준, 
 title: "Codex 실전 활용 03. Codex 첫 작업 요청 작성법"
 lang: ko
 translation_key: how-to-write-first-codex-task-request
-date: 2026-04-28 00:00:00 +0900
+date: 2026-04-28 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

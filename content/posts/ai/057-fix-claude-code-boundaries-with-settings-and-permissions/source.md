@@ -4,7 +4,7 @@ description: "Claude Code에서 자연어 지시와 settings, permissions의 책
 title: "Claude Code 실전 활용 05. settings와 permissions로 작업 경계 고정하기"
 lang: ko
 translation_key: fix-claude-code-boundaries-with-settings-and-permissions
-date: 2026-05-10 00:00:00 +0900
+date: 2026-05-18 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

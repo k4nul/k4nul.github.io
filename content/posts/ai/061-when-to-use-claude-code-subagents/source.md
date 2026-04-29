@@ -4,7 +4,7 @@ description: "Claude Code subagent를 언제 쓰고 언제 쓰지 말아야 하�
 title: "Claude Code 실전 활용 09. Claude Code subagent는 언제 써야 하는가"
 lang: ko
 translation_key: when-to-use-claude-code-subagents
-date: 2026-05-14 00:00:00 +0900
+date: 2026-05-22 09:00:00 +0900
 section: development
 topic_key: ai
 categories: AI

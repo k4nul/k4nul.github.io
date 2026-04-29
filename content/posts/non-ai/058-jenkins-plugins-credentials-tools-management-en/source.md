@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 03. Managing Plugins, Credentials, and Tools"
 description: "A Jenkins operations guide that treats plugins, credentials, and tools as operational surfaces rather than simple convenience features."
-date: 2026-05-22 09:00:00 +0900
+date: 2026-06-14 09:00:00 +0900
 lang: en
 translation_key: jenkins-plugins-credentials-tools-management
 section: development

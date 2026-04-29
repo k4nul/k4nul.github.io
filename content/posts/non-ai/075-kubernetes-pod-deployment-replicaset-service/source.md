@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 02. Pod, Deployment, ReplicaSet, Service를 운영 흐름으로 이해하기"
 description: "Kubernetes의 Pod, Deployment, ReplicaSet, Service를 개별 암기보다 운영 흐름으로 연결해 설명한 글."
-date: 2026-06-08 09:00:00 +0900
+date: 2026-07-01 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-pod-deployment-replicaset-service
 section: development

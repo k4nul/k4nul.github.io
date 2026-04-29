@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 07. Practical Manifests: ConfigMap, Secret, Ingress"
 description: "A beginner-friendly guide to separating configuration, sensitive values, and external HTTP entry points in Kubernetes manifests."
-date: 2026-06-19 09:00:00 +0900
+date: 2026-07-12 09:00:00 +0900
 lang: en
 translation_key: kubernetes-configmap-secret-ingress-manifests
 section: development

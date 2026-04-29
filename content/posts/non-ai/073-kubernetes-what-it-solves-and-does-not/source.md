@@ -2,7 +2,7 @@
 layout: single
 title: "K8S 01. Kubernetes는 무엇을 해결하고 무엇은 해결하지 않는가"
 description: "Kubernetes를 컨테이너 실행 도구가 아니라 원하는 상태를 맞추는 cluster 운영 시스템으로 이해하는 글."
-date: 2026-06-06 09:00:00 +0900
+date: 2026-06-29 09:00:00 +0900
 lang: ko
 translation_key: kubernetes-what-it-solves-and-does-not
 section: development

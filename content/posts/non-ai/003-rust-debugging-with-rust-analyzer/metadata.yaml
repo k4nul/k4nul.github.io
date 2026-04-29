@@ -14,16 +14,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-08T10:00:00+09:00"
-source_sha256: "020ca95508e5ca1822a2d2e76bc98b1b2cbdae85ac3980ba66bc4887ae05759a"
-source_updated_at: "2026-04-25T13:13:22.919584+09:00"
+source_sha256: "47c7a10c612994f22fa12f8af6ad922f2d11f8d4f6b83536babfccf0071e53dd"
+source_updated_at: "2026-04-28T00:00:00+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/003-rust-debugging-with-rust-analyzer"
 source_path: "content/posts/non-ai/003-rust-debugging-with-rust-analyzer/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 2
-planned_publish_date: "2026-04-27"
-planned_publish_at: "2026-04-27T18:00:00+09:00"
-publish_slot: "non_ai_daily"
-schedule_base_date: "2026-04-26"
+external_publish_sequence: 4
+planned_publish_date: "2026-05-01"
+planned_publish_at: "2026-05-01T09:00:00+09:00"
+publish_slot: "external_daily"
+schedule_base_date: "2026-04-28"

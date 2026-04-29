@@ -2,7 +2,7 @@
 layout: single
 title: "Jenkins 06. Jenkinsfile Basics: agent, stages, steps, post"
 description: "A beginner-friendly explanation of the core Jenkinsfile blocks: agent, stages, steps, and post."
-date: 2026-05-28 09:00:00 +0900
+date: 2026-06-20 09:00:00 +0900
 lang: en
 translation_key: jenkinsfile-agent-stages-steps-post
 section: development
