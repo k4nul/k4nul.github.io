@@ -10,6 +10,7 @@
 - `ROADMAP_DEVOPS_CURRICULUM.md`: `development` 아래 `devops` 허브 후보와 `Docker -> Git -> Jenkins -> K8S` 33편 구성을 정리한 로드맵
 - `ROADMAP_CODEX_PRACTICAL_USAGE.md`: `development` 아래 `ai` 허브에 연결할 "Codex 실전 활용" 10편 구성을 정리한 로드맵
 - `ROADMAP_AI_NON_AI_DAILY_PARALLEL.md`: 기존 파일명을 유지하지만, 현재 내용은 2026-07-21부터 `AI 1주제 + Non-AI 1주제`를 매주 KOR/ENG 미러로 분산 발행하는 8주 병행 로드맵
+- `ROADMAP_RUST_TAURI_CURRICULUM.md`: 2026-09-15부터 2026-10-21까지 Rust 코어 입문 이후 Tauri 프레임워크 후속 글 6주제를 KOR/ENG 미러로 정리한 로드맵
 
 ## 권장 읽기 순서
 
