@@ -1,0 +1,20 @@
+---
+---
+{% assign html_lang = page.lang | default: site.locale | slice: 0,2 | default: "en" %}
+{% assign target_url = page.redirect_to | absolute_url %}
+<!doctype html>
+<html lang="{{ html_lang }}" class="no-js">
+  <head>
+    {% include head.html %}
+    <meta http-equiv="refresh" content="0; url={{ target_url | escape }}">
+  </head>
+  <body class="layout--redirect">
+    <main id="main" role="main">
+      <p>This page has moved to <a href="{{ target_url | escape }}">{{ target_url }}</a>.</p>
+    </main>
+    {% include scripts.html %}
+    <script>
+      window.location.replace({{ target_url | jsonify }});
+    </script>
+  </body>
+</html>
