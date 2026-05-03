@@ -13,16 +13,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-10T09:00:00+09:00"
-source_sha256: "37992a159be139c692165c38a1855486b9c215787133f2a6451360070adb7170"
-source_updated_at: "2026-04-28T00:00:00+09:00"
+source_sha256: "861544b566a7e0a11b1eaddb70cae13d7832a2d2c69fd7a11f529deeda4dd33d"
+source_updated_at: "2026-04-25T13:13:22.957147+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/008-rust-ownership-borrowing-lifetimes-en"
 source_path: "content/posts/non-ai/008-rust-ownership-borrowing-lifetimes-en/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: null
-planned_publish_date: null
-planned_publish_at: null
-publish_slot: "translation_mirror_excluded"
-schedule_base_date: "2026-04-28"
+external_publish_sequence: 8
+planned_publish_date: "2026-05-03"
+planned_publish_at: "2026-05-03T18:00:00+09:00"
+publish_slot: "non_ai_daily"
+schedule_base_date: "2026-04-26"

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "ai-agents-and-sensitive-data-boundaries-en",
+  "source": {
+    "path": "content/posts/ai/078-ai-agents-and-sensitive-data-boundaries-en/source.md",
+    "source_sha256": "944926aaf4ae4159b44c6a11bc03e6e948e037eba3bc11e9dd2c5f64989e1c9e",
+    "source_updated_at": "2026-04-29T22:22:43.953732+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-07-28T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/078-ai-agents-and-sensitive-data-boundaries-en/variants/tistory.md",
+    "source_sha256": "944926aaf4ae4159b44c6a11bc03e6e948e037eba3bc11e9dd2c5f64989e1c9e",
+    "variant_sha256": "e4dc41ba8bf33860c240c665d107196f5c27c2020a90725b00ee63d1cd431eac",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.954732+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 78,
+    "planned_publish_date": "2026-07-29",
+    "planned_publish_at": "2026-07-29T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/078-ai-agents-and-sensitive-data-boundaries-en/variants/naver.md",
+    "source_sha256": "944926aaf4ae4159b44c6a11bc03e6e948e037eba3bc11e9dd2c5f64989e1c9e",
+    "variant_sha256": "5ca25ccadebee8cd4f6a79b4159041a3a9c714f962f77e17ce7ac59791f86ad7",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.595953+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 78,
+    "planned_publish_date": "2026-07-29",
+    "planned_publish_at": "2026-07-29T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/078-ai-agents-and-sensitive-data-boundaries-en",
+    "source_path": "content/posts/ai/078-ai-agents-and-sensitive-data-boundaries-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 78,
+    "planned_publish_date": "2026-07-29",
+    "planned_publish_at": "2026-07-29T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

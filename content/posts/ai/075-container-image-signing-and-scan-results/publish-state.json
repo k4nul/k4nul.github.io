@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "container-image-signing-and-scan-results",
+  "source": {
+    "path": "content/posts/ai/075-container-image-signing-and-scan-results/source.md",
+    "source_sha256": "5bdab3ba398388e205d47b4d65dfaa237edae708a6282ed0e9b405fca89c26c9",
+    "source_updated_at": "2026-04-29T22:22:43.948732+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-07-23T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/075-container-image-signing-and-scan-results/variants/tistory.md",
+    "source_sha256": "5bdab3ba398388e205d47b4d65dfaa237edae708a6282ed0e9b405fca89c26c9",
+    "variant_sha256": "8cf567eeba6cbeba73a53bb8e971d892dd386de198c177abb6b03926c11ad965",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.949731+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 75,
+    "planned_publish_date": "2026-07-23",
+    "planned_publish_at": "2026-07-23T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/075-container-image-signing-and-scan-results/variants/naver.md",
+    "source_sha256": "5bdab3ba398388e205d47b4d65dfaa237edae708a6282ed0e9b405fca89c26c9",
+    "variant_sha256": "17d3efa08a19fc1861bfcc38d5bd112d862bfc144b03389d31f79d609b08ae91",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.595953+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 75,
+    "planned_publish_date": "2026-07-23",
+    "planned_publish_at": "2026-07-23T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/075-container-image-signing-and-scan-results",
+    "source_path": "content/posts/ai/075-container-image-signing-and-scan-results/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 75,
+    "planned_publish_date": "2026-07-23",
+    "planned_publish_at": "2026-07-23T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

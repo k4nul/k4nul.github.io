@@ -16,6 +16,7 @@ from sync_tistory_variants import (
     IMAGE_RE,
     KST,
     SourceDoc,
+    channel_description,
     clean_title,
     collect_links,
     comparison_table,
@@ -36,6 +37,7 @@ from sync_tistory_variants import (
     section_map,
     sha256_text,
     tags,
+    tauri_summary_points,
     title_candidates as tistory_title_candidates,
     topic,
     troubleshooting,
@@ -100,6 +102,21 @@ def naver_title_candidates(slug: str, doc: SourceDoc) -> tuple[list[str], str, l
             "cargo run",
         ]
 
+    if current_topic == "tauri":
+        base = tistory_candidates[0] if tistory_candidates else cleaned
+        candidates = [
+            base.replace("정리:", "쉽게 정리:"),
+            f"{focus_keyword} 예제로 이해하기",
+            f"{focus_keyword} 따라 하면서 정리하기",
+            f"{focus_keyword} 처음 볼 때 헷갈리는 부분 정리",
+            f"{focus_keyword} 시작하기 전에 알아둘 것",
+        ]
+        unique_candidates = []
+        for candidate in candidates:
+            if candidate and candidate not in unique_candidates:
+                unique_candidates.append(candidate)
+        return unique_candidates[:5], focus_keyword, secondary[:4]
+
     base = tistory_candidates[0] if tistory_candidates else cleaned
     candidates = [
         base.replace("정리:", "쉽게 정리:").replace("실무 정리", "쉽게 정리"),
@@ -127,7 +144,7 @@ def recommended_images(doc: SourceDoc, focus_keyword: str) -> list[str]:
         ]
     return [
         f"{focus_keyword} 전체 흐름을 보여주는 대표 이미지",
-        "명령어 실행 결과 또는 설정 화면 캡처",
+        "코드 연결 흐름 또는 설정 화면 캡처",
     ]
 
 
@@ -138,7 +155,19 @@ def image_slots(doc: SourceDoc) -> list[str]:
         alt_match = re.match(r"!\[([^\]]*)\]", raw)
         alt = alt_match.group(1).strip() if alt_match and alt_match.group(1).strip() else "단계 확인 이미지"
         slots.append(f"[사진 {index} 삽입: {alt}]")
-    return slots
+    if slots:
+        return slots
+    current_topic = topic(doc.front_matter, "", doc.body)
+    if current_topic == "tauri":
+        return [
+            "[사진 1 삽입: Tauri 앱에서 입력과 결과가 함께 보이는 화면]",
+            "[사진 2 삽입: src-tauri/src/lib.rs에서 command와 invoke_handler를 확인한 화면]",
+            "[사진 3 삽입: capabilities 폴더 또는 권한 설정을 확인한 화면]",
+        ]
+    return [
+        "[사진 1 삽입: 글의 핵심 흐름을 한눈에 보여주는 화면]",
+        "[사진 2 삽입: 실행 결과 또는 설정 상태를 확인한 화면]",
+    ]
 
 
 def doc_info_lines(doc: SourceDoc) -> list[str]:
@@ -160,8 +189,8 @@ def doc_info_lines(doc: SourceDoc) -> list[str]:
 
 
 def naver_intro(doc: SourceDoc, best_title: str, focus_keyword: str) -> list[str]:
-    description = str(doc.front_matter.get("description") or "")
     current_topic = topic(doc.front_matter, "", doc.body)
+    description = channel_description(doc, focus_keyword, current_topic)
     if current_topic == "rust" and "rustup" in doc.body.lower():
         return [
             "Rust를 처음 설치하려고 하면 `rustup`, `rustc`, `cargo` 같은 이름이 한꺼번에 나와서 헷갈릴 수 있습니다.",
@@ -182,6 +211,7 @@ def render_code_flow(doc: SourceDoc) -> str:
     chosen = direct or problem or doc.body
     blocks = extract_code_blocks(chosen, limit=5)
     slots = image_slots(doc)
+    current_topic = topic(doc.front_matter, "", doc.body)
     lines: list[str] = []
 
     if not blocks:
@@ -198,6 +228,8 @@ def render_code_flow(doc: SourceDoc) -> str:
         is_output = language.lower() in {"text", "console", "output"}
         if is_output:
             lines.append("위 단계가 정상적으로 진행되면 아래처럼 결과를 확인할 수 있습니다.")
+        elif current_topic == "tauri":
+            lines.append("아래 코드는 이 단계에서 frontend와 Rust command가 어떻게 이어지는지 보여주는 부분입니다.")
         else:
             lines.append("아래 명령어는 이 단계에서 실제로 확인할 내용을 실행하는 부분입니다.")
         lines.append("")
@@ -207,6 +239,8 @@ def render_code_flow(doc: SourceDoc) -> str:
         lines.append("")
         if is_output:
             lines.append("출력 문구가 완전히 같지 않아도, 버전이나 실행 결과가 확인되면 같은 단계로 볼 수 있습니다.")
+        elif current_topic == "tauri":
+            lines.append("여기서 중요한 것은 코드를 외우는 것보다, 이 부분이 등록인지 호출인지 권한 경계인지 구분하는 것입니다.")
         else:
             lines.append("여기서 중요한 것은 명령어를 외우는 것보다, 이 단계가 무엇을 확인하는지 이해하는 것입니다.")
         lines.append("")
@@ -218,6 +252,12 @@ def render_code_flow(doc: SourceDoc) -> str:
 
 def common_confusions(doc: SourceDoc) -> list[tuple[str, str]]:
     current_topic = topic(doc.front_matter, "", doc.body)
+    if current_topic == "tauri":
+        return [
+            ("command 작성과 등록을 같은 단계로 보는 경우", "`#[tauri::command]`로 함수를 만드는 것과 `invoke_handler`에 등록하는 것은 나눠서 확인해야 합니다."),
+            ("frontend payload 이름을 Rust 인자 이름과 다르게 보내는 경우", "Tauri invoke 인자는 JSON payload로 넘어가므로 key 이름 규칙을 먼저 맞춰야 합니다."),
+            ("capability를 plugin permission과 같은 말로 보는 경우", "capability는 어떤 window/WebView에 어떤 권한을 줄지 묶는 경계이고, permission은 실제로 허용되는 API 범위에 가깝습니다."),
+        ]
     if current_topic == "rust":
         return [
             ("rustup과 rustc가 같은 것처럼 보이는 경우", "`rustup`은 설치와 버전 관리를 맡고, `rustc`는 실제 컴파일러라고 나눠서 보면 됩니다."),
@@ -260,7 +300,7 @@ def render_naver(post_slug: str, doc: SourceDoc, updated_at: str, source_link: s
     current_topic = topic(doc.front_matter, post_slug, doc.body)
     sections = section_map(doc.body)
     summary = section_by_names(sections, ["요약", "Summary"])
-    summary_items = first_sentences(summary or doc.body, 4)
+    summary_items = tauri_summary_points(focus_keyword) if current_topic == "tauri" else first_sentences(summary or doc.body, 4)
     trouble_items = troubleshooting(current_topic)[:4]
     faq_items = faq(current_topic)[:4]
     links = collect_links(section_by_names(sections, ["참고자료", "References", "참고 자료"]) or doc.body)
@@ -339,14 +379,24 @@ def render_naver(post_slug: str, doc: SourceDoc, updated_at: str, source_link: s
         )
 
     lines.extend(["## 오늘의 정리", ""])
-    lines.extend(
-        [
-            f"정리하면, {focus_keyword}를 볼 때는 명령어를 무작정 외우기보다 각 도구와 단계가 무엇을 확인하는지 나눠 보는 것이 좋습니다.",
-            "",
-            "처음에는 결과가 조금 다르게 보여도 바로 실패라고 보기보다, 운영체제와 버전 차이를 먼저 확인해보면 좋습니다.",
-            "",
-        ]
-    )
+    if current_topic == "tauri":
+        lines.extend(
+            [
+                f"정리하면, {focus_keyword}를 볼 때는 frontend, Rust command, invoke 등록, capability 경계를 나눠 보는 것이 좋습니다.",
+                "",
+                "처음에는 코드가 조금 길어 보여도 등록 문제인지, 호출 인자 문제인지, 권한 문제인지 순서대로 나누면 훨씬 덜 헷갈립니다.",
+                "",
+            ]
+        )
+    else:
+        lines.extend(
+            [
+                f"정리하면, {focus_keyword}를 볼 때는 명령어를 무작정 외우기보다 각 도구와 단계가 무엇을 확인하는지 나눠 보는 것이 좋습니다.",
+                "",
+                "처음에는 결과가 조금 다르게 보여도 바로 실패라고 보기보다, 운영체제와 버전 차이를 먼저 확인해보면 좋습니다.",
+                "",
+            ]
+        )
 
     lines.extend(["## 참고한 자료", ""])
     if links:

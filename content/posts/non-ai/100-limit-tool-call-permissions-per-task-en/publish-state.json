@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "limit-tool-call-permissions-per-task-en",
+  "source": {
+    "path": "content/posts/non-ai/100-limit-tool-call-permissions-per-task-en/source.md",
+    "source_sha256": "689c41c01cd61c021f22d69c1ce615d3d3c0b8c88d6719982bb3b980ea9fbea8",
+    "source_updated_at": "2026-04-29T22:22:43.857485+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-07-07T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/100-limit-tool-call-permissions-per-task-en/variants/tistory.md",
+    "source_sha256": "689c41c01cd61c021f22d69c1ce615d3d3c0b8c88d6719982bb3b980ea9fbea8",
+    "variant_sha256": "4039013094230eeeb5d1cab54bc7014df2ac5eb4b674f52e67cce73fef8e0fcd",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.866318+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 100,
+    "planned_publish_date": "2026-08-03",
+    "planned_publish_at": "2026-08-03T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/100-limit-tool-call-permissions-per-task-en/variants/naver.md",
+    "source_sha256": "689c41c01cd61c021f22d69c1ce615d3d3c0b8c88d6719982bb3b980ea9fbea8",
+    "variant_sha256": "81646a9c8df22bb5828db03cc04d0a52db7d042bd5ca99b8d2752832262c0650",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.518353+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 100,
+    "planned_publish_date": "2026-08-03",
+    "planned_publish_at": "2026-08-03T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/100-limit-tool-call-permissions-per-task-en",
+    "source_path": "content/posts/non-ai/100-limit-tool-call-permissions-per-task-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 100,
+    "planned_publish_date": "2026-08-03",
+    "planned_publish_at": "2026-08-03T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

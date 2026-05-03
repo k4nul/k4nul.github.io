@@ -2,7 +2,7 @@
 layout: single
 title: "Git 03. branch와 merge는 언제 어떻게 써야 하는가"
 description: "Git branch와 merge를 폴더 복사본이 아니라 개발 흐름과 이력 연결 관점에서 이해하는 글."
-date: 2026-05-28 09:00:00 +0900
+date: 2026-05-19 09:00:00 +09:00
 lang: ko
 translation_key: git-branch-and-merge
 section: development

@@ -14,16 +14,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-16T09:00:00+09:00"
-source_sha256: "37d852407e2e94c84ec3ae9d9b311b515ca54b2c5c9af079e0ae5c74bb8ae263"
-source_updated_at: "2026-04-28T00:00:00+09:00"
+source_sha256: "5da236a3914f45fcec44119b6be8ed6e9ea5d2b07ee463638c53e9e6e3dc593b"
+source_updated_at: "2026-04-25T13:13:23.271168+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/017-rust-crates-packages-project-layout"
 source_path: "content/posts/non-ai/017-rust-crates-packages-project-layout/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 18
-planned_publish_date: "2026-05-15"
-planned_publish_at: "2026-05-15T09:00:00+09:00"
-publish_slot: "external_daily"
-schedule_base_date: "2026-04-28"
+external_publish_sequence: 17
+planned_publish_date: "2026-05-12"
+planned_publish_at: "2026-05-12T18:00:00+09:00"
+publish_slot: "non_ai_daily"
+schedule_base_date: "2026-04-26"

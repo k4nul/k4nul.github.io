@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "what-should-agent-trace-record-en",
+  "source": {
+    "path": "content/posts/ai/066-what-should-agent-trace-record-en/source.md",
+    "source_sha256": "e34bdd4de307a3f81612c5b0abdc45700c59edbde30c480a89861ac919675c80",
+    "source_updated_at": "2026-04-29T22:22:43.719103+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-16T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/066-what-should-agent-trace-record-en/variants/tistory.md",
+    "source_sha256": "e34bdd4de307a3f81612c5b0abdc45700c59edbde30c480a89861ac919675c80",
+    "variant_sha256": "ea88ade9f847d3234e3145be7d1b685d821280591e8d4e72fb99d097d688954f",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.727187+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 66,
+    "planned_publish_date": "2026-06-30",
+    "planned_publish_at": "2026-06-30T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/066-what-should-agent-trace-record-en/variants/naver.md",
+    "source_sha256": "e34bdd4de307a3f81612c5b0abdc45700c59edbde30c480a89861ac919675c80",
+    "variant_sha256": "32c6211493f9c9968069211dd4ce13112d573f83a360c064687c3d988569815f",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.439255+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 66,
+    "planned_publish_date": "2026-06-30",
+    "planned_publish_at": "2026-06-30T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/066-what-should-agent-trace-record-en",
+    "source_path": "content/posts/ai/066-what-should-agent-trace-record-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 66,
+    "planned_publish_date": "2026-06-30",
+    "planned_publish_at": "2026-06-30T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

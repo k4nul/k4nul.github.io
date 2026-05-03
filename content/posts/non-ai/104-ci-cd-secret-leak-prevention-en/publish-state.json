@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "ci-cd-secret-leak-prevention-en",
+  "source": {
+    "path": "content/posts/non-ai/104-ci-cd-secret-leak-prevention-en/source.md",
+    "source_sha256": "456f0b0cd51896e04945f9974bf1152ba8235671d2e140506dedd263357b9ec4",
+    "source_updated_at": "2026-04-29T22:22:43.899462+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-07-16T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/104-ci-cd-secret-leak-prevention-en/variants/tistory.md",
+    "source_sha256": "456f0b0cd51896e04945f9974bf1152ba8235671d2e140506dedd263357b9ec4",
+    "variant_sha256": "01d9f1b7f3bd5f3ac9f02ebb1c90053d8681d72e631db2872f2444ea8fc42cee",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.913251+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 104,
+    "planned_publish_date": "2026-08-07",
+    "planned_publish_at": "2026-08-07T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/104-ci-cd-secret-leak-prevention-en/variants/naver.md",
+    "source_sha256": "456f0b0cd51896e04945f9974bf1152ba8235671d2e140506dedd263357b9ec4",
+    "variant_sha256": "bbac01da0514305b39e1bb440c116ef6d6f02f6ee215518f23598e2b79be7f2e",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.564885+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 104,
+    "planned_publish_date": "2026-08-07",
+    "planned_publish_at": "2026-08-07T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/104-ci-cd-secret-leak-prevention-en",
+    "source_path": "content/posts/non-ai/104-ci-cd-secret-leak-prevention-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 104,
+    "planned_publish_date": "2026-08-07",
+    "planned_publish_at": "2026-08-07T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

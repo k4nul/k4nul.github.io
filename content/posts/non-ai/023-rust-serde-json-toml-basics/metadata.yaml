@@ -13,16 +13,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-19T09:00:00+09:00"
-source_sha256: "41a3cb318ac1ca3126181d7771f935d3a873fa83f9c2e173d292d4f8a20e12c3"
-source_updated_at: "2026-04-28T00:00:00+09:00"
+source_sha256: "235ef7e86fb53d58efaae490c5246ce1def333f33abcf838db48088a0ca77c61"
+source_updated_at: "2026-04-25T13:13:23.403652+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/023-rust-serde-json-toml-basics"
 source_path: "content/posts/non-ai/023-rust-serde-json-toml-basics/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: 24
-planned_publish_date: "2026-05-21"
-planned_publish_at: "2026-05-21T09:00:00+09:00"
-publish_slot: "external_daily"
-schedule_base_date: "2026-04-28"
+external_publish_sequence: 23
+planned_publish_date: "2026-05-18"
+planned_publish_at: "2026-05-18T18:00:00+09:00"
+publish_slot: "non_ai_daily"
+schedule_base_date: "2026-04-26"

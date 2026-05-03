@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-tauri-frontend-invoke-rust-command",
+  "source": {
+    "path": "content/posts/non-ai/115-rust-tauri-frontend-invoke-rust-command/source.md",
+    "source_sha256": "d64a9f0c293a0ac2866467a2a739800db7277633ffc5a731e831ee76b4646393",
+    "source_updated_at": "2026-04-29T22:22:44.021169+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-09-01T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/115-rust-tauri-frontend-invoke-rust-command/variants/tistory.md",
+    "source_sha256": "d64a9f0c293a0ac2866467a2a739800db7277633ffc5a731e831ee76b4646393",
+    "variant_sha256": "6ad066dfc5ee13eecddda5a578d22c46eeee73b9a5e21da5d439beb5b4120fc9",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:58:05.737066+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 115,
+    "planned_publish_date": "2026-09-01",
+    "planned_publish_at": "2026-09-01T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/115-rust-tauri-frontend-invoke-rust-command/variants/naver.md",
+    "source_sha256": "d64a9f0c293a0ac2866467a2a739800db7277633ffc5a731e831ee76b4646393",
+    "variant_sha256": "af1decec774fa445ae50992ea75068ec107d93dd376a4618a8f32efb60a8edcb",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:58:43.408784+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 115,
+    "planned_publish_date": "2026-09-01",
+    "planned_publish_at": "2026-09-01T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/115-rust-tauri-frontend-invoke-rust-command",
+    "source_path": "content/posts/non-ai/115-rust-tauri-frontend-invoke-rust-command/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 115,
+    "planned_publish_date": "2026-09-01",
+    "planned_publish_at": "2026-09-01T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

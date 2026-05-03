@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "prompt-injection-as-a-harness-problem",
+  "source": {
+    "path": "content/posts/ai/069-prompt-injection-as-a-harness-problem/source.md",
+    "source_sha256": "121ed6ed54c737704d3dbfdfaac2876434d68de64336c5ec180c74f28bde5617",
+    "source_updated_at": "2026-04-29T22:22:43.829621+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-30T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/069-prompt-injection-as-a-harness-problem/variants/tistory.md",
+    "source_sha256": "121ed6ed54c737704d3dbfdfaac2876434d68de64336c5ec180c74f28bde5617",
+    "variant_sha256": "babd309f18f4db9b51ca8ff868d58547888f9f9b77707d3dcfd2f829c632ce45",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.829621+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 69,
+    "planned_publish_date": "2026-07-03",
+    "planned_publish_at": "2026-07-03T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/069-prompt-injection-as-a-harness-problem/variants/naver.md",
+    "source_sha256": "121ed6ed54c737704d3dbfdfaac2876434d68de64336c5ec180c74f28bde5617",
+    "variant_sha256": "0eed1bc9607773b28213691d1eb836abf938372b7cbe14e3727a15a2e5e08e1f",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.502453+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 69,
+    "planned_publish_date": "2026-07-03",
+    "planned_publish_at": "2026-07-03T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/069-prompt-injection-as-a-harness-problem",
+    "source_path": "content/posts/ai/069-prompt-injection-as-a-harness-problem/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 69,
+    "planned_publish_date": "2026-07-03",
+    "planned_publish_at": "2026-07-03T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

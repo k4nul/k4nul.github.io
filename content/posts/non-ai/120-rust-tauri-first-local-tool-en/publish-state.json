@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-tauri-first-local-tool-en",
+  "source": {
+    "path": "content/posts/non-ai/120-rust-tauri-first-local-tool-en/source.md",
+    "source_sha256": "0e5f74f75059af9f567179538df900c9d7f62461cb200271feb0fc48fbcea02d",
+    "source_updated_at": "2026-04-29T22:22:44.040018+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-09-15T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/120-rust-tauri-first-local-tool-en/variants/tistory.md",
+    "source_sha256": "0e5f74f75059af9f567179538df900c9d7f62461cb200271feb0fc48fbcea02d",
+    "variant_sha256": "5d9437da809fbf88ca824bc34721556af80fde6bfed83f0e6f0d7013fd84489f",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:58:05.768711+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 120,
+    "planned_publish_date": "2026-09-16",
+    "planned_publish_at": "2026-09-16T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/120-rust-tauri-first-local-tool-en/variants/naver.md",
+    "source_sha256": "0e5f74f75059af9f567179538df900c9d7f62461cb200271feb0fc48fbcea02d",
+    "variant_sha256": "e3fa2a739e4dd71bc2bfe3864b6e79eb0bc1a39f3543dab7949728b011381d5c",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:58:43.442880+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 120,
+    "planned_publish_date": "2026-09-16",
+    "planned_publish_at": "2026-09-16T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/120-rust-tauri-first-local-tool-en",
+    "source_path": "content/posts/non-ai/120-rust-tauri-first-local-tool-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 120,
+    "planned_publish_date": "2026-09-16",
+    "planned_publish_at": "2026-09-16T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

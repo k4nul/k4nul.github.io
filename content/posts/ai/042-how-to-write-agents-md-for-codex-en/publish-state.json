@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "how-to-write-agents-md-for-codex-en",
+  "source": {
+    "path": "content/posts/ai/042-how-to-write-agents-md-for-codex-en/source.md",
+    "source_sha256": "488bb9ebecfd9823bb5342526b1ee3e56663cd252c94f4759a807b750146d9ce",
+    "source_updated_at": "2026-04-29T22:22:42.719254+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-04-30T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/042-how-to-write-agents-md-for-codex-en/variants/tistory.md",
+    "source_sha256": "488bb9ebecfd9823bb5342526b1ee3e56663cd252c94f4759a807b750146d9ce",
+    "variant_sha256": "032b66713c30ecfa80db83edb5a511d64e4b36f4660796b85243113d05d80ee9",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.719253+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 42,
+    "planned_publish_date": "2026-06-06",
+    "planned_publish_at": "2026-06-06T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/042-how-to-write-agents-md-for-codex-en/variants/naver.md",
+    "source_sha256": "488bb9ebecfd9823bb5342526b1ee3e56663cd252c94f4759a807b750146d9ce",
+    "variant_sha256": "a2ee5972053435401d66bfab735cc6358aad4749f997992fd546c9dfa7207647",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.834806+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 42,
+    "planned_publish_date": "2026-06-06",
+    "planned_publish_at": "2026-06-06T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/042-how-to-write-agents-md-for-codex-en",
+    "source_path": "content/posts/ai/042-how-to-write-agents-md-for-codex-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 42,
+    "planned_publish_date": "2026-06-06",
+    "planned_publish_at": "2026-06-06T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

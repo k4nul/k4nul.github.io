@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "kubernetes-troubleshooting-describe-events-logs-en",
+  "source": {
+    "path": "content/posts/non-ai/094-kubernetes-troubleshooting-describe-events-logs-en/source.md",
+    "source_sha256": "9525259c3a7a134a2b62272f5abd79368641ab37516b842bdef0fa2a4fdabf9d",
+    "source_updated_at": "2026-04-29T22:22:43.752366+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-18T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/094-kubernetes-troubleshooting-describe-events-logs-en/variants/tistory.md",
+    "source_sha256": "9525259c3a7a134a2b62272f5abd79368641ab37516b842bdef0fa2a4fdabf9d",
+    "variant_sha256": "c6210e9ab1c0b42d6aa6caa3537d2361f312865e0da15a736887dba8f9574e42",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.756323+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 94,
+    "planned_publish_date": "2026-07-28",
+    "planned_publish_at": "2026-07-28T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/094-kubernetes-troubleshooting-describe-events-logs-en/variants/naver.md",
+    "source_sha256": "9525259c3a7a134a2b62272f5abd79368641ab37516b842bdef0fa2a4fdabf9d",
+    "variant_sha256": "d9262265fc84f12601b3689c7d7e5da485a0fa5d4f96d8e2549ab560d196bcf4",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.455376+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 94,
+    "planned_publish_date": "2026-07-28",
+    "planned_publish_at": "2026-07-28T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/094-kubernetes-troubleshooting-describe-events-logs-en",
+    "source_path": "content/posts/non-ai/094-kubernetes-troubleshooting-describe-events-logs-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 94,
+    "planned_publish_date": "2026-07-28",
+    "planned_publish_at": "2026-07-28T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

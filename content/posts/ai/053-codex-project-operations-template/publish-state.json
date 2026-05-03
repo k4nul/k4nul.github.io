@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "codex-project-operations-template",
+  "source": {
+    "path": "content/posts/ai/053-codex-project-operations-template/source.md",
+    "source_sha256": "d4ddd37350c158c90665b09296adba456fe43851550b87ecdd7f08826e67987e",
+    "source_updated_at": "2026-04-29T22:22:42.866692+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-06T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/053-codex-project-operations-template/variants/tistory.md",
+    "source_sha256": "d4ddd37350c158c90665b09296adba456fe43851550b87ecdd7f08826e67987e",
+    "variant_sha256": "4e4da0f7e3679439513ec2889ccc198cdf477918f95490c589a3fadf857ac067",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.878274+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 53,
+    "planned_publish_date": "2026-06-17",
+    "planned_publish_at": "2026-06-17T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/053-codex-project-operations-template/variants/naver.md",
+    "source_sha256": "d4ddd37350c158c90665b09296adba456fe43851550b87ecdd7f08826e67987e",
+    "variant_sha256": "c2dc52090ff734dd698b5c2d6c852082d3f69d68dce212b5f81e615820073bd3",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.941325+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 53,
+    "planned_publish_date": "2026-06-17",
+    "planned_publish_at": "2026-06-17T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/053-codex-project-operations-template",
+    "source_path": "content/posts/ai/053-codex-project-operations-template/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 53,
+    "planned_publish_date": "2026-06-17",
+    "planned_publish_at": "2026-06-17T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

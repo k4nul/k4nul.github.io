@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "threat-modeling-ai-coding-agents",
+  "source": {
+    "path": "content/posts/ai/073-threat-modeling-ai-coding-agents/source.md",
+    "source_sha256": "c545480fa332f5e4aca60a273cdee8c26aa7e0c6a18aa0345ecd59d64c3e621d",
+    "source_updated_at": "2026-04-29T22:22:43.939690+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-07-21T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/073-threat-modeling-ai-coding-agents/variants/tistory.md",
+    "source_sha256": "c545480fa332f5e4aca60a273cdee8c26aa7e0c6a18aa0345ecd59d64c3e621d",
+    "variant_sha256": "10fab15e8e1d7516af74e042165cf7eadd9b09af997f140fec0976872233f883",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.940688+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 73,
+    "planned_publish_date": "2026-07-21",
+    "planned_publish_at": "2026-07-21T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/073-threat-modeling-ai-coding-agents/variants/naver.md",
+    "source_sha256": "c545480fa332f5e4aca60a273cdee8c26aa7e0c6a18aa0345ecd59d64c3e621d",
+    "variant_sha256": "2726b584cb4ea74796892fa869da5bbb3389df681f2d6ea24e3091a4a6da91ab",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.587951+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 73,
+    "planned_publish_date": "2026-07-21",
+    "planned_publish_at": "2026-07-21T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/073-threat-modeling-ai-coding-agents",
+    "source_path": "content/posts/ai/073-threat-modeling-ai-coding-agents/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 73,
+    "planned_publish_date": "2026-07-21",
+    "planned_publish_at": "2026-07-21T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

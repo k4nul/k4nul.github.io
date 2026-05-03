@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "how-to-write-first-codex-task-request",
+  "source": {
+    "path": "content/posts/ai/039-how-to-write-first-codex-task-request/source.md",
+    "source_sha256": "8cb9a46f5055fa23fedf01dfbacfd489e45b43f0e22520072050ba9ea9a4f76a",
+    "source_updated_at": "2026-04-29T22:22:42.703619+09:00",
+    "status": "published",
+    "scheduled_at": null
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/039-how-to-write-first-codex-task-request/variants/tistory.md",
+    "source_sha256": "8cb9a46f5055fa23fedf01dfbacfd489e45b43f0e22520072050ba9ea9a4f76a",
+    "variant_sha256": "4986842bb5339d75126834ffccba06fda48247836c926a0135ec4a43759dcd35",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.719253+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 39,
+    "planned_publish_date": "2026-06-03",
+    "planned_publish_at": "2026-06-03T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/039-how-to-write-first-codex-task-request/variants/naver.md",
+    "source_sha256": "8cb9a46f5055fa23fedf01dfbacfd489e45b43f0e22520072050ba9ea9a4f76a",
+    "variant_sha256": "39f1dc1d1c8b76c22f99d29bddf41ecaffa8ec15a7f90bf01ee96b46e06cc7ca",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.834806+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 39,
+    "planned_publish_date": "2026-06-03",
+    "planned_publish_at": "2026-06-03T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/039-how-to-write-first-codex-task-request",
+    "source_path": "content/posts/ai/039-how-to-write-first-codex-task-request/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 39,
+    "planned_publish_date": "2026-06-03",
+    "planned_publish_at": "2026-06-03T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "incident-timeline-and-security-engineering-wrap-up-en",
+  "source": {
+    "path": "content/posts/non-ai/108-incident-timeline-and-security-engineering-wrap-up-en/source.md",
+    "source_sha256": "586ec1e0238c4ea22a6844f990d26b2ffced22bc50aed8940fe0a07575289290",
+    "source_updated_at": "2026-04-29T22:22:43.980280+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-08-06T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/108-incident-timeline-and-security-engineering-wrap-up-en/variants/tistory.md",
+    "source_sha256": "586ec1e0238c4ea22a6844f990d26b2ffced22bc50aed8940fe0a07575289290",
+    "variant_sha256": "8ecda2d1196a6293b8c0bf4a808e8bfdee78086d5a3e73ec42ef3090a70dbc8f",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.980279+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 108,
+    "planned_publish_date": "2026-08-11",
+    "planned_publish_at": "2026-08-11T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/108-incident-timeline-and-security-engineering-wrap-up-en/variants/naver.md",
+    "source_sha256": "586ec1e0238c4ea22a6844f990d26b2ffced22bc50aed8940fe0a07575289290",
+    "variant_sha256": "0d1b584a89c11cc83f7abbd990d7fe6320dab3833dbba3cc8ed961b777e72a3d",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.652203+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 108,
+    "planned_publish_date": "2026-08-11",
+    "planned_publish_at": "2026-08-11T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/108-incident-timeline-and-security-engineering-wrap-up-en",
+    "source_path": "content/posts/non-ai/108-incident-timeline-and-security-engineering-wrap-up-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 108,
+    "planned_publish_date": "2026-08-11",
+    "planned_publish_at": "2026-08-11T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "use-claude-code-with-agents-md",
+  "source": {
+    "path": "content/posts/ai/057-use-claude-code-with-agents-md/source.md",
+    "source_sha256": "2d5deaa414260e9c1fc7fa44874f7ed575bfd0e0a90e3e0d1c6174645380a555",
+    "source_updated_at": "2026-04-29T22:22:42.904304+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-09T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/057-use-claude-code-with-agents-md/variants/tistory.md",
+    "source_sha256": "2d5deaa414260e9c1fc7fa44874f7ed575bfd0e0a90e3e0d1c6174645380a555",
+    "variant_sha256": "d050b0fd81ba861490d607c0d3c4cd15ea080d8bebab634d3c86b3e6128b831c",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.911259+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 57,
+    "planned_publish_date": "2026-06-21",
+    "planned_publish_at": "2026-06-21T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/057-use-claude-code-with-agents-md/variants/naver.md",
+    "source_sha256": "2d5deaa414260e9c1fc7fa44874f7ed575bfd0e0a90e3e0d1c6174645380a555",
+    "variant_sha256": "0caf0019c9bab90d51ca44ab19b5bacd43294aa000a31b27ebe0584341eb63a2",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.965460+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 57,
+    "planned_publish_date": "2026-06-21",
+    "planned_publish_at": "2026-06-21T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/057-use-claude-code-with-agents-md",
+    "source_path": "content/posts/ai/057-use-claude-code-with-agents-md/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 57,
+    "planned_publish_date": "2026-06-21",
+    "planned_publish_at": "2026-06-21T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

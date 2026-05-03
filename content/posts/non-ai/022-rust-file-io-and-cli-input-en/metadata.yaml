@@ -13,16 +13,16 @@ tags:
 status: "published"
 scheduled_at: null
 source_date: "2026-04-18T09:00:00+09:00"
-source_sha256: "96bb47f309083167eda31b2742d21a2e96836353d653f99abef6cd1f1c6b34e4"
-source_updated_at: "2026-04-28T00:00:00+09:00"
+source_sha256: "9f46bb048397a516f95d2157c1db2df402106b7f4dd7c51ca37d696aed31f9c1"
+source_updated_at: "2026-04-25T13:13:23.348962+09:00"
 tistory_policy_version: "2026-04-25.tistory-search-variant.v3"
 post_folder: "content/posts/non-ai/022-rust-file-io-and-cli-input-en"
 source_path: "content/posts/non-ai/022-rust-file-io-and-cli-input-en/source.md"
 content_group: "non_ai"
 channel_category: "프로그래밍 언어"
 channel_category_slug: "programming_language"
-external_publish_sequence: null
-planned_publish_date: null
-planned_publish_at: null
-publish_slot: "translation_mirror_excluded"
-schedule_base_date: "2026-04-28"
+external_publish_sequence: 22
+planned_publish_date: "2026-05-17"
+planned_publish_at: "2026-05-17T18:00:00+09:00"
+publish_slot: "non_ai_daily"
+schedule_base_date: "2026-04-26"

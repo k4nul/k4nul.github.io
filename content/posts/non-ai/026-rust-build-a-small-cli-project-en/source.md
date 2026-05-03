@@ -7,6 +7,11 @@ lang: en
 translation_key: rust-build-a-small-cli-project
 section: development
 topic_key: rust
+featured: true
+track: rust
+repo:
+demo:
+references:
 categories: Rust
 tags: [rust, cli, mini-project, word-counter, cargo]
 author_profile: false

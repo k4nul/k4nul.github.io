@@ -5,8 +5,8 @@
 - 검토 기준일: 2026-04-29
 - 목적: Rust 코어 입문 이후 Tauri 프레임워크 학습과 후속 포스팅 후보를 계획으로 보관한다.
 - 현재 상태: 계획 문서만 작성한다. `_posts/`에는 아직 Tauri 포스트를 만들지 않는다.
-- 일정 위치: DevOps 예약분과 2026-07-21~2026-09-11 AI+Non-AI 병행 로드맵이 끝난 뒤, 2026-09-15부터 Rust 후속 블록으로 배치한다.
-- 발행 단위: 주 1주제. 한국어 원문은 화요일, 영어 미러는 수요일에 발행한다.
+- 일정 위치: DevOps 예약분과 2026-06-16~2026-08-06 AI+Non-AI 병행 로드맵이 끝난 뒤, 2026-08-11부터 Rust 후속 블록으로 배치한다.
+- 발행 단위: 주 1주제. 한국어 원문과 영어 미러를 같은 화요일에 발행한다.
 - 권장 구조: 실제 발행 시 `section: development`, `topic_key: rust`, `categories: Rust`
 - 기준 버전: Tauri 공식 release 페이지 기준 `tauri` v2.10.3, `@tauri-apps/api` v2.10.1, `tauri-cli` v2.10.1
 - 출처 기준: Tauri 공식 문서와 공식 저장소 우선
@@ -101,29 +101,29 @@
 
 ## Calendar
 
-기존 예약 글과 2026-07-21부터 2026-09-11까지의 AI+Non-AI 병행 로드맵을 침범하지 않도록, Tauri 글은 다음 주 화요일인 2026-09-15부터 시작한다.
+기존 예약 글과 2026-06-16부터 2026-08-06까지의 AI+Non-AI 병행 로드맵을 침범하지 않도록, Tauri 글은 다음 주 화요일인 2026-08-11부터 시작한다.
 
 | Week | Date | Lang | Topic | Translation key | Slug |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2026-09-15 | ko | Rust 14. Tauri는 Rust GUI 프레임워크가 아니라 앱 경계다 | rust-tauri-app-boundary | rust-tauri-app-boundary |
-| 1 | 2026-09-16 | en | Rust 14. Tauri is an app boundary, not a Rust GUI framework | rust-tauri-app-boundary | rust-tauri-app-boundary-en |
-| 2 | 2026-09-22 | ko | Rust 15. Tauri 개발 환경과 첫 앱 실행 | rust-tauri-development-environment-first-app | rust-tauri-development-environment-first-app |
-| 2 | 2026-09-23 | en | Rust 15. Tauri development environment and first app | rust-tauri-development-environment-first-app | rust-tauri-development-environment-first-app-en |
-| 3 | 2026-09-29 | ko | Rust 16. Tauri 프로젝트 구조 읽기 | rust-tauri-project-structure | rust-tauri-project-structure |
-| 3 | 2026-09-30 | en | Rust 16. Reading the Tauri project structure | rust-tauri-project-structure | rust-tauri-project-structure-en |
-| 4 | 2026-10-06 | ko | Rust 17. Frontend에서 Rust command 호출하기 | rust-tauri-frontend-invoke-rust-command | rust-tauri-frontend-invoke-rust-command |
-| 4 | 2026-10-07 | en | Rust 17. Calling Rust commands from the frontend | rust-tauri-frontend-invoke-rust-command | rust-tauri-frontend-invoke-rust-command-en |
-| 5 | 2026-10-13 | ko | Rust 18. Tauri capability와 permission 기초 | rust-tauri-capabilities-permissions | rust-tauri-capabilities-permissions |
-| 5 | 2026-10-14 | en | Rust 18. Tauri capabilities and permissions basics | rust-tauri-capabilities-permissions | rust-tauri-capabilities-permissions-en |
-| 6 | 2026-10-20 | ko | Rust 19. Tauri 첫 로컬 도구 만들기 | rust-tauri-first-local-tool | rust-tauri-first-local-tool |
-| 6 | 2026-10-21 | en | Rust 19. Building a first local tool with Tauri | rust-tauri-first-local-tool | rust-tauri-first-local-tool-en |
+| 1 | 2026-08-11 | ko | Rust 14. Tauri는 Rust GUI 프레임워크가 아니라 앱 경계다 | rust-tauri-app-boundary | rust-tauri-app-boundary |
+| 1 | 2026-08-11 | en | Rust 14. Tauri is an app boundary, not a Rust GUI framework | rust-tauri-app-boundary | rust-tauri-app-boundary-en |
+| 2 | 2026-08-18 | ko | Rust 15. Tauri 개발 환경과 첫 앱 실행 | rust-tauri-development-environment-first-app | rust-tauri-development-environment-first-app |
+| 2 | 2026-08-18 | en | Rust 15. Tauri development environment and first app | rust-tauri-development-environment-first-app | rust-tauri-development-environment-first-app-en |
+| 3 | 2026-08-25 | ko | Rust 16. Tauri 프로젝트 구조 읽기 | rust-tauri-project-structure | rust-tauri-project-structure |
+| 3 | 2026-08-25 | en | Rust 16. Reading the Tauri project structure | rust-tauri-project-structure | rust-tauri-project-structure-en |
+| 4 | 2026-09-01 | ko | Rust 17. Frontend에서 Rust command 호출하기 | rust-tauri-frontend-invoke-rust-command | rust-tauri-frontend-invoke-rust-command |
+| 4 | 2026-09-01 | en | Rust 17. Calling Rust commands from the frontend | rust-tauri-frontend-invoke-rust-command | rust-tauri-frontend-invoke-rust-command-en |
+| 5 | 2026-09-08 | ko | Rust 18. Tauri capability와 permission 기초 | rust-tauri-capabilities-permissions | rust-tauri-capabilities-permissions |
+| 5 | 2026-09-08 | en | Rust 18. Tauri capabilities and permissions basics | rust-tauri-capabilities-permissions | rust-tauri-capabilities-permissions-en |
+| 6 | 2026-09-15 | ko | Rust 19. Tauri 첫 로컬 도구 만들기 | rust-tauri-first-local-tool | rust-tauri-first-local-tool |
+| 6 | 2026-09-15 | en | Rust 19. Building a first local tool with Tauri | rust-tauri-first-local-tool | rust-tauri-first-local-tool-en |
 
 ## Planning Notes
 
 - 커리큘럼 자체는 포스트로 발행하지 않는다. 이 문서는 후속 개별 포스트의 범위와 순서를 잡기 위한 계획이다.
 - 실제 포스트로 전환할 때는 각 글마다 직접 실행한 환경, 도구 버전, 실패 조건, 한계를 분리해서 적는다.
 - Tauri 관련 CLI, plugin permission, updater 설정은 버전 민감 내용이므로 발행 직전에 공식 문서를 다시 확인한다.
-- KOR/ENG 미러를 같은 `translation_key`로 묶고, 영어 글에는 명시적 `permalink`를 둔다.
+- KOR/ENG 미러를 같은 `translation_key`로 묶고, 같은 날짜에 발행한다. 영어 글에는 명시적 `permalink`를 둔다.
 - 실제 포스트 파일을 만들기 전에는 `_data/start_tracks.yml`이나 home featured 항목에 연결하지 않는다.
 
 ## References For Future Drafting
@@ -144,4 +144,4 @@
 - Tauri v2 CLI, project layout, capability model, plugin permission 이름이 바뀐 경우
 - Rust 시리즈 확장 순서가 trait 심화 대신 Tauri 앱 개발로 확정된 경우
 - Tauri 관련 포스트를 실제 `_posts/`에 추가하기로 결정한 경우
-- KOR/ENG 미러 발행 일정이나 2026-09-15 시작일이 바뀐 경우
+- KOR/ENG 미러 발행 일정이나 2026-08-11 시작일이 바뀐 경우

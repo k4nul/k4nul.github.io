@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-tauri-capabilities-permissions",
+  "source": {
+    "path": "content/posts/non-ai/117-rust-tauri-capabilities-permissions/source.md",
+    "source_sha256": "6e7d6e9f0d9c7f4ffd250259351a206d7e47c8b18dc04c0d1744933af747995d",
+    "source_updated_at": "2026-04-29T22:22:44.035017+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-09-08T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/117-rust-tauri-capabilities-permissions/variants/tistory.md",
+    "source_sha256": "6e7d6e9f0d9c7f4ffd250259351a206d7e47c8b18dc04c0d1744933af747995d",
+    "variant_sha256": "f8c61dcca3ba5b6aefc23387386db9e61c04d9a7ab34cc15fbf95ce303527e17",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:58:05.753009+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 117,
+    "planned_publish_date": "2026-09-08",
+    "planned_publish_at": "2026-09-08T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/117-rust-tauri-capabilities-permissions/variants/naver.md",
+    "source_sha256": "6e7d6e9f0d9c7f4ffd250259351a206d7e47c8b18dc04c0d1744933af747995d",
+    "variant_sha256": "a8847c6da618378595e1d249a09983590150fdae345ca888186dda3c9a1a606d",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:58:43.424416+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 117,
+    "planned_publish_date": "2026-09-08",
+    "planned_publish_at": "2026-09-08T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/117-rust-tauri-capabilities-permissions",
+    "source_path": "content/posts/non-ai/117-rust-tauri-capabilities-permissions/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 117,
+    "planned_publish_date": "2026-09-08",
+    "planned_publish_at": "2026-09-08T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "why-good-agents-md-should-be-short",
+  "source": {
+    "path": "content/posts/ai/043-why-good-agents-md-should-be-short/source.md",
+    "source_sha256": "0751441a1852fad7c6135288f276138127c038fd0131f9b7eafc21dfb5e30d5e",
+    "source_updated_at": "2026-04-29T22:22:42.757627+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-01T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/043-why-good-agents-md-should-be-short/variants/tistory.md",
+    "source_sha256": "0751441a1852fad7c6135288f276138127c038fd0131f9b7eafc21dfb5e30d5e",
+    "variant_sha256": "cd8dbd6822115a4a08bd121c1d6cabef177beaeec48662dbdf611f354f9ef46c",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.766773+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 43,
+    "planned_publish_date": "2026-06-07",
+    "planned_publish_at": "2026-06-07T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/043-why-good-agents-md-should-be-short/variants/naver.md",
+    "source_sha256": "0751441a1852fad7c6135288f276138127c038fd0131f9b7eafc21dfb5e30d5e",
+    "variant_sha256": "f53950dc628da91763780c12bdfc398639d55741748a7c267d3b9d6462ae09f5",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.867035+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 43,
+    "planned_publish_date": "2026-06-07",
+    "planned_publish_at": "2026-06-07T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/043-why-good-agents-md-should-be-short",
+    "source_path": "content/posts/ai/043-why-good-agents-md-should-be-short/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 43,
+    "planned_publish_date": "2026-06-07",
+    "planned_publish_at": "2026-06-07T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

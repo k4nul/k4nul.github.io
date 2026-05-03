@@ -2,7 +2,7 @@
 layout: single
 title: "Git 08. PR/MR 기반 협업 흐름과 리뷰 기준"
 description: "Pull request와 merge request를 Git branch 협업 흐름 위에서 이해하고 리뷰 기준을 정리한 글."
-date: 2026-06-07 09:00:00 +0900
+date: 2026-05-24 09:00:00 +09:00
 lang: ko
 translation_key: git-pr-mr-collaboration-review
 section: development

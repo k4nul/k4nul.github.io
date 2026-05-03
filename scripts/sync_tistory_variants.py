@@ -268,6 +268,8 @@ def topic(front_matter: dict[str, Any], slug: str, body: str) -> str:
     haystack = " ".join(
         [slug, str(front_matter.get("title") or ""), " ".join(tags(front_matter)), body[:500]]
     ).lower()
+    if "tauri" in haystack:
+        return "tauri"
     if "rust" in haystack:
         return "rust"
     if "docker" in haystack or "container" in haystack:
@@ -287,6 +289,21 @@ def topic(front_matter: dict[str, Any], slug: str, body: str) -> str:
     return "general"
 
 
+def tauri_core_title(slug: str, cleaned: str) -> str:
+    lower_slug = slug.lower().removesuffix("-en")
+    title_map = {
+        "rust-tauri-app-boundary": "Tauri 앱 경계",
+        "rust-tauri-development-environment-first-app": "Tauri 개발 환경과 첫 앱",
+        "rust-tauri-project-structure": "Tauri 프로젝트 구조",
+        "rust-tauri-frontend-invoke-rust-command": "Tauri 프론트엔드에서 Rust command 호출",
+        "rust-tauri-capabilities-permissions": "Tauri capability와 permission",
+        "rust-tauri-first-local-tool": "Tauri 첫 로컬 도구 만들기",
+    }
+    if lower_slug in title_map:
+        return title_map[lower_slug]
+    return cleaned.replace("Rust", "").strip(" .:-") or "Tauri"
+
+
 def title_candidates(post: ManagedPost, doc: SourceDoc) -> tuple[list[str], str, list[str]]:
     original = str(doc.front_matter.get("title") or post.slug)
     cleaned = clean_title(original)
@@ -294,6 +311,20 @@ def title_candidates(post: ManagedPost, doc: SourceDoc) -> tuple[list[str], str,
     words = slug_words(post.slug)
     lower_slug = post.slug.lower()
 
+    if t == "tauri":
+        core = tauri_core_title(post.slug, cleaned)
+        candidates = [
+            f"{core} 정리: command와 권한 경계부터",
+            f"{core} 예제로 이해하는 Tauri v2 흐름",
+            f"Tauri 입문자가 먼저 확인할 {core}",
+        ]
+        return candidates, core, [
+            "Tauri v2",
+            "Rust command",
+            "Tauri invoke",
+            "Tauri capability",
+            "@tauri-apps/api",
+        ]
     if t == "rust" and {"install", "hello", "world"} & set(words):
         candidates = [
             "Windows에서 Rust 설치하고 Hello World 실행하기",
@@ -376,6 +407,27 @@ def title_candidates(post: ManagedPost, doc: SourceDoc) -> tuple[list[str], str,
         f"{cleaned}를 처음 볼 때 확인할 것",
     ]
     return candidates, cleaned, [word for word in words[:4] if word]
+
+
+def is_english_source(doc: SourceDoc) -> bool:
+    return str(doc.front_matter.get("lang") or "").lower().startswith("en")
+
+
+def channel_description(doc: SourceDoc, focus_keyword: str, t: str) -> str:
+    description = str(doc.front_matter.get("description") or "").strip()
+    if t == "tauri" and is_english_source(doc):
+        return f"{focus_keyword}에서 frontend 입력, Rust command, invoke 등록, capability 경계를 어떻게 나눠 확인할지 정리한다."
+    return description
+
+
+def tauri_summary_points(focus_keyword: str) -> list[str]:
+    return [
+        f"{focus_keyword}는 frontend 화면, Rust command, command 등록, 권한 경계를 나눠서 보면 이해하기 쉽다.",
+        "처음부터 파일 접근, shell 실행, 네트워크 요청을 열기보다 작은 로컬 command부터 시작하는 편이 안전하다.",
+        "`invoke` 호출 이름과 Rust command 등록 목록이 맞는지 먼저 확인해야 한다.",
+        "capability와 permission은 기능이 커질수록 별도로 점검해야 하는 보안 경계다.",
+        "검증 기준일과 실제 Tauri/API 버전을 함께 남겨야 나중에 문서 변화와 환경 차이를 구분할 수 있다.",
+    ]
 
 
 def section_map(body: str) -> dict[str, str]:
@@ -484,6 +536,18 @@ def collect_links(body: str) -> list[tuple[str, str]]:
 
 def comparison_table(t: str, body: str) -> str:
     lower = body.lower()
+    if t == "tauri":
+        return "\n".join(
+            [
+                "| 구성 요소 | 역할 | 먼저 확인할 것 |",
+                "|---|---|---|",
+                "| frontend | 사용자의 입력과 결과 화면을 담당 | `invoke` 호출 위치와 payload 이름 |",
+                "| Rust command | 실제 로컬 처리를 수행 | `#[tauri::command]`와 반환 타입 |",
+                "| invoke_handler | frontend에서 부를 command를 등록 | `generate_handler!`에 빠진 command가 없는지 |",
+                "| capability | window/WebView별 허용 범위를 정의 | 필요한 권한만 열려 있는지 |",
+                "| `src-tauri/` | Rust 쪽 앱 설정과 command가 있는 영역 | `lib.rs`, `tauri.conf.json`, `capabilities/` 위치 |",
+            ]
+        )
     if t == "rust" or any(word in lower for word in ["rustup", "rustc", "cargo"]):
         return "\n".join(
             [
@@ -551,6 +615,33 @@ def comparison_table(t: str, body: str) -> str:
 
 
 def troubleshooting(t: str) -> list[tuple[str, str, str, str]]:
+    if t == "tauri":
+        return [
+            (
+                "invoke가 command를 찾지 못하는 경우",
+                "frontend에서 호출했지만 command not found 또는 비슷한 오류가 난다.",
+                "`#[tauri::command]` 함수 이름과 `invoke_handler(tauri::generate_handler![...])` 등록 목록을 비교한다.",
+                "command 이름을 맞추고, 여러 command를 한 번의 `generate_handler!` 호출에 함께 넣는다.",
+            ),
+            (
+                "payload 인자가 Rust 함수에 전달되지 않는 경우",
+                "frontend에서는 값을 보냈는데 Rust command 인자가 비어 있거나 역직렬화 오류가 난다.",
+                "JavaScript payload key와 Rust 인자 이름의 camelCase/snake_case 차이를 확인한다.",
+                "기본 규칙에 맞춰 camelCase로 보내거나 `#[tauri::command(rename_all = \"snake_case\")]`를 명시한다.",
+            ),
+            (
+                "capability나 permission 때문에 API가 막히는 경우",
+                "command 또는 plugin API 호출이 권한 오류로 거절된다.",
+                "`src-tauri/capabilities/`와 `tauri.conf.json`에서 window label, permission, scope를 확인한다.",
+                "필요한 window에 필요한 permission만 추가하고, 파일·shell·네트워크 권한은 기능별로 나눠 연다.",
+            ),
+            (
+                "문서 예제와 프로젝트 구조가 다른 경우",
+                "`src-tauri/src/lib.rs`, `capabilities/default.json`, frontend import 경로가 글과 다르게 보인다.",
+                "Tauri v2 기준 프로젝트인지, `@tauri-apps/api/core`를 쓰는 구조인지 먼저 확인한다.",
+                "현재 프로젝트의 Tauri 버전과 생성 템플릿을 기록한 뒤 글의 예제를 맞춰 적용한다.",
+            ),
+        ]
     if t == "rust":
         return [
             (
@@ -685,6 +776,14 @@ def troubleshooting(t: str) -> list[tuple[str, str, str, str]]:
 
 
 def faq(t: str) -> list[tuple[str, str]]:
+    if t == "tauri":
+        return [
+            ("Tauri command는 plugin permission 없이도 쓸 수 있나요?", "등록한 custom command 자체는 `invoke_handler`로 노출된다. 다만 파일, shell, 네트워크 같은 기능을 쓰면 별도 plugin permission과 scope를 검토해야 한다."),
+            ("command를 만들었는데 왜 frontend에서 안 보이나요?", "`generate_handler!`에 command가 등록되어 있는지 먼저 확인한다. 여러 command를 등록할 때는 한 번의 `invoke_handler` 호출에 함께 넣어야 한다."),
+            ("capability는 언제부터 신경 써야 하나요?", "처음부터 window와 권한 경계를 작게 잡는 편이 좋다. 특히 파일 접근, shell 실행, 외부 binary 실행은 기능별로 분리해서 검토한다."),
+            ("`src-tauri/src/main.rs`와 `lib.rs` 중 어디를 고치나요?", "Tauri v2 기본 구조에서는 command와 앱 builder 흐름을 보통 `src-tauri/src/lib.rs`에서 다룬다."),
+            ("첫 로컬 도구는 어떤 기능이 안전한가요?", "파일이나 shell부터 열기보다 문자열 입력을 받아 계산 결과를 돌려주는 작은 command가 흐름을 익히기에 좋다."),
+        ]
     if t == "rust":
         return [
             ("rustup과 rustc는 같은 건가요?", "아니다. rustup은 Rust toolchain을 설치하고 관리하는 도구이고, rustc는 Rust 코드를 컴파일하는 컴파일러다."),
@@ -738,7 +837,10 @@ def render_original_flow(body: str, t: str) -> str:
 
     code_blocks = extract_code_blocks(chosen)
     if code_blocks:
-        lines.append("아래 명령은 이 글에서 바로 따라 하기 좋은 흐름만 뽑아 정리한 것이다.")
+        if t == "tauri":
+            lines.append("아래 코드는 frontend와 Rust command가 이어지는 핵심 흐름만 뽑아 정리한 것이다.")
+        else:
+            lines.append("아래 명령은 이 글에서 바로 따라 하기 좋은 흐름만 뽑아 정리한 것이다.")
         lines.append("")
         for language, content in code_blocks[:6]:
             lines.append(f"```{language}")
@@ -746,7 +848,7 @@ def render_original_flow(body: str, t: str) -> str:
             lines.append("```")
             lines.append("")
 
-    summary_items = first_sentences(chosen, 8)
+    summary_items = tauri_summary_points("Tauri 흐름") if t == "tauri" else first_sentences(chosen, 8)
     if summary_items:
         lines.append("명령어를 실행하기 전에 흐름을 이렇게 잡으면 덜 헷갈린다.")
         lines.append("")
@@ -777,7 +879,7 @@ def render_tistory(post: ManagedPost, doc: SourceDoc, source_updated_at: str, no
     t = topic(doc.front_matter, post.slug, doc.body)
     doc_info = extract_doc_info(doc.body)
     verify_date = verification_date(doc.body) or doc_info.get("검증 기준일")
-    description = str(doc.front_matter.get("description") or "")
+    description = channel_description(doc, focus_keyword, t)
     tag_candidates = tags(doc.front_matter)[:8]
     sections = section_map(doc.body)
     summary = section_by_names(sections, ["요약", "Summary"])
@@ -825,7 +927,7 @@ def render_tistory(post: ManagedPost, doc: SourceDoc, source_updated_at: str, no
         env_lines.append("- 이 글에 명시된 환경과 버전 기준을 먼저 확인한다.")
         env_lines.append("- 다른 운영체제나 도구 버전에서는 메시지와 화면이 달라질 수 있다.")
 
-    summary_items = first_sentences(summary or doc.body, 5)
+    summary_items = tauri_summary_points(focus_keyword) if t == "tauri" else first_sentences(summary or doc.body, 5)
     trouble = troubleshooting(t)
     faq_items = faq(t)
 
@@ -891,7 +993,11 @@ def render_tistory(post: ManagedPost, doc: SourceDoc, source_updated_at: str, no
         [
             "## 마무리",
             "",
-            f"{focus_keyword}를 볼 때는 명령어 자체보다 어떤 도구가 어떤 역할을 하는지 먼저 나누는 것이 중요하다. 그래야 오류가 났을 때 설치 문제인지, 실행 위치 문제인지, 설정 문제인지 빠르게 좁힐 수 있다.",
+            (
+                f"{focus_keyword}를 볼 때는 frontend, Rust command, capability가 어디서 만나는지 먼저 나누는 것이 중요하다. 그래야 오류가 났을 때 등록 문제인지, 호출 인자 문제인지, 권한 경계 문제인지 빠르게 좁힐 수 있다."
+                if t == "tauri"
+                else f"{focus_keyword}를 볼 때는 명령어 자체보다 어떤 도구가 어떤 역할을 하는지 먼저 나누는 것이 중요하다. 그래야 오류가 났을 때 설치 문제인지, 실행 위치 문제인지, 설정 문제인지 빠르게 좁힐 수 있다."
+            ),
             "",
             "## 태그 후보",
             "",

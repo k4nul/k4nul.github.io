@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "mcp-data-exposure-check-before-connection-en",
+  "source": {
+    "path": "content/posts/ai/072-mcp-data-exposure-check-before-connection-en/source.md",
+    "source_sha256": "0a09ff2b7195324f0fc44c64ad53a6212a7d2bb94d2d33e779447f1001a344ea",
+    "source_updated_at": "2026-04-29T22:22:43.881399+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-07-14T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/072-mcp-data-exposure-check-before-connection-en/variants/tistory.md",
+    "source_sha256": "0a09ff2b7195324f0fc44c64ad53a6212a7d2bb94d2d33e779447f1001a344ea",
+    "variant_sha256": "ed87afdc11d7f9ed1e8f206ed9bf312bfdbafb327d71f27602b51990c00e4273",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.899461+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 72,
+    "planned_publish_date": "2026-07-15",
+    "planned_publish_at": "2026-07-15T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/072-mcp-data-exposure-check-before-connection-en/variants/naver.md",
+    "source_sha256": "0a09ff2b7195324f0fc44c64ad53a6212a7d2bb94d2d33e779447f1001a344ea",
+    "variant_sha256": "97166098869ac2dde428f89e5fdb9733b4b6361d0a8428c6fb579e170980cd85",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.553597+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 72,
+    "planned_publish_date": "2026-07-15",
+    "planned_publish_at": "2026-07-15T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/072-mcp-data-exposure-check-before-connection-en",
+    "source_path": "content/posts/ai/072-mcp-data-exposure-check-before-connection-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 72,
+    "planned_publish_date": "2026-07-15",
+    "planned_publish_at": "2026-07-15T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

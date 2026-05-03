@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "how-far-should-claude-md-go",
+  "source": {
+    "path": "content/posts/ai/056-how-far-should-claude-md-go/source.md",
+    "source_sha256": "9f7664a5a5434b563332a27b8df148778f814262c598e24384e95f5a2552dda6",
+    "source_updated_at": "2026-04-29T22:22:42.894159+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-08T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/056-how-far-should-claude-md-go/variants/tistory.md",
+    "source_sha256": "9f7664a5a5434b563332a27b8df148778f814262c598e24384e95f5a2552dda6",
+    "variant_sha256": "0b9ed6dc49b481f5bd01ca4f00e6ed6fc18e24289459d24e0cb5c70e33889cd5",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.894158+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 56,
+    "planned_publish_date": "2026-06-20",
+    "planned_publish_at": "2026-06-20T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/056-how-far-should-claude-md-go/variants/naver.md",
+    "source_sha256": "9f7664a5a5434b563332a27b8df148778f814262c598e24384e95f5a2552dda6",
+    "variant_sha256": "fe1641de71e002c53adad58815fb6cc6ea771cda66654316879e7939087193a9",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.956331+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 56,
+    "planned_publish_date": "2026-06-20",
+    "planned_publish_at": "2026-06-20T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/056-how-far-should-claude-md-go",
+    "source_path": "content/posts/ai/056-how-far-should-claude-md-go/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 56,
+    "planned_publish_date": "2026-06-20",
+    "planned_publish_at": "2026-06-20T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

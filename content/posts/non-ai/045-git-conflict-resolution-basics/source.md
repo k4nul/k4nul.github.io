@@ -2,7 +2,7 @@
 layout: single
 title: "Git 05. conflict를 재현하고 해결하는 기본 절차"
 description: "Git merge conflict가 왜 발생하는지와 status, 파일 수정, add, commit으로 해결하는 기본 절차를 정리한 글."
-date: 2026-06-01 09:00:00 +0900
+date: 2026-05-21 09:00:00 +09:00
 lang: ko
 translation_key: git-conflict-resolution-basics
 section: development

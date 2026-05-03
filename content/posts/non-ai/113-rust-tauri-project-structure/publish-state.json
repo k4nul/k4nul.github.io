@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-tauri-project-structure",
+  "source": {
+    "path": "content/posts/non-ai/113-rust-tauri-project-structure/source.md",
+    "source_sha256": "c5af82dd35ee4a8fa1adae6a0ef34fa184b9204676b74b220da1c5cdf47d31fb",
+    "source_updated_at": "2026-04-29T22:22:44.011959+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-08-25T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/113-rust-tauri-project-structure/variants/tistory.md",
+    "source_sha256": "c5af82dd35ee4a8fa1adae6a0ef34fa184b9204676b74b220da1c5cdf47d31fb",
+    "variant_sha256": "545de1c0f3667601f67b841e80d3c770fdb18b2c15a2a8a9d55bef614caaf4f8",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:58:05.718812+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 113,
+    "planned_publish_date": "2026-08-25",
+    "planned_publish_at": "2026-08-25T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/113-rust-tauri-project-structure/variants/naver.md",
+    "source_sha256": "c5af82dd35ee4a8fa1adae6a0ef34fa184b9204676b74b220da1c5cdf47d31fb",
+    "variant_sha256": "52de5a10d448dad7ae1361bf7a9cb28d8a768d277ce3f86a8723352986717875",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:58:43.392969+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 113,
+    "planned_publish_date": "2026-08-25",
+    "planned_publish_at": "2026-08-25T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/113-rust-tauri-project-structure",
+    "source_path": "content/posts/non-ai/113-rust-tauri-project-structure/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 113,
+    "planned_publish_date": "2026-08-25",
+    "planned_publish_at": "2026-08-25T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

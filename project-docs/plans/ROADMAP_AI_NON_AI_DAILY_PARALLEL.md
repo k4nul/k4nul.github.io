@@ -2,11 +2,11 @@
 
 ## Snapshot
 
-- 검토 기준일: 2026-04-27 KST
+- 검토 기준일: 2026-04-29 KST
 - 목적: 예약 글이 조정된 뒤에도 AI 운영/보안과 Non-AI 보안 엔지니어링 흐름을 병행하되, 발행량을 품질 검증 가능한 수준으로 낮춘다.
-- 현재 예약분: `_posts`의 미래 예약 글은 2026-04-28부터 2026-07-18까지 하루 1개씩 발행되도록 조정한다.
-- 후속 시작일: 2026-07-21
-- 발행 단위: 주 2주제. 각 주제는 한국어 원문과 영어 미러를 분리된 날짜에 발행한다.
+- 현재 예약분: `_posts`의 생성 완료 예약 글은 2026-06-13 K8S 10 KOR/ENG 동시 발행까지 이어진다.
+- 후속 시작일: 2026-06-16
+- 발행 단위: 주 2주제. 각 주제는 한국어 원문과 영어 미러를 같은 날짜에 발행한다.
 - 실제 파일 수 기준: 8주 동안 16주제, 32개 `_posts` 파일.
 - 이전 계획 대비 변경: 기존 일일 `AI 1주제 + Non-AI 1주제` 계획은 품질 검증과 독자 소화 속도에 비해 과했으므로 주간 병행 계획으로 축소한다.
 
@@ -15,10 +15,10 @@
 | Day | Publish item | Reason |
 | --- | --- | --- |
 | Monday | 예약 없음 | 전주 글 점검, 링크 보강, 빌드/메타데이터 확인 |
-| Tuesday | AI 주제 한국어 원문 | 주간 AI 운영/보안 주제 시작 |
-| Wednesday | AI 주제 영어 미러 | 번역 검토와 hreflang 연결 확인 |
-| Thursday | Non-AI 주제 한국어 원문 | 보안 엔지니어링 또는 운영 보안 주제 발행 |
-| Friday | Non-AI 주제 영어 미러 | 번역 검토와 주간 마감 |
+| Tuesday | AI 주제 KOR/ENG 동시 발행 | 주간 AI 운영/보안 주제 시작, hreflang 쌍 동시 노출 |
+| Wednesday | 예약 없음 | 전날 발행 글 링크와 메타데이터 확인 |
+| Thursday | Non-AI 주제 KOR/ENG 동시 발행 | 보안 엔지니어링 또는 운영 보안 주제 발행 |
+| Friday | 예약 없음 | 주간 마감, 번역 표현과 참고자료 보강 |
 | Weekend | 예약 없음 | 재현 테스트, 참고자료 검증, 다음 주 초안 준비 |
 
 ## Positioning
@@ -59,42 +59,42 @@
 
 ## Calendar
 
-각 주는 `AI 1주제 + Non-AI 1주제`로 구성한다. 한국어 원문과 영어 미러는 같은 주 안에서 나눠 발행한다.
+각 주는 `AI 1주제 + Non-AI 1주제`로 구성한다. 한국어 원문과 영어 미러는 같은 날짜에 함께 발행한다.
 
 | Week | Date | Stream | Lang | Topic | Topic key | Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 2026-07-21 | AI | ko | 에이전트 trace에는 무엇을 남겨야 하는가 | ai | what-should-agent-trace-record |
-| 1 | 2026-07-22 | AI | en | What should an agent trace record? | ai | what-should-agent-trace-record-en |
-| 1 | 2026-07-23 | Non-AI | ko | Kubernetes 장애 대응: describe, events, logs | devops | kubernetes-troubleshooting-describe-events-logs |
-| 1 | 2026-07-24 | Non-AI | en | Kubernetes troubleshooting with describe, events, and logs | devops | kubernetes-troubleshooting-describe-events-logs-en |
-| 2 | 2026-07-28 | AI | ko | 하네스 관점의 guardrail과 approval 경계 | ai | guardrails-and-approval-boundaries-in-harness |
-| 2 | 2026-07-29 | AI | en | Guardrails and approval boundaries from a harness perspective | ai | guardrails-and-approval-boundaries-in-harness-en |
-| 2 | 2026-07-30 | Non-AI | ko | Kubernetes RBAC 최소 권한 입문 | security-engineering | kubernetes-rbac-least-privilege-basics |
-| 2 | 2026-07-31 | Non-AI | en | Kubernetes RBAC least privilege basics | security-engineering | kubernetes-rbac-least-privilege-basics-en |
-| 3 | 2026-08-04 | AI | ko | prompt injection을 하네스 문제로 보기 | ai | prompt-injection-as-a-harness-problem |
-| 3 | 2026-08-05 | AI | en | Prompt injection as a harness problem | ai | prompt-injection-as-a-harness-problem-en |
-| 3 | 2026-08-06 | Non-AI | ko | GitHub Actions 보안 체크리스트 | security-engineering | github-actions-security-checklist |
-| 3 | 2026-08-07 | Non-AI | en | GitHub Actions security checklist | security-engineering | github-actions-security-checklist-en |
-| 4 | 2026-08-11 | AI | ko | tool call 권한을 task 단위로 제한하기 | ai | limit-tool-call-permissions-per-task |
-| 4 | 2026-08-12 | AI | en | Limit tool-call permissions per task | ai | limit-tool-call-permissions-per-task-en |
-| 4 | 2026-08-13 | Non-AI | ko | SBOM, SLSA, provenance 입문 | security-engineering | sbom-slsa-provenance-basics |
-| 4 | 2026-08-14 | Non-AI | en | SBOM, SLSA, and provenance basics | security-engineering | sbom-slsa-provenance-basics-en |
-| 5 | 2026-08-18 | AI | ko | MCP 연결 전 데이터 노출 점검 | ai | mcp-data-exposure-check-before-connection |
-| 5 | 2026-08-19 | AI | en | Check data exposure before connecting MCP | ai | mcp-data-exposure-check-before-connection-en |
-| 5 | 2026-08-20 | Non-AI | ko | CI/CD secret leak 방지 기준 | security-engineering | ci-cd-secret-leak-prevention |
-| 5 | 2026-08-21 | Non-AI | en | CI/CD secret leak prevention criteria | security-engineering | ci-cd-secret-leak-prevention-en |
-| 6 | 2026-08-25 | AI | ko | AI coding agent 보안 위협 모델 입문 | ai | threat-modeling-ai-coding-agents |
-| 6 | 2026-08-26 | AI | en | Threat modeling AI coding agents | ai | threat-modeling-ai-coding-agents-en |
-| 6 | 2026-08-27 | Non-AI | ko | container image signing과 scan 결과 해석 | security-engineering | container-image-signing-and-scan-results |
-| 6 | 2026-08-28 | Non-AI | en | Container image signing and scan result interpretation | security-engineering | container-image-signing-and-scan-results-en |
-| 7 | 2026-09-01 | AI | ko | AI agent와 개인정보/민감정보 경계 | ai | ai-agents-and-sensitive-data-boundaries |
-| 7 | 2026-09-02 | AI | en | AI agents and sensitive data boundaries | ai | ai-agents-and-sensitive-data-boundaries-en |
-| 7 | 2026-09-03 | Non-AI | ko | cloud IAM 과권한과 service account 관리 | security-engineering | cloud-iam-and-service-account-least-privilege |
-| 7 | 2026-09-04 | Non-AI | en | Cloud IAM and service account least privilege | security-engineering | cloud-iam-and-service-account-least-privilege-en |
-| 8 | 2026-09-08 | AI | ko | AI agent incident review 템플릿 | ai | ai-agent-incident-review-template |
-| 8 | 2026-09-09 | AI | en | AI agent incident review template | ai | ai-agent-incident-review-template-en |
-| 8 | 2026-09-10 | Non-AI | ko | incident timeline 작성법과 보안 엔지니어링 정리 | security-engineering | incident-timeline-and-security-engineering-wrap-up |
-| 8 | 2026-09-11 | Non-AI | en | Incident timelines and security engineering wrap-up | security-engineering | incident-timeline-and-security-engineering-wrap-up-en |
+| 1 | 2026-06-16 | AI | ko | 에이전트 trace에는 무엇을 남겨야 하는가 | ai | what-should-agent-trace-record |
+| 1 | 2026-06-16 | AI | en | What should an agent trace record? | ai | what-should-agent-trace-record-en |
+| 1 | 2026-06-18 | Non-AI | ko | Kubernetes 장애 대응: describe, events, logs | devops | kubernetes-troubleshooting-describe-events-logs |
+| 1 | 2026-06-18 | Non-AI | en | Kubernetes troubleshooting with describe, events, and logs | devops | kubernetes-troubleshooting-describe-events-logs-en |
+| 2 | 2026-06-23 | AI | ko | 하네스 관점의 guardrail과 approval 경계 | ai | guardrails-and-approval-boundaries-in-harness |
+| 2 | 2026-06-23 | AI | en | Guardrails and approval boundaries from a harness perspective | ai | guardrails-and-approval-boundaries-in-harness-en |
+| 2 | 2026-06-25 | Non-AI | ko | Kubernetes RBAC 최소 권한 입문 | security-engineering | kubernetes-rbac-least-privilege-basics |
+| 2 | 2026-06-25 | Non-AI | en | Kubernetes RBAC least privilege basics | security-engineering | kubernetes-rbac-least-privilege-basics-en |
+| 3 | 2026-06-30 | AI | ko | prompt injection을 하네스 문제로 보기 | ai | prompt-injection-as-a-harness-problem |
+| 3 | 2026-06-30 | AI | en | Prompt injection as a harness problem | ai | prompt-injection-as-a-harness-problem-en |
+| 3 | 2026-07-02 | Non-AI | ko | GitHub Actions 보안 체크리스트 | security-engineering | github-actions-security-checklist |
+| 3 | 2026-07-02 | Non-AI | en | GitHub Actions security checklist | security-engineering | github-actions-security-checklist-en |
+| 4 | 2026-07-07 | AI | ko | tool call 권한을 task 단위로 제한하기 | ai | limit-tool-call-permissions-per-task |
+| 4 | 2026-07-07 | AI | en | Limit tool-call permissions per task | ai | limit-tool-call-permissions-per-task-en |
+| 4 | 2026-07-09 | Non-AI | ko | SBOM, SLSA, provenance 입문 | security-engineering | sbom-slsa-provenance-basics |
+| 4 | 2026-07-09 | Non-AI | en | SBOM, SLSA, and provenance basics | security-engineering | sbom-slsa-provenance-basics-en |
+| 5 | 2026-07-14 | AI | ko | MCP 연결 전 데이터 노출 점검 | ai | mcp-data-exposure-check-before-connection |
+| 5 | 2026-07-14 | AI | en | Check data exposure before connecting MCP | ai | mcp-data-exposure-check-before-connection-en |
+| 5 | 2026-07-16 | Non-AI | ko | CI/CD secret leak 방지 기준 | security-engineering | ci-cd-secret-leak-prevention |
+| 5 | 2026-07-16 | Non-AI | en | CI/CD secret leak prevention criteria | security-engineering | ci-cd-secret-leak-prevention-en |
+| 6 | 2026-07-21 | AI | ko | AI coding agent 보안 위협 모델 입문 | ai | threat-modeling-ai-coding-agents |
+| 6 | 2026-07-21 | AI | en | Threat modeling AI coding agents | ai | threat-modeling-ai-coding-agents-en |
+| 6 | 2026-07-23 | Non-AI | ko | container image signing과 scan 결과 해석 | security-engineering | container-image-signing-and-scan-results |
+| 6 | 2026-07-23 | Non-AI | en | Container image signing and scan result interpretation | security-engineering | container-image-signing-and-scan-results-en |
+| 7 | 2026-07-28 | AI | ko | AI agent와 개인정보/민감정보 경계 | ai | ai-agents-and-sensitive-data-boundaries |
+| 7 | 2026-07-28 | AI | en | AI agents and sensitive data boundaries | ai | ai-agents-and-sensitive-data-boundaries-en |
+| 7 | 2026-07-30 | Non-AI | ko | cloud IAM 과권한과 service account 관리 | security-engineering | cloud-iam-and-service-account-least-privilege |
+| 7 | 2026-07-30 | Non-AI | en | Cloud IAM and service account least privilege | security-engineering | cloud-iam-and-service-account-least-privilege-en |
+| 8 | 2026-08-04 | AI | ko | AI agent incident review 템플릿 | ai | ai-agent-incident-review-template |
+| 8 | 2026-08-04 | AI | en | AI agent incident review template | ai | ai-agent-incident-review-template-en |
+| 8 | 2026-08-06 | Non-AI | ko | incident timeline 작성법과 보안 엔지니어링 정리 | security-engineering | incident-timeline-and-security-engineering-wrap-up |
+| 8 | 2026-08-06 | Non-AI | en | Incident timelines and security engineering wrap-up | security-engineering | incident-timeline-and-security-engineering-wrap-up-en |
 
 ## Deferred Candidate Pool
 

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "claude-code-as-operating-structure",
+  "source": {
+    "path": "content/posts/ai/055-claude-code-as-operating-structure/source.md",
+    "source_sha256": "e788e723a491ca0ab38f9121ba3dc862c7cc4d82e384fcdde5bd1802847c5726",
+    "source_updated_at": "2026-04-29T22:22:42.878275+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-07T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/055-claude-code-as-operating-structure/variants/tistory.md",
+    "source_sha256": "e788e723a491ca0ab38f9121ba3dc862c7cc4d82e384fcdde5bd1802847c5726",
+    "variant_sha256": "8582fff23ad2d08109b4d347f0aadaa500b3e3cc22615c77952f4c8b3693e0dc",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.886626+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 55,
+    "planned_publish_date": "2026-06-19",
+    "planned_publish_at": "2026-06-19T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/055-claude-code-as-operating-structure/variants/naver.md",
+    "source_sha256": "e788e723a491ca0ab38f9121ba3dc862c7cc4d82e384fcdde5bd1802847c5726",
+    "variant_sha256": "ab0edc8303ec23ddbf5420a9f870f662a239e0db0ae9f756df9947b8e5f71b43",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.949324+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 55,
+    "planned_publish_date": "2026-06-19",
+    "planned_publish_at": "2026-06-19T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/055-claude-code-as-operating-structure",
+    "source_path": "content/posts/ai/055-claude-code-as-operating-structure/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 55,
+    "planned_publish_date": "2026-06-19",
+    "planned_publish_at": "2026-06-19T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

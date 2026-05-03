@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "when-to-use-claude-code-subagents",
+  "source": {
+    "path": "content/posts/ai/063-when-to-use-claude-code-subagents/source.md",
+    "source_sha256": "50ed29484629b28d4826d44635221a3279c29a892e2f6baaaac0a3cce810b83f",
+    "source_updated_at": "2026-04-29T22:22:42.962662+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-15T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/063-when-to-use-claude-code-subagents/variants/tistory.md",
+    "source_sha256": "50ed29484629b28d4826d44635221a3279c29a892e2f6baaaac0a3cce810b83f",
+    "variant_sha256": "91ff234f919f3e873f775faad2c00c1b94eac53c92e7a8d9c2a5f203bd862f3a",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.967662+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 63,
+    "planned_publish_date": "2026-06-27",
+    "planned_publish_at": "2026-06-27T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/063-when-to-use-claude-code-subagents/variants/naver.md",
+    "source_sha256": "50ed29484629b28d4826d44635221a3279c29a892e2f6baaaac0a3cce810b83f",
+    "variant_sha256": "0a92a0574edd55cca2558b032afccd5d9e5fae3c702154deca43626ac35035ce",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.006073+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 63,
+    "planned_publish_date": "2026-06-27",
+    "planned_publish_at": "2026-06-27T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/063-when-to-use-claude-code-subagents",
+    "source_path": "content/posts/ai/063-when-to-use-claude-code-subagents/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 63,
+    "planned_publish_date": "2026-06-27",
+    "planned_publish_at": "2026-06-27T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

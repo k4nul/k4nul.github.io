@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "ai-agent-incident-review-template",
+  "source": {
+    "path": "content/posts/ai/079-ai-agent-incident-review-template/source.md",
+    "source_sha256": "3016e99ea3fe3c5e38f527b2ab4efbf89486094bb96bcc4e62d7f54cd6058da5",
+    "source_updated_at": "2026-04-29T22:22:43.974705+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-08-04T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/079-ai-agent-incident-review-template/variants/tistory.md",
+    "source_sha256": "3016e99ea3fe3c5e38f527b2ab4efbf89486094bb96bcc4e62d7f54cd6058da5",
+    "variant_sha256": "930ded4e0325c06b7bfb18c59909bb8ec7c7513b8f9e35e89d80f858509f9f3e",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.974705+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 79,
+    "planned_publish_date": "2026-08-04",
+    "planned_publish_at": "2026-08-04T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/079-ai-agent-incident-review-template/variants/naver.md",
+    "source_sha256": "3016e99ea3fe3c5e38f527b2ab4efbf89486094bb96bcc4e62d7f54cd6058da5",
+    "variant_sha256": "a3f59c628dd905ede9956027a4e185f270c455cc6cbf00a6bb7aef8ab0860170",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.645203+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 79,
+    "planned_publish_date": "2026-08-04",
+    "planned_publish_at": "2026-08-04T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/079-ai-agent-incident-review-template",
+    "source_path": "content/posts/ai/079-ai-agent-incident-review-template/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 79,
+    "planned_publish_date": "2026-08-04",
+    "planned_publish_at": "2026-08-04T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

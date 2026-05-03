@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "handle-logs-issues-and-auto-memory-with-context-budget",
+  "source": {
+    "path": "content/posts/ai/062-handle-logs-issues-and-auto-memory-with-context-budget/source.md",
+    "source_sha256": "99615fcb16d9a3e4d68d24bdb892de9f4ef0941fdb529f5d71805f0670cd2d1f",
+    "source_updated_at": "2026-04-29T22:22:42.954109+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-14T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/062-handle-logs-issues-and-auto-memory-with-context-budget/variants/tistory.md",
+    "source_sha256": "99615fcb16d9a3e4d68d24bdb892de9f4ef0941fdb529f5d71805f0670cd2d1f",
+    "variant_sha256": "45999455571b1d8f0b4e4bba0180c95e30e3799592854ff414dce7ca4a76b108",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.958661+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 62,
+    "planned_publish_date": "2026-06-26",
+    "planned_publish_at": "2026-06-26T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/062-handle-logs-issues-and-auto-memory-with-context-budget/variants/naver.md",
+    "source_sha256": "99615fcb16d9a3e4d68d24bdb892de9f4ef0941fdb529f5d71805f0670cd2d1f",
+    "variant_sha256": "839b7271dad2021552c9e75c817cd030b812f6d11984cacbcdd0ec93d5abe758",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.995729+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 62,
+    "planned_publish_date": "2026-06-26",
+    "planned_publish_at": "2026-06-26T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/062-handle-logs-issues-and-auto-memory-with-context-budget",
+    "source_path": "content/posts/ai/062-handle-logs-issues-and-auto-memory-with-context-budget/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 62,
+    "planned_publish_date": "2026-06-26",
+    "planned_publish_at": "2026-06-26T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

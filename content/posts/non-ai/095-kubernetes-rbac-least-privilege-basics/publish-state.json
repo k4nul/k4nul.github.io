@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "kubernetes-rbac-least-privilege-basics",
+  "source": {
+    "path": "content/posts/non-ai/095-kubernetes-rbac-least-privilege-basics/source.md",
+    "source_sha256": "4da849f132acb9c29901085a6596fd7299e61cf279ad819aa149f0080cfb54da",
+    "source_updated_at": "2026-04-29T22:22:43.813660+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-25T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/095-kubernetes-rbac-least-privilege-basics/variants/tistory.md",
+    "source_sha256": "4da849f132acb9c29901085a6596fd7299e61cf279ad819aa149f0080cfb54da",
+    "variant_sha256": "483dd561813e8d1f80a591a9ff73207be72c7c19ce14c1a80b7f609072368b3e",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.813660+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 95,
+    "planned_publish_date": "2026-07-29",
+    "planned_publish_at": "2026-07-29T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/095-kubernetes-rbac-least-privilege-basics/variants/naver.md",
+    "source_sha256": "4da849f132acb9c29901085a6596fd7299e61cf279ad819aa149f0080cfb54da",
+    "variant_sha256": "28840eb16d2ef076b610de3e04a50b4f9715a4b96fca732ca1be59f2167b1491",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.486559+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 95,
+    "planned_publish_date": "2026-07-29",
+    "planned_publish_at": "2026-07-29T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/095-kubernetes-rbac-least-privilege-basics",
+    "source_path": "content/posts/non-ai/095-kubernetes-rbac-least-privilege-basics/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 95,
+    "planned_publish_date": "2026-07-29",
+    "planned_publish_at": "2026-07-29T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

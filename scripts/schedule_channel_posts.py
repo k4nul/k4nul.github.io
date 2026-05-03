@@ -170,12 +170,22 @@ def build_plan(
     category: str,
     sequence: int,
     post_dir: Path,
+    planned_date: Any | None = None,
 ) -> dict[str, Any]:
     base = datetime.strptime(base_date, "%Y-%m-%d").replace(tzinfo=KST)
-    day = base + timedelta(days=sequence - 1)
+    nominal_day = base + timedelta(days=sequence - 1)
+    day_date = planned_date or nominal_day.date()
     slot_time = AI_SLOT_TIME if group == "ai" else NON_AI_SLOT_TIME
     hour, minute, second = map(int, slot_time.split(":"))
-    planned = day.replace(hour=hour, minute=minute, second=second)
+    planned = datetime(
+        day_date.year,
+        day_date.month,
+        day_date.day,
+        hour,
+        minute,
+        second,
+        tzinfo=KST,
+    )
     return {
         "post_folder": rel_path(post_dir, root),
         "source_path": rel_path(post_dir / "source.md", root),
@@ -184,7 +194,7 @@ def build_plan(
         "channel_category_slug": CATEGORY_SLUGS[category],
         "publish_sequence": sequence,
         "external_publish_sequence": sequence,
-        "planned_publish_date": day.date().isoformat(),
+        "planned_publish_date": day_date.isoformat(),
         "planned_publish_at": planned.isoformat(),
         "publish_slot": "ai_daily" if group == "ai" else "non_ai_daily",
         "schedule_base_date": base_date,
@@ -343,6 +353,8 @@ def main() -> int:
     }
     category_counts = {category: 0 for category in CATEGORY_SLUGS}
     schedule_rows: list[dict[str, Any]] = []
+    base = datetime.strptime(args.base_date, "%Y-%m-%d").replace(tzinfo=KST)
+    next_available_date = {group: base.date() for group in grouped}
     for group, posts in grouped.items():
         for index, source_path in enumerate(posts, start=1):
             slug = slug_from_post_dir(source_path.parent)
@@ -353,7 +365,16 @@ def main() -> int:
                 changes["folder_moves"] += 1
             source_path = post_dir / "source.md"
             category = classify_channel_category(slug, source_text)
-            plan = build_plan(root, args.base_date, group, category, index, post_dir)
+            nominal_date = (base + timedelta(days=index - 1)).date()
+            source_doc = parse_source(source_text)
+            source_date = parse_datetime(source_doc.front_matter.get("date"), None)
+            planned_date = max(
+                nominal_date,
+                source_date.date() if source_date else nominal_date,
+                next_available_date[group],
+            )
+            next_available_date[group] = planned_date + timedelta(days=1)
+            plan = build_plan(root, args.base_date, group, category, index, post_dir, planned_date)
             category_counts[category] += 1
             metadata_path = post_dir / "metadata.yaml"
             state_path = post_dir / "publish-state.json"
@@ -403,7 +424,7 @@ def main() -> int:
         "schema_version": 1,
         "base_date": args.base_date,
         "timezone": "Asia/Seoul",
-        "rule": "one AI post and one non-AI post per day from the beginning of each stream",
+        "rule": "one AI post and one non-AI post per day from the beginning of each stream, without publishing before the source post date",
         "exclusion_rule": "security topics stay on GitHub only and are not scheduled for Naver/Tistory",
         "excluded_posts": sorted(EXTERNAL_CHANNEL_EXCLUDED_SLUGS),
         "slots": {

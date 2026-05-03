@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "connect-external-context-with-mcp",
+  "source": {
+    "path": "content/posts/ai/061-connect-external-context-with-mcp/source.md",
+    "source_sha256": "8129e535ef4568890f020e528993500e1b4e6473518e7ebb61af44229cf51481",
+    "source_updated_at": "2026-04-29T22:22:42.944110+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-13T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/061-connect-external-context-with-mcp/variants/tistory.md",
+    "source_sha256": "8129e535ef4568890f020e528993500e1b4e6473518e7ebb61af44229cf51481",
+    "variant_sha256": "684d64bc453bc38dc3b50d924b309c6d7cb110f674513ccc4c8833794737d9e4",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.949110+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 61,
+    "planned_publish_date": "2026-06-25",
+    "planned_publish_at": "2026-06-25T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/061-connect-external-context-with-mcp/variants/naver.md",
+    "source_sha256": "8129e535ef4568890f020e528993500e1b4e6473518e7ebb61af44229cf51481",
+    "variant_sha256": "5fa8d405da55feef8ef7eb9f7d9dc0cdf0f630a5f6bdcb7e7af8130e69afe887",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.995729+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 61,
+    "planned_publish_date": "2026-06-25",
+    "planned_publish_at": "2026-06-25T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/061-connect-external-context-with-mcp",
+    "source_path": "content/posts/ai/061-connect-external-context-with-mcp/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 61,
+    "planned_publish_date": "2026-06-25",
+    "planned_publish_at": "2026-06-25T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

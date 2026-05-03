@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "guardrails-and-approval-boundaries-in-harness-en",
+  "source": {
+    "path": "content/posts/ai/068-guardrails-and-approval-boundaries-in-harness-en/source.md",
+    "source_sha256": "7dd770c382acda1e3bb0e378539def4148c57464f1c12ec4868f915285423f03",
+    "source_updated_at": "2026-04-29T22:22:43.768024+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-06-23T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/068-guardrails-and-approval-boundaries-in-harness-en/variants/tistory.md",
+    "source_sha256": "7dd770c382acda1e3bb0e378539def4148c57464f1c12ec4868f915285423f03",
+    "variant_sha256": "08c35325942bdd636b48d87d7a2f037da8efe90106b1bdf511e5d8e8d5902c94",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.773912+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 68,
+    "planned_publish_date": "2026-07-02",
+    "planned_publish_at": "2026-07-02T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/068-guardrails-and-approval-boundaries-in-harness-en/variants/naver.md",
+    "source_sha256": "7dd770c382acda1e3bb0e378539def4148c57464f1c12ec4868f915285423f03",
+    "variant_sha256": "057c2e100fed64e9dce25e104b854fcace0389b9cf187f5a368fc862c1dd1c8b",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.468957+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 68,
+    "planned_publish_date": "2026-07-02",
+    "planned_publish_at": "2026-07-02T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/068-guardrails-and-approval-boundaries-in-harness-en",
+    "source_path": "content/posts/ai/068-guardrails-and-approval-boundaries-in-harness-en/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 68,
+    "planned_publish_date": "2026-07-02",
+    "planned_publish_at": "2026-07-02T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

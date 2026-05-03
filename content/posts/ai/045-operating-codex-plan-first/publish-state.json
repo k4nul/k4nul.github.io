@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "operating-codex-plan-first",
+  "source": {
+    "path": "content/posts/ai/045-operating-codex-plan-first/source.md",
+    "source_sha256": "ed81cfe246245368c9f214e081045807ca95ab9176680454cad6cac6b967c674",
+    "source_updated_at": "2026-04-29T22:22:42.786817+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-02T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/045-operating-codex-plan-first/variants/tistory.md",
+    "source_sha256": "ed81cfe246245368c9f214e081045807ca95ab9176680454cad6cac6b967c674",
+    "variant_sha256": "d172c774f90e7586a5b230f069c8ecea7145c91b167ecf136b3d2b12655edfb1",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.791817+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 45,
+    "planned_publish_date": "2026-06-09",
+    "planned_publish_at": "2026-06-09T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/045-operating-codex-plan-first/variants/naver.md",
+    "source_sha256": "ed81cfe246245368c9f214e081045807ca95ab9176680454cad6cac6b967c674",
+    "variant_sha256": "df347b2b47d693f3c55fca142443fe43ce5d2f719be7f1fbc66695c01d804b99",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.881649+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 45,
+    "planned_publish_date": "2026-06-09",
+    "planned_publish_at": "2026-06-09T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/045-operating-codex-plan-first",
+    "source_path": "content/posts/ai/045-operating-codex-plan-first/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 45,
+    "planned_publish_date": "2026-06-09",
+    "planned_publish_at": "2026-06-09T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

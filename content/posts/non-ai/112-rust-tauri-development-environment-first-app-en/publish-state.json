@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "rust-tauri-development-environment-first-app-en",
+  "source": {
+    "path": "content/posts/non-ai/112-rust-tauri-development-environment-first-app-en/source.md",
+    "source_sha256": "8bd411dbb39d732e50d11d59ddd51041d48533d89e62e75e969a150c00b61e4f",
+    "source_updated_at": "2026-04-29T22:22:43.998121+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-08-18T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/112-rust-tauri-development-environment-first-app-en/variants/tistory.md",
+    "source_sha256": "8bd411dbb39d732e50d11d59ddd51041d48533d89e62e75e969a150c00b61e4f",
+    "variant_sha256": "a244a9ba4c950aff6212b7ffa32508d0e09b626934c6f8407bfa3027fe87b888",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:58:05.682578+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 112,
+    "planned_publish_date": "2026-08-19",
+    "planned_publish_at": "2026-08-19T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/112-rust-tauri-development-environment-first-app-en/variants/naver.md",
+    "source_sha256": "8bd411dbb39d732e50d11d59ddd51041d48533d89e62e75e969a150c00b61e4f",
+    "variant_sha256": "0b7ea7c37a94d6d3e2eac50a1e9a3b97c2df13d37f2989d3dfb8e65a7ff48194",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:58:43.358884+09:00",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "publish_sequence": 112,
+    "planned_publish_date": "2026-08-19",
+    "planned_publish_at": "2026-08-19T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/112-rust-tauri-development-environment-first-app-en",
+    "source_path": "content/posts/non-ai/112-rust-tauri-development-environment-first-app-en/source.md",
+    "content_group": "non_ai",
+    "channel_category": "프로그래밍 언어",
+    "channel_category_slug": "programming_language",
+    "sequence": 112,
+    "planned_publish_date": "2026-08-19",
+    "planned_publish_at": "2026-08-19T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

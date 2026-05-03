@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "split-instructions-with-rules-and-skills",
+  "source": {
+    "path": "content/posts/ai/058-split-instructions-with-rules-and-skills/source.md",
+    "source_sha256": "7ae3640bbb192d499da45116c85d122638f7adc24a18c480f20c3739a422fb2c",
+    "source_updated_at": "2026-04-29T22:22:42.916258+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-05-10T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/ai/058-split-instructions-with-rules-and-skills/variants/tistory.md",
+    "source_sha256": "7ae3640bbb192d499da45116c85d122638f7adc24a18c480f20c3739a422fb2c",
+    "variant_sha256": "db1dd86eb02278662a4dcf00aa409874d4c12a754a8f80b3a0538419a7fb4824",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:42.921261+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 58,
+    "planned_publish_date": "2026-06-22",
+    "planned_publish_at": "2026-06-22T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "naver": {
+    "status": "needs_manual_review",
+    "reason": "scheduled_post_variant_updated",
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/ai/058-split-instructions-with-rules-and-skills/variants/naver.md",
+    "source_sha256": "7ae3640bbb192d499da45116c85d122638f7adc24a18c480f20c3739a422fb2c",
+    "variant_sha256": "2e2f06bc1e4ecc890998798db37720bc5a773ba32c9487f3716a8eecb7b2523a",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:47.972972+09:00",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "publish_sequence": 58,
+    "planned_publish_date": "2026-06-22",
+    "planned_publish_at": "2026-06-22T09:00:00+09:00",
+    "publish_slot": "ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/ai/058-split-instructions-with-rules-and-skills",
+    "source_path": "content/posts/ai/058-split-instructions-with-rules-and-skills/source.md",
+    "content_group": "ai",
+    "channel_category": "AI",
+    "channel_category_slug": "ai",
+    "sequence": 58,
+    "planned_publish_date": "2026-06-22",
+    "planned_publish_at": "2026-06-22T09:00:00+09:00",
+    "publish_slot": "ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}

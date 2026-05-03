@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "slug": "cloud-iam-and-service-account-least-privilege",
+  "source": {
+    "path": "content/posts/non-ai/105-cloud-iam-and-service-account-least-privilege/source.md",
+    "source_sha256": "30833b491f2d0a726cdfb73bd3ee071533417f2d9848119802728be7a29ba0da",
+    "source_updated_at": "2026-04-29T22:22:43.965027+09:00",
+    "status": "scheduled",
+    "scheduled_at": "2026-07-30T09:00:00+09:00"
+  },
+  "policy_version": "2026-04-25.tistory-search-variant.v3",
+  "tistory": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/tistory.md",
+    "absolute_variant_path": "content/posts/non-ai/105-cloud-iam-and-service-account-least-privilege/variants/tistory.md",
+    "source_sha256": "30833b491f2d0a726cdfb73bd3ee071533417f2d9848119802728be7a29ba0da",
+    "variant_sha256": "9058fb90522c7f214ae9500b2a6643ad6c78cacbb7bfcd0b046e0a441654c1f9",
+    "policy_version": "2026-04-25.tistory-search-variant.v3",
+    "updated_at": "2026-04-29T22:22:43.965027+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 105,
+    "planned_publish_date": "2026-08-08",
+    "planned_publish_at": "2026-08-08T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "naver": {
+    "status": "ready_for_draft",
+    "reason": null,
+    "requires_manual_review": true,
+    "variant_path": "variants/naver.md",
+    "absolute_variant_path": "content/posts/non-ai/105-cloud-iam-and-service-account-least-privilege/variants/naver.md",
+    "source_sha256": "30833b491f2d0a726cdfb73bd3ee071533417f2d9848119802728be7a29ba0da",
+    "variant_sha256": "e5d6a1784d61095e41c387e285bb0366e377fe3d8be360f67875f914970ff453",
+    "policy_version": "2026-04-25.naver-final-post.v3",
+    "updated_at": "2026-04-29T22:22:48.630092+09:00",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "publish_sequence": 105,
+    "planned_publish_date": "2026-08-08",
+    "planned_publish_at": "2026-08-08T18:00:00+09:00",
+    "publish_slot": "non_ai_daily"
+  },
+  "external_publish_plan": {
+    "post_folder": "content/posts/non-ai/105-cloud-iam-and-service-account-least-privilege",
+    "source_path": "content/posts/non-ai/105-cloud-iam-and-service-account-least-privilege/source.md",
+    "content_group": "non_ai",
+    "channel_category": "DevOps",
+    "channel_category_slug": "devops",
+    "sequence": 105,
+    "planned_publish_date": "2026-08-08",
+    "planned_publish_at": "2026-08-08T18:00:00+09:00",
+    "publish_slot": "non_ai_daily",
+    "base_date": "2026-04-26",
+    "cadence_days": 1,
+    "timezone": "Asia/Seoul"
+  }
+}
