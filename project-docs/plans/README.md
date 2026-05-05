@@ -1,4 +1,4 @@
-# Plan Index
+﻿# Plan Index
 
 ## 계획 문서 위치
 
@@ -12,6 +12,7 @@
 - `ROADMAP_CLAUDE_CODE_PRACTICAL_USAGE.md`: `development` 아래 `ai` 허브에 연결할 "Claude Code 실전 활용" 10편 구성을 정리한 로드맵
 - `ROADMAP_AI_NON_AI_DAILY_PARALLEL.md`: 기존 파일명을 유지하지만, 현재 내용은 2026-06-16부터 `AI 1주제 + Non-AI 1주제`를 매주 KOR/ENG 동시 발행으로 배치하는 8주 병행 로드맵
 - `ROADMAP_RUST_TAURI_CURRICULUM.md`: 2026-08-11부터 2026-09-15까지 Rust 코어 입문 이후 Tauri 프레임워크 후속 글 6주제를 KOR/ENG 동시 발행으로 정리한 로드맵
+- `ROADMAP_RUST_SERVICE_TO_PRODUCTION.md`: 2026-09-22부터 2027-04-13까지 Rust API 서비스를 운영 가능한 단위로 만드는 30주제 KOR/ENG 동시 발행 로드맵
 
 ## 권장 읽기 순서
 
