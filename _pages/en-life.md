@@ -9,6 +9,9 @@ sidebar:
 lang: en
 translation_key: section-life
 section_key: life
+robots: "noindex, follow"
+sitemap: false
+search: false
 section_description: "Archive for lighter notes, everyday thoughts, and personal posts outside the core technical sections."
 ---
 

@@ -8,4 +8,7 @@ sidebar:
   nav: "sections"
 lang: en
 translation_key: page-categories
+robots: "noindex, follow"
+sitemap: false
+search: false
 ---

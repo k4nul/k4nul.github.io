@@ -8,4 +8,7 @@ sidebar:
   nav: "sections"
 lang: ko
 translation_key: page-tags
+robots: "noindex, follow"
+sitemap: false
+search: false
 ---

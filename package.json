@@ -33,6 +33,7 @@
     "build:js": "npm run uglify && npm run add-banner",
     "check:links": "npm run check:links:local",
     "check:links:local": "bundle exec jekyll build && node scripts/check-links.mjs --site _site",
-    "check:links:prod": "node scripts/check-links.mjs --prod --base-url https://www.k4nul.com"
+    "check:links:prod": "node scripts/check-links.mjs --prod --base-url https://www.k4nul.com",
+    "seo:audit": "node scripts/seo-audit.mjs --site _site"
   }
 }

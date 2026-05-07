@@ -1,9 +1,11 @@
 ---
-title: "AI Engineering"
-layout: section-archive
+title: "Redirecting"
+layout: redirect
 permalink: /development/ai/
 description: "Legacy route for the AI Engineering archive."
 canonical_url: https://www.k4nul.com/ai-engineering/
+redirect_to: /ai-engineering/
+robots: noindex, follow
 author_profile: true
 sidebar:
   nav: "sections"
@@ -15,4 +17,3 @@ sitemap: false
 ---
 
 This route is kept for compatibility. The canonical archive is [AI Engineering](/ai-engineering/).
-

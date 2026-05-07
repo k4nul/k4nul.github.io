@@ -9,6 +9,9 @@ sidebar:
 lang: ko
 translation_key: section-life
 section_key: life
+robots: "noindex, follow"
+sitemap: false
+search: false
 section_description: "가벼운 메모, 일상 생각, 개인 기록을 모아두는 섹션이다."
 ---
 
