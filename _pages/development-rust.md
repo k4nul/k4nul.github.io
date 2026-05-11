@@ -15,6 +15,10 @@ topic_description: "Rust 설치, 디버깅, 문법, ownership, concurrency까지
 
 Rust를 처음 시작하는 흐름부터 디버깅, 기본 문법, ownership, generics, async까지 순서대로 따라갈 수 있는 학습 허브입니다. 각 글은 실습 예제와 함께 읽기 쉬운 입문형 가이드로 정리합니다.
 
+## AI agent 운영과의 연결
+
+Rust 글은 AI agent가 만든 코드를 검증할 때 필요한 기반입니다. agent 작업 결과를 볼 때는 [build와 test만으로 agent 작업 검증이 부족한 이유](/ai/build-and-test-are-not-enough-to-validate-an-agent/)를 함께 읽고, 작은 CLI나 API 예제를 검증 가능한 단위로 쪼개는 관점에서 활용하세요.
+
 ## 시리즈 읽기
 
 - [Rust 설치와 Hello World 실행하기](/rust/rust-install-hello-world/)

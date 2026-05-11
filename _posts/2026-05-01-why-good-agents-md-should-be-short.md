@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "좋은 AGENTS.md가 길어지면 왜 토큰 비용, 중복 지시, 책임 혼합이 커지는지 설명한 글."
-title: "Codex 실전 활용 05. 좋은 AGENTS.md는 왜 짧아야 하는가"
+title: "AGENTS.md 작성법: 짧게 쓰는 기준과 분리 예시"
 lang: ko
 translation_key: why-good-agents-md-should-be-short
 date: 2026-05-01 09:00:00 +09:00

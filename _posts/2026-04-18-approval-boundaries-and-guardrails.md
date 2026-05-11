@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "approval 경계와 guardrail이 비어 있을 때 agent 시스템이 흔들리는 이유를 다루는 글."
-title: "하네스 엔지니어링 09. approval과 guardrail이 비어 있으면 agent 시스템은 불안정하다"
+title: "Agent approval과 guardrail 경계: 비어 있으면 시스템이 흔들리는 이유"
 lang: ko
 translation_key: approval-boundaries-and-guardrails
 date: 2026-04-18 00:00:00 +0900

@@ -11,6 +11,12 @@ layout: archive
 
 {% include section-topics.html current_lang=current_lang %}
 
+{% if content and content != "" %}
+  <div class="section-archive__content">
+    {{ content }}
+  </div>
+{% endif %}
+
 {% assign filtered_posts = site.posts | where: "lang", current_lang | where: "section", page.section_key %}
 {% if page.topic_key %}
   {% assign filtered_posts = filtered_posts | where: "topic_key", page.topic_key %}

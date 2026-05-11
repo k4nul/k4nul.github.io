@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Claude Code의 CLAUDE.md에 무엇을 넣고 무엇을 rules, skills, settings로 내려야 하는지 정리한 글."
-title: "Claude Code 실전 활용 02. CLAUDE.md는 어디까지 써야 하는가"
+title: "CLAUDE.md 작성 범위: rules, skills, settings로 나누는 기준"
 lang: ko
 translation_key: how-far-should-claude-md-go
 date: 2026-05-08 09:00:00 +09:00

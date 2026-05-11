@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "AI 코딩 도구를 바꿀 때 결과가 달라지는 이유를 프롬프트 밖의 실행 환경 관점에서 설명한 글."
-title: "하네스 엔지니어링 01. 왜 AI 코딩 툴을 바꿀 때마다 결과가 달라질까"
+title: "AI 코딩 도구 결과 차이: 프롬프트 밖의 하네스 변수"
 lang: ko
 translation_key: why-ai-tools-produce-different-results
 date: 2026-04-11 00:00:00 +0900

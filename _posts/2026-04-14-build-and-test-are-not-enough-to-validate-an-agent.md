@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "build와 test만으로 agent 작업을 검증하기 어려운 이유와 추가 검증 계층을 설명한 글."
-title: "하네스 엔지니어링 05. build와 test만으로는 agent를 검증할 수 없다"
+title: "AI agent 검증 루프: build와 test만으로 부족한 이유"
 lang: ko
 translation_key: build-and-test-are-not-enough-to-validate-an-agent
 date: 2026-04-14 00:00:00 +0900

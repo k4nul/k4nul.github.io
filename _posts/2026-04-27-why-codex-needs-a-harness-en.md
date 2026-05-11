@@ -1,7 +1,7 @@
 ﻿---
 layout: single
 description: "Explains why reliable Codex work needs project rules, permissions, and verification, not only better prompts."
-title: "Practical Codex 02. Why Codex Needs a Harness"
+title: "Codex Harness Design: Why Better Prompts Are Not Enough"
 lang: en
 translation_key: why-codex-needs-a-harness
 date: 2026-04-27 00:00:00 +0900

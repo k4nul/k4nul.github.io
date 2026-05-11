@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Codex에서 반복되는 작성, 리뷰, 릴리스 절차를 skill로 분리해 표준화하는 기준을 설명한 글."
-title: "Codex 실전 활용 08. skill로 Codex 반복 작업 표준화하기"
+title: "Codex skill 사용 기준: 반복 작업을 언제 표준화할까"
 lang: ko
 translation_key: standardize-codex-workflows-with-skills
 date: 2026-05-04 09:00:00 +09:00

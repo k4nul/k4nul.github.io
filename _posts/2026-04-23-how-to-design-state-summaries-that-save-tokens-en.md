@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains how to replace full history with a short working-state summary that directly controls the current task."
-title: "Token Management 04. How to Design State Summaries That Save Tokens"
+title: "Working State Summary Design: Save Tokens Without Losing Task Context"
 lang: en
 translation_key: how-to-design-state-summaries-that-save-tokens
 date: 2026-04-23 00:00:00 +0900

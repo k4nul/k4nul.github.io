@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains token management as a stability, latency, and context-control problem in agent systems, not just a cost issue."
-title: "Token Management 01. Why Token Management Matters in Harness Engineering"
+title: "AI Agent Token Management: Context Stability Matters More Than Cost"
 lang: en
 translation_key: why-token-management-matters-in-harness-engineering
 date: 2026-04-20 00:00:00 +0900

@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains when Codex subagents are worth using and when a single-agent flow is safer."
-title: "Practical Codex 09. When Should You Use Codex Subagents?"
+title: "Codex Subagent Usage Criteria: When Parallel Agents Are Worth It"
 lang: en
 translation_key: when-to-use-codex-subagents
 date: 2026-05-05 09:00:00 +09:00

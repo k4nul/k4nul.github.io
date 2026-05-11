@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "문서 중심 운영에서 관측 가능한 하네스로 옮겨 가는 실전 전환 로드맵을 정리한 글."
-title: "하네스 엔지니어링 10. 문서 중심 운영에서 관측 가능한 하네스로: 실전 전환 로드맵"
+title: "Observable harness 전환: 문서 중심 agent 운영을 검증 가능하게 바꾸기"
 lang: ko
 translation_key: from-document-centered-ops-to-observable-harness
 date: 2026-04-19 00:00:00 +0900

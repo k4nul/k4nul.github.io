@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "결과만으로는 부족하고 trace가 필요한 이유를 운영, 디버깅, 평가 관점에서 설명한 글."
-title: "하네스 엔지니어링 08. 결과만으로는 부족하고 trace가 필요하다"
+title: "Agent trace 설계: 결과보다 실행 기록이 중요한 이유"
 lang: ko
 translation_key: why-trace-matters-more-than-results
 date: 2026-04-17 00:00:00 +0900

@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Codex 반복 작업에서 모델, 권한, sandbox, MCP 같은 설정을 config로 고정해야 하는 이유를 정리한 글."
-title: "Codex 실전 활용 07. config로 Codex 작업 일관성 확보하기"
+title: "Codex config 운영: 모델, 권한, sandbox를 고정해 일관성 확보하기"
 lang: ko
 translation_key: using-config-to-keep-codex-consistent
 date: 2026-05-03 09:00:00 +09:00

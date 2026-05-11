@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains why logs, plans, memory, and prior conversation history often bloat agent context and weaken execution quality."
-title: "Token Management 03. Long Logs, Long Plans, Long Memory: Why Agent Context Keeps Growing"
+title: "Agent Context Bloat: How Long Logs, Plans, and Memory Create Risk"
 lang: en
 translation_key: long-logs-long-plans-long-memory-agent-context-bloat
 date: 2026-04-22 00:00:00 +0900

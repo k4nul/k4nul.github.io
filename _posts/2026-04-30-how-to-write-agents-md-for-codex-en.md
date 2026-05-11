@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains how to write a Codex AGENTS.md with repository purpose, inspection paths, working rules, and verification criteria."
-title: "Practical Codex 04. How to Write AGENTS.md for Codex"
+title: "AGENTS.md Writing Guide: Short Operating Rules for Codex"
 lang: en
 translation_key: how-to-write-agents-md-for-codex
 date: 2026-04-30 09:00:00 +09:00

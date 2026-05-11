@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Claude Code에서 자연어 지시와 settings, permissions의 책임을 나누어 작업 경계를 고정하는 방법."
-title: "Claude Code 실전 활용 05. settings와 permissions로 작업 경계 고정하기"
+title: "Claude Code permissions/settings 기준: 작업 경계를 고정하는 법"
 lang: ko
 translation_key: fix-claude-code-boundaries-with-settings-and-permissions
 date: 2026-05-11 09:00:00 +09:00

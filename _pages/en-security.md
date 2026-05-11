@@ -14,6 +14,10 @@ section_description: "Archive of posts on document malware analysis, exploit cha
 
 This section collects hands-on analysis notes for document-based malware, droppers, and exploit-driven execution flows. The current public posts focus on DOCM/RTF document malware; CVE analysis and reverse engineering posts belong in the same Security track as they are added. The focus is on static analysis, dynamic analysis, shellcode tracing, and the tools used to break down real samples.
 
+## Connection to AI Agent Security
+
+Security posts connect directly to AI agent permissions, sensitive data, trace, and approval boundaries. When applying agents to real repositories, pair this section with [approval boundaries and guardrails](/en/ai/approval-boundaries-and-guardrails/) and [agent trace design](/en/ai/why-trace-matters-more-than-the-result/).
+
 ## Featured Posts
 
 - [Document Malware Analysis Archive](/en/security/malware-analysis/)

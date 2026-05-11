@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "자연어 원칙을 실제 시스템 규칙과 강제 장치로 옮기는 방법을 다루는 글."
-title: "하네스 엔지니어링 07. 원칙에서 enforcement로: 문장을 시스템 규칙으로 올리는 법"
+title: "하네스 enforcement 설계: 자연어 원칙을 시스템 규칙으로 바꾸기"
 lang: ko
 translation_key: from-principles-to-enforcement
 date: 2026-04-16 00:00:00 +0900

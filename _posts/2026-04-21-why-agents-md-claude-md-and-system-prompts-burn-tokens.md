@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "AGENTS.md, CLAUDE.md, 시스템 프롬프트가 왜 쉽게 비대해지고 토큰 낭비와 실행 품질 저하를 함께 만드는지 구조적으로 설명한 글."
-title: "토큰 관리 02. 토큰을 태우는 AGENTS.md, CLAUDE.md, 시스템 프롬프트의 공통 문제"
+title: "AGENTS.md와 CLAUDE.md 토큰 낭비: 긴 지시 파일의 공통 문제"
 lang: ko
 translation_key: why-agents-md-claude-md-and-system-prompts-burn-tokens
 date: 2026-04-21 00:00:00 +0900

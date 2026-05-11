@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Codex 첫 작업 요청에 목표, 범위, 제약, 완료 기준, 검증 방법을 어떻게 담아야 하는지 정리한 글."
-title: "Codex 실전 활용 03. Codex 첫 작업 요청 작성법"
+title: "Codex 작업 요청 작성법: 목표, 범위, 검증 기준을 담는 법"
 lang: ko
 translation_key: how-to-write-first-codex-task-request
 date: 2026-04-29 09:00:00 +09:00

@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "AGENTS.md를 이미 쓰는 저장소에서 Claude Code의 CLAUDE.md를 중복 없이 연결하는 방법."
-title: "Claude Code 실전 활용 03. AGENTS.md가 있는 저장소에서 Claude Code를 함께 쓰는 법"
+title: "Claude Code와 AGENTS.md 병행 운영: 중복 없이 CLAUDE.md 연결하기"
 lang: ko
 translation_key: use-claude-code-with-agents-md
 date: 2026-05-09 09:00:00 +09:00

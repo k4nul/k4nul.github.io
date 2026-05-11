@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains harness engineering as the design of the tools, permissions, and verification around AI."
-title: "Harness Engineering 02. What Is Harness Engineering?"
+title: "Harness Engineering Concept: Designing the Agent Execution Environment"
 lang: en
 translation_key: what-is-harness-engineering
 date: 2026-04-11 00:10:00 +0900

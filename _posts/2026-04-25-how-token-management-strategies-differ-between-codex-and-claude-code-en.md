@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains how token-management strategy should be adjusted to the different context-consumption patterns of Codex and Claude Code while keeping the same harness-engineering principles."
-title: "Token Management 06. How Token Management Strategies Differ Between Codex and Claude Code"
+title: "Codex vs Claude Code Token Management: Different Context Consumption Patterns"
 lang: en
 translation_key: how-token-management-strategies-differ-between-codex-and-claude-code
 date: 2026-04-25 00:00:00 +0900

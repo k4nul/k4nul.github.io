@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explores what a project instruction file should own and where it should stop inside a larger harness."
-title: "Harness Engineering 03. How Far Should a Project Instruction File Go?"
+title: "Project Instruction File Scope: Why AGENTS.md and CLAUDE.md Should Not Be Control Planes"
 lang: en
 translation_key: project-instruction-files-should-not-be-control-planes
 date: 2026-04-12 00:00:00 +0900

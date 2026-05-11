@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains why agent systems become unstable when approval boundaries and guardrails are missing."
-title: "Harness Engineering 09. Agent Systems Need Approval Boundaries and Guardrails"
+title: "Agent Approval and Guardrail Boundaries: Why Empty Boundaries Break Systems"
 lang: en
 translation_key: approval-boundaries-and-guardrails
 date: 2026-04-18 00:00:00 +0900

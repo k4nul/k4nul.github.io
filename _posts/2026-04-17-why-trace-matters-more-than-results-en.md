@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains why results alone are not enough and why trace matters for operations, debugging, and evaluation."
-title: "Harness Engineering 08. Results Alone Are Not Enough; You Need Trace"
+title: "Agent Trace Design: Why Execution Records Matter More Than Results"
 lang: en
 translation_key: why-trace-matters-more-than-results
 date: 2026-04-17 00:00:00 +0900

@@ -15,10 +15,13 @@ topic_description: "Archive for Docker, Git, Jenkins, Kubernetes, and practical 
 
 This archive connects Docker images and registries, Git collaboration, Jenkins CI/CD, and Kubernetes operations into one learning path. The focus is on operational boundaries, failure conditions, and verification steps rather than tool introductions alone.
 
+## Connection to AI Agent Operations
+
+The DevOps track provides the automation and deployment boundary behind agent work. When an agent changes a repository, pair this archive with [observable harness migration](/en/ai/from-document-centered-ops-to-an-observable-harness/), [approval boundaries and guardrails](/en/ai/approval-boundaries-and-guardrails/), and the [AI Engineering Hub](/en/development/ai/).
+
 ## Suggested Flow
 
 - Docker: containers, images, Dockerfile, build cache, and registry flow
 - Git: change records, branch/merge, remote, conflict, rebase, tags, and PR/MR
 - Jenkins: setup, plugins, credentials, Pipeline, Jenkinsfile, and failure separation
 - Kubernetes: core resources, installation strategy, manifests, resources, storage, and on-prem add-ons
-

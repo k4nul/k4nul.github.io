@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains why a long AGENTS.md increases token cost, duplicate instructions, and mixed responsibilities."
-title: "Practical Codex 05. Why a Good AGENTS.md Should Be Short"
+title: "AGENTS.md Length Criteria: Why Shorter Project Instructions Work Better"
 lang: en
 translation_key: why-good-agents-md-should-be-short
 date: 2026-05-01 09:00:00 +09:00

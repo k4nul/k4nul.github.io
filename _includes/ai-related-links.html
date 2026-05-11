@@ -1,0 +1,68 @@
+{% assign current_lang = page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
+{% assign page_tags_joined = page.tags | join: "," %}
+{% assign show_ai_related = false %}
+
+{% if page.section == "development" %}
+  {% if page.topic_key == "ai" or page.topic_key == "token-management" %}
+    {% assign show_ai_related = true %}
+  {% elsif page_tags_joined contains "codex" or page_tags_joined contains "claude-code" or page_tags_joined contains "agents-md" or page_tags_joined contains "claude-md" %}
+    {% assign show_ai_related = true %}
+  {% endif %}
+{% endif %}
+
+{% if show_ai_related %}
+  {% assign hub_url = "/ai-engineering/" %}
+  {% assign hub_title = "AI Engineering 허브" %}
+  {% assign nav_title = "관련 읽기 경로" %}
+  {% assign nav_description = "이 글을 agent 운영, 검증, 보안 경계 흐름 안에서 이어 읽을 수 있습니다." %}
+  {% assign archive_label = "허브" %}
+  {% assign related_label = "관련 글" %}
+  {% if current_lang == "en" %}
+    {% assign hub_url = "/en/development/ai/" %}
+    {% assign hub_title = "AI Engineering Hub" %}
+    {% assign nav_title = "Related Reading Paths" %}
+    {% assign nav_description = "Continue from this post into agent operations, verification, and security boundaries." %}
+    {% assign archive_label = "Hub" %}
+    {% assign related_label = "Related" %}
+  {% endif %}
+
+  {% assign relation_keys = "what-is-harness-engineering,project-instruction-files-should-not-be-control-planes,build-and-test-are-not-enough-to-validate-an-agent,approval-boundaries-and-guardrails,from-document-centered-ops-to-observable-harness,how-to-write-agents-md-for-codex,how-far-should-claude-md-go" | split: "," %}
+
+  {% if page.topic_key == "token-management" or page_tags_joined contains "token-management" %}
+    {% assign relation_keys = "why-token-management-matters-in-harness-engineering,why-agents-md-claude-md-and-system-prompts-burn-tokens,long-logs-long-plans-long-memory-agent-context-bloat,how-to-design-state-summaries-that-save-tokens,good-compression-vs-bad-compression-what-to-keep-and-what-to-drop,how-token-management-strategies-differ-between-codex-and-claude-code" | split: "," %}
+  {% elsif page_tags_joined contains "codex" or page.translation_key contains "codex" or page_tags_joined contains "agents-md" %}
+    {% assign relation_keys = "why-codex-needs-a-harness,how-to-write-first-codex-task-request,how-to-write-agents-md-for-codex,why-good-agents-md-should-be-short,operating-codex-plan-first,using-config-to-keep-codex-consistent,when-to-use-codex-subagents,codex-project-operations-template,codex-goal-long-running-task-harness" | split: "," %}
+  {% elsif page_tags_joined contains "claude-code" or page.translation_key contains "claude" or page_tags_joined contains "claude-md" or page_tags_joined contains "mcp" or page_tags_joined contains "hooks" or page_tags_joined contains "permissions" or page_tags_joined contains "settings" %}
+    {% assign relation_keys = "claude-code-as-operating-structure,how-far-should-claude-md-go,use-claude-code-with-agents-md,split-instructions-with-rules-and-skills,fix-claude-code-boundaries-with-settings-and-permissions,why-agents-md-claude-md-and-system-prompts-burn-tokens" | split: "," %}
+  {% endif %}
+
+  {% assign related_count = 1 %}
+  <nav class="topic-series-nav" aria-label="{{ nav_title }}">
+    <p class="topic-series-nav__eyebrow">{{ nav_title }}</p>
+    <p class="topic-series-nav__description">{{ nav_description }}</p>
+    <div class="topic-series-nav__grid">
+      <a class="topic-series-nav__card" href="{{ hub_url | relative_url }}">
+        <span class="topic-series-nav__label">{{ archive_label }}</span>
+        <strong class="topic-series-nav__title">{{ hub_title }}</strong>
+      </a>
+
+      {% for related_key in relation_keys %}
+        {% if related_count >= 5 %}
+          {% break %}
+        {% endif %}
+        {% if related_key == page.translation_key %}
+          {% continue %}
+        {% endif %}
+        {% assign matched_posts = site.posts | where: "translation_key", related_key | where: "lang", current_lang %}
+        {% assign related_post = matched_posts | first %}
+        {% if related_post %}
+          {% assign related_count = related_count | plus: 1 %}
+          <a class="topic-series-nav__card" href="{{ related_post.url | relative_url }}">
+            <span class="topic-series-nav__label">{{ related_label }}</span>
+            <strong class="topic-series-nav__title">{{ related_post.title }}</strong>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+{% endif %}

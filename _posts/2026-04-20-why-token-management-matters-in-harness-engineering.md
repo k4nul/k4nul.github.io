@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "토큰 관리를 비용 절약이 아니라 agent 시스템의 안정성, 지연, 문맥 제어 문제로 설명한 글."
-title: "토큰 관리 01. 왜 하네스 엔지니어링에서 토큰 관리가 중요한가"
+title: "AI 에이전트 토큰 관리: 비용보다 중요한 컨텍스트 안정성"
 lang: ko
 translation_key: why-token-management-matters-in-harness-engineering
 date: 2026-04-20 00:00:00 +0900

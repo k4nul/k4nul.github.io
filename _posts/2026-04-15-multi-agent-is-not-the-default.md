@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "멀티에이전트 구성이 항상 정답이 아닌 이유와 단일 에이전트 기준선을 설명한 글."
-title: "하네스 엔지니어링 06. 멀티에이전트는 기본값이 아니다"
+title: "멀티에이전트 사용 기준: 기본값이 아니라 선택지로 다루기"
 lang: ko
 translation_key: multi-agent-is-not-the-default
 date: 2026-04-15 00:00:00 +0900

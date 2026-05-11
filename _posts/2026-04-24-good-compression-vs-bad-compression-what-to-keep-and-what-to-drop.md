@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "토큰 절약에서 중요한 것은 무조건 삭제가 아니라, 핵심 정보를 보존한 채 정보 밀도와 우선순위를 높이는 압축이라는 점을 설명한 글."
-title: "토큰 관리 05. 좋은 압축과 나쁜 압축: 무엇을 남기고 무엇을 버릴 것인가"
+title: "Agent context 압축 기준: 무엇을 남기고 무엇을 버릴 것인가"
 lang: ko
 translation_key: good-compression-vs-bad-compression-what-to-keep-and-what-to-drop
 date: 2026-04-24 00:00:00 +0900

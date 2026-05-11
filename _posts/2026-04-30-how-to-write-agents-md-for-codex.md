@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Codex용 AGENTS.md에 저장소 목적, 우선 확인 경로, 작업 원칙, 검증 기준을 어떻게 담을지 설명한 글."
-title: "Codex 실전 활용 04. Codex용 AGENTS.md 작성법"
+title: "AGENTS.md 작성법: Codex가 먼저 읽을 운영 기준을 짧게 쓰기"
 lang: ko
 translation_key: how-to-write-agents-md-for-codex
 date: 2026-04-30 09:00:00 +09:00

@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Claude Code에서 긴 외부 자료를 붙여 넣는 대신 MCP로 필요한 문맥을 연결하는 운영 기준."
-title: "Claude Code 실전 활용 07. MCP로 외부 문맥을 붙여 넣지 않고 연결하기"
+title: "Claude Code MCP 운영: 외부 문맥을 붙여 넣지 않고 연결하는 법"
 lang: ko
 translation_key: connect-external-context-with-mcp
 date: 2026-05-13 09:00:00 +09:00

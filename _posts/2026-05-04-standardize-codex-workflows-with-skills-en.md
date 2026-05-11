@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains when to move repeated writing, review, and release procedures into Codex skills."
-title: "Practical Codex 08. Standardize Repeated Codex Workflows with Skills"
+title: "Codex Skill Usage Criteria: When to Standardize Repeated Workflows"
 lang: en
 translation_key: standardize-codex-workflows-with-skills
 date: 2026-05-04 09:00:00 +09:00

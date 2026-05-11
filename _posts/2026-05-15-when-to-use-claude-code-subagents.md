@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Claude Code subagent를 언제 쓰고 언제 쓰지 말아야 하는지 판단하는 기준."
-title: "Claude Code 실전 활용 09. Claude Code subagent는 언제 써야 하는가"
+title: "Claude Code subagent 사용 기준: 전문 에이전트를 언제 분리할까"
 lang: ko
 translation_key: when-to-use-claude-code-subagents
 date: 2026-05-15 09:00:00 +09:00

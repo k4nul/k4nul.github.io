@@ -1,8 +1,8 @@
 ---
-title: "AI 도구와 하네스 엔지니어링"
+title: "AI Engineering 허브: 코딩 에이전트 운영과 검증"
 layout: section-archive
 permalink: /ai-engineering/
-description: "AI 코딩 도구, 하네스 엔지니어링, 운영 규칙, 검증 흐름을 다루는 아카이브"
+description: "Codex, Claude Code, 하네스 엔지니어링, 토큰 관리, 검증 루프, 보안 경계를 문제별로 따라 읽는 AI Engineering 허브"
 author_profile: true
 sidebar:
   nav: "sections"
@@ -10,24 +10,95 @@ lang: ko
 translation_key: topic-development-ai
 section_key: development
 topic_key: ai
-topic_description: "AI 코딩 도구, 하네스 엔지니어링, 운영 규칙, 검증 흐름을 다루는 글을 모아둔 분류다."
+topic_description: "AI 코딩 도구를 더 많이 쓰는 방법보다, 작업 결과를 예측 가능하게 만들기 위한 하네스, 컨텍스트, 검증, 권한 경계를 정리하는 허브다."
 ---
 
-AI 코딩 도구 자체보다 그 주변의 권한 경계, 검증 흐름, handoff 계약, 운영 규칙을 어떻게 설계할지에 초점을 맞춘 글을 모아둡니다. 프롬프트만이 아니라 실행 환경과 제어면까지 함께 보는 관점의 아카이브입니다.
+이 페이지는 Codex나 Claude Code를 “잘 물어보는 법”보다, AI coding agent가 저장소 안에서 반복 가능한 결과를 내도록 만드는 운영 구조를 다룹니다. 글 발행 순서가 아니라 독자가 겪는 문제 기준으로 읽기 경로를 묶었습니다.
 
-## 연재 흐름
+## 이 페이지에서 다루는 문제
 
-- 하네스 엔지니어링: AI 도구 주변의 실행 환경, 검증, 권한 경계를 설명하는 개념 축
-- 토큰 관리: 긴 지시, 로그, 상태 요약, context 압력을 운영 문제로 다루는 축
-- Codex 실전 활용: Codex를 프로젝트 작업 수행 에이전트로 운영하는 실전 축
-- Claude Code 실전 활용: Claude Code의 memory, settings, hooks, MCP, subagent를 운영 구조로 다루는 축
-- AI 에이전트 운영과 보안: trace, guardrail, MCP 신뢰 경계, 평가, prompt injection, supply chain 보안으로 확장하는 후속 축
+- 같은 요청인데 Codex나 Claude Code 결과가 매번 달라진다.
+- `AGENTS.md`와 `CLAUDE.md`에 무엇을 넣고 무엇을 빼야 할지 모르겠다.
+- 긴 로그, 긴 계획, auto memory 때문에 컨텍스트가 쉽게 비대해진다.
+- build/test는 통과했지만 agent가 제대로 일했는지 확신하기 어렵다.
+- MCP, hooks, settings, permissions가 편의 기능인지 보안 경계인지 헷갈린다.
 
-## 추천 글
+## 빠른 결론
 
-- [하네스 엔지니어링이란 무엇인가](/ai/what-is-harness-engineering/)
-- [AI 코딩 도구를 바꾸면 결과가 달라지는 이유](/ai/why-ai-tools-produce-different-results/)
-- [프로젝트 instruction file이 control plane이 되면 안 되는 이유](/ai/project-instruction-files-should-not-be-control-planes/)
+AI agent 운영의 핵심은 프롬프트를 길게 쓰는 것이 아니라, 작업 요청, instruction file, config, tool permission, trace, 검증 루프를 서로 다른 책임으로 나누는 것입니다. 문서에는 매번 필요한 기준만 남기고, 반복 절차는 template이나 skill로, 강제 경계는 settings, permissions, hook, CI로 내려야 합니다.
+
+## 핵심 개념
+
+- Harness Engineering: 모델 바깥의 실행 환경, 권한, 검증, 기록을 설계하는 일입니다. 먼저 [하네스 엔지니어링 개념](/ai/what-is-harness-engineering/)을 읽으면 전체 지도가 잡힙니다.
+- Context/Token Management: 토큰 절약보다 컨텍스트 안정성이 중요합니다. 시작점은 [AI 에이전트 토큰 관리와 컨텍스트 안정성](/ai/why-token-management-matters-in-harness-engineering/)입니다.
+- Agent Workflow: 요청, 계획, 수정, 검증, handoff를 반복 가능한 흐름으로 만드는 일입니다. [Codex 첫 작업 요청 작성법](/ai/how-to-write-first-codex-task-request/)과 [Codex plan-first 운영](/ai/operating-codex-plan-first/)을 함께 보세요.
+- Verification Loop: build/test 결과만으로는 부족합니다. [AI agent 검증에서 build와 test만으로 부족한 이유](/ai/build-and-test-are-not-enough-to-validate-an-agent/)가 기준점입니다.
+- Guardrail/Approval: 자연어 지시가 아니라 승인 경계와 차단 규칙으로 위험 행동을 줄입니다. [approval과 guardrail 경계](/ai/approval-boundaries-and-guardrails/)에서 출발하세요.
+
+## 읽는 순서
+
+1. [AI 코딩 도구 결과가 달라지는 이유](/ai/why-ai-tools-produce-different-results/)
+2. [하네스 엔지니어링 개념](/ai/what-is-harness-engineering/)
+3. [프로젝트 지침 파일과 하네스의 책임 경계](/ai/project-instruction-files-should-not-be-control-planes/)
+4. [AGENTS.md 작성법](/ai/how-to-write-agents-md-for-codex/)
+5. [CLAUDE.md 작성 범위](/ai/how-far-should-claude-md-go/)
+6. [AI 에이전트 토큰 관리와 컨텍스트 안정성](/ai/why-token-management-matters-in-harness-engineering/)
+7. [agent 작업 검증 루프](/ai/build-and-test-are-not-enough-to-validate-an-agent/)
+
+## 문제별 추천 경로
+
+### Codex가 매번 다른 결과를 낼 때
+
+- [AI 코딩 도구 결과가 달라지는 이유](/ai/why-ai-tools-produce-different-results/)
+- [Codex를 작업 수행 에이전트로 운영하는 기준](/ai/codex-as-work-execution-agent/)
+- [Codex에 하네스가 필요한 이유](/ai/why-codex-needs-a-harness/)
+- [Codex 작업을 plan-first로 운영하기](/ai/operating-codex-plan-first/)
+
+### AGENTS.md를 어떻게 써야 할지 모를 때
+
+- [AGENTS.md 작성법: 저장소 목적과 검증 기준을 짧게 담기](/ai/how-to-write-agents-md-for-codex/)
+- [좋은 AGENTS.md를 짧게 쓰는 기준](/ai/why-good-agents-md-should-be-short/)
+- [instruction file이 control plane이 되면 안 되는 이유](/ai/project-instruction-files-should-not-be-control-planes/)
+- [AGENTS.md, CLAUDE.md, system prompt가 토큰을 태우는 구조](/ai/why-agents-md-claude-md-and-system-prompts-burn-tokens/)
+
+### Claude Code 설정이 비대해질 때
+
+- [Claude Code를 운영 구조로 이해하기](/ai/claude-code-as-operating-structure/)
+- [CLAUDE.md 작성 범위: rules, skills, settings로 나누는 기준](/ai/how-far-should-claude-md-go/)
+- [AGENTS.md가 있는 저장소에서 Claude Code를 함께 쓰는 법](/ai/use-claude-code-with-agents-md/)
+- [rules와 skills로 지시 로딩을 나누는 기준](/ai/split-instructions-with-rules-and-skills/)
+
+### 토큰/컨텍스트 관리가 어려울 때
+
+- [AI 에이전트 토큰 관리: 비용보다 중요한 컨텍스트 안정성](/ai/why-token-management-matters-in-harness-engineering/)
+- [긴 로그와 긴 계획이 agent context를 비대하게 만드는 이유](/ai/long-logs-long-plans-long-memory-agent-context-bloat/)
+- [working state summary 설계법](/ai/how-to-design-state-summaries-that-save-tokens/)
+- [Codex와 Claude Code의 토큰 관리 전략 차이](/ai/how-token-management-strategies-differ-between-codex-and-claude-code/)
+- [토큰 관리 시리즈 아카이브](/development/token-management/)
+
+### AI agent 작업 결과를 검증하고 싶을 때
+
+- [build와 test만으로 agent 작업 검증이 부족한 이유](/ai/build-and-test-are-not-enough-to-validate-an-agent/)
+- [handoff를 schema 계약으로 바꾸는 방법](/ai/from-prose-to-schema-turning-handoff-into-a-contract/)
+- [trace가 결과보다 중요한 이유](/ai/why-trace-matters-more-than-results/)
+- [문서 중심 운영에서 observable harness로 전환하기](/ai/from-document-centered-ops-to-observable-harness/)
+
+### MCP/hooks/permissions/settings 보안 경계를 잡고 싶을 때
+
+- [approval과 guardrail 경계](/ai/approval-boundaries-and-guardrails/)
+- [Claude Code settings와 permissions로 작업 경계 고정하기](/ai/fix-claude-code-boundaries-with-settings-and-permissions/)
+- [하네스 원칙을 enforcement로 옮기는 기준](/ai/from-principles-to-enforcement/)
+- 추후 작성 후보: Claude Code hooks 검증 자동화, MCP 데이터 노출 점검, task 단위 tool permission 제한, prompt injection을 하네스 문제로 다루는 글
+
+## 실전 템플릿
+
+- [AI agent 운영 실전 템플릿](/ai-engineering/templates/)
+- 포함 내용: `AGENTS.md` 최소 템플릿, `CLAUDE.md` 최소 템플릿, Codex 작업 요청 프롬프트, agent 결과 리뷰 체크리스트, Claude Code permissions/settings 점검표
+
+## 관련 글 링크
+
+- [Codex 프로젝트 운영 템플릿](/ai/codex-project-operations-template/)
+- [Codex subagent 사용 기준](/ai/when-to-use-codex-subagents/)
+- [Claude Code settings와 permissions 경계](/ai/fix-claude-code-boundaries-with-settings-and-permissions/)
+- [좋은 압축과 나쁜 압축](/ai/good-compression-vs-bad-compression-what-to-keep-and-what-to-drop/)
 - [멀티 에이전트가 기본값이 아닌 이유](/ai/multi-agent-is-not-the-default/)
-- [문서 중심 운영에서 observable harness로 가는 방법](/ai/from-document-centered-ops-to-observable-harness/)
-- [토큰 관리 시리즈](/development/token-management/)

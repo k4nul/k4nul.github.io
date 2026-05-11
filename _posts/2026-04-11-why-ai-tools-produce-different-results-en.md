@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains why AI coding tools produce different results by looking beyond prompts to the execution environment."
-title: "Harness Engineering 01. Why Do Results Change When You Switch AI Coding Tools?"
+title: "AI Coding Tool Result Drift: Why the Harness Changes the Output"
 lang: en
 translation_key: why-ai-tools-produce-different-results
 date: 2026-04-11 00:00:00 +0900

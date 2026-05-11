@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Claude Code를 기능 목록이 아니라 CLAUDE.md, rules, skills, settings, hooks, MCP, subagent가 만드는 운영 구조로 이해하기 위한 첫 기준."
-title: "Claude Code 실전 활용 01. Claude Code를 기능이 아니라 운영 구조로 이해하기"
+title: "Claude Code 운영 구조: 기능 목록이 아니라 하네스로 이해하기"
 lang: ko
 translation_key: claude-code-as-operating-structure
 date: 2026-05-07 09:00:00 +09:00

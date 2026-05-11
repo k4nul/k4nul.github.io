@@ -15,6 +15,10 @@ topic_description: "Rust learning archive covering setup, debugging, syntax fund
 
 This hub is organized as a beginner-friendly Rust series that starts with installation and moves toward ownership, traits, error handling, concurrency, and async. Each post is written as a practical guide that can be read in sequence.
 
+## Connection to AI Agent Operations
+
+The Rust track is useful when reviewing code produced by AI agents. Pair it with [why build and test are not enough to validate agent work](/en/ai/build-and-test-are-not-enough-to-validate-an-agent/) and use the examples as small, verifiable units.
+
 ## Read the Series
 
 - [Install Rust and Run Hello World](/en/rust/install-rust-and-run-hello-world/)

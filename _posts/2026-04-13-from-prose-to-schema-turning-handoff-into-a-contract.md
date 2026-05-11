@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "handoff를 자유 서술이 아니라 schema 기반 계약으로 바꾸는 이유와 설계 포인트를 정리한 글."
-title: "하네스 엔지니어링 04. prose에서 schema로: handoff를 메모가 아니라 계약으로 바꾸는 법"
+title: "Handoff schema 설계: 자유 서술을 검증 가능한 계약으로 바꾸기"
 lang: ko
 translation_key: from-prose-to-schema-turning-handoff-into-a-contract
 date: 2026-04-13 00:00:00 +0900

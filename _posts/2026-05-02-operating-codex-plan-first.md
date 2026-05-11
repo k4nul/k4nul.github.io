@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "복잡한 Codex 작업을 바로 수정하지 않고 계획, 위험, 검증 방법부터 정리하게 하는 운영 방식을 설명한 글."
-title: "Codex 실전 활용 06. Codex를 plan-first로 운영하기"
+title: "Codex plan-first 운영: 수정 전 범위와 검증을 고정하는 법"
 lang: ko
 translation_key: operating-codex-plan-first
 date: 2026-05-02 09:00:00 +09:00

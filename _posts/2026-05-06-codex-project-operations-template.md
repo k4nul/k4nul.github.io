@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Codex를 실제 프로젝트에 적용할 때 작업 요청, AGENTS.md, config, skill, subagent 기준을 하나로 묶은 운영 템플릿."
-title: "Codex 실전 활용 10. Codex 프로젝트 적용용 운영 템플릿"
+title: "Codex 프로젝트 운영 템플릿: 요청, AGENTS.md, config, skill, 검증 묶기"
 lang: ko
 translation_key: codex-project-operations-template
 date: 2026-05-06 09:00:00 +09:00

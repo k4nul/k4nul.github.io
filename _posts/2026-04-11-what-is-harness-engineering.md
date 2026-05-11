@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "하네스 엔지니어링을 AI 주변의 도구, 권한, 검증 구조 설계라는 관점에서 설명한 글."
-title: "하네스 엔지니어링 02. 하네스 엔지니어링이란 무엇인가"
+title: "하네스 엔지니어링 개념: AI 에이전트 실행 환경 설계"
 lang: ko
 translation_key: what-is-harness-engineering
 date: 2026-04-11 00:10:00 +0900

@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Codex subagent를 병렬성과 전문화가 실제 이득을 줄 때만 사용해야 하는 이유와 판단 기준을 정리한 글."
-title: "Codex 실전 활용 09. Codex subagent는 언제 써야 하는가"
+title: "Codex subagent 사용 기준: 병렬 에이전트를 언제 써야 하나"
 lang: ko
 translation_key: when-to-use-codex-subagents
 date: 2026-05-05 09:00:00 +09:00

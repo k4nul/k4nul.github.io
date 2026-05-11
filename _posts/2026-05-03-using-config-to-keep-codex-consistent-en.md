@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains why model, permission, sandbox, and MCP defaults should be fixed in Codex config for repeatable work."
-title: "Practical Codex 07. Use Config to Keep Codex Work Consistent"
+title: "Codex Config Operations: Fix Model, Permissions, Sandbox, and MCP Defaults"
 lang: en
 translation_key: using-config-to-keep-codex-consistent
 date: 2026-05-03 09:00:00 +09:00

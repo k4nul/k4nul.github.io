@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains that token savings are not about deleting as much as possible, but about preserving control information while raising information density and priority."
-title: "Token Management 05. Good Compression and Bad Compression: What to Keep and What to Drop"
+title: "Agent Context Compression Criteria: What to Keep and What to Drop"
 lang: en
 translation_key: good-compression-vs-bad-compression-what-to-keep-and-what-to-drop
 date: 2026-04-24 00:00:00 +0900

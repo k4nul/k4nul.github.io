@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains why build and test alone are not enough to validate an agent and what extra checks are needed."
-title: "Harness Engineering 05. Build and Test Are Not Enough to Validate an Agent"
+title: "AI Agent Verification Loop: Why Build and Test Are Not Enough"
 lang: en
 translation_key: build-and-test-are-not-enough-to-validate-an-agent
 date: 2026-04-14 00:00:00 +0900

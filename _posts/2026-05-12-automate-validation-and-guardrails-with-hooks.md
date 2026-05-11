@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Claude Code hooks를 검증, 차단, 완료 보고 점검에 사용하는 운영 기준을 정리한 글."
-title: "Claude Code 실전 활용 06. hooks로 검증과 보호 장치를 자동화하기"
+title: "Claude Code hooks 활용: 검증과 guardrail을 자동화하는 기준"
 lang: ko
 translation_key: automate-validation-and-guardrails-with-hooks
 date: 2026-05-12 09:00:00 +09:00

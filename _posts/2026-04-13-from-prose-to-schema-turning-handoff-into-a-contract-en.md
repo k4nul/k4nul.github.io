@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains why handoffs should move from free-form prose to schema-based contracts and how to design them."
-title: "Harness Engineering 04. From Prose to Schema: Turning Handoff into a Contract"
+title: "Handoff Schema Design: Turning Free-Form Notes into a Verifiable Contract"
 lang: en
 translation_key: from-prose-to-schema-turning-handoff-into-a-contract
 date: 2026-04-13 00:00:00 +0900

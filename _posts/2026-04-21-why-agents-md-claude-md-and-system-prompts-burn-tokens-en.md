@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains why AGENTS.md, CLAUDE.md, and system prompts often bloat into structures that waste tokens and weaken execution quality."
-title: "Token Management 02. Shared Problems in AGENTS.md, CLAUDE.md, and System Prompts That Burn Tokens"
+title: "AGENTS.md and CLAUDE.md Token Waste: Shared Problems in Long Instruction Files"
 lang: en
 translation_key: why-agents-md-claude-md-and-system-prompts-burn-tokens
 date: 2026-04-21 00:00:00 +0900

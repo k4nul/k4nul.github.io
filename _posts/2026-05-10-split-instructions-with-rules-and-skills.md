@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Claude Code에서 CLAUDE.md, .claude/rules, skills의 책임을 나누어 instruction loading을 관리하는 방법."
-title: "Claude Code 실전 활용 04. rules와 skills로 지시를 언제 로드할지 나누기"
+title: "Claude Code rules와 skills 기준: 지시를 언제 로드할지 나누기"
 lang: ko
 translation_key: split-instructions-with-rules-and-skills
 date: 2026-05-10 09:00:00 +09:00

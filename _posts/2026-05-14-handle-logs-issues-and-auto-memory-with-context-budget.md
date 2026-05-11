@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Claude Code에서 긴 로그, 이슈, auto memory를 문맥 예산 안에서 다루는 기준."
-title: "Claude Code 실전 활용 08. 긴 로그, 이슈, auto memory를 문맥 예산 안에서 다루기"
+title: "Claude Code context budget: 긴 로그, 이슈, auto memory 관리 기준"
 lang: ko
 translation_key: handle-logs-issues-and-auto-memory-with-context-budget
 date: 2026-05-14 09:00:00 +09:00

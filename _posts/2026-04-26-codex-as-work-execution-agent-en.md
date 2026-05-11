@@ -1,7 +1,7 @@
 ﻿---
 layout: single
 description: "Explains why Codex should be treated as a repository work agent, not just a code generator."
-title: "Practical Codex 01. Treat Codex as a Work Execution Agent, Not a Code Generator"
+title: "Codex Operating Model: Treat It as a Work Execution Agent, Not a Code Generator"
 lang: en
 translation_key: codex-as-work-execution-agent
 date: 2026-04-26 00:00:00 +0900

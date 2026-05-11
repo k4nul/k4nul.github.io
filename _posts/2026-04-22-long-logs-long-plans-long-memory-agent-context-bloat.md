@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "로그, 계획, 메모리, 이전 대화가 왜 agent 컨텍스트를 비대하게 만들고 실행 품질을 떨어뜨리는지 구조적으로 설명한 글."
-title: "토큰 관리 03. 긴 로그, 긴 계획, 긴 메모리: 에이전트 컨텍스트 비대화의 원인"
+title: "Agent context 비대화: 긴 로그, 긴 계획, 긴 memory가 만드는 문제"
 lang: ko
 translation_key: long-logs-long-plans-long-memory-agent-context-bloat
 date: 2026-04-22 00:00:00 +0900

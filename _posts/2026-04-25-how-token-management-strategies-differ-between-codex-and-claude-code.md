@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "하네스 엔지니어링의 공통 원칙은 유지하되, Codex와 Claude Code의 문맥 소비 방식 차이에 맞춰 토큰 관리 전략을 어떻게 조정해야 하는지 설명한 글."
-title: "토큰 관리 06. Codex와 Claude Code에서 토큰 관리 전략은 어떻게 달라지는가"
+title: "Codex와 Claude Code 토큰 관리 전략: 컨텍스트 소비 방식의 차이"
 lang: ko
 translation_key: how-token-management-strategies-differ-between-codex-and-claude-code
 date: 2026-04-25 00:00:00 +0900

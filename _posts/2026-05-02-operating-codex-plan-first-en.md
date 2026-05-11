@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains how to run complex Codex tasks plan-first by clarifying scope, risk, and verification before edits."
-title: "Practical Codex 06. Operating Codex Plan-First"
+title: "Codex Plan-First Operations: Fix Scope and Verification Before Editing"
 lang: en
 translation_key: operating-codex-plan-first
 date: 2026-05-02 09:00:00 +09:00

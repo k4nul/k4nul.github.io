@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Shows how to write a first Codex task request with goal, scope, constraints, completion criteria, and verification."
-title: "Practical Codex 03. How to Write Your First Codex Task Request"
+title: "Codex Task Request Template: Goal, Scope, Constraints, and Verification"
 lang: en
 translation_key: how-to-write-first-codex-task-request
 date: 2026-04-29 09:00:00 +09:00

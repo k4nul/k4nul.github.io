@@ -1,7 +1,7 @@
 ﻿---
 layout: single
 description: "Codex를 단순 코드 생성기가 아니라 저장소 작업을 수행하는 에이전트로 다뤄야 하는 이유를 정리한 글."
-title: "Codex 실전 활용 01. Codex를 코드 생성기가 아니라 작업 수행 에이전트로 보기"
+title: "Codex 운영 기준: 코드 생성기가 아니라 작업 수행 에이전트로 보기"
 lang: ko
 translation_key: codex-as-work-execution-agent
 date: 2026-04-26 00:00:00 +0900

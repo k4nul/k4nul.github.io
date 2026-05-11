@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "A practical roadmap for moving from document-centered operations to an observable harness."
-title: "Harness Engineering 10. From Documents to an Observable Harness"
+title: "Observable Harness Migration: Making Document-Centered Agent Ops Verifiable"
 lang: en
 translation_key: from-document-centered-ops-to-observable-harness
 date: 2026-04-19 00:00:00 +0900

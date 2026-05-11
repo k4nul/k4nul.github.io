@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "A practical operating template that combines Codex task requests, AGENTS.md, config, skills, subagents, and verification."
-title: "Practical Codex 10. A Project Operations Template for Codex"
+title: "Codex Project Operations Template: Requests, AGENTS.md, Config, Skills, and Verification"
 lang: en
 translation_key: codex-project-operations-template
 date: 2026-05-06 09:00:00 +09:00

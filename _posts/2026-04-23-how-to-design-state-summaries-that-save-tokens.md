@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "전체 히스토리 대신 현재 작업을 직접 제어하는 working state를 어떻게 설계해야 하는지 설명한 글."
-title: "토큰 관리 04. 토큰을 아끼는 상태 요약 설계법"
+title: "Working state summary 설계: 토큰을 줄이고 작업 맥락을 유지하는 법"
 lang: ko
 translation_key: how-to-design-state-summaries-that-save-tokens
 date: 2026-04-23 00:00:00 +0900

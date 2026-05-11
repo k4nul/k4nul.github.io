@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "Explains how to turn natural-language principles into concrete system rules and enforcement."
-title: "Harness Engineering 07. Turning Principles into Enforceable Rules"
+title: "Harness Enforcement Design: Turning Principles into System Rules"
 lang: en
 translation_key: from-principles-to-enforcement
 date: 2026-04-16 00:00:00 +0900

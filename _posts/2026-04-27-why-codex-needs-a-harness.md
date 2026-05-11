@@ -1,7 +1,7 @@
 ﻿---
 layout: single
 description: "Codex 결과를 안정화하려면 좋은 요청뿐 아니라 프로젝트 규칙, 권한, 검증 구조가 필요한 이유를 설명한 글."
-title: "Codex 실전 활용 02. 왜 Codex에는 하네스가 필요한가"
+title: "Codex 하네스 설계: 좋은 요청만으로 부족한 이유"
 lang: ko
 translation_key: why-codex-needs-a-harness
 date: 2026-04-27 00:00:00 +0900
