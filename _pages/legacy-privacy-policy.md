@@ -5,7 +5,6 @@ permalink: /privacy-policy/
 description: "Legacy route for the privacy policy."
 canonical_url: https://www.k4nul.com/privacy/
 redirect_to: /privacy/
-robots: noindex, follow
 author_profile: true
 sidebar:
   nav: "sections"

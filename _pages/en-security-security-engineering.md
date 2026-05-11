@@ -11,6 +11,8 @@ translation_key: topic-security-security-engineering
 section_key: security
 topic_key: security-engineering
 topic_description: "Archive for practical security engineering topics such as supply chain security, cloud security, secure coding, AI-assisted code review, DevSecOps, and vulnerability prioritization."
+robots: "noindex, follow"
+sitemap: false
 ---
 
 This archive covers operational security topics beyond malware sample analysis. It focuses on security criteria that can be checked inside development and operations workflows, including SBOM, provenance, CI/CD secrets, cloud IAM, container security, vulnerability prioritization, secure coding, and AI-assisted code review.

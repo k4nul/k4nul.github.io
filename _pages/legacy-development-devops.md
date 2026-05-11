@@ -5,7 +5,6 @@ permalink: /development/devops/
 description: "Legacy route for the DevOps archive."
 canonical_url: https://www.k4nul.com/devops/
 redirect_to: /devops/
-robots: noindex, follow
 author_profile: true
 sidebar:
   nav: "sections"

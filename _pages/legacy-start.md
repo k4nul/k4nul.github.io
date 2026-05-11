@@ -5,7 +5,6 @@ permalink: /start/
 description: "Legacy route for the Start Here page."
 canonical_url: https://www.k4nul.com/start-here/
 redirect_to: /start-here/
-robots: noindex, follow
 author_profile: true
 sidebar:
   nav: "sections"

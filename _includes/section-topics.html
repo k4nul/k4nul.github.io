@@ -15,21 +15,23 @@
     <span class="section-topics__label">{{ topics_label }}</span>
     <a class="section-topics__link{% unless page.topic_key %} is-active{% endunless %}" href="{{ section_url | relative_url }}">{{ all_label }}</a>
     {% for topic in section_topics %}
-      {% assign topic_title = topic.title_ko %}
-      {% if current_lang == "en" %}
-        {% assign topic_title = topic.title_en | default: topic.title_ko %}
-      {% endif %}
-      {% assign topic_url = section_url | append: topic.slug | append: "/" %}
-      {% if current_lang == "ko" and page.section_key == "development" %}
-        {% if topic.key == "ai" %}
-          {% assign topic_url = "/ai-engineering/" %}
-        {% elsif topic.key == "rust" %}
-          {% assign topic_url = "/rust/" %}
-        {% elsif topic.key == "devops" %}
-          {% assign topic_url = "/devops/" %}
+      {% unless topic.active == false %}
+        {% assign topic_title = topic.title_ko %}
+        {% if current_lang == "en" %}
+          {% assign topic_title = topic.title_en | default: topic.title_ko %}
         {% endif %}
-      {% endif %}
-      <a class="section-topics__link{% if page.topic_key == topic.key %} is-active{% endif %}" href="{{ topic_url | relative_url }}">{{ topic_title }}</a>
+        {% assign topic_url = section_url | append: topic.slug | append: "/" %}
+        {% if current_lang == "ko" and page.section_key == "development" %}
+          {% if topic.key == "ai" %}
+            {% assign topic_url = "/ai-engineering/" %}
+          {% elsif topic.key == "rust" %}
+            {% assign topic_url = "/rust/" %}
+          {% elsif topic.key == "devops" %}
+            {% assign topic_url = "/devops/" %}
+          {% endif %}
+        {% endif %}
+        <a class="section-topics__link{% if page.topic_key == topic.key %} is-active{% endif %}" href="{{ topic_url | relative_url }}">{{ topic_title }}</a>
+      {% endunless %}
     {% endfor %}
   </div>
 {% endif %}

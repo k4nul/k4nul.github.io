@@ -11,6 +11,8 @@ translation_key: topic-security-security-engineering
 section_key: security
 topic_key: security-engineering
 topic_description: "공급망 보안, 클라우드 보안, secure coding, AI 보조 코드 리뷰, DevSecOps, 취약점 우선순위화처럼 운영 가능한 보안 주제를 모아둔 분류다."
+robots: "noindex, follow"
+sitemap: false
 ---
 
 이 아카이브는 악성코드 샘플 분석보다 넓은 운영 보안 주제를 다룹니다. SBOM, provenance, CI/CD secret, cloud IAM, container security, vulnerability prioritization, secure coding, AI 보조 코드 리뷰처럼 개발과 운영 흐름 안에서 바로 점검할 수 있는 보안 기준을 정리합니다.

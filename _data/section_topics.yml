@@ -6,6 +6,7 @@ security:
     description_ko: 문서형 악성코드, 드로퍼, OLE/RTF/매크로 분석 글을 모아둔 분류다.
     description_en: A focused archive for document malware, droppers, and OLE/RTF/macro analysis posts.
   - key: security-engineering
+    active: false
     slug: security-engineering
     title_ko: 보안 엔지니어링
     title_en: Security Engineering
