@@ -2,26 +2,55 @@
 
 ## Repository Purpose
 
-This repository is the operating source for `www.k4nul.com`. It combines original blog content with a copied Minimal Mistakes Jekyll theme. Prefer editing blog operation files and content structure over upstream/theme files unless the task explicitly requires theme changes.
+This repository is the operating source for `www.k4nul.com`. It combines original blog content with a copied Minimal Mistakes Jekyll theme. Prefer editing blog operation files, pages, content structure, and documentation over upstream/theme files unless the task explicitly requires theme changes.
 
-`k4nul.com` covers security analysis, Rust, DevOps, and AI agent operations. The growth axis is AI coding agent harness, operations, and security: Codex, Claude Code, `AGENTS.md`, `CLAUDE.md`, context/token management, verification loops, guardrails, approvals, MCP, hooks, and permission boundaries. Rust, DevOps, and Security posts should be preserved and, where truthful, connected back to agent operations, validation, security, or automation.
+K4NUL should grow from a posting blog into a Korean practical knowledge base for `AI coding agent operations, validation, and security`.
+
+Primary growth topics:
+
+- AI coding agent operations
+- Codex
+- Claude Code
+- `AGENTS.md`
+- `CLAUDE.md`
+- hooks
+- MCP
+- permissions/settings
+- token/context management
+- AI agent validation
+- AI agent security
+
+Rust, DevOps, and Security posts should be preserved and, where truthful, connected back to agent operations, validation, security, automation, permission boundaries, reproducible testing, or supply-chain/security practice.
+
+## Growth Goals
+
+Use `docs/growth/` as the operating source for growth work.
+
+- 30 days: stabilize indexing for `/ai-engineering/`, `/start-here/`, `/ai-engineering/templates/`; start increasing non-brand Search Console queries; add hub/template/related internal links to at least 10 important posts; prioritize rewrites and internal links over new post volume.
+- 90 days: make Organic Search comparable to or larger than Direct; secure 10+ pages with average position inside 30; build long-tail query coverage for `AGENTS.md`, `CLAUDE.md`, Codex, and Claude Code; operate 5+ template pages; target a conservative 2-3x increase over the current user baseline.
+- 180 days: conservative target of 500-1,000 monthly users, aggressive target of 2,000-5,000 monthly users; make K4NUL recognizable in Korean long-tail searches for AI coding agent operations, validation, and security; English only the winning templates/hubs, focused on reference/template/how-to pages.
+
+Do not estimate Search Console or GA4 numbers if they are not present in the repo or explicitly supplied by the user. Record missing values as `사용자 입력 필요`.
 
 ## Repo Layout
 
 - `_posts/`: original GitHub blog posts. Read `_posts/AGENTS.md`, `docs/blog-style.md`, and `templates/post-template.md` before writing or revising posts.
-- `_pages/`: top-level pages, section archives, search, about, contact, privacy.
+- `_pages/`: top-level pages, section archives, search, about, contact, privacy, AI Engineering hubs, and templates.
 - `_data/`: navigation, section/topic metadata, SEO descriptions, featured/start track data.
 - `_includes/`, `_layouts/`: Minimal Mistakes includes and local layout overrides.
 - `assets/`, `images/`: site images, CSS, JS assets.
 - `docs/`, `templates/`, `project-docs/`, `skills/`: internal documentation and writing aids. These are excluded from the generated site.
+- `docs/growth/`: growth goals, roadmap, daily routine, weekly plan, content backlog, Search Console rules, prompt bank, and change-log template.
 - `content/posts/`: local derivative posts for external channels. Use only `doc/channel-posting/` rules there.
 
 ## Build / Test Commands
 
+- Check current branch before edits, commits, or pushes: `git branch --show-current`
 - Build site: `bundle exec jekyll build`
 - Serve locally: `bundle exec jekyll serve`
+- Link check after link structure changes: `npm run check:links:local`
+- SEO audit when metadata/canonical/social output changes: `npm run seo:audit`
 - Minify theme JS only when JS changes: `npm run build:js`
-- Check current branch before edits, commits, or pushes: `git branch --show-current`
 
 ## Git Rules
 
@@ -31,37 +60,88 @@ This repository is the operating source for `www.k4nul.com`. It combines origina
 - If the branch is not `master`, stop immediately and report only the current branch name.
 - Do not create pull requests unless the user explicitly asks.
 - Push only when explicitly requested, and only to `origin master`.
+- Do not revert user changes. If the working tree already has unrelated changes, leave them alone.
 
-## Writing Conventions
+## Daily Codex Routine
+
+Every daily operation starts with:
+
+1. Run `git branch --show-current`; continue only on `master`.
+2. Run `git status --short`; identify existing user changes and avoid touching unrelated files.
+3. Read the relevant local rules:
+   - General growth work: `docs/growth/daily-codex-routine.md`
+   - Post writing/revision: `_posts/AGENTS.md`, `docs/blog-style.md`, `templates/post-template.md`
+   - Search-driven rewrites: `docs/growth/search-console-decision-rules.md`
+4. Decide whether the task is an immediate common task or should be separated into a weekly prompt from `docs/growth/prompt-bank.md`.
+5. Keep the change small: one post, one hub, one template, or a narrow documentation update.
+
+Daily work priorities:
+
+- Monday: draft or write one long-tail post for `AGENTS.md`, `CLAUDE.md`, Codex, Claude Code, hooks, MCP, or token/context.
+- Tuesday: rewrite 1-2 existing posts for title, description, first paragraph, TL;DR, and internal links.
+- Wednesday: create or improve one template/checklist page.
+- Thursday: improve internal links between hubs, posts, templates, and related posts.
+- Friday: write or improve one experiment/postmortem with reproduction, failure case, verification date, and limitations.
+- Saturday: strengthen `/ai-engineering/`, `/start-here/`, and `/ai-engineering/templates/`.
+- Sunday: analyze user-provided Search Console/GA4 data. If no data is provided, only prepare next-week candidates.
+
+## Content Modification Principles
 
 - Do not rewrite existing post bodies in bulk for site-structure tasks.
 - Preserve existing URLs, slugs, permalinks, front matter identity fields, and Korean/English `translation_key` pairs unless the user explicitly asks for a URL change.
-- Do not invent facts, metrics, traffic data, Search Console data, GA4 data, career history, affiliations, experiments, or representative work. If data is not available in the repo or explicitly supplied, say so.
+- Do not invent facts, metrics, traffic data, Search Console data, GA4 data, career history, affiliations, experiments, or representative work.
 - Keep facts, direct reproduction, interpretation, limitations, and references separate.
 - Date-sensitive claims need `검증 기준일`; version-sensitive claims need test environment and versions.
 - Prefer primary sources: official docs, standards, original repositories, or directly reproduced results.
-- Do not invent unverified career history, affiliation, education, certifications, representative work, experiments, or sample attribution.
 - Keep existing permalinks unless the user explicitly requests a URL change. If a URL must change, add a redirect or clear navigation path.
+- New content should support the AI coding agent operations/validation/security axis unless the user asks for another topic.
+- Do not mass-produce new posts. Prefer existing content structure, internal links, rewrites, and templates.
+- Do not split many similar short posts. Connect them under a hub.
 
-## Content Update Checklist
-
-When revising a post or hub page, check:
-
-- `title`: the search intent appears before series numbering or internal labels.
-- `description`: present, concrete, and non-empty.
-- Summary: the first section gives the conclusion or TL;DR before deep detail.
-- Internal links: use descriptive anchor text, not "here" or "this post".
-- Related posts: connect to 3-5 existing posts or a relevant hub when possible; do not link to unpublished or nonexistent URLs.
-- Canonical and hreflang: preserve `permalink`, `lang`, and `translation_key` behavior for Korean/English pairs.
-- Verification: keep claims tied to sources, versions, direct reproduction, or explicit limitations.
-
-## SEO Conventions
+## SEO And Internal Linking Principles
 
 - Canonical domain is `https://www.k4nul.com`.
 - Major pages and posts should have `title`, `description`, `lang`, and `translation_key`.
 - Korean/English pairs share the same `translation_key`; English mirrors use explicit `permalink` when needed.
 - Optional post fields supported for portfolio surfacing: `featured`, `track`, `repo`, `demo`, `references`.
 - Do not put unverifiable profile details into JSON-LD or About content.
+- Title search intent comes before series numbering or internal labels.
+- Use descriptive anchor text. Avoid weak anchors like `여기`, `이 글`, or `this post`.
+- Prefer links among:
+  - hub -> individual post
+  - individual post -> hub
+  - individual post -> template/checklist
+  - related posts, 3-5 where useful
+- When adding or changing link structure, run `npm run check:links:local` if Node dependencies are available.
+
+## Search Console / GA4 Rules
+
+- Search Console is the primary source for growth decisions because it shows query, page, impressions, clicks, CTR, and average position.
+- GA4 is useful for organic landing pages and engaged sessions, but do not use event totals alone as the main growth signal.
+- If data is missing, write `사용자 입력 필요` rather than estimating.
+- Decision rules live in `docs/growth/search-console-decision-rules.md`.
+- Do not execute these without data and a scoped prompt:
+  - large-scale existing post changes
+  - English translation
+  - expanding 3+ hubs
+  - cannibalization cleanup
+  - mass title changes
+  - large structure changes
+
+## Post / Hub Revision Checklist
+
+When revising a post or hub page, check:
+
+- `title`: search intent appears before series numbering or internal labels.
+- `description`: present, concrete, and non-empty.
+- TL;DR or summary: the first section gives the conclusion before deep detail.
+- Internal links: descriptive anchors, not `여기` or `이 글`.
+- Hub link: connect to `/ai-engineering/`, `/start-here/`, or the relevant section hub when useful.
+- Template link: connect to `/ai-engineering/templates/` or a relevant checklist when useful.
+- Related posts: connect to 3-5 existing posts or a relevant hub when possible; do not link to unpublished or nonexistent URLs.
+- Canonical/hreflang: preserve `permalink`, `lang`, and `translation_key` behavior for Korean/English pairs.
+- Verification: keep claims tied to sources, versions, direct reproduction, or explicit limitations.
+- Build: `bundle exec jekyll build` succeeds, or the exact failure is reported.
 
 ## Do Not
 
@@ -70,6 +150,7 @@ When revising a post or hub page, check:
 - Do not add broad privacy-policy language for services that are not actually configured.
 - Do not make large theme or build-system changes for content/navigation tasks.
 - Do not hide build failures. Minimize the change, identify the failing file or plugin, and report the exact error.
+- Do not create broad English mirrors unless Search Console performance supports them.
 
 ## Verification Checklist
 
@@ -83,8 +164,17 @@ When revising a post or hub page, check:
 - Feed discovery remains available through `/feed.xml`.
 - Primary navigation matches `Security / AI Engineering / Rust / DevOps / Start Here / About`.
 
-## Work Completion Criteria
+## Completion Report Format
 
-- Build succeeds, or the exact failing file/plugin and error are reported.
-- The final response summarizes changed files, why each was changed, verification commands, and remaining risks.
-- For content growth work, document what changed, what was intentionally left alone, and the next human editorial priorities.
+Final reports for growth/content work should include:
+
+1. Generated or modified files.
+2. Purpose of each file.
+3. Immediate common tasks completed.
+4. Tasks separated into weekly prompts.
+5. Verification commands and results.
+6. Remaining risks.
+7. Location of the daily prompt for tomorrow.
+8. Next five execution priorities.
+
+For content growth work, also document what changed, what was intentionally left alone, and the next human editorial priorities.
