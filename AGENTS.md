@@ -22,13 +22,15 @@ Primary growth topics:
 
 Rust, DevOps, and Security posts should be preserved and, where truthful, connected back to agent operations, validation, security, automation, permission boundaries, reproducible testing, or supply-chain/security practice.
 
+The repository already has a long scheduled-post queue. Default growth work should operate that queue, not create more posts.
+
 ## Growth Goals
 
 Use `docs/growth/` as the operating source for growth work.
 
 - 30 days: stabilize indexing for `/ai-engineering/`, `/start-here/`, `/ai-engineering/templates/`; start increasing non-brand Search Console queries; add hub/template/related internal links to at least 10 important posts; prioritize rewrites and internal links over new post volume.
 - 90 days: make Organic Search comparable to or larger than Direct; secure 10+ pages with average position inside 30; build long-tail query coverage for `AGENTS.md`, `CLAUDE.md`, Codex, and Claude Code; operate 5+ template pages; target a conservative 2-3x increase over the current user baseline.
-- 180 days: conservative target of 500-1,000 monthly users, aggressive target of 2,000-5,000 monthly users; make K4NUL recognizable in Korean long-tail searches for AI coding agent operations, validation, and security; English only the winning templates/hubs, focused on reference/template/how-to pages.
+- 180 days: conservative target of 500-1,000 monthly users, aggressive target of 2,000-5,000 monthly users; make K4NUL recognizable in Korean long-tail searches for AI coding agent operations, validation, and security; keep existing English pages, and prioritize KR/EN improvement for core templates, references, and how-to pages.
 
 Do not estimate Search Console or GA4 numbers if they are not present in the repo or explicitly supplied by the user. Record missing values as `사용자 입력 필요`.
 
@@ -40,7 +42,7 @@ Do not estimate Search Console or GA4 numbers if they are not present in the rep
 - `_includes/`, `_layouts/`: Minimal Mistakes includes and local layout overrides.
 - `assets/`, `images/`: site images, CSS, JS assets.
 - `docs/`, `templates/`, `project-docs/`, `skills/`: internal documentation and writing aids. These are excluded from the generated site.
-- `docs/growth/`: growth goals, roadmap, daily routine, weekly plan, content backlog, Search Console rules, prompt bank, and change-log template.
+- `docs/growth/`: growth goals, roadmap, daily routine, weekly plan, scheduled-post inventory/calendar, pre/post-publish checklists, content backlog, Search Console rules, prompt bank, and change-log template.
 - `content/posts/`: local derivative posts for external channels. Use only `doc/channel-posting/` rules there.
 
 ## Build / Test Commands
@@ -77,13 +79,32 @@ Every daily operation starts with:
 
 Daily work priorities:
 
-- Monday: draft or write one long-tail post for `AGENTS.md`, `CLAUDE.md`, Codex, Claude Code, hooks, MCP, or token/context.
+- Monday: inspect this week's scheduled long-tail posts for `AGENTS.md`, `CLAUDE.md`, Codex, Claude Code, hooks, MCP, or token/context quality.
 - Tuesday: rewrite 1-2 existing posts for title, description, first paragraph, TL;DR, and internal links.
-- Wednesday: create or improve one template/checklist page.
+- Wednesday: improve templates/checklists that scheduled posts should link to.
 - Thursday: improve internal links between hubs, posts, templates, and related posts.
-- Friday: write or improve one experiment/postmortem with reproduction, failure case, verification date, and limitations.
+- Friday: improve already scheduled experiment/postmortem posts, or record candidates when no scheduled item fits.
 - Saturday: strengthen `/ai-engineering/`, `/start-here/`, and `/ai-engineering/templates/`.
 - Sunday: analyze user-provided Search Console/GA4 data. If no data is provided, only prepare next-week candidates.
+
+## Scheduled Post Queue Policy
+
+- Default to using existing scheduled future posts instead of creating new posts.
+- Do not change future post publish dates, filename slugs, or permalinks unless the user explicitly asks.
+- If a schedule change looks useful, record it only in `docs/growth/schedule-adjustment-candidates.md`.
+- Track the queue in `docs/growth/scheduled-posts-inventory.md` and `docs/growth/scheduled-posts-calendar.md`.
+- Use `docs/growth/pre-publish-checklist.md` before publication and `docs/growth/post-publish-checklist.md` after publication.
+- New posts are allowed only when a core template is missing from the scheduled queue, Search Console shows a clear need for a new reference page and no existing landing page can be improved, or the user explicitly asks for a new post.
+- For KR/EN pairs, review both sides together for title, description, TL;DR, internal links, canonical, and hreflang.
+
+## Public Future-Link Policy
+
+- Do not link from public pages to future-dated posts by default.
+- This repo uses Jekyll and does not configure `future: true`; current builds exclude future-dated posts.
+- Public hubs, Start Here, and home should link only to already published posts or posts that are publicly available on the current build date.
+- If a future-dated post is actually included in the build output, an exception can be reviewed, but do not assume that behavior.
+- Add hub and related-post links on the publish day or after the URL is confirmed public.
+- Future-post-to-future-post links must be checked against publication order so they do not create 404s at release time.
 
 ## Content Modification Principles
 
@@ -96,13 +117,14 @@ Daily work priorities:
 - Keep existing permalinks unless the user explicitly requests a URL change. If a URL must change, add a redirect or clear navigation path.
 - New content should support the AI coding agent operations/validation/security axis unless the user asks for another topic.
 - Do not mass-produce new posts. Prefer existing content structure, internal links, rewrites, and templates.
+- Do not add new posts when a scheduled post can be improved instead.
 - Do not split many similar short posts. Connect them under a hub.
 
 ## SEO And Internal Linking Principles
 
 - Canonical domain is `https://www.k4nul.com`.
 - Major pages and posts should have `title`, `description`, `lang`, and `translation_key`.
-- Korean/English pairs share the same `translation_key`; English mirrors use explicit `permalink` when needed.
+- Korean/English pairs share the same `translation_key`; English pages use explicit `permalink` when needed.
 - Optional post fields supported for portfolio surfacing: `featured`, `track`, `repo`, `demo`, `references`.
 - Do not put unverifiable profile details into JSON-LD or About content.
 - Title search intent comes before series numbering or internal labels.
@@ -114,6 +136,22 @@ Daily work priorities:
   - related posts, 3-5 where useful
 - When adding or changing link structure, run `npm run check:links:local` if Node dependencies are available.
 
+## KR/EN Operating Policy
+
+K4NUL already publishes Korean and English pages in parallel. Do not treat English as a future-only experiment, and do not delete or discard existing English pages.
+
+- Existing Korean and English pages stay in place.
+- Each language page should canonicalize to itself, not to the other language.
+- Equivalent Korean/English pairs should use matching `translation_key` values and valid `hreflang` alternates.
+- Do not connect non-equivalent pages with `hreflang`.
+- If an English page is outdated or low quality, mark it as a rewrite candidate instead of deleting it.
+- Fix broken links, wrong canonical URLs, and missing `hreflang` before creating broad new language work.
+- New posts about AI coding agent operations, Codex, Claude Code, `AGENTS.md`, `CLAUDE.md`, hooks, MCP, permissions/settings, token/context management, AI agent security, and AI agent verification default to KR/EN parallel publication.
+- Template, checklist, reference, and how-to content also defaults to KR/EN parallel publication.
+- General Rust/DevOps/Security posts are Korean-first unless they directly support AI agent operations, validation, security, automation, or permission boundaries.
+- Short notes or posts that depend strongly on Korean reader context do not need forced English versions.
+- English investment priority: templates/checklists, `AGENTS.md`/`CLAUDE.md`, Codex/Claude Code operations, hooks/MCP/permissions security, AI agent verification/postmortems, then general Rust/DevOps.
+
 ## Search Console / GA4 Rules
 
 - Search Console is the primary source for growth decisions because it shows query, page, impressions, clicks, CTR, and average position.
@@ -122,7 +160,7 @@ Daily work priorities:
 - Decision rules live in `docs/growth/search-console-decision-rules.md`.
 - Do not execute these without data and a scoped prompt:
   - large-scale existing post changes
-  - English translation
+  - broad non-core English expansion
   - expanding 3+ hubs
   - cannibalization cleanup
   - mass title changes
@@ -150,7 +188,8 @@ When revising a post or hub page, check:
 - Do not add broad privacy-policy language for services that are not actually configured.
 - Do not make large theme or build-system changes for content/navigation tasks.
 - Do not hide build failures. Minimize the change, identify the failing file or plugin, and report the exact error.
-- Do not create broad English mirrors unless Search Console performance supports them.
+- Do not delete existing English pages, mark them as deprecated, or canonicalize them to Korean pages.
+- Do not mechanically English-publish every short note if it delays core hub, template, or checklist work.
 
 ## Verification Checklist
 

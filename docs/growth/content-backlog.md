@@ -4,10 +4,17 @@
 
 상태 값:
 
-- `candidate`: 작성 또는 리라이트 후보.
+- `candidate`: 예약 글 보강, 공개 글 리라이트, 또는 예외적 신규 작성 후보.
 - `needs-data`: Search Console/GA4 데이터가 있어야 우선순위 판단 가능.
 - `ready`: 다음 작업으로 바로 착수 가능.
 - `defer`: 지금은 보류.
+
+운영 원칙:
+
+- 기본적으로 새 글을 만들지 않고 `scheduled-posts-inventory.md`의 예약 포스팅을 우선 활용한다.
+- 예약 큐에 없는 핵심 템플릿이 필요하거나, Search Console상 새 reference page가 필요하거나, 사용자가 명시적으로 요청할 때만 신규 글을 후보로 둔다.
+- 미래 포스트의 publish date, slug, permalink는 임의로 바꾸지 않는다. 일정 변경은 `schedule-adjustment-candidates.md`에 후보로만 기록한다.
+- 공개 페이지에는 이미 공개된 글과 오늘 실제 공개된 글만 직접 링크한다.
 
 ## Hub Candidates
 
@@ -65,15 +72,17 @@
 | AI agent 작업 결과를 사람이 리뷰해야 하는 기준 | ready | 체크리스트 기반으로 작성 가능 |
 | MCP tool allowlist를 잘못 잡았을 때의 위험 | needs-data | 실제 설정 또는 문서 근거 필요 |
 
-## English Candidates
+## KR/EN Priority Candidates
 
-영어화는 성과가 나온 템플릿과 허브만 진행한다. 아래 후보는 Search Console에서 노출 또는 클릭이 확인되기 전까지 `needs-data` 상태다.
+아래 목록은 신규 영어판 생성 후보가 아니라, 기존 영어판 유지, 리라이트, canonical/hreflang/link 보강, 또는 핵심축 KR/EN 병행 발행 우선순위다. 기존 영어판은 삭제하거나 폐기하지 않는다.
 
-| 후보 | 상태 | 조건 |
-| --- | --- | --- |
-| AGENTS.md template | needs-data | 한국어 템플릿 페이지 노출/클릭 확인 |
-| CLAUDE.md template | needs-data | `CLAUDE.md` 관련 query 확인 |
-| Codex prompt template | needs-data | Codex prompt/template query 확인 |
-| Claude Code hooks example | needs-data | hooks 관련 query 확인 |
-| MCP security checklist | needs-data | MCP security/permissions query 확인 |
-| AI agent review checklist | needs-data | validation/review query 확인 |
+| 우선순위 | 후보 | 기본 작업 | 조건 |
+| --- | --- | --- | --- |
+| 1 | AGENTS.md template | KR/EN 병행 발행 또는 기존 EN 리라이트 | template/checklist 핵심축 |
+| 1 | CLAUDE.md template | KR/EN 병행 발행 또는 기존 EN 리라이트 | `CLAUDE.md` 관련 핵심축 |
+| 1 | Codex prompt template | KR/EN 병행 발행 또는 기존 EN 리라이트 | Codex prompt/template 핵심축 |
+| 2 | Claude Code hooks example | KR/EN 병행 발행 또는 기존 EN 리라이트 | hooks/security 핵심축 |
+| 2 | MCP security checklist | KR/EN 병행 발행 또는 기존 EN 리라이트 | MCP security/permissions 핵심축 |
+| 2 | AI agent review checklist | KR/EN 병행 발행 또는 기존 EN 리라이트 | validation/review 핵심축 |
+| 3 | Existing English AI Engineering pages | canonical/hreflang/link 감사 후 리라이트 후보 표시 | 기존 EN 유지 |
+| 4 | Rust/DevOps general posts | 한국어 우선, agent 운영/보안과 직접 연결될 때만 EN 보강 | 비핵심축 |

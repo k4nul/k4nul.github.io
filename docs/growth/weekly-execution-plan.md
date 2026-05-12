@@ -19,8 +19,9 @@
 
 ## Week 2: Template Assets
 
-목표: 검색 노출과 실무 재사용에 맞는 템플릿 자산을 만든다.
+목표: 예약 글이 연결할 템플릿 자산을 보강한다.
 
+- 예약 포스팅 인벤토리에서 템플릿 연결이 필요한 글을 먼저 확인한다.
 - `AGENTS.md` 최소 템플릿 보강.
 - `CLAUDE.md` 최소 템플릿 보강.
 - Codex 작업 요청 프롬프트 템플릿 보강.
@@ -29,23 +30,23 @@
 
 완료 기준:
 
-- 템플릿 페이지 또는 연결 글 2개 이상이 허브에서 접근 가능하다.
+- 템플릿 페이지 또는 연결 글 2개 이상이 허브에서 접근 가능하다. 단, 미래 글은 공개 전 허브에서 직접 링크하지 않는다.
 - 각 템플릿은 목적, 적용 조건, 금지 사항, 검증 방법을 포함한다.
 
 ## Week 3: Long-Tail Search Writing
 
-목표: 대량 발행이 아니라 long-tail intent에 맞는 글 또는 기존 글 리라이트를 수행한다.
+목표: 새 글을 만들지 않고 예약 큐의 long-tail intent 글을 발행 전 보강한다.
 
-- `AGENTS.md는 왜 짧게 써야 할까` 유형 글을 우선 검토한다.
-- `CLAUDE.md와 system prompt는 무엇이 다를까` 유형 글을 우선 검토한다.
-- hooks, MCP, permissions/settings, token/context, validation/security 후보 중 1개만 작성한다.
-- 이미 비슷한 글이 있으면 새 글 대신 해당 글을 리라이트하고 허브에 연결한다.
+- `docs/growth/scheduled-posts-inventory.md`에서 이번 달 AI 핵심축 글을 우선 검토한다.
+- `AGENTS.md`, `CLAUDE.md`, Codex, Claude Code, hooks, MCP, permissions/settings, token/context, validation/security 글의 title, description, TL;DR, 내부링크를 보강한다.
+- 예약 큐에 없는 핵심 템플릿이 필요한 경우에만 신규 작성 후보로 기록한다.
+- 이미 비슷한 글이 있으면 새 글 대신 해당 예약 글 또는 공개 글을 리라이트하고 허브 연결은 발행 후 수행한다.
 
 완료 기준:
 
-- 신규 글은 주 1개 이하.
+- 신규 글은 기본 금지. 예외는 예약 큐에 없는 핵심 템플릿, Search Console상 새 reference page 필요, 사용자 명시 요청뿐이다.
 - 기존 URL을 보존한다.
-- 관련 허브와 템플릿 링크가 포함된다.
+- 관련 허브와 템플릿 링크는 공개된 대상만 포함한다.
 
 ## Week 4: Search Console Rewrite
 
@@ -55,7 +56,7 @@
 - 평균 순위 8-30위: 본문 보강, 요약 보강, 내부링크 추가.
 - 클릭 있음 + 체류 낮음: 첫 문단, TL;DR, 예제 보강.
 - 비슷한 쿼리로 여러 글 노출: cannibalization 점검.
-- 템플릿 페이지 노출 발생: 영어화 후보 지정.
+- 템플릿 페이지 노출 발생: 기존 EN 대응 페이지 유무, canonical/hreflang, KR/EN 품질 보강 후보 지정.
 
 완료 기준:
 
@@ -70,23 +71,25 @@
 - Instruction Files 허브.
 - AI Agent Security 허브.
 - 기존 AI Engineering 허브와 templates 페이지에서 서로 연결한다.
-- Rust/DevOps/Security 글은 agent 검증, 자동화, 권한 경계와 연결 가능한 글만 보조 경로로 넣는다.
+- Rust/DevOps/Security 글은 이미 공개된 글 또는 오늘 공개된 글 중 agent 검증, 자동화, 권한 경계와 연결 가능한 글만 보조 경로로 넣는다.
 
 완료 기준:
 
 - 허브 3개가 검색 의도, 추천 경로, 관련 템플릿, 대표 글을 가진다.
 - build와 link check가 성공한다.
 
-## Months 4-6: English Only For Winners
+## Months 4-6: Maintain EN And Prioritize Core KR/EN
 
-목표: 성과가 나온 템플릿과 허브만 영어화한다.
+목표: 기존 영어판을 유지하면서, 핵심축 영어판과 KR/EN pair 품질을 우선 보강한다.
 
-- Search Console에서 노출, 클릭, 평균 순위가 확인된 페이지만 후보로 지정한다.
-- 전체 번역보다 reference, template, how-to 페이지를 우선한다.
-- Korean canonical/hreflang 구조를 깨지 않는다.
-- 영어 mirror는 필요한 경우 명시적 `permalink`와 같은 `translation_key`를 둔다.
+- 기존 영어판은 삭제하거나 폐기하지 않는다.
+- 각 언어 페이지는 자기 자신을 canonical로 가져야 한다.
+- 대응되는 한국어/영어 페이지가 있으면 같은 `translation_key`와 올바른 `hreflang` alternate를 점검한다.
+- 번역 품질이 낮거나 내용이 오래된 영어판은 삭제하지 않고 리라이트 후보로 표시한다.
+- 투자는 템플릿/체크리스트, `AGENTS.md`/`CLAUDE.md`, Codex/Claude Code 운영, hooks/MCP/permissions 보안, AI agent 검증/postmortem 순서로 배분한다.
+- Rust/DevOps 일반 글은 한국어 우선이며, AI agent 운영/보안과 직접 연결될 때 영어판을 함께 발행하거나 보강한다.
 
 완료 기준:
 
-- 영어화 후보 선정 근거가 Search Console 데이터 또는 사용자 제공 데이터에 연결된다.
-- 수치 추정 없이 실제 입력값 또는 `사용자 입력 필요`로 표시한다.
+- KR/EN 보강 후보 선정 근거가 Search Console 데이터, 사용자 제공 데이터, 또는 canonical/hreflang/link 감사 결과에 연결된다.
+- 수치 추정 없이 실제 입력값, 감사 결과, 또는 `사용자 입력 필요`로 표시한다.

@@ -14,7 +14,7 @@ Rust, DevOps, Security 글은 독립 주제로 보존하되, 가능한 경우 ag
 - Search Console 기준 non-brand query 증가 시작.
 - `AGENTS.md`, `CLAUDE.md`, Codex, Claude Code, hooks 관련 검색어 노출 발생.
 - 주요 글 10개 이상에 허브, 템플릿, 관련 글 내부링크 추가.
-- 새 글 양산보다 기존 글 리라이트와 내부링크 개선을 우선.
+- 새 글 양산보다 예약 포스팅 큐의 발행 전 점검, 기존 글 리라이트, 내부링크 개선을 우선.
 
 ## 90일 목표
 
@@ -29,13 +29,14 @@ Rust, DevOps, Security 글은 독립 주제로 보존하되, 가능한 경우 ag
 - 보수적 목표: 월간 사용자 500-1,000명대 진입.
 - 공격적 목표: 월간 사용자 2,000-5,000명대 진입.
 - K4NUL을 `AI coding agent 운영·검증·보안` 한국어 long-tail 검색에서 인지되는 블로그로 만든다.
-- 성과가 나온 템플릿과 허브만 영어화한다.
-- 영어화는 전체 번역이 아니라 reference, template, how-to 페이지 중심으로 한다.
+- 기존 영어판은 유지하고, canonical/hreflang/link 문제가 있는 영어판을 우선 보정한다.
+- 핵심축 콘텐츠는 KR/EN 병행 발행과 보강을 기본으로 하되, 투자는 reference, template, checklist, how-to 페이지에 우선 배분한다.
 
 ## Conservative And Aggressive Targets
 
-- 보수적 운영: 주 1개 신규 long-tail 글, 주 1-2개 기존 글 리라이트, 주 1개 템플릿/체크리스트 보강.
+- 보수적 운영: 주 1개 예약 long-tail 글 발행 전 점검, 주 1-2개 기존 공개 글 리라이트, 주 1개 템플릿/체크리스트 보강.
 - 공격적 운영: Search Console에서 노출이 확인된 주제만 추가 보강하고, 허브와 템플릿을 중심으로 내부링크를 촘촘히 연결.
+- 신규 글은 기본 운영 작업이 아니다. 예약 큐에 없는 핵심 템플릿, Search Console상 새 reference page 필요, 사용자 명시 요청일 때만 예외로 한다.
 - 금지: 현재 레포에 없는 Search Console, GA4 수치를 추정해 목표 달성률로 쓰지 않는다.
 
 ## Why Search Console Comes Before GA4
@@ -50,7 +51,8 @@ Rust, DevOps, Security 글은 독립 주제로 보존하되, 가능한 경우 ag
 - Search Console: impressions, clicks, CTR, average position, non-brand queries, indexed pages.
 - GA4: organic landing pages, engaged sessions, organic sessions, page views.
 - Content operations: 리라이트한 기존 글 수, 내부링크 추가 글 수, 템플릿/체크리스트 수, 허브에 연결된 글 수.
-- Quality: 검증 기준일/버전 명시율, 공식 문서 또는 직접 재현 근거 연결률, canonical/hreflang 보존 여부.
+- Scheduled queue operations: 발행 전 점검한 예약 글 수, 발행 후 허브에 반영한 글 수, 일정 변경 후보로만 기록한 글 수.
+- Quality: 검증 기준일/버전 명시율, 공식 문서 또는 직접 재현 근거 연결률, 언어별 self-canonical 여부, 대응되는 KR/EN pair의 hreflang 보존 여부.
 
 ## User-Provided Data Slots
 
