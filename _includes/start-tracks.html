@@ -15,12 +15,17 @@
           {% for item_key in track.items %}
             {% assign matched_posts = site.posts | where: "translation_key", item_key | where: "lang", current_lang %}
             {% assign start_post = matched_posts | first %}
-            {% if start_post %}
+            {% assign start_entry = start_post %}
+            {% unless start_entry %}
+              {% assign matched_pages = site.pages | where: "translation_key", item_key | where: "lang", current_lang %}
+              {% assign start_entry = matched_pages | first %}
+            {% endunless %}
+            {% if start_entry %}
               {% assign displayed_count = displayed_count | plus: 1 %}
               <li>
-                <a href="{{ start_post.url | relative_url }}">{{ start_post.title }}</a>
-                {% if start_post.description %}
-                  <span>{{ start_post.description }}</span>
+                <a href="{{ start_entry.url | relative_url }}">{{ start_entry.title }}</a>
+                {% if start_entry.description %}
+                  <span>{{ start_entry.description }}</span>
                 {% endif %}
               </li>
             {% endif %}

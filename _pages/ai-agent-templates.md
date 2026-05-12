@@ -135,6 +135,7 @@ translation_key: ai-agent-operations-templates
 
 ## 함께 읽을 글
 
+- [AI Engineering 허브](/ai-engineering/)
 - [AGENTS.md 작성법: 저장소 목적과 검증 기준을 짧게 담기](/ai/how-to-write-agents-md-for-codex/)
 - [CLAUDE.md 작성 범위: rules, skills, settings로 나누는 기준](/ai/how-far-should-claude-md-go/)
 - [Codex 첫 작업 요청 작성법](/ai/how-to-write-first-codex-task-request/)

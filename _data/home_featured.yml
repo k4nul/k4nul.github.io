@@ -1,25 +1,50 @@
 ko:
-  title: "처음 방문했다면 여기부터"
-  intro: "글이 올라온 순서보다 읽는 순서가 중요한 글을 모았다. Rust, 하네스 엔지니어링, 문서형 악성코드 분석의 시작점이다."
+  mode: manual
+  title: "AI coding agent 운영과 검증"
+  intro: "Codex와 Claude Code를 코드 생성기가 아니라 권한, 검증, 작업 요청, 프로젝트 지침으로 운영하는 글을 먼저 배치했다."
   items:
-    - translation_key: rust-install-hello-world
-      title: "Rust 입문: 설치와 Hello World"
-      description: "Rust를 처음 여는 독자가 rustup, rustc, cargo의 역할을 잡는 시작 글."
-    - translation_key: rust-build-a-small-cli-project
-      title: "Rust 실전 연결: 작은 CLI 프로젝트"
-      description: "기초 문법을 word counter CLI로 묶어 시리즈를 이어 읽게 하는 글."
-    - translation_key: what-is-harness-engineering
-      title: "하네스 엔지니어링 개념 잡기"
-      description: "AI 주변의 도구, 권한, 검증 구조를 하나의 운영 관점으로 정리한 대표 글."
-    - translation_key: why-token-management-matters-in-harness-engineering
-      title: "토큰 관리와 하네스 안정성"
-      description: "토큰을 비용보다 문맥 제어와 안정성의 문제로 보는 시리즈 출발점."
-    - translation_key: macro-malware
-      title: "매크로 문서형 악성코드 분석"
-      description: "DOCM 샘플의 진입점, 난독화, CustomXML 페이로드, 실행 체인을 따라가는 분석."
-    - translation_key: rtf-malware
-      title: "RTF 문서형 악성코드 분석"
-      description: "RTF/OLE 구조와 Equation Editor exploit 흐름을 근거 중심으로 추적한 분석."
+    - url: /ai-engineering/
+      title: "AI Engineering 허브: 코딩 에이전트 운영과 검증"
+      description: "AI 코딩 도구를 실행 환경, 권한 경계, 검증 흐름, handoff 계약으로 다루는 허브."
+    - url: /ai-engineering/templates/
+      title: "AI agent 운영 실전 템플릿"
+      description: "AGENTS.md, CLAUDE.md, Codex 작업 요청, permissions/settings 기준 글을 한곳에 묶은 진입점."
+    - translation_key: how-to-write-agents-md-for-codex
+      title: "AGENTS.md 작성법"
+      description: "Codex가 먼저 읽을 저장소 목적, 수정 경계, 검증 기준을 짧게 정리하는 방법."
+    - translation_key: how-far-should-claude-md-go
+      title: "CLAUDE.md 작성 범위"
+      description: "Claude Code 지침 파일에 남길 기준과 settings/hooks로 내려보낼 기준을 나누는 글."
+    - translation_key: codex-project-operations-template
+      title: "Codex 프로젝트 운영 템플릿"
+      description: "저장소에 Codex를 적용할 때 작업 요청, 검증, 완료 보고 기준을 묶는 운영 템플릿."
+    - translation_key: fix-claude-code-boundaries-with-settings-and-permissions
+      title: "Claude Code permissions/settings 기준"
+      description: "자연어 지시와 settings, permissions의 책임을 나누어 작업 경계를 고정하는 기준."
+  other_title: "다른 트랙 대표 글"
+  other_intro: "Rust, DevOps, Security 대표 글은 아래 트랙으로 분리했다."
+  other_tracks:
+    - title: "Rust Track"
+      items:
+        - translation_key: rust-install-hello-world
+          title: "Rust 입문: 설치와 Hello World"
+          description: "Rust를 처음 여는 독자가 rustup, rustc, cargo의 역할을 잡는 시작 글."
+        - translation_key: rust-build-a-small-cli-project
+          title: "Rust 실전 연결: 작은 CLI 프로젝트"
+          description: "기초 문법을 word counter CLI로 묶어 시리즈를 이어 읽게 하는 글."
+    - title: "DevOps Track"
+      items:
+        - translation_key: docker-build-cache-and-invalidation
+          title: "Docker build cache와 invalidation"
+          description: "Dockerfile 변경과 build cache가 이미지 재빌드에 미치는 영향을 정리한 글."
+    - title: "Security Track"
+      items:
+        - translation_key: macro-malware
+          title: "매크로 문서형 악성코드 분석"
+          description: "DOCM 샘플의 진입점, 난독화, CustomXML 페이로드, 실행 체인을 따라가는 분석."
+        - translation_key: rtf-malware
+          title: "RTF 문서형 악성코드 분석"
+          description: "RTF/OLE 구조와 Equation Editor exploit 흐름을 근거 중심으로 추적한 분석."
 
 en:
   title: "Start Here"

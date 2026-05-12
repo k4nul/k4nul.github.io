@@ -2,21 +2,21 @@ ko:
   intro: "처음 방문한 독자가 글 발행 순서 대신 주제별 흐름으로 읽을 수 있도록 정리한 경로다. 각 링크는 현재 사이트에 실제로 빌드되는 글만 사용한다."
   sparse_note: "공개된 글이 아직 적은 트랙이다. 새 글이 공개되면 이 경로에 추가한다."
   tracks:
+    - key: ai-engineering
+      title: "AI Engineering Track"
+      description: "Codex, Claude Code, 하네스 엔지니어링, 토큰 관리, agent workflow를 운영 구조로 보는 경로다."
+      items:
+        - what-is-harness-engineering
+        - ai-agent-operations-templates
+        - how-to-write-agents-md-for-codex
+        - how-far-should-claude-md-go
+        - how-to-write-first-codex-task-request
     - key: security
       title: "Security Track"
       description: "문서형 악성코드 분석과 취약점 악용 흐름을 근거 중심으로 읽는 경로다."
       items:
         - macro-malware
         - rtf-malware
-    - key: ai-engineering
-      title: "AI Engineering Track"
-      description: "Codex, Claude Code, 하네스 엔지니어링, 토큰 관리, agent workflow를 운영 구조로 보는 경로다."
-      items:
-        - what-is-harness-engineering
-        - why-ai-tools-produce-different-results
-        - project-instruction-files-should-not-be-control-planes
-        - why-token-management-matters-in-harness-engineering
-        - why-codex-needs-a-harness
     - key: rust
       title: "Rust Track"
       description: "설치, ownership/borrowing, error handling, CLI 프로젝트까지 이어지는 Rust 학습 경로다."
