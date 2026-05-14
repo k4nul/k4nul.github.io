@@ -122,6 +122,10 @@ search: false
 
 여기서 다음 질문이 이어진다. 상태 요약이 중요하다는 것은 알겠는데, 실제 압축 과정에서 무엇을 남기고 무엇을 버려야 할까. 어떤 정보는 줄이면 되고, 어떤 정보는 절대 빠지면 안 되며, 어떤 정보는 과감히 버릴 수 있다. 다음 글에서는 `좋은 압축과 나쁜 압축: 무엇을 남기고 무엇을 버릴 것인가`를 다루며, 상태 요약을 만들 때 정보 손실을 어디까지 허용해야 하는지 더 구체적으로 이어가 보겠다.
 
+## 함께 읽을 글
+
+- [Claude Code context budget: 긴 로그, 이슈, auto memory 관리 기준](/ai/handle-logs-issues-and-auto-memory-with-context-budget/)
+
 ## 참고자료
 
 - OpenAI, [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)

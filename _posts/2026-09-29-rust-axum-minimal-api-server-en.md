@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 02. Building a minimal API server with Axum"
 description: "Builds the smallest useful Rust API server shape with Axum Router, routes, handlers, and JSON responses."

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 02. Axum으로 최소 API 서버 만들기"
 description: "Axum의 Router, route, handler, Json 응답을 사용해 가장 작은 Rust API 서버의 형태를 잡는다."

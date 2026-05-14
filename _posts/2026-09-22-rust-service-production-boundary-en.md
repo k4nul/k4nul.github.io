@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 01. Defining what Rust owns in a web service"
 description: "Defines how to separate language, framework, infrastructure, and operations responsibilities in a Rust web service."

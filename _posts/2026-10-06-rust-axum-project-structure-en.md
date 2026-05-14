@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 03. Structuring a Rust Axum API project"
 description: "Sets boundaries between main, router, state, and handler modules in an Axum API project."

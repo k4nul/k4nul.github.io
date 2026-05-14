@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 06. 설정 파일과 환경변수 분리하기"
 description: "Rust API의 포트, 로그 레벨, 데이터베이스 URL, 비밀값을 설정 계층으로 분리하는 기준을 세운다."

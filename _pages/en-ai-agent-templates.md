@@ -2,7 +2,7 @@
 title: "AI Agent Operations Templates"
 layout: single
 permalink: /en/development/ai/templates/
-description: "Minimal templates for AGENTS.md, CLAUDE.md, Codex task requests, agent output review, and Claude Code permissions/settings checks."
+description: "Minimal templates for AGENTS.md, CLAUDE.md, Codex task requests, agent output review, Claude Code permissions/settings, and MCP connection checks."
 author_profile: true
 breadcrumbs: false
 sidebar:
@@ -11,7 +11,7 @@ lang: en
 translation_key: ai-agent-operations-templates
 ---
 
-This page collects small templates for operating AI coding agents without turning project instructions into long control-plane documents. Use them as starting points, then remove anything that does not apply to the repository.
+This page collects small templates for operating AI coding agents without turning project instructions into long control-plane documents. Use them as starting points, then remove anything that does not apply to the repository. Before connecting external tools or context, check permissions, provenance, and auditability first.
 
 ## Minimal AGENTS.md
 
@@ -134,9 +134,22 @@ Done Means:
 - Does the permission mode match the team's approval policy?
 - Were allowed and denied tool calls tested after changing settings?
 
+## MCP Pre-Connection Checklist
+
+- Did you identify the owner and data classification of the system being connected?
+- Did you separate read-only, write-capable, and auto-executable permissions?
+- Will the agent report which issues, logs, dashboards, docs, or databases it read from?
+- Are secrets, customer data, or internal security materials excluded unless explicitly approved?
+- Was each third-party MCP server reviewed for trust and prompt-injection risk?
+- Are tool schemas and outputs small enough to avoid polluting the working context?
+- If write access is needed, do approval, dry-run, audit log, and rollback rules exist?
+- Could the same task be handled more safely through file references or a short source summary?
+
 ## Related Posts
 
+- [AI Engineering Hub](/en/development/ai/)
 - [How to Write AGENTS.md for Codex](/en/ai/how-to-write-agents-md-for-codex/)
 - [How to Write Your First Codex Task Request](/en/ai/how-to-write-first-codex-task-request/)
 - [Build and Test Are Not Enough to Validate an Agent](/en/ai/build-and-test-are-not-enough-to-validate-an-agent/)
 - [Why a Good AGENTS.md Should Be Short](/en/ai/why-good-agents-md-should-be-short/)
+- [Approval Boundaries and Guardrails](/en/ai/approval-boundaries-and-guardrails/)

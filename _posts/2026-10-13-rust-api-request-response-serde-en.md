@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 04. Designing request and response types with serde"
 description: "Separates request DTOs, response DTOs, and internal domain types while defining where serde belongs."

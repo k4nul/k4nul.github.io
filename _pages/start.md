@@ -49,7 +49,7 @@ AI agent 운영에서도 민감정보, 권한, trace, 승인 경계가 중요합
 - Codex가 매번 다른 결과를 낼 때: [Codex에 하네스가 필요한 이유](/ai/why-codex-needs-a-harness/) → [Codex plan-first 운영](/ai/operating-codex-plan-first/) → [Codex config로 일관성 확보하기](/ai/using-config-to-keep-codex-consistent/)
 - `AGENTS.md`가 길어질 때: [AGENTS.md 작성법](/ai/how-to-write-agents-md-for-codex/) → [좋은 AGENTS.md를 짧게 쓰는 기준](/ai/why-good-agents-md-should-be-short/) → [instruction file과 control plane 경계](/ai/project-instruction-files-should-not-be-control-planes/)
 - `CLAUDE.md`와 rules가 비대해질 때: [Claude Code 운영 구조](/ai/claude-code-as-operating-structure/) → [CLAUDE.md 작성 범위](/ai/how-far-should-claude-md-go/) → [rules와 skills 책임 분리](/ai/split-instructions-with-rules-and-skills/)
-- 컨텍스트가 너무 커질 때: [AI 에이전트 토큰 관리](/ai/why-token-management-matters-in-harness-engineering/) → [agent context 비대화 원인](/ai/long-logs-long-plans-long-memory-agent-context-bloat/) → [working state summary 설계법](/ai/how-to-design-state-summaries-that-save-tokens/)
+- 컨텍스트가 너무 커질 때: [AI 에이전트 토큰 관리](/ai/why-token-management-matters-in-harness-engineering/) → [agent context 비대화 원인](/ai/long-logs-long-plans-long-memory-agent-context-bloat/) → [Claude Code context budget 관리](/ai/handle-logs-issues-and-auto-memory-with-context-budget/) → [working state summary 설계법](/ai/how-to-design-state-summaries-that-save-tokens/)
 - 작업 결과를 검증하고 싶을 때: [build와 test만으로 부족한 이유](/ai/build-and-test-are-not-enough-to-validate-an-agent/) → [handoff schema 계약](/ai/from-prose-to-schema-turning-handoff-into-a-contract/) → [observable harness 전환](/ai/from-document-centered-ops-to-observable-harness/)
 
 ## 추천 첫 글 5개

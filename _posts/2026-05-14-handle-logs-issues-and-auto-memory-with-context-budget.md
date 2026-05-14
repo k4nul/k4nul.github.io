@@ -124,6 +124,14 @@ auto memory는 유용하지만, 사람이 가끔 감사해야 한다.
 
 법무, 보안, 장애 대응처럼 원문 보존이 중요한 작업에서는 요약만 남기면 안 된다. 원문은 별도 저장소에 보존하고, live context에는 작업에 필요한 상태를 남기는 방식으로 나누어야 한다.
 
+## 함께 읽을 글
+
+- [AI Engineering 허브](/ai-engineering/)
+- [AI agent 운영 실전 템플릿](/ai-engineering/templates/)
+- [긴 로그와 긴 계획이 agent context를 비대하게 만드는 이유](/ai/long-logs-long-plans-long-memory-agent-context-bloat/)
+- [working state summary 설계법](/ai/how-to-design-state-summaries-that-save-tokens/)
+- [Codex와 Claude Code의 토큰 관리 전략 차이](/ai/how-token-management-strategies-differ-between-codex-and-claude-code/)
+
 ## 참고자료
 
 - Anthropic, [How Claude remembers your project](https://code.claude.com/docs/en/memory)

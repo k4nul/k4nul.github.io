@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 07. Writing structured logs with tracing"
 description: "Uses tracing events and spans to shape request-scoped structured logs for a Rust API."

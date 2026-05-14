@@ -2,7 +2,7 @@
 title: "AI agent 운영 실전 템플릿"
 layout: single
 permalink: /ai-engineering/templates/
-description: "AGENTS.md, CLAUDE.md, Codex 작업 요청, agent 결과 리뷰, Claude Code permissions/settings 점검을 위한 최소 템플릿"
+description: "AGENTS.md, CLAUDE.md, Codex 작업 요청, agent 결과 리뷰, Claude Code permissions/settings와 MCP 연결 점검을 위한 최소 템플릿"
 author_profile: true
 sidebar:
   nav: "sections"
@@ -10,7 +10,7 @@ lang: ko
 translation_key: ai-agent-operations-templates
 ---
 
-이 페이지는 AI coding agent를 프로젝트에 붙일 때 처음부터 길고 복잡한 운영 문서를 만들지 않기 위한 최소 템플릿 모음입니다. 각 템플릿은 복사해서 늘리는 출발점이 아니라, 프로젝트에 맞는 것만 남기는 기준으로 사용합니다.
+이 페이지는 AI coding agent를 프로젝트에 붙일 때 처음부터 길고 복잡한 운영 문서를 만들지 않기 위한 최소 템플릿 모음입니다. 각 템플릿은 복사해서 늘리는 출발점이 아니라, 프로젝트에 맞는 것만 남기는 기준으로 사용합니다. 외부 도구나 문맥을 연결할 때는 편의보다 권한, 출처, 감사 가능성을 먼저 확인합니다.
 
 ## AGENTS.md 최소 템플릿
 
@@ -133,11 +133,25 @@ translation_key: ai-agent-operations-templates
 - permission mode가 팀의 승인 정책과 맞는가?
 - 설정 변경 후 실제로 어떤 tool call이 허용/차단되는지 테스트했는가?
 
+## MCP 연결 전 점검표
+
+- MCP로 연결할 시스템의 소유자와 데이터 등급을 확인했는가?
+- 읽기 전용, 쓰기 가능, 자동 실행 가능 권한을 구분했는가?
+- 이슈, 로그, 모니터링, 문서, 데이터베이스 중 어떤 출처를 읽었는지 작업 보고에 남기게 했는가?
+- secret, customer data, 내부 보안 자료가 불필요하게 노출되지 않는가?
+- third-party MCP server의 신뢰성과 prompt injection 위험을 별도로 검토했는가?
+- tool schema와 출력이 너무 길어 agent context를 오염시키지 않는가?
+- 쓰기 권한이 필요하다면 승인, dry-run, audit log, rollback 기준이 있는가?
+- MCP 연결이 없어도 같은 작업을 파일 참조나 요약으로 안전하게 처리할 수 있는가?
+
 ## 함께 읽을 글
 
 - [AI Engineering 허브](/ai-engineering/)
 - [AGENTS.md 작성법: 저장소 목적과 검증 기준을 짧게 담기](/ai/how-to-write-agents-md-for-codex/)
 - [CLAUDE.md 작성 범위: rules, skills, settings로 나누는 기준](/ai/how-far-should-claude-md-go/)
+- [Claude Code context budget: 긴 로그, 이슈, auto memory 관리 기준](/ai/handle-logs-issues-and-auto-memory-with-context-budget/)
 - [Codex 첫 작업 요청 작성법](/ai/how-to-write-first-codex-task-request/)
 - [AI agent 검증에서 build와 test만으로 부족한 이유](/ai/build-and-test-are-not-enough-to-validate-an-agent/)
 - [Claude Code settings와 permissions로 작업 경계 고정하기](/ai/fix-claude-code-boundaries-with-settings-and-permissions/)
+- [Claude Code hooks 활용: 검증과 guardrail을 자동화하는 기준](/ai/automate-validation-and-guardrails-with-hooks/)
+- [Claude Code MCP 운영: 외부 문맥을 붙여 넣지 않고 연결하는 법](/ai/connect-external-context-with-mcp/)

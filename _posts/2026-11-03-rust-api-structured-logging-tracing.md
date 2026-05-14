@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 07. tracing으로 구조화 로그 남기기"
 description: "Rust tracing의 event와 span을 사용해 요청 단위로 추적 가능한 로그 구조를 만든다."

@@ -123,6 +123,10 @@ search: false
 
 마지막으로, 실제 운영에서 어느 쪽이 더 크게 문제로 드러나는지는 팀의 작업 형태에 따라 달라질 수 있다. 짧고 독립적인 태스크가 많은 팀은 startup instruction stack이 더 중요하게 느껴질 수 있고, 긴 연속 작업과 반복 tool call이 많은 팀은 thread growth가 더 큰 병목으로 보일 수 있다. 그래서 이 글의 결론은 특정 도구 선택이 아니라, 사용하는 도구에 맞춰 하네스를 계속 조정해야 한다는 점에 있다.
 
+## 함께 읽을 글
+
+- [Claude Code context budget: 긴 로그, 이슈, auto memory 관리 기준](/ai/handle-logs-issues-and-auto-memory-with-context-budget/)
+
 ## 참고자료
 
 - OpenAI, [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)

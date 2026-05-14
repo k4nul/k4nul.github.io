@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 05. Making API error responses consistent"
 description: "Separates internal errors, user input errors, HTTP status codes, and JSON error responses in a Rust API."

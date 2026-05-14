@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 08. 입력 검증과 잘못된 요청 처리하기"
 description: "Rust API에서 JSON 파싱 실패, 필드 검증 실패, 크기 제한 실패를 구분해 400 계열 응답으로 정리한다."

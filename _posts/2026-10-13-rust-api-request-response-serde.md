@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 04. 요청/응답 타입 설계와 serde 사용 기준"
 description: "Rust API에서 요청 DTO, 응답 DTO, 내부 도메인 타입을 분리하고 serde 적용 범위를 정한다."

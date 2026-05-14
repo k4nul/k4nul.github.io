@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 05. 에러 응답을 일관되게 만들기"
 description: "Rust API에서 내부 에러, 사용자 입력 에러, HTTP 상태 코드, JSON 에러 응답의 경계를 분리한다."

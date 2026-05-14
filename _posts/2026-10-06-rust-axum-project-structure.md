@@ -1,4 +1,4 @@
-﻿---
+---
 layout: single
 title: "Rust Service 03. Rust API 프로젝트 구조 잡기"
 description: "Axum API 프로젝트에서 main, router, state, handler 모듈을 어떻게 나눌지 기준을 세운다."
