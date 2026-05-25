@@ -98,6 +98,13 @@ Jenkins LTS와 Java 요구사항은 날짜에 민감하다. 이 글은 2026-04-2
 
 운영 환경에서는 TLS, reverse proxy, backup, restore, plugin pinning, controller/agent 분리, 계정 권한 정책을 별도 절차로 검증해야 한다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+- [Docker registry push와 image 관리](/devops/docker-registry-push-and-image-management/)
+
 ## 참고자료
 
 - Jenkins User Handbook, [Installing Jenkins](https://www.jenkins.io/doc/book/installing/)

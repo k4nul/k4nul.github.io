@@ -116,6 +116,58 @@
 - build 실패 시 파일/플러그인/오류: 해당 없음
 - 오늘 글은 `search: false`가 있어 사이트 내부 검색 노출 의도는 별도 확인이 필요하다. HTML robots noindex는 출력되지 않았다.
 
+## 2026-05-25
+
+### 오늘의 목표
+
+- 2026-05-16부터 2026-05-25까지의 운영 공백을 복구한다.
+- 공백 기간에 발행된 글의 post-publish 내부링크를 복구한다.
+- 다음 14일 예약 글의 pre-publish 내부링크와 운영 문서를 재동기화한다.
+
+### 변경 파일
+
+- `_pages/development-ai.md`, `_pages/start.md`, `_pages/ai-agent-templates.md`: 공개된 Claude Code 운영 템플릿과 Git PR/MR 리뷰 글을 AI Engineering 경로에 연결했다.
+- `_pages/development-devops.md`, `_pages/en-development-devops.md`: 공개된 Docker, Git 01~08, Jenkins 01 경로를 DevOps 추천 흐름에 반영했다.
+- `_posts/2026-05-17*`~`_posts/2026-05-25*`: 공백 기간 발행 글에 관련 공개 글과 허브 링크를 추가했다.
+- `_posts/2026-05-26*`~`_posts/2026-06-08*`: 다음 14일 예약 글에 현재 공개된 관련 글만 연결했다.
+- `docs/growth/*`: 일일/주간 운영 원칙, 예약 인벤토리/캘린더, 색인 후보, 복구 보고서를 갱신했다.
+
+### 변경 이유
+
+- 최근 며칠 동안 발행 후 허브 반영과 내부링크 작업이 이어지지 않은 상태를 복구했다.
+- 예약 글은 공개 페이지에서 아직 링크하지 않고, 글 본문에는 현재 이미 공개된 글만 연결해 발행 시점 404 위험을 줄였다.
+- 새 글을 만들지 않고 예약 포스팅 큐 운영을 다시 기본값으로 고정했다.
+
+### 실행한 검증 명령
+
+- `git branch --show-current`: `master`
+- `git status --short`: 작업 시작 시 출력 없음.
+- `bundle exec jekyll build`: 성공. 2026-05-26 이후 글은 `Skipping: ... has a future date`로 제외됨.
+- `npm.cmd run check:links:local`: 성공. Source pages 172, internal references 10393, unique internal targets 190, broken targets 0.
+- `git diff --check`: 통과. LF/CRLF warning만 출력됨.
+- `_site` 미래 slug 점검: 다음 14일 예약 slug가 `_site` HTML에서 발견되지 않음.
+- `npm.cmd run seo:audit`: 실패. 기존 canonical mismatch와 thin redirect warning이 남아 있으며, `AI` 생성 경로와 `/ai/...` canonical 불일치가 포함됨.
+
+### 결과
+
+- 2026-05-16~2026-05-25 발행 글 19개를 복구 대상으로 확인했다.
+- 2026-05-26~2026-06-08 예약 글 28개에 공개된 선행 글 링크를 추가했다.
+- `docs/growth/indexing-candidates.md`와 `docs/growth/recovery-report.md`를 새로 만들었다.
+
+### 다음 작업
+
+- 2026-05-26 Jenkins 02 발행 후 post-publish 확인.
+- K8S 06~10 예약 글 pre-publish 내부링크 보강.
+- 2026-06-16 agent trace KR/EN pair의 AI Engineering 연결 후보 점검.
+
+### 남은 리스크
+
+- Search Console 데이터: 사용자 입력 필요
+- GA4 데이터: 사용자 입력 필요
+- 링크 검증 미실행 사유: 해당 없음
+- build 실패 시 파일/플러그인/오류: 해당 없음
+- SEO audit 실패: 기존 redirect/thin page warning과 canonical mismatch 49건. 이번 작업의 링크 추가로 새 broken link는 생기지 않았으나, AI category 생성 경로와 canonical 경로 불일치는 별도 구조 개선 후보로 남김.
+
 ## 2026-05-15
 
 ### 오늘의 목표

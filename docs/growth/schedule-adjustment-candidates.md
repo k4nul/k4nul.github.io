@@ -1,6 +1,6 @@
 # Schedule Adjustment Candidates
 
-Verification date: 2026-05-13
+Verification date: 2026-05-25
 
 This document records candidates only. Do not change publish date, slug, filename, or permalink unless the user explicitly requests it.
 
@@ -17,6 +17,16 @@ This document records candidates only. Do not change publish date, slug, filenam
 | 2026-11-17 | 2027-01-19 | Rust | 20 | candidate only; do not change date without user request |
 | 2027-02-16 | 2027-02-23 | Rust | 4 | candidate only; do not change date without user request |
 | 2027-03-16 | 2027-03-23 | Rust | 4 | candidate only; do not change date without user request |
+
+## Recovery Notes: 2026-05-25
+
+These are still candidates only. No publish dates, filename slugs, or permalinks were changed during recovery.
+
+| Start | End | Topic | Count | Note |
+| --- | --- | --- | --- | --- |
+| 2026-05-17 | 2026-05-24 | Git KR/EN daily series | 16 | Already published during the operating gap. Internal links restored; no schedule change needed. |
+| 2026-05-25 | 2026-06-03 | Jenkins KR/EN daily series | 20 | High publishing density. Keep dates unless Search Console or the user requests a change. |
+| 2026-06-04 | 2026-06-13 | Kubernetes KR/EN daily series | 20 | Next pre-publish focus after Jenkins queue. |
 
 ## Weak Title Candidates
 

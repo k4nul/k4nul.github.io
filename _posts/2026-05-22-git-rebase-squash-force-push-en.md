@@ -126,6 +126,13 @@ This post does not cover every interactive rebase command such as `pick`, `rewor
 
 The reproduction used only an isolated bare remote. In real hosted repositories, protected branches, required reviews, or required status checks may reject force pushes.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [Reproducing and Resolving a Basic Conflict](/en/devops/git-conflict-resolution-basics/)
+- [Connecting tags, releases, and Docker Image Versions](/en/devops/git-tags-releases-docker-image-versions/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+
 ## References
 
 - Git, [git rebase](https://git-scm.com/docs/git-rebase)

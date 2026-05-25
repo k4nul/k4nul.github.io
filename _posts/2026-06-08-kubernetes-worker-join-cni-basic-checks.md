@@ -76,6 +76,13 @@ kubectl describe node <worker-node-name>
 
 사용하는 CNI에 따라 설치 manifest, Pod CIDR 요구사항, NetworkPolicy 지원 여부가 달라진다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [Docker 컨테이너와 VM 차이](/devops/docker-containers-vs-vms/)
+- [Dockerfile과 build context 이해하기](/devops/dockerfile-basics-and-build-context/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+
 ## 참고자료
 
 - Kubernetes Docs, [kubeadm join](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join/)

@@ -80,6 +80,13 @@ The control plane installation and basic check flow were verified in the author'
 
 A single control plane is useful for learning but does not meet production high-availability expectations.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [Docker Containers vs. VMs](/en/devops/docker-containers-vs-vms/)
+- [Dockerfile Basics and Build Context](/en/devops/dockerfile-basics-and-build-context/)
+- [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
+
 ## References
 
 - Kubernetes Docs, [Creating a cluster with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)

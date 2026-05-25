@@ -92,6 +92,13 @@ This post covers only part of Jenkinsfile syntax. Real operational Pipelines may
 
 Agent operating systems affect whether `sh`, `bat`, `powershell`, or `pwsh` should be used.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+- [Docker registry push and image management](/en/devops/docker-registry-push-and-image-management/)
+
 ## References
 
 - Jenkins User Handbook, [Pipeline Syntax](https://www.jenkins.io/doc/book/pipeline/syntax/)

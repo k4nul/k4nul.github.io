@@ -107,6 +107,12 @@ Claude Code에게 "민감 파일은 읽지 마"라고 말하는 것은 행동을
 
 보안 요구가 강한 팀에서는 Claude Code 설정만으로 충분하지 않다. 별도 sandbox, secret scanning, CI policy, code review, 조직 managed settings가 함께 필요할 수 있다.
 
+## 함께 읽을 글
+
+- [AI Engineering 허브](/ai-engineering/)
+- [AI agent 운영 실전 템플릿](/ai-engineering/templates/)
+- [Claude Code 프로젝트 운영 템플릿: CLAUDE.md, rules, skills, settings 묶기](/ai/claude-code-project-operations-template/)
+
 ## 참고자료
 
 - Anthropic, [Claude Code settings](https://code.claude.com/docs/en/settings)

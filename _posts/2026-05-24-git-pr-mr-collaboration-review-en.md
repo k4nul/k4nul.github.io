@@ -100,6 +100,14 @@ This post does not compare every GitHub and GitLab PR/MR setting. CODEOWNERS, br
 
 The reproduction used only a local Git remote without a hosted service. Real PR/MR creation, review comments, CI pipeline integration, and merge button behavior were not reproduced.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [AI Engineering Hub](/en/development/ai/)
+- [Connecting tags, releases, and Docker Image Versions](/en/devops/git-tags-releases-docker-image-versions/)
+- [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
+- [AI agent operations templates](/en/development/ai/templates/)
+
 ## References
 
 - GitHub Docs, [About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)

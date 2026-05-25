@@ -70,6 +70,7 @@ AI agent 운영의 핵심은 프롬프트를 길게 쓰는 것이 아니라, 작
 - [AGENTS.md가 있는 저장소에서 Claude Code를 함께 쓰는 법](/ai/use-claude-code-with-agents-md/)
 - [rules와 skills로 지시 로딩을 나누는 기준](/ai/split-instructions-with-rules-and-skills/)
 - [Claude Code subagent 사용 기준: 전문 에이전트를 언제 분리할까](/ai/when-to-use-claude-code-subagents/)
+- [Claude Code 프로젝트 운영 템플릿: CLAUDE.md, rules, skills, settings 묶기](/ai/claude-code-project-operations-template/)
 
 ### 토큰/컨텍스트 관리가 어려울 때
 
@@ -86,6 +87,7 @@ AI agent 운영의 핵심은 프롬프트를 길게 쓰는 것이 아니라, 작
 - [handoff를 schema 계약으로 바꾸는 방법](/ai/from-prose-to-schema-turning-handoff-into-a-contract/)
 - [trace가 결과보다 중요한 이유](/ai/why-trace-matters-more-than-results/)
 - [문서 중심 운영에서 observable harness로 전환하기](/ai/from-document-centered-ops-to-observable-harness/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
 
 ### MCP/hooks/permissions/settings 보안 경계를 잡고 싶을 때
 
@@ -106,6 +108,7 @@ AI agent 운영의 핵심은 프롬프트를 길게 쓰는 것이 아니라, 작
 - [Codex 프로젝트 운영 템플릿](/ai/codex-project-operations-template/)
 - [Codex subagent 사용 기준](/ai/when-to-use-codex-subagents/)
 - [Claude Code subagent 사용 기준](/ai/when-to-use-claude-code-subagents/)
+- [Claude Code 프로젝트 운영 템플릿](/ai/claude-code-project-operations-template/)
 - [Claude Code settings와 permissions 경계](/ai/fix-claude-code-boundaries-with-settings-and-permissions/)
 - [좋은 압축과 나쁜 압축](/ai/good-compression-vs-bad-compression-what-to-keep-and-what-to-drop/)
 - [멀티 에이전트가 기본값이 아닌 이유](/ai/multi-agent-is-not-the-default/)

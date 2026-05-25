@@ -82,6 +82,13 @@ The basic cluster flow was checked in the author's practice environment. Detaile
 
 Kubernetes deployment methods differ across managed services, kubeadm, kops, kubespray, and lightweight distributions. This series continues with kubeadm because the focus is on on-prem fundamentals.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [Docker Containers vs. VMs](/en/devops/docker-containers-vs-vms/)
+- [Dockerfile Basics and Build Context](/en/devops/dockerfile-basics-and-build-context/)
+- [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
+
 ## References
 
 - Kubernetes Docs, [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)

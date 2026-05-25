@@ -98,6 +98,13 @@ This post does not compare Git Flow, trunk-based development, or release branch 
 
 The reproduction only tested local branch merging. GitHub, GitLab, Bitbucket branch protection and merge method settings were not tested.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [Understanding Change Flow with status, diff, add, commit, and log](/en/devops/git-status-diff-add-commit-log/)
+- [Separating remote, fetch, pull, and push](/en/devops/git-remote-fetch-pull-push/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+
 ## References
 
 - Git, [Git Glossary](https://git-scm.com/docs/gitglossary)

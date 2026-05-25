@@ -110,6 +110,12 @@ secret, production customer data, 내부 보안 자료처럼 권한과 감사가
 
 보안 요구가 높은 조직에서는 MCP server 설치와 권한 부여가 별도 승인 대상일 수 있다. third-party server는 신뢰성과 prompt injection 위험을 독립적으로 평가해야 한다.
 
+## 함께 읽을 글
+
+- [AI Engineering 허브](/ai-engineering/)
+- [AI agent 운영 실전 템플릿](/ai-engineering/templates/)
+- [Claude Code 프로젝트 운영 템플릿: CLAUDE.md, rules, skills, settings 묶기](/ai/claude-code-project-operations-template/)
+
 ## 참고자료
 
 - Anthropic, [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp)

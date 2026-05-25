@@ -1,7 +1,7 @@
 # Scheduled Posts Inventory
 
-Verification date: 2026-05-13
-Scan range: future posts in `_posts/` from 2026-05-14 through 2027-04-30, based on filename dates.
+Verification date: 2026-05-25
+Scan range: future posts in `_posts/` from 2026-05-26 through 2027-04-30, based on filename dates. The older 2026-05-13 full scan remains below as a historical snapshot.
 
 ## Build Policy Observed
 
@@ -13,13 +13,57 @@ Scan range: future posts in `_posts/` from 2026-05-14 through 2027-04-30, based 
 
 ## Summary
 
-- Scheduled posts total: 163
-- KR: 83
-- EN: 80
-- KR/EN pair translation_key count: 80
-- Posts that belong to KR/EN pairs: 160
+- Scheduled future posts total: 142
+- KR: 71
+- EN: 71
+- KR/EN pair translation_key count: 71
+- Posts that belong to KR/EN pairs: 142
+- Recently published during recovery gap, 2026-05-16 through 2026-05-25: 19 posts.
+- Next 14 days, 2026-05-26 through 2026-06-08: 28 posts / 14 KR/EN pairs.
+- Next 30 days, 2026-05-26 through 2026-06-24: 44 posts / 22 KR/EN pairs.
 
-## Core Axis Distribution
+## Recovery Sync Snapshot: 2026-05-25
+
+Last daily change-log entry before recovery: 2026-05-15. The operating gap is therefore 2026-05-16 through 2026-05-25.
+
+### Published During Gap
+
+| Date | Post group | Count | KR/EN status | Core axis | Post-publish status |
+| --- | --- | --- | --- | --- | --- |
+| 2026-05-16 | Claude Code project operations template | 1 | KR only | AI coding agent operations, CLAUDE.md, Claude Code, permissions/settings | Connected to `/ai-engineering/`, `/start-here/`, `/ai-engineering/templates/`, and related Claude Code posts. |
+| 2026-05-17~2026-05-24 | Git 01~08 | 16 | 8 KR/EN pairs | DevOps; Git 08 also AI agent verification | Added DevOps hub links, adjacent Git links, and Git 08 links to AI Engineering/templates. |
+| 2026-05-25 | Jenkins 01 | 2 | paired KR/EN | DevOps | Added DevOps hub and related Git/Docker links. |
+
+### Next 14 Days
+
+| Date | Post group | KR/EN status | Core axis | Hub to connect | Template to connect | Pre-publish status | Schedule candidate |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-05-26 | Jenkins 02 installation and initial setup | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published DevOps posts. | No date change. |
+| 2026-05-27 | Jenkins 03 plugins, credentials, tools | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published DevOps posts. | No date change. |
+| 2026-05-28 | Jenkins 04 Freestyle Job vs Pipeline | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published DevOps posts. | No date change. |
+| 2026-05-29 | Jenkins 05 Declarative Pipeline | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published DevOps posts. | No date change. |
+| 2026-05-30 | Jenkins 06 Jenkinsfile basics | paired KR/EN | DevOps, AI coding agent operations | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published DevOps posts. | No date change; title remains weak-title candidate only. |
+| 2026-05-31 | Jenkins 07 environment, parameters, when | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published DevOps posts. | No date change. |
+| 2026-06-01 | Jenkins 08 Docker image build and registry push | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published DevOps posts. | No date change. |
+| 2026-06-02 | Jenkins 09 common failures | paired KR/EN | AI coding agent operations, DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published DevOps posts. | No date change; later AI Engineering connection candidate after publication. |
+| 2026-06-03 | Jenkins 10 Kubernetes deployment boundary | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published DevOps posts. | No date change. |
+| 2026-06-04 | K8S 01 what Kubernetes solves | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published Docker/Jenkins posts. | No date change. |
+| 2026-06-05 | K8S 02 Pod, Deployment, ReplicaSet, Service | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published Docker/Jenkins posts. | No date change. |
+| 2026-06-06 | K8S 03 kubeadm installation strategy | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published Docker/Jenkins posts. | No date change. |
+| 2026-06-07 | K8S 04 control plane install checks | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published Docker/Jenkins posts. | No date change. |
+| 2026-06-08 | K8S 05 worker join and CNI checks | paired KR/EN | DevOps | `/devops/`, `/en/development/devops/` | N/A | Related links added to already published Docker/Jenkins posts. | No date change. |
+
+### Next 30 Days
+
+| Range | Post group | Count | KR/EN status | Core axis | Main follow-up |
+| --- | --- | --- | --- | --- | --- |
+| 2026-05-26~2026-06-03 | Jenkins 02~10 | 18 | 9 KR/EN pairs | DevOps; selected posts touch AI coding agent operations | Post-publish: add only actually published Jenkins links to DevOps hub. |
+| 2026-06-04~2026-06-13 | Kubernetes 01~10 | 20 | 10 KR/EN pairs | DevOps; K8S 07 security, K8S 08 verification | Pre-publish K8S 06~10 next; connect AI/security hubs only after publication. |
+| 2026-06-16 | Agent trace record | 2 | paired KR/EN | AI coding agent operations, AI agent security, AI agent verification | High-priority AI Engineering and Start Here candidate after publication. |
+| 2026-06-18 | Kubernetes troubleshooting with describe/events/logs | 2 | paired KR/EN | token/context, DevOps | Link to DevOps and AI Engineering after publication if public. |
+| 2026-06-23 | Guardrails and approval boundaries from harness perspective | 2 | paired KR/EN | AI coding agent operations, permissions/settings, AI agent security | High-priority AI Engineering/security candidate after publication. |
+
+## Historical Core Axis Distribution From 2026-05-13 Scan
 
 | Core axis | Post count |
 | --- | --- |
@@ -34,7 +78,9 @@ Scan range: future posts in `_posts/` from 2026-05-14 through 2027-04-30, based 
 | MCP | 2 |
 | CLAUDE.md | 1 |
 
-## Inventory
+## Historical Full Inventory From 2026-05-13 Scan
+
+Rows dated 2026-05-14 through 2026-05-25 have since moved from scheduled to published status. Keep them here only as the original baseline for comparison; use the recovery snapshot above for current queue operations.
 
 | Scheduled date | Lang | Title | slug/permalink | Category | Tags | Core axis | KR/EN pair | Hub to connect | Template to connect | Needs pre-publish work | Risks |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

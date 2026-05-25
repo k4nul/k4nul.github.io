@@ -97,6 +97,13 @@ merge 방식도 팀 정책과 맞춰야 한다. fast-forward는 이력이 단순
 
 직접 재현은 로컬 branch merge만 확인했다. GitHub, GitLab, Bitbucket의 branch protection이나 merge method 설정은 확인하지 않았다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [status, diff, add, commit, log로 변경 흐름 이해하기](/devops/git-status-diff-add-commit-log/)
+- [remote, fetch, pull, push를 분리해서 이해하기](/devops/git-remote-fetch-pull-push/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+
 ## 참고자료
 
 - Git, [Git Glossary](https://git-scm.com/docs/gitglossary)

@@ -126,6 +126,13 @@ Jenkins LTS and Java requirements are date- and version-sensitive. This post is 
 
 Jenkins may not be the simplest choice for teams that only use GitHub repositories and GitHub-hosted runners, teams that keep issues, MR, registry, and runners inside GitLab, or teams that prioritize Kubernetes-native pipelines.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+- [Connecting tags, releases, and Docker Image Versions](/en/devops/git-tags-releases-docker-image-versions/)
+- [Docker registry push and image management](/en/devops/docker-registry-push-and-image-management/)
+
 ## References
 
 - Jenkins, [Jenkins User Documentation](https://www.jenkins.io/doc/)

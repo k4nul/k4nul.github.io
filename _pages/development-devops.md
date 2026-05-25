@@ -21,8 +21,8 @@ DevOps 글은 AI agent 작업을 자동 검증하고 배포 경계 안에 묶기
 
 ## 추천 흐름
 
-- Docker: 컨테이너, 이미지, Dockerfile, 캐시, registry 흐름
-- Git: 변경 기록, branch/merge, remote, conflict, rebase, tag, PR/MR
-- Jenkins: 설치, plugin, credentials, Pipeline, Jenkinsfile, 장애 분리
+- Docker: [컨테이너와 VM 차이](/devops/docker-containers-vs-vms/), [Dockerfile과 build context](/devops/dockerfile-basics-and-build-context/), [image와 tag/digest](/devops/docker-images-layers-tags-digests/), [registry push와 image 관리](/devops/docker-registry-push-and-image-management/)
+- Git: [Git이 기록하는 것과 기록하지 않는 것](/devops/git-records-and-boundaries/), [status/diff/add/commit/log 흐름](/devops/git-status-diff-add-commit-log/), [branch와 merge](/devops/git-branch-and-merge/), [remote/fetch/pull/push](/devops/git-remote-fetch-pull-push/), [conflict 기본 절차](/devops/git-conflict-resolution-basics/), [rebase/squash/force push 주의점](/devops/git-rebase-squash-force-push/), [tag와 release로 Docker image version 연결](/devops/git-tags-releases-docker-image-versions/), [PR/MR 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+- Jenkins: [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/), 설치, plugin, credentials, Pipeline, Jenkinsfile, 장애 분리
 - Kubernetes: 기본 리소스, 설치 전략, manifest, resource, storage, 온프렘 보완 요소
 

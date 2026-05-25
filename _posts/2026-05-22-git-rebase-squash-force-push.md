@@ -125,6 +125,13 @@ force push도 마찬가지다. 필요한 순간은 있지만 기본값이 되어
 
 직접 재현은 isolated bare remote에서만 수행했다. 실제 협업 저장소의 protected branch, required review, required status checks 환경에서는 force push가 거절될 수 있다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [conflict를 재현하고 해결하는 기본 절차](/devops/git-conflict-resolution-basics/)
+- [tag와 release로 Docker 이미지 버전과 배포 이력 연결하기](/devops/git-tags-releases-docker-image-versions/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+
 ## 참고자료
 
 - Git, [git rebase](https://git-scm.com/docs/git-rebase)

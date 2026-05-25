@@ -103,6 +103,12 @@ git log --oneline -1
 
 직접 재현은 로컬 저장소에서만 수행했다. 원격 저장소, branch protection, hosted Git 서비스의 PR/MR 정책은 확인하지 않았다. 따라서 이 글의 결론은 Git의 기본 기록 모델에 대한 설명이지, 특정 조직의 협업 정책까지 포함한 결론은 아니다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [status, diff, add, commit, log로 변경 흐름 이해하기](/devops/git-status-diff-add-commit-log/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+
 ## 참고자료
 
 - Git, [Git Glossary](https://git-scm.com/docs/gitglossary)

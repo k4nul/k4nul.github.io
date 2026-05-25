@@ -91,6 +91,13 @@ pipeline {
 
 Jenkins agent 운영체제에 따라 `sh`, `bat`, `powershell`, `pwsh` step 선택이 달라질 수 있다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+- [Docker registry push와 image 관리](/devops/docker-registry-push-and-image-management/)
+
 ## 참고자료
 
 - Jenkins User Handbook, [Pipeline Syntax](https://www.jenkins.io/doc/book/pipeline/syntax/)

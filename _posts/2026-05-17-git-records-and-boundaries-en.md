@@ -104,6 +104,12 @@ This post does not cover Git object internals, packfiles, reflog, or garbage col
 
 The reproduction used only a local repository. Remote repositories, branch protection, and hosted Git PR/MR policies were not tested. The conclusion here is about Git's basic recording model, not about any specific team's collaboration policy.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [Understanding Change Flow with status, diff, add, commit, and log](/en/devops/git-status-diff-add-commit-log/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+
 ## References
 
 - Git, [Git Glossary](https://git-scm.com/docs/gitglossary)

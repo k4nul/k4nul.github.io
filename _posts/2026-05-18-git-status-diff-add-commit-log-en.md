@@ -97,6 +97,13 @@ This post does not cover reset, restore, checkout, or stash. Binary diffs, renam
 
 The reproduction used a tiny repository with one file. Large repositories, generated files, line-ending conversion, and file mode changes were not tested.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [What Git Records and What It Does Not Record](/en/devops/git-records-and-boundaries/)
+- [When and How to Use branch and merge](/en/devops/git-branch-and-merge/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+
 ## References
 
 - Git, [git status](https://git-scm.com/docs/git-status)

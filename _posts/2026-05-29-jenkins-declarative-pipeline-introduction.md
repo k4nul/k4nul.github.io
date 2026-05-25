@@ -89,6 +89,13 @@ Scripted Pipeline은 더 유연하지만 초반에는 자유도가 오히려 부
 
 Declarative Pipeline만으로 모든 복잡한 배포 흐름을 표현해야 한다는 뜻은 아니다. 복잡한 로직은 Scripted block, shared library, 외부 script로 분리하는 편이 나을 수 있다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+- [Docker registry push와 image 관리](/devops/docker-registry-push-and-image-management/)
+
 ## 참고자료
 
 - Jenkins User Handbook, [Pipeline](https://www.jenkins.io/doc/book/pipeline/)

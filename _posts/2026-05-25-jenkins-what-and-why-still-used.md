@@ -125,6 +125,13 @@ Jenkins LTS와 Java 요구사항은 버전과 날짜에 민감하다. 이 글은
 
 GitHub 저장소만 쓰고 GitHub-hosted runner로 충분한 팀, GitLab 안에서 issue, MR, registry, runner를 모두 쓰는 팀, Kubernetes-native pipeline을 우선하는 팀에는 Jenkins가 가장 단순한 선택이 아닐 수 있다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+- [tag와 release로 Docker 이미지 버전과 배포 이력 연결하기](/devops/git-tags-releases-docker-image-versions/)
+- [Docker registry push와 image 관리](/devops/docker-registry-push-and-image-management/)
+
 ## 참고자료
 
 - Jenkins, [Jenkins User Documentation](https://www.jenkins.io/doc/)

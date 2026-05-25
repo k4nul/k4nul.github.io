@@ -90,6 +90,13 @@ This post does not compare semantic versioning, CalVer, or release branch strate
 
 The reproduction only created Git tags. Docker image build and push are based on the earlier Docker 05 reproduction; this post did not run a Docker registry push again.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [Why rebase, squash, and force push Need Care](/en/devops/git-rebase-squash-force-push/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+- [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
+
 ## References
 
 - Git, [git tag](https://git-scm.com/docs/git-tag)

@@ -156,3 +156,4 @@ translation_key: ai-agent-operations-templates
 - [Claude Code hooks 활용: 검증과 guardrail을 자동화하는 기준](/ai/automate-validation-and-guardrails-with-hooks/)
 - [Claude Code MCP 운영: 외부 문맥을 붙여 넣지 않고 연결하는 법](/ai/connect-external-context-with-mcp/)
 - [Claude Code subagent 사용 기준: 전문 에이전트를 언제 분리할까](/ai/when-to-use-claude-code-subagents/)
+- [Claude Code 프로젝트 운영 템플릿: CLAUDE.md, rules, skills, settings 묶기](/ai/claude-code-project-operations-template/)

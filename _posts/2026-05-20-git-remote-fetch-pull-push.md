@@ -119,6 +119,13 @@ git merge origin/main --ff-only
 
 직접 재현은 로컬 bare 저장소에서만 수행했다. GitHub, GitLab 같은 hosted 서비스의 권한, branch protection, pull request ref는 확인하지 않았다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [branch와 merge는 언제 어떻게 써야 하는가](/devops/git-branch-and-merge/)
+- [conflict를 재현하고 해결하는 기본 절차](/devops/git-conflict-resolution-basics/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+
 ## 참고자료
 
 - Git, [git remote](https://git-scm.com/docs/git-remote)

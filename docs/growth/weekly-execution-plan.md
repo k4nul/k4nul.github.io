@@ -1,6 +1,16 @@
 # Weekly Execution Plan
 
-검증 기준일: 2026-05-13
+검증 기준일: 2026-05-25
+
+## Queue-First Operating Rule
+
+최근 운영 공백 복구 이후 주간 실행 계획의 기본값은 신규 글 작성이 아니라 예약 포스팅 큐 운영이다. 매주 먼저 이미 작성된 예약 글의 발행 전 품질, 발행 후 내부링크, KR/EN 대응, Search Console 색인 후보를 확인한다.
+
+- 공개 페이지에는 실제 공개된 글과 오늘 공개된 글만 링크한다.
+- 미래 글의 publish date, filename slug, permalink는 변경하지 않는다.
+- 기존 영어판은 삭제하지 않고, 품질 문제가 있으면 리라이트 후보로 기록한다.
+- Search Console/GA4 데이터가 없으면 성과 수치를 추정하지 않는다.
+- 광범위한 제목 변경, cannibalization 정리, 영어 확장은 별도 데이터 기반 프롬프트로 분리한다.
 
 ## Week 1: Structure Lock
 
@@ -27,6 +37,7 @@
 - Codex 작업 요청 프롬프트 템플릿 보강.
 - Claude Code hooks 예제 후보 설계.
 - MCP permissions/settings 보안 체크리스트 후보 설계.
+- 다음 14일 예약 글에서 실제로 연결할 템플릿이 필요한지 먼저 확인한다. DevOps 기반 글처럼 템플릿 연결이 부자연스러운 경우 `N/A`로 기록한다.
 
 완료 기준:
 
@@ -41,6 +52,7 @@
 - `AGENTS.md`, `CLAUDE.md`, Codex, Claude Code, hooks, MCP, permissions/settings, token/context, validation/security 글의 title, description, TL;DR, 내부링크를 보강한다.
 - 예약 큐에 없는 핵심 템플릿이 필요한 경우에만 신규 작성 후보로 기록한다.
 - 이미 비슷한 글이 있으면 새 글 대신 해당 예약 글 또는 공개 글을 리라이트하고 허브 연결은 발행 후 수행한다.
+- 다음 7-14일 예약 글에 내부링크가 없으면, 현재 공개된 관련 글 2-3개와 허브를 먼저 연결한다.
 
 완료 기준:
 
@@ -57,6 +69,7 @@
 - 클릭 있음 + 체류 낮음: 첫 문단, TL;DR, 예제 보강.
 - 비슷한 쿼리로 여러 글 노출: cannibalization 점검.
 - 템플릿 페이지 노출 발생: 기존 EN 대응 페이지 유무, canonical/hreflang, KR/EN 품질 보강 후보 지정.
+- 데이터가 없는 주에는 Search Console 작업을 추정하지 않고 다음 주 예약 글 점검으로 대체한다.
 
 완료 기준:
 

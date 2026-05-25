@@ -98,6 +98,13 @@ This post only covers text file conflicts. Binary files, generated files, lock f
 
 The reproduction used one file and a simple merge. Rebase conflicts, cherry-pick conflicts, mergetool, and IDE merge UIs were not tested.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [Separating remote, fetch, pull, and push](/en/devops/git-remote-fetch-pull-push/)
+- [Why rebase, squash, and force push Need Care](/en/devops/git-rebase-squash-force-push/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+
 ## References
 
 - Git, [Git Glossary](https://git-scm.com/docs/gitglossary)

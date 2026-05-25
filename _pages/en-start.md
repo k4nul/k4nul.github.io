@@ -43,7 +43,7 @@ K4NUL covers security analysis, Rust, DevOps, and AI coding agent operations. St
 - When Codex results drift: [Why Codex Needs a Harness](/en/ai/why-codex-needs-a-harness/) → [Operating Codex Plan-First](/en/ai/operating-codex-plan-first/) → [Use Config to Keep Codex Work Consistent](/en/ai/using-config-to-keep-codex-consistent/)
 - When `AGENTS.md` grows too long: [How to Write AGENTS.md for Codex](/en/ai/how-to-write-agents-md-for-codex/) → [Why a Good AGENTS.md Should Be Short](/en/ai/why-good-agents-md-should-be-short/) → [Project Instruction Files Should Not Be Control Planes](/en/ai/how-far-should-a-project-instruction-file-go/)
 - When context gets too large: [Why Token Management Matters in Harness Engineering](/en/ai/why-token-management-matters-in-harness-engineering/) → [Long Logs, Long Plans, Long Memory](/en/ai/long-logs-long-plans-long-memory-agent-context-bloat/) → [How to Design State Summaries That Save Tokens](/en/ai/how-to-design-state-summaries-that-save-tokens/)
-- When agent output needs verification: [Build and Test Are Not Enough to Validate an Agent](/en/ai/build-and-test-are-not-enough-to-validate-an-agent/) → [From Prose to Schema](/en/ai/from-prose-to-schema-turning-handoff-into-a-contract/) → [From Documents to an Observable Harness](/en/ai/from-document-centered-ops-to-an-observable-harness/)
+- When agent output needs verification: [Build and Test Are Not Enough to Validate an Agent](/en/ai/build-and-test-are-not-enough-to-validate-an-agent/) → [From Prose to Schema](/en/ai/from-prose-to-schema-turning-handoff-into-a-contract/) → [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
 
 ## First Five Posts
 

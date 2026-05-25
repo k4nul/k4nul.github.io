@@ -1,6 +1,6 @@
 # Prompt Bank
 
-검증 기준일: 2026-05-13
+검증 기준일: 2026-05-25
 
 아래 프롬프트는 Codex에게 그대로 붙여 넣어 실행한다. 대량 수정, 광범위한 KR/EN 보강, cannibalization, Search Console 기반 판단처럼 데이터나 감사가 필요한 작업은 즉시 실행하지 않고 이 프롬프트로 분리한다.
 
@@ -21,6 +21,7 @@
 작업 목록:
 - `docs/growth/daily-codex-routine.md`의 요일별 작업표에서 오늘 작업을 고른다.
 - `docs/growth/scheduled-posts-inventory.md`와 `docs/growth/scheduled-posts-calendar.md`에서 이번 주 예약 글을 먼저 확인한다.
+- 월요일은 이번 주 예약 글 점검, 화요일은 다음 7일 예약 글 리라이트, 수요일은 예약 글과 연결될 템플릿 보강, 목요일은 최근 발행 글 내부링크 정리, 금요일은 실험/postmortem 품질 보강, 토요일은 실제 공개된 글만 허브 반영, 일요일은 Search Console/GA4 또는 다음 주 예약 글 점검을 수행한다.
 - Search Console/GA4 데이터가 없으면 수치를 추정하지 않는다.
 - title, description, TL;DR, internal links, hub link, template link, related posts를 점검한다.
 - 기존 URL, slug, permalink, translation_key를 보존한다.
@@ -46,6 +47,50 @@
 - 실행한 검증 명령과 결과
 - 남은 리스크
 - 다음 작업 3개
+```
+
+## Queue Recovery Prompt
+
+```md
+너는 www.k4nul.com Git 블로그 레포지토리의 운영 공백을 복구하는 Codex다.
+
+목적:
+- 마지막 운영 기록 이후 오늘까지 발행된 글의 post-publish 작업을 복구한다.
+- 다음 14일 예약 글의 pre-publish 상태를 점검한다.
+- scheduled-posts-inventory, scheduled-posts-calendar, indexing-candidates, recovery-report를 다시 동기화한다.
+
+범위:
+- 먼저 `git branch --show-current`로 `master`인지 확인한다.
+- `git status --short`로 기존 사용자 변경을 확인한다.
+- 새 글은 만들지 않는다.
+- 기존 URL, slug, permalink, publish date, translation_key를 바꾸지 않는다.
+
+작업 목록:
+- 마지막 `docs/growth/daily-change-log.md` 기록 날짜를 찾는다.
+- 그 다음 날부터 오늘까지 발행된 글을 찾고, 공개된 글만 허브와 관련 글에 연결한다.
+- 다음 14일 예약 글에 현재 공개된 관련 글 2-3개와 허브 링크가 있는지 확인한다.
+- 미래 글을 공개 페이지에서 직접 링크하지 않는다.
+- KR/EN pair는 양쪽 제목, description, TL;DR, 관련 링크, canonical/hreflang을 같이 점검한다.
+- Search Console 색인 요청 후보를 `docs/growth/indexing-candidates.md`에 기록한다.
+
+검증 방법:
+- `bundle exec jekyll build`
+- 링크 구조 변경 시 `npm.cmd run check:links:local`
+- `git diff --check`
+- `_site`에서 다음 14일 미래 slug가 공개 페이지에 노출되지 않는지 `rg`로 확인
+
+완료 보고 형식:
+- 운영 공백 기간
+- 확인한 최근 발행 글
+- 확인한 다음 14일 예약 글
+- 복구한 post-publish 작업
+- 수행한 pre-publish 보강
+- 수정 파일
+- KR/EN 변경
+- 미래 글 링크 방지 확인
+- Search Console 색인 요청 후보
+- 검증 결과
+- 남은 리스크
 ```
 
 ## Week 1 Prompt: Structure Lock

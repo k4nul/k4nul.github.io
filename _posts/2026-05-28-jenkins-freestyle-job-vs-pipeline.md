@@ -78,6 +78,13 @@ Freestyle Job이 나쁜 것은 아니다. 오래된 job, 단순 운영 task, 임
 
 작성자 실습 환경에서 기본 UI 흐름은 확인했다. 다만 실제 화면 구성, 저장 파일 차이, job copy/rename/move 동작은 Jenkins 버전과 plugin 구성에 따라 달라질 수 있다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+- [Docker registry push와 image 관리](/devops/docker-registry-push-and-image-management/)
+
 ## 참고자료
 
 - Jenkins User Handbook, [Working with projects](https://www.jenkins.io/doc/book/using/working-with-projects/)

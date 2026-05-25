@@ -120,6 +120,13 @@ This post does not cover SSH keys, HTTPS tokens, credential helpers, signed comm
 
 The reproduction used only a local bare repository. Permissions, branch protection, and pull request refs on GitHub or GitLab were not tested.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [When and How to Use branch and merge](/en/devops/git-branch-and-merge/)
+- [Reproducing and Resolving a Basic Conflict](/en/devops/git-conflict-resolution-basics/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+
 ## References
 
 - Git, [git remote](https://git-scm.com/docs/git-remote)

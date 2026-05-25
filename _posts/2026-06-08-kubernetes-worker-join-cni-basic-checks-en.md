@@ -77,6 +77,13 @@ This post assumes Linux worker nodes. Windows workers, multi-architecture nodes,
 
 CNI installation manifests, Pod CIDR requirements, and NetworkPolicy support vary by CNI.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [Docker Containers vs. VMs](/en/devops/docker-containers-vs-vms/)
+- [Dockerfile Basics and Build Context](/en/devops/dockerfile-basics-and-build-context/)
+- [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
+
 ## References
 
 - Kubernetes Docs, [kubeadm join](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join/)

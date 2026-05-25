@@ -1,13 +1,40 @@
 # Scheduled Posts Calendar
 
-Verification date: 2026-05-13
-Scan range: 2026-05-14 through 2027-04-30.
+Verification date: 2026-05-25
+Scan range: current future queue 2026-05-26 through 2027-04-30. Older rows remain as the baseline calendar snapshot.
 
 ## Operating Notes
 
 - This calendar does not change publish dates. If a schedule change looks useful, record it only in `schedule-adjustment-candidates.md`.
 - Future posts are not included in the current build output, so do not link to them from public hubs, Start Here, or home before publication.
 - Add hub and related-post links on the publish day or after the URL is public.
+
+## Current Calendar Focus: 2026-05-25
+
+| Window | Dates | Count | Status |
+| --- | --- | --- | --- |
+| Operating gap recovered | 2026-05-16~2026-05-25 | 19 posts | Published posts were checked and linked from public hubs or related posts where appropriate. |
+| Next 14 days | 2026-05-26~2026-06-08 | 28 posts | Jenkins 02~10 and K8S 01~05 now have related links to already published posts only. |
+| Next 30 days | 2026-05-26~2026-06-24 | 44 posts | Jenkins, Kubernetes, agent trace, troubleshooting, and guardrail posts are the active queue. |
+
+## Next 14-Day Calendar
+
+| Date | KR post | EN post | Core axis | Pre-publish note |
+| --- | --- | --- | --- | --- |
+| 2026-05-26 | Jenkins 02. Jenkins 설치와 초기 설정 | Jenkins 02. Jenkins Installation and Initial Setup | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
+| 2026-05-27 | Jenkins 03. 플러그인, credentials, tools를 어떻게 관리해야 하는가 | Jenkins 03. Managing Plugins, Credentials, and Tools | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
+| 2026-05-28 | Jenkins 04. Freestyle Job과 Pipeline은 무엇이 다른가 | Jenkins 04. Freestyle Job vs Pipeline | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
+| 2026-05-29 | Jenkins 05. Declarative Pipeline 입문 | Jenkins 05. Introduction to Declarative Pipeline | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
+| 2026-05-30 | Jenkins 06. Jenkinsfile 기본 문법 agent, stages, steps, post | Jenkins 06. Jenkinsfile Basics: agent, stages, steps, post | AI coding agent operations, DevOps | Related links added; title remains a candidate, not changed in bulk. |
+| 2026-05-31 | Jenkins 07. Jenkinsfile 실전 environment, parameters, when | Jenkins 07. Practical Jenkinsfile: environment, parameters, when | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
+| 2026-06-01 | Jenkins 08. Jenkins에서 Docker 이미지 빌드와 레지스트리 푸시 | Jenkins 08. Building Docker Images and Pushing to a Registry in Jenkins | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
+| 2026-06-02 | Jenkins 09. Jenkins 운영에서 자주 만나는 장애와 원인 분리 | Jenkins 09. Common Jenkins Failures and Root Cause Separation | AI coding agent operations, DevOps | Related links added; AI Engineering hub connection is post-publish candidate only. |
+| 2026-06-03 | Jenkins 10. Jenkins에서 Kubernetes 배포로 연결할 때 경계는 어디에 두는가 | Jenkins 10. Drawing the Boundary Between Jenkins and Kubernetes Deployment | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
+| 2026-06-04 | K8S 01. Kubernetes는 무엇을 해결하고 무엇은 해결하지 않는가 | K8S 01. What Kubernetes Solves and What It Does Not | DevOps | Related links added to published Docker/Jenkins posts and DevOps hub. |
+| 2026-06-05 | K8S 02. Pod, Deployment, ReplicaSet, Service를 운영 흐름으로 이해하기 | K8S 02. Understanding Pod, Deployment, ReplicaSet, and Service as an Operations Flow | DevOps | Related links added to published Docker/Jenkins posts and DevOps hub. |
+| 2026-06-06 | K8S 03. 온프렘 기준 Kubernetes 설치 전략과 kubeadm 선택 이유 | K8S 03. Kubernetes Installation Strategy for On-Prem and Why kubeadm | DevOps | Related links added to published Docker/Jenkins posts and DevOps hub. |
+| 2026-06-07 | K8S 04. control plane 설치와 기본 점검 | K8S 04. Control Plane Installation and Basic Checks | DevOps | Related links added to published Docker/Jenkins posts and DevOps hub. |
+| 2026-06-08 | K8S 05. worker join, CNI 구성, 클러스터 기본 확인 | K8S 05. Worker Join, CNI Setup, and Basic Cluster Checks | DevOps | Related links added to published Docker/Jenkins posts and DevOps hub. |
 
 ## Monthly Summary
 

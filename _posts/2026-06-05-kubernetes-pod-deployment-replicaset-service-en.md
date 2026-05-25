@@ -86,6 +86,13 @@ The basic object creation flow was checked in the author's practice environment.
 
 There are special cases where managing ReplicaSets directly can make sense, but normal application deployment should start with Deployment.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [Docker Containers vs. VMs](/en/devops/docker-containers-vs-vms/)
+- [Dockerfile Basics and Build Context](/en/devops/dockerfile-basics-and-build-context/)
+- [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
+
 ## References
 
 - Kubernetes Docs, [Pods](https://kubernetes.io/docs/concepts/workloads/pods/)

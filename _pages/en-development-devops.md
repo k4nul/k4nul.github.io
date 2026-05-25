@@ -21,7 +21,7 @@ The DevOps track provides the automation and deployment boundary behind agent wo
 
 ## Suggested Flow
 
-- Docker: containers, images, Dockerfile, build cache, and registry flow
-- Git: change records, branch/merge, remote, conflict, rebase, tags, and PR/MR
-- Jenkins: setup, plugins, credentials, Pipeline, Jenkinsfile, and failure separation
+- Docker: [containers vs. VMs](/en/devops/docker-containers-vs-vms/), [Dockerfile and build context](/en/devops/dockerfile-basics-and-build-context/), [images, layers, tags, and digests](/en/devops/docker-images-layers-tags-digests/), [registry push and image management](/en/devops/docker-registry-push-and-image-management/)
+- Git: [what Git records](/en/devops/git-records-and-boundaries/), [status/diff/add/commit/log flow](/en/devops/git-status-diff-add-commit-log/), [branch and merge](/en/devops/git-branch-and-merge/), [remote/fetch/pull/push](/en/devops/git-remote-fetch-pull-push/), [conflict basics](/en/devops/git-conflict-resolution-basics/), [rebase/squash/force push care](/en/devops/git-rebase-squash-force-push/), [tags, releases, and Docker image versions](/en/devops/git-tags-releases-docker-image-versions/), [PR/MR review flow](/en/devops/git-pr-mr-collaboration-review/)
+- Jenkins: [what Jenkins is and why it is still used](/en/devops/jenkins-what-and-why-still-used/), setup, plugins, credentials, Pipeline, Jenkinsfile, and failure separation
 - Kubernetes: core resources, installation strategy, manifests, resources, storage, and on-prem add-ons

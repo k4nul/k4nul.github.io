@@ -99,6 +99,14 @@ git merge origin/main --ff-only
 
 직접 재현은 hosted 서비스 없이 로컬 Git remote만 사용했다. 실제 PR/MR 생성, 리뷰 코멘트, CI pipeline 연동, merge button 동작은 재현하지 않았다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [AI Engineering 허브](/ai-engineering/)
+- [tag와 release로 Docker 이미지 버전과 배포 이력 연결하기](/devops/git-tags-releases-docker-image-versions/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+- [AI agent 운영 실전 템플릿](/ai-engineering/templates/)
+
 ## 참고자료
 
 - GitHub Docs, [About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)

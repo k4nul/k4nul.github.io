@@ -78,6 +78,13 @@ tools 설정은 build 재현성과 연결된다. Git, JDK, Maven, Docker CLI 같
 
 실제 credential 암호화 방식, backup/restore 후 credential 사용 가능성, plugin upgrade 호환성은 환경별로 재현해야 한다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+- [Docker registry push와 image 관리](/devops/docker-registry-push-and-image-management/)
+
 ## 참고자료
 
 - Jenkins User Handbook, [Managing Plugins](https://www.jenkins.io/doc/book/managing/plugins/)

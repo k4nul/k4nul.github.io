@@ -93,6 +93,13 @@ registry.example.com/team/app:latest-staging
 
 private registry 인증, TLS, credential rotation, image signing, SBOM, vulnerability scan은 별도 보안/운영 주제로 다뤄야 한다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+- [Docker registry push와 image 관리](/devops/docker-registry-push-and-image-management/)
+
 ## 참고자료
 
 - Jenkins User Handbook, [Using Docker with Pipeline](https://www.jenkins.io/doc/book/pipeline/docker/)

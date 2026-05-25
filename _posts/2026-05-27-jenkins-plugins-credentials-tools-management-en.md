@@ -79,6 +79,13 @@ This post does not cover plugin health scores, plugin pinning, Configuration as 
 
 Credential encryption behavior, backup/restore effects, and plugin upgrade compatibility must be reproduced in the target environment.
 
+## Related Posts
+
+- [DevOps Operations Flow](/en/development/devops/)
+- [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
+- [Docker registry push and image management](/en/devops/docker-registry-push-and-image-management/)
+
 ## References
 
 - Jenkins User Handbook, [Managing Plugins](https://www.jenkins.io/doc/book/managing/plugins/)

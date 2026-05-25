@@ -96,6 +96,13 @@ git log --oneline -2
 
 직접 재현은 한 파일만 있는 작은 저장소에서 수행했다. 대형 저장소, generated file, line ending 변환, file mode 변경은 확인하지 않았다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [Git은 무엇을 기록하고 무엇을 기록하지 않는가](/devops/git-records-and-boundaries/)
+- [branch와 merge는 언제 어떻게 써야 하는가](/devops/git-branch-and-merge/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+
 ## 참고자료
 
 - Git, [git status](https://git-scm.com/docs/git-status)

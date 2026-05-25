@@ -89,6 +89,13 @@ git show --stat --oneline v1.0.1
 
 직접 재현은 Git tag 생성만 수행했다. Docker image build/push는 이전 Docker 05 글의 재현 결과를 전제로 설명했으며, 이 글에서 Docker registry push를 다시 실행하지는 않았다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [rebase, squash, force push를 조심해서 다뤄야 하는 이유](/devops/git-rebase-squash-force-push/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+
 ## 참고자료
 
 - Git, [git tag](https://git-scm.com/docs/git-tag)

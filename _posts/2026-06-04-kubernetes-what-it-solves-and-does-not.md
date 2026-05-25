@@ -81,6 +81,13 @@ Kubernetes는 운영을 대신해 주는 도구가 아니라 운영 의도를 AP
 
 Kubernetes 배포 방식은 managed service, kubeadm, kops, kubespray, 경량 배포판에 따라 달라질 수 있다. 이 연재는 온프렘 기초 이해를 위해 kubeadm 중심으로 이어 간다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [Docker 컨테이너와 VM 차이](/devops/docker-containers-vs-vms/)
+- [Dockerfile과 build context 이해하기](/devops/dockerfile-basics-and-build-context/)
+- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
+
 ## 참고자료
 
 - Kubernetes Docs, [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)

@@ -97,6 +97,13 @@ git merge conflict-left
 
 직접 재현은 단일 파일과 단순 merge에서만 수행했다. rebase conflict, cherry-pick conflict, mergetool, IDE merge UI는 확인하지 않았다.
 
+## 함께 읽을 글
+
+- [DevOps 운영 흐름](/devops/)
+- [remote, fetch, pull, push를 분리해서 이해하기](/devops/git-remote-fetch-pull-push/)
+- [rebase, squash, force push를 조심해서 다뤄야 하는 이유](/devops/git-rebase-squash-force-push/)
+- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
+
 ## 참고자료
 
 - Git, [Git Glossary](https://git-scm.com/docs/gitglossary)

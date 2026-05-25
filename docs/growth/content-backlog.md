@@ -1,6 +1,6 @@
 # Content Backlog
 
-검증 기준일: 2026-05-13
+검증 기준일: 2026-05-25
 
 상태 값:
 
@@ -71,6 +71,18 @@
 | Claude Code hooks로 검증을 자동화하면서 생긴 실패 사례 | needs-data | 실제 hooks 실험 필요 |
 | AI agent 작업 결과를 사람이 리뷰해야 하는 기준 | ready | 체크리스트 기반으로 작성 가능 |
 | MCP tool allowlist를 잘못 잡았을 때의 위험 | needs-data | 실제 설정 또는 문서 근거 필요 |
+
+## Recovery Follow-Up Candidates: 2026-05-25
+
+아래 항목은 신규 글 작성 후보가 아니라, 운영 공백 복구 이후 예약 큐와 공개 글을 계속 관리하기 위한 후보이다.
+
+| 후보 | 상태 | 메모 |
+| --- | --- | --- |
+| Jenkins 02-10 KR/EN post-publish 처리 | ready | 2026-05-26~2026-06-03 발행 후 DevOps 허브에 실제 공개 글만 추가 |
+| Kubernetes 01-05 KR/EN pre-publish 재확인 | ready | 2026-06-04~2026-06-08 발행 전 링크와 검증 한계 재확인 |
+| K8S 06-10 KR/EN 내부링크 보강 | candidate | 2026-06-09~2026-06-13 예약 글, 아직 이번 14일 범위 밖 일부 포함 |
+| 2026-06-16 agent trace KR/EN 품질 점검 | candidate | AI agent verification 핵심축, `/ai-engineering/`와 `/start-here/` 연결 후보 |
+| Git/Jenkins 제목 검색 의도 보강 | needs-data | 전체 제목 대량 변경 금지. Search Console 또는 scoped prompt 필요 |
 
 ## KR/EN Priority Candidates
 
