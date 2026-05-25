@@ -87,6 +87,12 @@ subagent 기능과 표시 방식은 Codex 클라이언트별로 차이가 있을
 
 또한 subagent를 쓴다고 검증 책임이 사라지지 않는다. 최종 변경은 여전히 사람이 리뷰하거나, 메인 agent가 통합 후 테스트와 diff review를 수행해야 한다.
 
+## 함께 읽을 글
+
+- [AI Engineering 허브](/ai-engineering/)
+- [멀티에이전트 사용 기준: 기본값이 아니라 선택지로 다루기](/ai/multi-agent-is-not-the-default/)
+- [Claude Code subagent 사용 기준: 전문 에이전트를 언제 분리할까](/ai/when-to-use-claude-code-subagents/)
+
 ## 참고자료
 
 - OpenAI, [Subagents](https://developers.openai.com/codex/subagents)

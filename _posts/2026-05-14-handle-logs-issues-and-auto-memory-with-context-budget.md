@@ -131,6 +131,7 @@ auto memory는 유용하지만, 사람이 가끔 감사해야 한다.
 - [긴 로그와 긴 계획이 agent context를 비대하게 만드는 이유](/ai/long-logs-long-plans-long-memory-agent-context-bloat/)
 - [working state summary 설계법](/ai/how-to-design-state-summaries-that-save-tokens/)
 - [Codex와 Claude Code의 토큰 관리 전략 차이](/ai/how-token-management-strategies-differ-between-codex-and-claude-code/)
+- [Claude Code subagent 사용 기준: 전문 에이전트를 언제 분리할까](/ai/when-to-use-claude-code-subagents/)
 
 ## 참고자료
 

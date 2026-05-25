@@ -71,6 +71,12 @@ search: false
 
 다음 편에서는 "원칙에서 enforcement로: 문장을 시스템 규칙으로 올리는 법"을 다뤄보려 한다. 좋은 원칙을 문서에 적는 것만으로는 agent가 항상 그 기준을 지키지 않는다. 어떤 규칙은 자연어 설명으로 남길 수 있지만, 어떤 규칙은 lint, schema, hook, CI 같은 장치로 올려야 한다. 그래서 다음 글에서는 문장을 어떻게 검증 가능한 시스템 규칙으로 바꾸는지 살펴볼 생각이다. 멀티에이전트의 사용 조건을 정했다면, 이제 그 조건을 실제로 강제하는 방법까지 가야 한다.
 
+## 함께 읽을 글
+
+- [AI Engineering 허브](/ai-engineering/)
+- [Codex subagent 사용 기준: 병렬 에이전트를 언제 써야 하나](/ai/when-to-use-codex-subagents/)
+- [Claude Code subagent 사용 기준: 전문 에이전트를 언제 분리할까](/ai/when-to-use-claude-code-subagents/)
+
 ## 출처 및 참고
 
 - OpenAI, [Subagents](https://developers.openai.com/codex/subagents)

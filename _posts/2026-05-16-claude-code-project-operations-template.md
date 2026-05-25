@@ -211,6 +211,17 @@ Avoid a subagent when:
 
 작은 개인 프로젝트는 `CLAUDE.md`와 간단한 permission 설정만으로 충분할 수 있다. 반대로 규제가 강한 팀 저장소는 managed settings, 별도 sandbox, CI policy, audit log가 더 중요할 수 있다.
 
+## 함께 읽을 글
+
+- [AI Engineering 허브](/ai-engineering/)
+- [AI agent 운영 실전 템플릿](/ai-engineering/templates/)
+- [Claude Code를 운영 구조로 이해하기](/ai/claude-code-as-operating-structure/)
+- [CLAUDE.md 작성 범위: rules, skills, settings로 나누는 기준](/ai/how-far-should-claude-md-go/)
+- [Claude Code settings와 permissions로 작업 경계 고정하기](/ai/fix-claude-code-boundaries-with-settings-and-permissions/)
+- [Claude Code hooks 활용: 검증과 guardrail을 자동화하는 기준](/ai/automate-validation-and-guardrails-with-hooks/)
+- [Claude Code MCP 운영: 외부 문맥을 붙여 넣지 않고 연결하는 법](/ai/connect-external-context-with-mcp/)
+- [Claude Code subagent 사용 기준: 전문 에이전트를 언제 분리할까](/ai/when-to-use-claude-code-subagents/)
+
 ## 참고자료
 
 - Anthropic, [Extend Claude Code](https://code.claude.com/docs/en/features-overview)
