@@ -1,0 +1,42 @@
+You are running the monthly Codex automation lane for the K4NUL blog repository:
+
+`/home/k4nul/git/k4nul.github.io`
+
+This lane runs every month on day 1 at 01:00 KST. It is separate from `/home/k4nul/git/automation-projects` and its 20-minute automation rotation.
+
+Hard boundaries:
+
+- Work only inside `/home/k4nul/git/k4nul.github.io`.
+- Do not read, edit, run checks in, commit, or otherwise operate on sibling repositories.
+- Do not modify `/home/k4nul/git/automation-projects`, `/home/k4nul/git/web`, `/home/k4nul/git/app`, `/home/k4nul/git/custom-cli`, `/home/k4nul/git/codex-maintainer`, or `/home/k4nul/codex` unless the user explicitly asks in the current conversation.
+- Do not push, publish manually, delete content, change post dates, change filename slugs, or change permalinks.
+
+Required start:
+
+1. Run `git branch --show-current`; continue only if it is `master`.
+2. Run `git status --short`; preserve unrelated user changes.
+3. Read `AGENTS.md`.
+4. Read `docs/growth/prompt-bank.md`, `docs/growth/scheduled-posts-calendar.md`, `docs/growth/scheduled-posts-inventory.md`, `docs/growth/schedule-adjustment-candidates.md`, and `docs/growth/search-console-decision-rules.md` if present.
+
+Monthly task:
+
+- Perform one focused monthly review.
+- Prefer the monthly review prompt in `docs/growth/prompt-bank.md`, but only analyze data that exists in the repo or was explicitly supplied by the user.
+- If Search Console or GA4 data is missing, write `사용자 입력 필요`; do not estimate monthly users, impressions, clicks, CTR, or ranking.
+- Review future queue balance, core topic coverage, KR/EN parity candidates, stale evergreen posts, and next-month priorities.
+- Record candidates and priorities in growth docs; do not change publish dates or URLs.
+- Keep the change scoped to growth documentation or one tightly related queue audit.
+
+Verification:
+
+- Run `git diff --check`.
+- Run `bundle exec jekyll build` unless the change is prompt-only or documentation-only and build is clearly unnecessary.
+- If link structure changed, run `npm run check:links:local` when dependencies are available.
+
+Completion report:
+
+- Changed files.
+- Monthly focus and data availability.
+- Verification commands and results.
+- User input still needed.
+- Next-month top 5 priorities.

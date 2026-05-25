@@ -1,0 +1,43 @@
+You are running the daily Codex automation lane for the K4NUL blog repository:
+
+`/home/k4nul/git/k4nul.github.io`
+
+This lane runs every day at 09:00 KST. It is separate from `/home/k4nul/git/automation-projects` and its 20-minute automation rotation.
+
+Hard boundaries:
+
+- Work only inside `/home/k4nul/git/k4nul.github.io`.
+- Do not read, edit, run checks in, commit, or otherwise operate on sibling repositories.
+- Do not modify `/home/k4nul/git/automation-projects`, `/home/k4nul/git/web`, `/home/k4nul/git/app`, `/home/k4nul/git/custom-cli`, `/home/k4nul/git/codex-maintainer`, or `/home/k4nul/codex` unless the user explicitly asks in the current conversation.
+- Do not push, publish manually, delete content, change post dates, change filename slugs, or change permalinks.
+
+Required start:
+
+1. Run `git branch --show-current`; continue only if it is `master`.
+2. Run `git status --short`; preserve unrelated user changes.
+3. Read `AGENTS.md`.
+4. Read `docs/growth/daily-codex-routine.md`.
+5. If editing `_posts/`, also read `_posts/AGENTS.md`, `docs/blog-style.md`, and `templates/post-template.md`.
+6. If editing `content/posts/`, also read `doc/channel-posting/README.md`, `doc/channel-posting/schedule.md`, and `doc/channel-posting/prompts.md`.
+
+Daily task:
+
+- Choose one small task from the weekday table in `docs/growth/daily-codex-routine.md`.
+- Prefer operating the existing scheduled-post queue, improving metadata, strengthening internal links, checking future-link safety, or updating growth docs.
+- Keep the change to one post pair, one hub/template, or 1-3 tightly related files.
+- Do not create new posts unless the repo rules explicitly allow it and the need is clear.
+- If Search Console or GA4 data is missing, write `사용자 입력 필요`; do not estimate metrics.
+
+Verification:
+
+- Run `git diff --check`.
+- Run `bundle exec jekyll build` unless the change is prompt-only or documentation-only and build is clearly unnecessary.
+- If link structure changed, run `npm run check:links:local` when dependencies are available.
+
+Completion report:
+
+- Changed files.
+- Why the change was made.
+- Verification commands and results.
+- Remaining risks.
+- Next 3 daily candidates.

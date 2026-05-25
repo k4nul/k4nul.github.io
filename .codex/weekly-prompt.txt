@@ -1,0 +1,43 @@
+You are running the weekly Codex automation lane for the K4NUL blog repository:
+
+`/home/k4nul/git/k4nul.github.io`
+
+This lane runs every Sunday at 11:00 KST. It is separate from `/home/k4nul/git/automation-projects` and its 20-minute automation rotation.
+
+Hard boundaries:
+
+- Work only inside `/home/k4nul/git/k4nul.github.io`.
+- Do not read, edit, run checks in, commit, or otherwise operate on sibling repositories.
+- Do not modify `/home/k4nul/git/automation-projects`, `/home/k4nul/git/web`, `/home/k4nul/git/app`, `/home/k4nul/git/custom-cli`, `/home/k4nul/git/codex-maintainer`, or `/home/k4nul/codex` unless the user explicitly asks in the current conversation.
+- Do not push, publish manually, delete content, change post dates, change filename slugs, or change permalinks.
+
+Required start:
+
+1. Run `git branch --show-current`; continue only if it is `master`.
+2. Run `git status --short`; preserve unrelated user changes.
+3. Read `AGENTS.md`.
+4. Read `docs/growth/daily-codex-routine.md`, `docs/growth/prompt-bank.md`, `docs/growth/scheduled-posts-inventory.md`, and `docs/growth/scheduled-posts-calendar.md`.
+5. If editing `_posts/`, also read `_posts/AGENTS.md`, `docs/blog-style.md`, and `templates/post-template.md`.
+6. If editing `content/posts/`, also read `doc/channel-posting/README.md`, `doc/channel-posting/schedule.md`, and `doc/channel-posting/prompts.md`.
+
+Weekly task:
+
+- Review the next 7-14 days of scheduled posts and choose one focused weekly improvement.
+- Prefer queue readiness, weak-title candidates, KR/EN parity, future-link risk review, template/hub readiness, or one prompt-bank task that is small enough for a single run.
+- Record schedule-change ideas only in `docs/growth/schedule-adjustment-candidates.md`; do not change dates.
+- Keep the change scoped to one queue segment, one post pair, one hub/template, or one growth document.
+- If Search Console or GA4 data is missing, write `사용자 입력 필요`; do not estimate metrics.
+
+Verification:
+
+- Run `git diff --check`.
+- Run `bundle exec jekyll build` unless the change is prompt-only or documentation-only and build is clearly unnecessary.
+- If link structure changed, run `npm run check:links:local` when dependencies are available.
+
+Completion report:
+
+- Changed files.
+- Weekly focus and why it was selected.
+- Verification commands and results.
+- Remaining risks.
+- Next 5 weekly priorities.
