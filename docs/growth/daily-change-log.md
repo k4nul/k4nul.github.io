@@ -1,5 +1,51 @@
 # Daily Change Log
 
+## 2026-05-26
+
+### 오늘의 목표
+
+- 화요일 작업으로 다음 7일 예약 글 중 `Jenkins 06` KR/EN 쌍의 제목, description, 첫 문단, 내부링크를 작게 보강한다.
+- publish date, filename slug, permalink는 바꾸지 않고 검색 의도와 읽기 흐름만 선명하게 만든다.
+
+### 변경 파일
+
+- `_posts/2026-05-30-jenkinsfile-agent-stages-steps-post.md`: KR 제목과 description을 검색 의도 중심으로 다듬고, 요약/문제 정의에서 Jenkinsfile 읽기 관점을 더 분명히 했으며, 발행 순서상 안전한 선행 Jenkins 05 링크를 추가했다.
+- `_posts/2026-05-30-jenkinsfile-agent-stages-steps-post-en.md`: EN 제목과 description을 같은 기준으로 조정하고, opening summary/problem definition/related posts를 KR과 대응되게 보강했다.
+- `docs/growth/daily-change-log.md`: 오늘 작업 결과를 기록했다.
+
+### 변경 이유
+
+- `docs/growth/daily-codex-routine.md`의 화요일 규칙에 따라 새 글을 만들지 않고 다음 7일 예약 글 1개 KR/EN pair만 리라이트 대상으로 골랐다.
+- `Jenkins 06`은 일정 문서에서 weak-title candidate로 남아 있었고, 현재 제목은 문법 항목 나열에 가까워 검색 의도가 약했다.
+- 링크는 공개 글과 발행 순서상 앞선 `2026-05-29` Jenkins 05 글만 추가해 future-link 안전성을 유지했다.
+
+### 실행한 검증 명령
+
+- `git branch --show-current`: `master`
+- `git status --short`: 작업 시작 시 출력 없음.
+- `bundle exec jekyll build`: 실패. `/bin/bash: line 1: bundle: command not found`
+- `npm run check:links:local`: 실패. 내부 스크립트가 `bundle exec jekyll build`를 먼저 호출하며 `sh: 1: bundle: not found`
+- `git diff --check`: 통과
+
+### 결과
+
+- `Jenkins 06` KR/EN 예약 글의 제목이 "Jenkinsfile을 어떻게 읽을까" 검색 의도에 맞게 정리됐다.
+- 두 글의 첫 문단이 문법 항목 나열보다 실행 구조 해석에 초점을 두도록 바뀌었다.
+- 관련 링크에 `Jenkins 05`를 추가해 Declarative Pipeline 글에서 Jenkinsfile 읽기 글로 이어지는 선행 학습 경로를 만들었다.
+
+### 다음 작업
+
+- 2026-05-27 예약 글 `Jenkins 03` KR/EN 쌍의 title/description/첫 문단 점검.
+- 2026-05-28 예약 글 `Jenkins 04` KR/EN 쌍의 비교 의도와 내부링크 점검.
+- Jenkins 02~10 예약 글의 EN title tone 일관성만 따로 묶을지 주간 프롬프트 후보로 검토.
+
+### 남은 리스크
+
+- Search Console 데이터: 사용자 입력 필요
+- GA4 데이터: 사용자 입력 필요
+- 링크 검증 미실행 사유: 로컬 link check 스크립트가 `bundle exec jekyll build`에 의존하는데 현재 shell에 `bundle`이 없다.
+- build 실패 시 파일/플러그인/오류: `bundle` 실행 파일 부재로 Jekyll build 자체를 시작하지 못했다.
+
 ## 2026-05-13
 
 ### 오늘의 목표

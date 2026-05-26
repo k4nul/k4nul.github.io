@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Jenkins 06. Jenkinsfile Basics: agent, stages, steps, post"
-description: "A beginner-friendly explanation of the core Jenkinsfile blocks: agent, stages, steps, and post."
+title: "Jenkins 06. How to Read a Jenkinsfile: agent, stages, steps, and post"
+description: "A practical guide for first-time Jenkinsfile readers to separate agent, stages, steps, and post by execution flow."
 date: 2026-05-30 09:00:00 +09:00
 lang: en
 translation_key: jenkinsfile-agent-stages-steps-post
@@ -18,9 +18,9 @@ permalink: /en/devops/jenkinsfile-agent-stages-steps-post/
 
 ## Summary
 
-The first Jenkinsfile blocks to read are `agent`, `stages`, `steps`, and `post`. `agent` decides where work runs. `stages` divides the work. `steps` defines what each stage does. `post` defines what happens after completion.
+When you first open a Jenkinsfile, `agent`, `stages`, `steps`, and `post` appear again and again inside `pipeline { ... }`. These four blocks are not just Groovy syntax to memorize. They are the operating structure that tells you where work runs, how it is split, what each stage does, and what must happen after completion.
 
-The conclusion of this post is that beginners should read Jenkinsfile as an execution plan before treating it like Groovy code.
+The conclusion of this post is that beginners should read Jenkinsfile as an execution plan before treating it like Groovy code. If you already read [Jenkins 05. Introduction to Declarative Pipeline](/en/devops/jenkins-declarative-pipeline-introduction/), this is the next step that makes Docker build and deployment stages easier to follow.
 
 ## Document Information
 
@@ -35,6 +35,8 @@ The conclusion of this post is that beginners should read Jenkinsfile as an exec
 ## Problem Definition
 
 Jenkinsfile can look intimidating because of nested braces. At the beginner level, you do not need to memorize every directive. First separate execution location, stages, stage steps, and post-run behavior.
+
+Teams that keep copying `agent any` or repeating `steps { sh '...' }` without reading the surrounding structure often lose track of why a stage runs on a given node and what cleanup or reporting should still happen after failure. This post narrows the reading model down to that minimum.
 
 ## Verified Facts
 
@@ -95,6 +97,7 @@ Agent operating systems affect whether `sh`, `bat`, `powershell`, or `pwsh` shou
 ## Related Posts
 
 - [DevOps Operations Flow](/en/development/devops/)
+- [Jenkins 05. Introduction to Declarative Pipeline](/en/devops/jenkins-declarative-pipeline-introduction/)
 - [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
 - [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
 - [Docker registry push and image management](/en/devops/docker-registry-push-and-image-management/)
