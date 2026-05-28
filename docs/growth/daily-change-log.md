@@ -1,5 +1,50 @@
 # Daily Change Log
 
+## 2026-05-28
+
+### 오늘의 목표
+
+- 목요일 작업으로 최근 공개된 Jenkins 글을 공개 허브에서 안전하게 찾을 수 있게 KR/EN DevOps 허브의 내부링크를 정리한다.
+- 미래 글 링크를 추가하지 않고, 2026-05-28 기준 공개된 Jenkins 04까지만 반영한다.
+
+### 변경 파일
+
+- `_pages/development-devops.md`: DevOps 허브의 Jenkins 추천 흐름에 오늘 공개된 `Jenkins 04. Freestyle Job과 Pipeline은 무엇이 다른가` 링크를 추가했다.
+- `_pages/en-development-devops.md`: EN DevOps 허브의 Jenkins 추천 흐름에 오늘 공개된 `Jenkins 04. Freestyle Job vs Pipeline` 링크를 추가했다.
+- `docs/growth/daily-change-log.md`: 오늘 허브 내부링크 정리 작업과 검증 결과를 기록했다.
+
+### 변경 이유
+
+- `docs/growth/daily-codex-routine.md`의 목요일 규칙에 따라 최근 공개 글의 post-publish 내부링크 정리를 선택했다.
+- KR/EN DevOps 허브는 Jenkins 03까지만 노출하고 있었고, 2026-05-28 공개 글 Jenkins 04가 허브에서 바로 발견되지 않았다.
+- 2026-05-29 이후 Jenkins 글은 여전히 future-dated post이므로 허브 문구는 유지하고 공개된 Jenkins 04까지만 추가했다.
+
+### 실행한 검증 명령
+
+- `git branch --show-current`: `master`
+- `git status --short`: 작업 시작 시 출력 없음.
+- `git diff --check`: 통과
+- `bundle exec jekyll build`: 성공. 2026-05-29 이후 미래 글은 expected future-date skip으로 제외됨. 기존 Sass division deprecation warning은 유지됨.
+- `npm run check:links:local`: 성공. Source pages 178, internal link references 10807, unique internal targets 196, broken targets 0.
+
+### 결과
+
+- `/devops/`와 `/en/development/devops/`에서 Jenkins 04 공개 글까지 바로 접근할 수 있게 됐다.
+- 허브 문구는 아직 비공개인 Declarative Pipeline, Jenkinsfile, 장애 분리 글을 future-link 없이 예고만 하도록 유지했다.
+- KR/EN 허브가 동일한 공개 범위를 반영하도록 정리됐다.
+
+### 다음 작업
+
+- 2026-05-29 공개 후 KR/EN DevOps 허브에 `Jenkins 05`를 안전하게 반영할지 확인.
+- 2026-05-30 공개 후 `Jenkins 06`이 AI coding agent operations와 연결되는 지점을 `/ai-engineering/` 후보로 검토.
+- 2026-06-02 공개 전 `Jenkins 09` KR/EN pair의 실패 원인 분리 표현을 금요일 후보로 점검.
+
+### 남은 리스크
+
+- Search Console 데이터: 사용자 입력 필요
+- GA4 데이터: 사용자 입력 필요
+- 기존 theme Sass deprecation warning은 이번 변경과 무관하며 그대로 남아 있다.
+
 ## 2026-05-26
 
 ### 오늘의 목표
