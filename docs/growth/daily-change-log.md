@@ -207,6 +207,54 @@
 - build 실패 시 파일/플러그인/오류: 해당 없음
 - 오늘 글은 `search: false`가 있어 사이트 내부 검색 노출 의도는 별도 확인이 필요하다. HTML robots noindex는 출력되지 않았다.
 
+## 2026-05-29
+
+### 오늘의 목표
+
+- 금요일 기준으로 예약된 AI 운영 글 중 incident review와 trace/postmortem 관점에 가까운 `2026-06-16` agent trace KR/EN pair를 점검한다.
+- 기존 URL, slug, permalink, publish date는 유지한 채 description, 요약 문장, 관련 공개 링크를 보강한다.
+- 미래 글끼리 연결하지 않고, 이미 공개된 AI Engineering 허브/템플릿/관련 글만 사용한다.
+
+### 변경 파일
+
+- `_posts/2026-06-16-what-should-agent-trace-record.md`: KR 예약 글의 description을 구체화하고, incident review 관점 요약과 공개된 관련 글 링크를 추가했다.
+- `_posts/2026-06-16-what-should-agent-trace-record-en.md`: EN 예약 글의 description을 구체화하고, approval audit 관점 요약과 공개된 관련 글 링크를 추가했다.
+- `docs/growth/daily-change-log.md`: 오늘 작업 결과를 기록했다.
+
+### 변경 이유
+
+- 금요일 작업 기준은 예약된 실험/postmortem 성격 글의 사실/관찰/해석/한계와 검증 기준을 확인하고, 부족하면 좁은 범위에서 보강하는 것이다.
+- 이 pair는 기본 구조는 갖춰져 있었지만 search intent가 약한 description과 related-link 부재가 남아 있었다.
+- trace 글은 결과 로그보다 approval chain, verification trail, guardrail 경계를 설명하는 운영 글이므로, 이미 공개된 AI Engineering 허브와 인접 검증 글로 안전하게 연결하는 편이 적절하다.
+
+### 실행한 검증 명령
+
+- `git branch --show-current`: `master`
+- `git status --short`: 작업 시작 시 변경 없음.
+- `bundle exec jekyll build`: 성공. 미래 날짜 예약 글은 expected skip 처리되었고, Minimal Mistakes Sass division deprecation warning은 기존 경고로 유지됨.
+- `npm run check:links:local`: 성공. Source pages 180, internal references 10939, unique internal targets 198, broken targets 0.
+- `git diff --check`: 통과.
+
+### 결과
+
+- 예약 글 1개 KR/EN pair 범위에서만 수정했다.
+- publish date, filename slug, permalink, `translation_key`는 변경하지 않았다.
+- 공개 페이지에는 미래 글 링크를 추가하지 않았고, 미래 글 내부에는 이미 공개된 허브/템플릿/관련 글만 연결했다.
+- Jekyll build와 로컬 링크 점검 모두 통과했고, 새 broken link는 생기지 않았다.
+
+### 다음 작업
+
+- 2026-06-02 `Jenkins 09` KR/EN pair가 공개되면 AI Engineering 연결이 필요한지 post-publish 기준으로 다시 확인한다.
+- 2026-06-16 agent trace pair 발행 직전에 canonical, hreflang, meta description 출력값을 최종 점검한다.
+- 2026-06-23 guardrails and approval boundaries KR/EN pair를 다음 금요일 후보로 검토한다.
+
+### 남은 리스크
+
+- Search Console 데이터: 사용자 입력 필요
+- GA4 데이터: 사용자 입력 필요
+- 링크 검증 미실행 사유: 해당 없음
+- build 실패 시 파일/플러그인/오류: 해당 없음
+
 ## 2026-05-25
 
 ### 오늘의 목표

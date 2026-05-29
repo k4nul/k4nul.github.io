@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "에이전트 trace에는 무엇을 남겨야 하는가"
-description: "에이전트 trace에는 무엇을 남겨야 하는가에 대해 공식 문서와 운영 관점으로 확인할 기준, 점검 순서, 한계를 정리한 글."
+description: "공식 문서를 기준으로 agent trace에 남겨야 할 입력 출처, 권한, tool call, guardrail, approval, verification 기록 기준을 정리한다."
 date: 2026-06-16 09:00:00 +09:00
 lang: ko
 translation_key: what-should-agent-trace-record
@@ -17,7 +17,7 @@ search: true
 
 ## 요약
 
-agent trace는 대화 전문을 그대로 저장하는 공간이 아니라, 나중에 "무엇을 근거로 어떤 권한을 사용했는가"를 확인하기 위한 운영 기록이다. 최소한 실행 단위, 모델 호출, tool call, handoff, guardrail 결과, 승인 여부, 오류와 검증 결과를 연결해서 남겨야 한다.
+agent trace는 대화 전문을 그대로 저장하는 공간이 아니라, 나중에 "무엇을 근거로 어떤 권한을 사용했는가"를 확인하기 위한 운영 기록이다. incident review와 approval audit 관점에서도 실행 단위, 모델 호출, tool call, handoff, guardrail 결과, 승인 여부, 오류와 검증 결과를 연결해서 남겨야 한다.
 
 ## 문서 정보
 
@@ -86,7 +86,15 @@ sensitive_data: { raw_input_saved: false, redaction: "token/value redacted" }
 
 내 판단으로는 agent trace의 목적은 "모델의 생각을 보관"하는 것이 아니라 "운영 가능한 책임 사슬을 남기는 것"이다. 따라서 trace에는 자연어 대화보다 실행 단위, 권한, tool call, guardrail, approval, 검증 결과가 더 안정적으로 남아야 한다.
 
-의견: 기본값은 원문 최소 저장이어야 한다. 문제가 생긴 뒤 원문이 필요하다는 이유로 모든 입력을 항상 저장하면 trace가 새로운 데이터 유출 경로가 된다.
+의견: 기본값은 원문 최소 저장이어야 한다. 문제가 생긴 뒤 원문이 필요하다는 이유로 모든 입력을 항상 저장하면 trace가 새로운 데이터 유출 경로가 된다. postmortem에서 먼저 보여야 할 것은 raw prompt 전문보다 approval chain과 verification trail이다.
+
+## 함께 읽을 글
+
+- [AI Engineering 허브](/ai-engineering/)
+- [AI agent 운영 실전 템플릿](/ai-engineering/templates/)
+- [Agent trace 설계: 결과보다 실행 기록이 중요한 이유](/ai/why-trace-matters-more-than-results/)
+- [Agent approval과 guardrail 경계: 비어 있으면 시스템이 흔들리는 이유](/ai/approval-boundaries-and-guardrails/)
+- [AI agent 검증 루프: build와 test만으로 부족한 이유](/ai/build-and-test-are-not-enough-to-validate-an-agent/)
 
 ## 한계와 예외
 

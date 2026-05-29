@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "What should an agent trace record?"
-description: "Explains What should an agent trace record? with official documentation, operational checks, and limitations."
+description: "Explains which inputs, permissions, tool calls, guardrails, approvals, and verification results an agent trace should record."
 date: 2026-06-16 09:00:00 +09:00
 lang: en
 translation_key: what-should-agent-trace-record
@@ -18,7 +18,7 @@ permalink: /en/ai/what-should-agent-trace-record/
 
 ## Summary
 
-An agent trace is not a place to store the entire conversation by default. It is an operational record that should explain which input, permission, tool call, guardrail, approval, and verification result led to the next step.
+An agent trace is not a place to store the entire conversation by default. It is an operational record that should explain which input, permission, tool call, guardrail, approval, and verification result led to the next step. That same chain is what later makes incident review and approval audit possible.
 
 ## Document Information
 
@@ -82,7 +82,15 @@ sensitive_data: { raw_input_saved: false, redaction: "token/value redacted" }
 
 In my view, the purpose of an agent trace is not to preserve the model's hidden reasoning. It is to preserve an auditable operational chain: input origin, authority, action, control, result, and verification.
 
-Opinion: the default should be minimal raw-content capture. If every prompt and tool output is always stored, the trace itself becomes a data exposure surface.
+Opinion: the default should be minimal raw-content capture. If every prompt and tool output is always stored, the trace itself becomes a data exposure surface. In a postmortem, the first records that should be visible are the approval chain and verification trail, not the full raw prompt by default.
+
+## Related Posts
+
+- [AI Engineering Hub](/en/development/ai/)
+- [AI Agent Operations Templates](/en/development/ai/templates/)
+- [Agent Trace Design: Why Execution Records Matter More Than Results](/en/ai/why-trace-matters-more-than-the-result/)
+- [Agent Approval and Guardrail Boundaries: Why Empty Boundaries Break Systems](/en/ai/approval-boundaries-and-guardrails/)
+- [AI Agent Verification Loop: Why Build and Test Are Not Enough](/en/ai/build-and-test-are-not-enough-to-validate-an-agent/)
 
 ## Limitations
 
