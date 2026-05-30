@@ -87,6 +87,7 @@ AI agent 운영의 핵심은 프롬프트를 길게 쓰는 것이 아니라, 작
 - [handoff를 schema 계약으로 바꾸는 방법](/ai/from-prose-to-schema-turning-handoff-into-a-contract/)
 - [trace가 결과보다 중요한 이유](/ai/why-trace-matters-more-than-results/)
 - [문서 중심 운영에서 observable harness로 전환하기](/ai/from-document-centered-ops-to-observable-harness/)
+- [Jenkinsfile 읽기: agent, stages, steps, post를 어떻게 구분할까](/devops/jenkinsfile-agent-stages-steps-post/)
 - [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
 
 ### MCP/hooks/permissions/settings 보안 경계를 잡고 싶을 때

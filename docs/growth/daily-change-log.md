@@ -1,5 +1,48 @@
 # Daily Change Log
 
+## 2026-05-30
+
+### 오늘의 목표
+
+- 토요일 작업으로 오늘 공개된 `Jenkins 06` KR/EN pair를 공개 허브에서 안전하게 찾을 수 있게 `/ai-engineering/`와 `/en/development/ai/`를 보강한다.
+- 미래 글 링크를 추가하지 않고, 2026-05-30 기준 실제 공개된 Jenkins 글만 반영한다.
+
+### 변경 파일
+
+- `_pages/development-ai.md`: AI agent 검증 경로에 오늘 공개된 `Jenkins 06. Jenkinsfile 읽기: agent, stages, steps, post를 어떻게 구분할까` 링크를 추가했다.
+- `_pages/en-development-ai.md`: EN AI Engineering hub의 verification path에 오늘 공개된 `Jenkins 06. How to Read a Jenkinsfile: agent, stages, steps, and post` 링크를 추가했다.
+- `docs/growth/daily-change-log.md`: 오늘 공개 허브 반영 작업과 검증 결과를 기록했다.
+
+### 변경 이유
+
+- `docs/growth/daily-codex-routine.md`의 토요일 규칙에 따라 공개 허브 1개 묶음만 작게 보강했다.
+- `Jenkins 06`은 2026-05-30 09:00 KST 공개 글이며, Jenkinsfile을 실행 계획과 후처리 기준으로 읽는 관점이 AI agent 작업 검증 경로와 맞닿아 있다.
+- 기존 AI Engineering 허브는 PR/MR 리뷰 기준까지만 연결하고 있었고, agent가 만든 CI 변경을 읽는 공개 글이 바로 노출되지 않았다.
+
+### 실행한 검증 명령
+
+- `git branch --show-current`: `master`
+- `git status --short`: 작업 시작 시 출력 없음.
+- `git diff --check`: 통과
+- `bundle exec jekyll build`: 성공. 미래 글은 expected future-date skip으로 제외됐고, 기존 Minimal Mistakes Sass division deprecation warning은 유지됐다.
+- `npm run check:links:local`: 성공. Source pages 182, internal link references 11081, unique internal targets 200, broken targets 0.
+
+### 결과
+
+- `/ai-engineering/`와 `/en/development/ai/`에서 Jenkinsfile 구조 읽기 글이 AI agent verification 경로의 공개 글로 바로 발견되게 된다.
+- Jenkins 07 이후 글은 여전히 future-dated post이므로 공개 허브에는 추가하지 않았다.
+
+### 다음 작업
+
+- `/start-here/`와 `/en/start-here/`에 오늘 공개된 Jenkins 06을 넣을 가치가 있는지 경로 적합성만 검토.
+- 2026-06-02 공개 전 `Jenkins 09` KR/EN pair를 금요일 후보로 점검.
+- 2026-06-16 공개 예정 `agent trace` KR/EN pair를 AI Engineering 허브의 high-priority post-publish 후보로 유지.
+
+### 남은 리스크
+
+- Search Console 데이터: 사용자 입력 필요
+- GA4 데이터: 사용자 입력 필요
+
 ## 2026-05-28
 
 ### 오늘의 목표

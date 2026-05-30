@@ -74,6 +74,7 @@ Reliable agent work comes from separating responsibilities: task request, instru
 - [From Prose to Schema: Turning Handoff Into a Contract](/en/ai/from-prose-to-schema-turning-handoff-into-a-contract/)
 - [Why Trace Matters More Than Results](/en/ai/why-trace-matters-more-than-the-result/)
 - [From Documents to an Observable Harness](/en/ai/from-document-centered-ops-to-an-observable-harness/)
+- [How to Read a Jenkinsfile: agent, stages, steps, and post](/en/devops/jenkinsfile-agent-stages-steps-post/)
 - [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
 
 ### When MCP, hooks, and permissions need boundaries
