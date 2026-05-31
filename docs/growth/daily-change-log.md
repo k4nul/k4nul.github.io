@@ -1,5 +1,51 @@
 # Daily Change Log
 
+## 2026-05-31
+
+### 오늘의 목표
+
+- 일요일 작업으로 Search Console/GA4 데이터 부재를 명시하고, 2026-06-01~2026-06-07 예약 큐 기준 다음 주 작업 후보를 정리한다.
+- 미래 글 링크, publish date, filename slug, permalink는 건드리지 않고 다음 주 운영 우선순위만 문서화한다.
+
+### 변경 파일
+
+- `docs/growth/daily-change-log.md`: 2026-05-31 일요일 점검 결과와 다음 주 작업 후보를 기록했다.
+- `docs/growth/weekly-execution-plan.md`: 2026-06-01~2026-06-07 운영 주간의 요일별 후보 작업을 추가했다.
+
+### 변경 이유
+
+- `docs/growth/daily-codex-routine.md`의 일요일 규칙에 따라 Search Console/GA4 분석 대신 다음 주 예약 글 운영 후보만 준비했다.
+- 레포 내 Search Console/GA4 입력값은 여전히 없으므로 수치를 추정하지 않고 `사용자 입력 필요`로 유지했다.
+- 다음 7일 예약 큐는 `Jenkins 08~10`과 `K8S 01~04`가 이어지므로, 월요일 점검과 화요일 리라이트, 수요일 템플릿 보강 후보를 미리 고정하는 편이 안전하다.
+
+### 실행한 검증 명령
+
+- `git branch --show-current`: `master`
+- `git status --short`: 작업 시작 시 출력 없음.
+- `bundle exec jekyll build`: 미실행. `docs/growth/` 문서만 바꾼 documentation-only 작업이라 public build 산출물 영향이 없다.
+- `npm run check:links:local`: 미실행. 링크 구조 변경이 없다.
+- `git diff --check`: 통과
+
+### 결과
+
+- Search Console 데이터: `사용자 입력 필요`
+- GA4 데이터: `사용자 입력 필요`
+- 다음 주 운영 후보를 `Jenkins 08~10`, `K8S 01~04`, `2026-06-16 agent trace`, `2026-06-23 guardrails` 큐 순서에 맞춰 요일별로 정리했다.
+
+### 다음 작업
+
+- 2026-06-01 월요일: `Jenkins 08~10`과 `K8S 01~04` KR/EN pair의 title, description, TL;DR, 선행 공개 링크, future-link 안전성을 점검한다.
+- 2026-06-02 화요일: `Jenkins 09. Common Jenkins Failures and Root Cause Separation` KR/EN pair를 리라이트 후보로 다룬다.
+- 2026-06-03 수요일: `agent trace` 및 guardrail 계열 예약 글이 연결할 수 있는 incident/trace 체크리스트 보강 여부를 검토한다.
+
+### 남은 리스크
+
+- Search Console 데이터: 사용자 입력 필요
+- GA4 데이터: 사용자 입력 필요
+- 링크 검증 미실행 사유: 링크 구조 변경 없음
+- build 실패 시 파일/플러그인/오류: 해당 없음. 이번 작업은 build 미실행
+- 예약 큐 검토는 문서 기준 후보 정리까지만 끝냈고, 실제 본문 리라이트와 허브 반영은 각 발행일/요일 작업에서 다시 확인해야 한다.
+
 ## 2026-05-30
 
 ### 오늘의 목표
