@@ -1,7 +1,7 @@
 # Scheduled Posts Inventory
 
-Verification date: 2026-05-25
-Scan range: future posts in `_posts/` from 2026-05-26 through 2027-04-30, based on filename dates. The older 2026-05-13 full scan remains below as a historical snapshot.
+Verification date: 2026-05-31
+Scan range: future posts in `_posts/` from 2026-06-01 through 2027-04-30, based on filename dates. The older 2026-05-13 full scan remains below as a historical snapshot.
 
 ## Build Policy Observed
 
@@ -13,14 +13,38 @@ Scan range: future posts in `_posts/` from 2026-05-26 through 2027-04-30, based 
 
 ## Summary
 
-- Scheduled future posts total: 142
-- KR: 71
-- EN: 71
-- KR/EN pair translation_key count: 71
-- Posts that belong to KR/EN pairs: 142
-- Recently published during recovery gap, 2026-05-16 through 2026-05-25: 19 posts.
-- Next 14 days, 2026-05-26 through 2026-06-08: 28 posts / 14 KR/EN pairs.
-- Next 30 days, 2026-05-26 through 2026-06-24: 44 posts / 22 KR/EN pairs.
+- Scheduled future posts total: 130
+- KR: 65
+- EN: 65
+- KR/EN pair translation_key count: 65
+- Posts that belong to KR/EN pairs: 130
+- Published since the 2026-05-25 recovery snapshot, 2026-05-26 through 2026-05-31: 12 posts.
+- Next 14 days, 2026-06-01 through 2026-06-13: 26 posts / 13 KR/EN pairs.
+- Next 30 days, 2026-06-01 through 2026-06-30: 36 posts / 18 KR/EN pairs.
+
+## Sunday Queue Review Snapshot: 2026-05-31
+
+Search Console data: `사용자 입력 필요`
+
+GA4 data: `사용자 입력 필요`
+
+### Queue Windows Reviewed
+
+| Window | Dates | Count | Focus | Notes |
+| --- | --- | --- | --- | --- |
+| Active operating week | 2026-06-01~2026-06-08 | 16 posts | Jenkins 08~10 and K8S 01~05 | Existing queue notes already point only to published posts and hubs. No date change candidate recorded. |
+| Focused weekly improvement | 2026-06-09~2026-06-13 | 10 posts | K8S 06~10 KR/EN queue readiness | Reviewed titles, descriptions, `translation_key` pairs, and markdown links. No internal future-link pattern was detected inside the posts. Keep AI/security/template connections as post-publish work only. |
+| Later June crossover | 2026-06-16~2026-06-30 | 10 posts | Agent trace, guardrails, RBAC, prompt injection | Hold as next weekly candidate after the Kubernetes block is public. |
+
+### Selected Weekly Improvement: K8S 06~10
+
+| Date | Post group | KR/EN status | Core axis | Queue note |
+| --- | --- | --- | --- | --- |
+| 2026-06-09 | K8S 06 first manifests | paired KR/EN | DevOps | No internal markdown links detected; add only published K8S links after 2026-06-09 publication. |
+| 2026-06-10 | K8S 07 ConfigMap, Secret, Ingress | paired KR/EN | AI agent security, DevOps | Preserve DevOps-only pre-publish handling. AI Engineering and Start Here remain post-publish candidates only. |
+| 2026-06-11 | K8S 08 requests, limits, probes | paired KR/EN | AI agent verification, DevOps | Treat as a verification crossover after publication. Growth docs should keep KR/EN parity on this positioning. |
+| 2026-06-12 | K8S 09 PV, PVC, StorageClass | paired KR/EN | DevOps | Keep pre-publish scope on DevOps/storage basics. Add related public K8S links only after earlier K8S URLs are live. |
+| 2026-06-13 | K8S 10 MetalLB and OpenEBS | paired KR/EN | DevOps | Keep as a bare-metal addendum. Add related K8S 06~09 links only after those URLs are public. |
 
 ## Recovery Sync Snapshot: 2026-05-25
 

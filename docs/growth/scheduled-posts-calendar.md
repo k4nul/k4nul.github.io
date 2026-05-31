@@ -1,7 +1,7 @@
 # Scheduled Posts Calendar
 
-Verification date: 2026-05-25
-Scan range: current future queue 2026-05-26 through 2027-04-30. Older rows remain as the baseline calendar snapshot.
+Verification date: 2026-05-31
+Scan range: current future queue 2026-06-01 through 2027-04-30. Older rows remain as the baseline calendar snapshot.
 
 ## Operating Notes
 
@@ -9,24 +9,18 @@ Scan range: current future queue 2026-05-26 through 2027-04-30. Older rows remai
 - Future posts are not included in the current build output, so do not link to them from public hubs, Start Here, or home before publication.
 - Add hub and related-post links on the publish day or after the URL is public.
 
-## Current Calendar Focus: 2026-05-25
+## Current Calendar Focus: 2026-05-31
 
 | Window | Dates | Count | Status |
 | --- | --- | --- | --- |
-| Operating gap recovered | 2026-05-16~2026-05-25 | 19 posts | Published posts were checked and linked from public hubs or related posts where appropriate. |
-| Next 14 days | 2026-05-26~2026-06-08 | 28 posts | Jenkins 02~10 and K8S 01~05 now have related links to already published posts only. |
-| Next 30 days | 2026-05-26~2026-06-24 | 44 posts | Jenkins, Kubernetes, agent trace, troubleshooting, and guardrail posts are the active queue. |
+| Active operating week | 2026-06-01~2026-06-07 | 14 posts | Jenkins 08~10 and K8S 01~04 are the next publish block. Public-link changes wait until each post is actually live. |
+| Next 14 days | 2026-06-01~2026-06-13 | 26 posts | K8S 06~10 was reviewed as the selected weekly improvement. The block remains docs-only until publication. |
+| Next 30 days | 2026-06-01~2026-06-30 | 36 posts | June stays KR/EN-balanced and shifts from DevOps foundations into AI/security crossover topics after 2026-06-16. |
 
 ## Next 14-Day Calendar
 
 | Date | KR post | EN post | Core axis | Pre-publish note |
 | --- | --- | --- | --- | --- |
-| 2026-05-26 | Jenkins 02. Jenkins 설치와 초기 설정 | Jenkins 02. Jenkins Installation and Initial Setup | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
-| 2026-05-27 | Jenkins 03. 플러그인, credentials, tools를 어떻게 관리해야 하는가 | Jenkins 03. Managing Plugins, Credentials, and Tools | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
-| 2026-05-28 | Jenkins 04. Freestyle Job과 Pipeline은 무엇이 다른가 | Jenkins 04. Freestyle Job vs Pipeline | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
-| 2026-05-29 | Jenkins 05. Declarative Pipeline 입문 | Jenkins 05. Introduction to Declarative Pipeline | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
-| 2026-05-30 | Jenkins 06. Jenkinsfile 기본 문법 agent, stages, steps, post | Jenkins 06. Jenkinsfile Basics: agent, stages, steps, post | AI coding agent operations, DevOps | Related links added; title remains a candidate, not changed in bulk. |
-| 2026-05-31 | Jenkins 07. Jenkinsfile 실전 environment, parameters, when | Jenkins 07. Practical Jenkinsfile: environment, parameters, when | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
 | 2026-06-01 | Jenkins 08. Jenkins에서 Docker 이미지 빌드와 레지스트리 푸시 | Jenkins 08. Building Docker Images and Pushing to a Registry in Jenkins | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
 | 2026-06-02 | Jenkins 09. Jenkins 운영에서 자주 만나는 장애와 원인 분리 | Jenkins 09. Common Jenkins Failures and Root Cause Separation | AI coding agent operations, DevOps | Related links added; AI Engineering hub connection is post-publish candidate only. |
 | 2026-06-03 | Jenkins 10. Jenkins에서 Kubernetes 배포로 연결할 때 경계는 어디에 두는가 | Jenkins 10. Drawing the Boundary Between Jenkins and Kubernetes Deployment | DevOps | Related links added to published Jenkins 01, Git PR/MR, Docker registry, DevOps hub. |
@@ -35,6 +29,11 @@ Scan range: current future queue 2026-05-26 through 2027-04-30. Older rows remai
 | 2026-06-06 | K8S 03. 온프렘 기준 Kubernetes 설치 전략과 kubeadm 선택 이유 | K8S 03. Kubernetes Installation Strategy for On-Prem and Why kubeadm | DevOps | Related links added to published Docker/Jenkins posts and DevOps hub. |
 | 2026-06-07 | K8S 04. control plane 설치와 기본 점검 | K8S 04. Control Plane Installation and Basic Checks | DevOps | Related links added to published Docker/Jenkins posts and DevOps hub. |
 | 2026-06-08 | K8S 05. worker join, CNI 구성, 클러스터 기본 확인 | K8S 05. Worker Join, CNI Setup, and Basic Cluster Checks | DevOps | Related links added to published Docker/Jenkins posts and DevOps hub. |
+| 2026-06-09 | K8S 06. 첫 manifest 작성 Pod, Deployment, Service | K8S 06. Writing First Manifests: Pod, Deployment, Service | DevOps | No internal markdown links detected in the scheduled pair. Add only published K8S related links after the URL is live. |
+| 2026-06-10 | K8S 07. 실무형 manifest 작성 ConfigMap, Secret, Ingress | K8S 07. Practical Manifests: ConfigMap, Secret, Ingress | AI agent security, DevOps | Security crossover is valid, but AI Engineering and Start Here links stay post-publish only. |
+| 2026-06-11 | K8S 08. requests, limits, probe를 왜 같이 봐야 하는가 | K8S 08. Why requests, limits, and probes should be reviewed together | AI agent verification, DevOps | Verification crossover is valid. Keep AI Engineering/template links deferred until publication. |
+| 2026-06-12 | K8S 09. PV, PVC, StorageClass를 어떻게 이해해야 하는가 | K8S 09. Understanding PV, PVC, and StorageClass | DevOps | Storage basics remain DevOps-only pre-publish. Related K8S links should wait for published URLs. |
+| 2026-06-13 | K8S 10. 온프렘 번외 MetalLB와 OpenEBS는 언제 필요한가 | K8S 10. Bare-metal addendum: when MetalLB and OpenEBS are useful | DevOps | Keep as a bare-metal addendum. Add related K8S 06~09 links only after those posts are public. |
 
 ## Monthly Summary
 
@@ -116,7 +115,7 @@ Scan range: current future queue 2026-05-26 through 2027-04-30. Older rows remai
 | 2026-06-10 | EN | K8S 07. Practical Manifests: ConfigMap, Secret, Ingress | AI agent security, DevOps | paired KR/EN | - |
 | 2026-06-10 | KR | K8S 07. 실무형 manifest 작성 ConfigMap, Secret, Ingress | AI agent security, DevOps | paired KR/EN | - |
 | 2026-06-11 | EN | K8S 08. Why requests, limits, and probes should be reviewed together | AI agent verification, DevOps | paired KR/EN | - |
-| 2026-06-11 | KR | K8S 08. requests, limits, probe를 왜 같이 봐야 하는가 | DevOps | paired KR/EN | - |
+| 2026-06-11 | KR | K8S 08. requests, limits, probe를 왜 같이 봐야 하는가 | AI agent verification, DevOps | paired KR/EN | - |
 | 2026-06-12 | EN | K8S 09. Understanding PV, PVC, and StorageClass | DevOps | paired KR/EN | - |
 | 2026-06-12 | KR | K8S 09. PV, PVC, StorageClass를 어떻게 이해해야 하는가 | DevOps | paired KR/EN | - |
 | 2026-06-13 | EN | K8S 10. Bare-metal addendum: when MetalLB and OpenEBS are useful | DevOps | paired KR/EN | - |

@@ -1,6 +1,6 @@
 # Weekly Execution Plan
 
-검증 기준일: 2026-05-25
+검증 기준일: 2026-05-31
 
 ## Queue-First Operating Rule
 
@@ -22,6 +22,16 @@
 - 목요일 2026-06-04: `K8S 01` 공개 후 실제 public URL이 확인되면 DevOps 허브 반영 여부를 검토하고, 미래 K8S 글은 여전히 링크하지 않는다.
 - 금요일 2026-06-05: `agent trace` KR/EN pair를 금요일 품질 보강 후보로 삼아 사실, 관찰, 해석, 한계 분리 여부를 사전 점검한다.
 - 주간 데이터 상태: Search Console `사용자 입력 필요`, GA4 `사용자 입력 필요`
+
+## Focused Weekly Improvement Chosen On 2026-05-31
+
+목표: 다음 7-14일 창에서 아직 별도 점검 메모가 얕은 `K8S 06~10` KR/EN pair를 큐 준비 관점으로 정리한다.
+
+- 범위: `2026-06-09~2026-06-13` 예약 글 10개, KR/EN 5쌍
+- 선택 이유: 이미 작성된 예약 큐이고, public 링크를 건드리지 않아도 점검 가능한 구간이며, `K8S 08`의 AI agent verification 포지셔닝을 KR/EN 문서에서 맞춰 둘 필요가 있다.
+- 점검 결과: `translation_key` 쌍은 정상이며, 본문 markdown 링크는 외부 근거 링크 중심이라 내부 future-link 위험이 없다.
+- 후속 작업: `K8S 07`은 AI agent security 교차점으로, `K8S 08`은 AI agent verification 교차점으로 발행 후 허브/템플릿 연결 후보만 유지한다.
+- 데이터 상태: Search Console `사용자 입력 필요`, GA4 `사용자 입력 필요`
 
 ## Week 1: Structure Lock
 

@@ -4,19 +4,22 @@
 
 ### 오늘의 목표
 
-- 일요일 작업으로 Search Console/GA4 데이터 부재를 명시하고, 2026-06-01~2026-06-07 예약 큐 기준 다음 주 작업 후보를 정리한다.
-- 미래 글 링크, publish date, filename slug, permalink는 건드리지 않고 다음 주 운영 우선순위만 문서화한다.
+- 일요일 작업으로 Search Console/GA4 데이터 부재를 명시하고, 2026-06-01~2026-06-13 예약 큐를 다시 읽어 다음 7-14일 창의 한 구간만 보강한다.
+- 미래 글 링크, publish date, filename slug, permalink는 건드리지 않고 `K8S 06~10` KR/EN pair의 큐 준비 상태만 문서화한다.
 
 ### 변경 파일
 
-- `docs/growth/daily-change-log.md`: 2026-05-31 일요일 점검 결과와 다음 주 작업 후보를 기록했다.
-- `docs/growth/weekly-execution-plan.md`: 2026-06-01~2026-06-07 운영 주간의 요일별 후보 작업을 추가했다.
+- `docs/growth/daily-change-log.md`: 2026-05-31 일요일 점검 결과와 `K8S 06~10` 집중 보강 이유를 기록했다.
+- `docs/growth/weekly-execution-plan.md`: 다음 7-14일 창에서 선택한 `K8S 06~10` 큐 준비 작업을 명시했다.
+- `docs/growth/scheduled-posts-inventory.md`: 미래 큐 기준일과 집계 범위를 2026-05-31 기준으로 갱신하고 `K8S 06~10` 점검 메모를 추가했다.
+- `docs/growth/scheduled-posts-calendar.md`: 현재 future queue 창을 2026-06-01~2026-06-13 기준으로 갱신하고 `K8S 06~10` 사전 메모를 추가했다.
 
 ### 변경 이유
 
 - `docs/growth/daily-codex-routine.md`의 일요일 규칙에 따라 Search Console/GA4 분석 대신 다음 주 예약 글 운영 후보만 준비했다.
 - 레포 내 Search Console/GA4 입력값은 여전히 없으므로 수치를 추정하지 않고 `사용자 입력 필요`로 유지했다.
-- 다음 7일 예약 큐는 `Jenkins 08~10`과 `K8S 01~04`가 이어지므로, 월요일 점검과 화요일 리라이트, 수요일 템플릿 보강 후보를 미리 고정하는 편이 안전하다.
+- 다음 14일 예약 큐는 `Jenkins 08~10`, `K8S 01~10`으로 이어지며, 그중 `2026-06-09~2026-06-13`의 `K8S 06~10`은 아직 주간 메모가 얕았다.
+- `K8S 07`과 `K8S 08`은 DevOps를 넘어 각각 AI agent security, AI agent verification과 연결될 수 있어 KR/EN 큐 메타데이터 정합성을 지금 맞춰 두는 편이 안전하다.
 
 ### 실행한 검증 명령
 
@@ -30,13 +33,17 @@
 
 - Search Console 데이터: `사용자 입력 필요`
 - GA4 데이터: `사용자 입력 필요`
-- 다음 주 운영 후보를 `Jenkins 08~10`, `K8S 01~04`, `2026-06-16 agent trace`, `2026-06-23 guardrails` 큐 순서에 맞춰 요일별로 정리했다.
+- 미래 큐 집계를 2026-05-31 기준으로 갱신했다. 현재 future queue는 130 posts / 65 KR/EN pairs다.
+- 다음 14일 창은 `2026-06-01~2026-06-13` 26 posts / 13 KR/EN pairs로 정리했다.
+- 선택한 주간 개선 범위는 `2026-06-09~2026-06-13`의 `K8S 06~10`이며, 내부 future-link 위험은 보이지 않았고 `K8S 08`의 KR/EN 포지셔닝 메모를 맞췄다.
 
 ### 다음 작업
 
 - 2026-06-01 월요일: `Jenkins 08~10`과 `K8S 01~04` KR/EN pair의 title, description, TL;DR, 선행 공개 링크, future-link 안전성을 점검한다.
 - 2026-06-02 화요일: `Jenkins 09. Common Jenkins Failures and Root Cause Separation` KR/EN pair를 리라이트 후보로 다룬다.
 - 2026-06-03 수요일: `agent trace` 및 guardrail 계열 예약 글이 연결할 수 있는 incident/trace 체크리스트 보강 여부를 검토한다.
+- 2026-06-08 월요일: `K8S 06~10` KR/EN pair의 title tone, description parity, post-publish 연결 후보를 다시 확인한다.
+- 2026-06-11 목요일: `K8S 08` 공개 후 AI Engineering/templates 연결이 실제로 맞는지 공개 URL 기준으로만 판단한다.
 
 ### 남은 리스크
 
@@ -45,6 +52,7 @@
 - 링크 검증 미실행 사유: 링크 구조 변경 없음
 - build 실패 시 파일/플러그인/오류: 해당 없음. 이번 작업은 build 미실행
 - 예약 큐 검토는 문서 기준 후보 정리까지만 끝냈고, 실제 본문 리라이트와 허브 반영은 각 발행일/요일 작업에서 다시 확인해야 한다.
+- `K8S 07`, `K8S 08`의 AI/security 성격은 현재 문서 메모 수준이며, 공개 후 실제 허브 연결 적합성은 다시 검토해야 한다.
 
 ## 2026-05-30
 
