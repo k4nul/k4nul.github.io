@@ -1,5 +1,57 @@
 # Daily Change Log
 
+## 2026-06-01
+
+### 오늘의 목표
+
+- 월간 Codex automation lane으로 최근 28일/월간 성장 운영을 좁은 문서 감사 범위에서 리뷰한다.
+- Search Console/GA4 데이터가 레포에 없다는 사실을 명시하고, 미래 예약 큐의 균형, 핵심 주제 커버리지, KR/EN parity 후보, stale evergreen 후보, 다음 달 우선순위를 growth 문서에 기록한다.
+- publish date, filename slug, permalink, public 링크 구조는 건드리지 않는다.
+
+### 변경 파일
+
+- `docs/growth/content-backlog.md`: 월간 리뷰 스냅샷, data availability, queue balance, stale evergreen watchlist, 다음 달 우선순위 5개를 기록했다.
+- `docs/growth/schedule-adjustment-candidates.md`: 월간 리뷰 기준의 candidate-only 메모를 추가하고, 일정 변경 후보가 없음을 명시했다.
+- `docs/growth/daily-change-log.md`: 월간 automation lane 수행 결과를 기록했다.
+
+### 변경 이유
+
+- `docs/growth/prompt-bank.md`의 Monthly Review Prompt는 Search Console/GA4 데이터가 있을 때 성과를 읽도록 되어 있지만, 현재 레포에는 월간 입력값이 없다.
+- 데이터가 없더라도 queue balance, core-topic coverage, KR/EN parity candidate, stale evergreen candidate, next-month priority는 레포 기준으로 좁게 정리할 수 있다.
+- future queue는 KR/EN 균형이 유지되지만, `2026-08` 이후 Rust/DevOps 비중이 높아져 핵심 AI 성장축은 템플릿/허브/evergreen 리라이트로 보완할 필요가 있다.
+
+### 실행한 검증 명령
+
+- `git branch --show-current`: `master`
+- `git status --short`: 작업 시작 시 출력 없음.
+- `git diff --check`: 통과
+- `bundle exec jekyll build`: 미실행. `docs/growth/` 문서만 바꾼 documentation-only 작업이라 public build 산출물 영향이 없다.
+- `npm run check:links:local`: 미실행. public 링크 구조 변경이 없다.
+
+### 결과
+
+- Search Console 데이터: `사용자 입력 필요`
+- GA4 데이터: `사용자 입력 필요`
+- 월간 사용자, non-brand query 수, 평균 순위 30위 안쪽 페이지 수: `사용자 입력 필요`
+- future queue는 `130 posts / 65 KR/EN pairs`로 균형을 유지한다.
+- `2026-06`과 `2026-07`은 AI agent 운영·보안 교차 주제가 강하지만, `2026-08` 이후는 Rust/DevOps 비중이 높아져 exact `AGENTS.md`/`CLAUDE.md`/Codex template refresh는 backlog 자산 보강으로 메워야 한다.
+- 새 publish-date 변경 후보는 기록하지 않았고, stale evergreen watchlist와 다음 달 우선순위 5개만 남겼다.
+
+### 다음 작업
+
+- 2026-06-02 이후 공개되는 `2026-06-16`, `2026-06-23`, `2026-06-25`, `2026-06-30`, `2026-07-14` KR/EN pair를 post-publish 링크 및 EN parity 우선 후보로 유지한다.
+- `/ai-engineering/templates/`에서 `AGENTS.md`, `CLAUDE.md`, Codex 작업 요청 템플릿 자산 보강을 다음 달 상위 작업으로 유지한다.
+- stale evergreen watchlist인 `2026-04-21`, `2026-04-30`, `2026-05-06`, `2026-05-11`, `2026-05-12`, `2026-05-13` 공개 글은 Search Console 입력 전까지 좁은 범위 감사 후보로만 둔다.
+- Search Console/GA4 월간 입력값을 받으면 Week 4 또는 Monthly Review prompt로 넘길 page/query 표를 준비한다.
+
+### 남은 리스크
+
+- Search Console 데이터: 사용자 입력 필요
+- GA4 데이터: 사용자 입력 필요
+- 링크 검증 미실행 사유: public 링크 구조 변경 없음
+- build 실패 시 파일/플러그인/오류: 해당 없음. 이번 작업은 build 미실행
+- 월간 리뷰는 레포에 있는 queue/문서 데이터만 사용했으므로 실제 검색 성과 우선순위는 사용자 제공 Search Console/GA4 입력 후 재정렬해야 한다.
+
 ## 2026-05-31
 
 ### 오늘의 목표

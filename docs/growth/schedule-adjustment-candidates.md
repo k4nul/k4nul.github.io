@@ -1,8 +1,19 @@
 # Schedule Adjustment Candidates
 
-Verification date: 2026-05-25
+Verification date: 2026-06-01
 
 This document records candidates only. Do not change publish date, slug, filename, or permalink unless the user explicitly requests it.
+
+## Monthly Review Notes: 2026-06-01
+
+No publish-date, slug, filename, or permalink change candidate was recorded from this monthly review. The notes below stay candidate-only.
+
+| Range | Observation | Candidate action | Date change |
+| --- | --- | --- | --- |
+| 2026-06-16~2026-07-30 | AI/security core coverage is strong and KR/EN-balanced. | Keep dates. Prioritize post-publish hub links, template links, and EN quality review only. | none |
+| 2026-08-11~2026-10-27 | Queue density shifts back to Rust/Tauri/Rust Service and weakens the primary AI growth axis. | Keep dates. Compensate with template/checklist work and evergreen rewrites instead of schedule moves. | none |
+| 2026-06-01~2027-04-30 | No clear future refresh block for exact `AGENTS.md`, `CLAUDE.md`, or Codex template/reference queries appears in the current snapshot. | Use `content-backlog.md` template and evergreen candidates before considering any new post or date change. | none |
+| 2026-06-10, 2026-06-11, 2026-06-16, 2026-06-23, 2026-06-25, 2026-06-30, 2026-07-14 | Existing EN rewrite candidates align with the core AI/security axis. | Treat them as wording/parity candidates after publication, not as scheduling problems. | none |
 
 ## Similar Topic Clusters
 

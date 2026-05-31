@@ -1,6 +1,6 @@
 # Content Backlog
 
-검증 기준일: 2026-05-25
+검증 기준일: 2026-06-01
 
 상태 값:
 
@@ -15,6 +15,46 @@
 - 예약 큐에 없는 핵심 템플릿이 필요하거나, Search Console상 새 reference page가 필요하거나, 사용자가 명시적으로 요청할 때만 신규 글을 후보로 둔다.
 - 미래 포스트의 publish date, slug, permalink는 임의로 바꾸지 않는다. 일정 변경은 `schedule-adjustment-candidates.md`에 후보로만 기록한다.
 - 공개 페이지에는 이미 공개된 글과 오늘 실제 공개된 글만 직접 링크한다.
+
+## Monthly Review Snapshot: 2026-06-01
+
+### Data Availability
+
+| 항목 | 상태 | 메모 |
+| --- | --- | --- |
+| Search Console impressions/clicks/CTR/average position | 사용자 입력 필요 | 레포 내 월간 입력값 없음 |
+| non-brand query 수 | 사용자 입력 필요 | 레포 내 월간 입력값 없음 |
+| 평균 순위 30위 안쪽 페이지 수 | 사용자 입력 필요 | 레포 내 월간 입력값 없음 |
+| GA4 organic/direct sessions | 사용자 입력 필요 | 레포 내 월간 입력값 없음 |
+| 월간 사용자 수 | 사용자 입력 필요 | 추정 금지 |
+
+### Queue Balance And Coverage Notes
+
+- future queue는 `130 posts / 65 KR/EN pairs`로 언어 균형은 유지된다.
+- `2026-06`과 `2026-07`은 trace, guardrail, RBAC, prompt injection, least privilege, MCP처럼 AI agent 운영·보안 축이 강하다.
+- `2026-08`은 첫 주 incident/security pair 뒤에 Rust/Tauri 중심으로 이동하고, `2026-09~2026-10`은 대부분 Rust/DevOps라 핵심 AI 축 밀도가 약해진다.
+- `2026-06-01~2027-04-30` 큐 스냅샷에는 exact `AGENTS.md`, `CLAUDE.md`, Codex 운영 템플릿 리프레시 블록이 뚜렷하지 않다. 다음 달 보강은 새 글 양산이나 일정 변경보다 템플릿/체크리스트와 evergreen 리라이트 쪽이 우선이다.
+
+### Stale Evergreen Watchlist
+
+| 공개일 | 후보 | 상태 | 이유 |
+| --- | --- | --- | --- |
+| 2026-04-21 | `why-agents-md-claude-md-and-system-prompts-burn-tokens` KR/EN pair | candidate | instruction-file 핵심축이지만 1개월 이상 경과. `AGENTS.md`/`CLAUDE.md` 템플릿과 내부링크 재점검 후보 |
+| 2026-04-30 | `how-to-write-agents-md-for-codex` KR/EN pair | candidate | AGENTS.md long-tail evergreen. exact future queue 보강 부재를 메울 공개 글 후보 |
+| 2026-05-06 | `codex-project-operations-template` KR/EN pair | candidate | Codex 운영 템플릿 축의 대표 공개 글. 템플릿 허브 연결 강화 후보 |
+| 2026-05-11 | `fix-claude-code-boundaries-with-settings-and-permissions` | candidate | permissions/settings 핵심축 공개 글. KR-only 자산이라 KR/EN 및 template 연결 감사 후보 |
+| 2026-05-12 | `automate-validation-and-guardrails-with-hooks` | candidate | hooks/validation evergreen이지만 future queue 직접 후속이 얕다 |
+| 2026-05-13 | `connect-external-context-with-mcp` | candidate | MCP 핵심축 공개 글. 2026-07-14 MCP pair와 연결할 대표 evergreen 후보 |
+
+### Next-Month Top 5 Priorities
+
+| 우선순위 | 항목 | 상태 | 메모 |
+| --- | --- | --- | --- |
+| 1 | `2026-06-16`, `2026-06-23`, `2026-06-25`, `2026-06-30`, `2026-07-14` KR/EN pair의 post-publish 링크와 EN 품질 점검 | ready | AI core axis와 직접 연결되는 다음 달 공개 묶음 |
+| 2 | `/ai-engineering/templates/`에서 `AGENTS.md` 최소 템플릿, `CLAUDE.md` 최소 템플릿, Codex 작업 요청 프롬프트를 우선 보강 | ready | future queue의 exact template refresh 공백 보완 |
+| 3 | stale evergreen shortlist의 title, description, TL;DR, hub/template/internal link 감사 | candidate | Search Console 입력 전에는 좁은 범위 감사만 허용 |
+| 4 | 기존 EN AI Engineering pages와 schedule-adjustment 문서의 EN rewrite candidates를 묶어 KR/EN parity 감사 | candidate | 삭제 없이 self-canonical, hreflang, parity 유지 |
+| 5 | Search Console/GA4 월간 입력값 수집 후 Week 4 또는 월간 rewrite prompt로 넘길 page/query 표 준비 | needs-data | 수치 추정 금지, mass title change 금지 |
 
 ## Hub Candidates
 
