@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Jenkins 09. Jenkins 운영에서 자주 만나는 장애와 원인 분리"
-description: "Jenkins 장애를 controller, agent, queue, credential, plugin, Pipeline 코드 관점으로 나눠 보는 글."
+description: "Jenkins 장애 트러블슈팅에서 queue, agent, credential, plugin, Pipeline 실패 위치를 먼저 분리하는 기준을 정리한 글."
 date: 2026-06-02 09:00:00 +09:00
 lang: ko
 translation_key: jenkins-common-failures-troubleshooting
@@ -17,9 +17,9 @@ search: true
 
 ## 요약
 
-Jenkins 장애는 "빌드가 실패했다" 한 문장으로 묶으면 해결이 늦어진다. 먼저 queue에 머무는지, agent가 offline인지, credential이 실패했는지, plugin이나 Pipeline 문법 문제인지 분리해야 한다.
+Jenkins 장애를 "빌드가 실패했다" 한 문장으로 묶으면 해결이 늦어진다. queue에 머무는지, agent가 offline인지, credential 바인딩이 실패했는지, plugin 변경이나 Pipeline 문법 문제가 있는지 먼저 나눠 봐야 한다.
 
-이 글의 결론은 Jenkins 장애 대응의 첫 단계가 재실행이 아니라 분류라는 것이다. 실패 위치를 controller, agent, workspace, registry, credential, Pipeline 코드 중 어디인지 좁혀야 한다.
+이 글의 결론은 Jenkins 장애 대응의 첫 단계가 재실행이 아니라 분류라는 것이다. 특히 [Jenkinsfile 실전 environment, parameters, when](/devops/jenkinsfile-environment-parameters-when/) 과 [Jenkins에서 Docker 이미지 빌드와 레지스트리 푸시](/devops/jenkins-docker-image-build-registry-push/) 단계에서 장애가 보이면, 실패 위치를 controller, agent, workspace, registry, credential, Pipeline 코드 중 어디인지 먼저 좁혀야 한다.
 
 ## 문서 정보
 
@@ -43,6 +43,8 @@ Jenkins에서 자주 만나는 증상은 비슷해 보인다.
 - Pipeline이 느리거나 log가 지나치게 크다.
 
 이 증상을 하나로 묶으면 원인을 찾기 어렵다.
+
+이 글은 [플러그인, credentials, tools를 어떻게 관리해야 하는가](/devops/jenkins-plugins-credentials-tools-management/) 와 [Jenkinsfile 읽기: agent, stages, steps, post를 어떻게 구분할까](/devops/jenkinsfile-agent-stages-steps-post/) 를 전제로, 장애를 어디서부터 좁혀야 하는지에만 집중한다.
 
 ## 확인된 사실
 
@@ -92,9 +94,10 @@ Jenkins 장애는 plugin, agent OS, network, registry, Git server, credential pr
 ## 함께 읽을 글
 
 - [DevOps 운영 흐름](/devops/)
-- [Jenkins는 무엇이고 왜 아직도 많이 쓰이는가](/devops/jenkins-what-and-why-still-used/)
-- [PR/MR 기반 협업 흐름과 리뷰 기준](/devops/git-pr-mr-collaboration-review/)
-- [Docker registry push와 image 관리](/devops/docker-registry-push-and-image-management/)
+- [Jenkins 설치와 초기 설정](/devops/jenkins-installation-initial-setup/)
+- [플러그인, credentials, tools를 어떻게 관리해야 하는가](/devops/jenkins-plugins-credentials-tools-management/)
+- [Jenkinsfile 읽기: agent, stages, steps, post를 어떻게 구분할까](/devops/jenkinsfile-agent-stages-steps-post/)
+- [Jenkins에서 Docker 이미지 빌드와 레지스트리 푸시](/devops/jenkins-docker-image-build-registry-push/)
 
 ## 참고자료
 

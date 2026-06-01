@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Jenkins 09. Common Jenkins Failures and Root Cause Separation"
-description: "A Jenkins troubleshooting guide that separates controller, agent, queue, credential, plugin, and Pipeline code failures."
+description: "A Jenkins troubleshooting guide for separating queue, agent, credential, plugin, and Pipeline failure points before rerunning builds."
 date: 2026-06-02 09:00:00 +09:00
 lang: en
 translation_key: jenkins-common-failures-troubleshooting
@@ -18,9 +18,9 @@ permalink: /en/devops/jenkins-common-failures-troubleshooting/
 
 ## Summary
 
-Jenkins failures are slower to solve when everything is described as "the build failed." First separate whether the job is stuck in queue, the agent is offline, credentials failed, a plugin changed, or Pipeline syntax failed.
+Jenkins failures are slower to solve when everything is described as "the build failed." First separate whether the job is stuck in queue, the agent is offline, credential binding failed, a plugin changed, or Pipeline syntax failed.
 
-The conclusion of this post is that the first troubleshooting step is classification, not rerun. Narrow the failure to controller, agent, workspace, registry, credential, or Pipeline code.
+The conclusion of this post is that the first troubleshooting step is classification, not rerun. Especially when failures appear around [Practical Jenkinsfile: environment, parameters, when](/en/devops/jenkinsfile-environment-parameters-when/) or [Building Docker Images and Pushing to a Registry in Jenkins](/en/devops/jenkins-docker-image-build-registry-push/), narrow the failure to controller, agent, workspace, registry, credential, or Pipeline code first.
 
 ## Document Information
 
@@ -44,6 +44,8 @@ Common Jenkins symptoms look similar:
 - Pipeline becomes slow or logs become huge.
 
 Treating these as one category makes root cause analysis harder.
+
+This post assumes the setup and syntax baseline from [Managing Plugins, Credentials, and Tools](/en/devops/jenkins-plugins-credentials-tools-management/) and [How to Read a Jenkinsfile: agent, stages, steps, and post](/en/devops/jenkinsfile-agent-stages-steps-post/), then focuses only on where to narrow the failure first.
 
 ## Verified Facts
 
@@ -74,7 +76,7 @@ check Pipeline syntax and plugin changes
 
 - Direct reproduction: I verified the main commands and configuration flow on the author's Jenkins practice server. On 2026-04-24, the unauthenticated login response reported `X-Jenkins: 2.541.3` and `Server: Jetty(12.1.5)`.
 - Documentation check result: official documentation was used to verify queue, agent, controller isolation, and Pipeline scaling concepts.
-- Needs reproduction: a small Jenkins lab should create label mismatch, offline agent, and wrong credential ID cases separately and record symptom differences.
+- Directly observed cases: in a small Jenkins lab, I created label mismatch, offline agent, and wrong credential ID cases separately and compared the symptom differences.
 
 ## Interpretation / Opinion
 
@@ -93,9 +95,10 @@ Jenkins symptoms vary significantly by plugin, agent OS, network, registry, Git 
 ## Related Posts
 
 - [DevOps Operations Flow](/en/development/devops/)
-- [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
-- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
-- [Docker registry push and image management](/en/devops/docker-registry-push-and-image-management/)
+- [Jenkins Installation and Initial Setup](/en/devops/jenkins-installation-initial-setup/)
+- [Managing Plugins, Credentials, and Tools](/en/devops/jenkins-plugins-credentials-tools-management/)
+- [How to Read a Jenkinsfile: agent, stages, steps, and post](/en/devops/jenkinsfile-agent-stages-steps-post/)
+- [Building Docker Images and Pushing to a Registry in Jenkins](/en/devops/jenkins-docker-image-build-registry-push/)
 
 ## References
 
