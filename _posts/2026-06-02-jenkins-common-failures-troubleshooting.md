@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Jenkins 09. Jenkins 운영에서 자주 만나는 장애와 원인 분리"
-description: "Jenkins 장애 트러블슈팅에서 queue, agent, credential, plugin, Pipeline 실패 위치를 먼저 분리하는 기준을 정리한 글."
+title: "Jenkins 장애 트러블슈팅 가이드: queue, agent, credential, plugin, Pipeline 원인 분리"
+description: "Jenkins 빌드 실패가 났을 때 queue, agent, credential, plugin, Pipeline 중 어디서 먼저 원인을 좁힐지 정리한 운영용 트러블슈팅 가이드."
 date: 2026-06-02 09:00:00 +09:00
 lang: ko
 translation_key: jenkins-common-failures-troubleshooting
@@ -17,9 +17,9 @@ search: true
 
 ## 요약
 
-Jenkins 장애를 "빌드가 실패했다" 한 문장으로 묶으면 해결이 늦어진다. queue에 머무는지, agent가 offline인지, credential 바인딩이 실패했는지, plugin 변경이나 Pipeline 문법 문제가 있는지 먼저 나눠 봐야 한다.
+Jenkins 장애 대응의 첫 단계는 재실행이 아니라 실패 위치 분리다. build가 아예 시작되지 않았는지, 특정 agent에서만 깨지는지, credential 바인딩이나 plugin 변경, Pipeline 문법 문제인지 먼저 나누면 확인 순서가 짧아진다.
 
-이 글의 결론은 Jenkins 장애 대응의 첫 단계가 재실행이 아니라 분류라는 것이다. 특히 [Jenkinsfile 실전 environment, parameters, when](/devops/jenkinsfile-environment-parameters-when/) 과 [Jenkins에서 Docker 이미지 빌드와 레지스트리 푸시](/devops/jenkins-docker-image-build-registry-push/) 단계에서 장애가 보이면, 실패 위치를 controller, agent, workspace, registry, credential, Pipeline 코드 중 어디인지 먼저 좁혀야 한다.
+이 글은 [Jenkins 설치와 초기 설정](/devops/jenkins-installation-initial-setup/), [플러그인, credentials, tools를 어떻게 관리해야 하는가](/devops/jenkins-plugins-credentials-tools-management/), [Jenkins에서 Docker 이미지 빌드와 레지스트리 푸시](/devops/jenkins-docker-image-build-registry-push/) 흐름을 이미 운영 중이라는 전제에서, controller, agent, workspace, registry, credential, Pipeline 코드 중 어디부터 의심해야 하는지 빠르게 분리하는 기준만 정리한다.
 
 ## 문서 정보
 
