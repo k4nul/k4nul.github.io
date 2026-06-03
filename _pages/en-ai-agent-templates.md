@@ -112,6 +112,19 @@ Done Means:
 
 ## Agent Output Review Checklist
 
+### When To Use It
+
+- Use this checklist for any agent result that changes code, docs, operating rules, or settings.
+- Apply it first to boundary-changing work such as `AGENTS.md`, `CLAUDE.md`, permissions/settings, hooks, and MCP configuration.
+- Do not skip it just because the diff is small if URLs, public APIs, secret access, or deployment flow are involved.
+
+### Do Not Approve
+
+- Do not approve refactors that were outside the requested scope just because the final result looks cleaner.
+- Do not treat skipped build/test work as a successful verification outcome.
+- Do not accept diffs or attached artifacts that expose secrets, credentials, internal logs, or customer data.
+- Do not ignore signs that existing user changes were reverted without an explicit reason.
+
 - Does the diff solve the requested goal?
 - Were URLs, public APIs, filenames, or data schemas changed unintentionally?
 - Did the agent avoid reverting existing user work?
@@ -121,6 +134,14 @@ Done Means:
 - Is the diff small enough to review?
 - Were secrets, credentials, sensitive files, or internal logs exposed?
 - Were required docs or operating checklists updated?
+
+### Verification Method
+
+- Compare the original request and the completion report first to confirm the goal, scope, and protected boundaries still match.
+- Run `git diff --check` to catch whitespace errors, conflict markers, and broken patch artifacts.
+- Confirm that the relevant commands were actually run for the change type, such as `bundle exec jekyll build`, tests, lint, or link checks.
+- For settings or permission changes, verify at least one action that should be allowed and one action that should be blocked.
+- If any check was skipped, confirm that the reason and the remaining risk are reported separately.
 
 ## Claude Code Permissions/Settings Checklist
 

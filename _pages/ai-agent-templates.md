@@ -111,6 +111,19 @@ translation_key: ai-agent-operations-templates
 
 ## AI agent 작업 결과 리뷰 체크리스트
 
+### 적용 조건
+
+- 코드 변경, 문서 변경, 운영 문서 변경, 설정 변경이 포함된 모든 agent 결과 리뷰에 사용한다.
+- 특히 `AGENTS.md`, `CLAUDE.md`, permissions/settings, hooks, MCP 설정처럼 경계가 바뀌는 작업에 우선 적용한다.
+- 변경 범위가 작아 보여도 URL, 공개 API, secret 접근, 배포 흐름이 걸려 있으면 생략하지 않는다.
+
+### 금지 사항
+
+- 요청 범위에 없던 리팩터링을 결과만 보고 승인하지 않는다.
+- build/test 미실행 상태를 성공처럼 해석하지 않는다.
+- secret, credential, 내부 로그, 고객 데이터가 diff나 첨부 산출물에 포함된 결과를 그대로 수용하지 않는다.
+- 기존 사용자 변경을 되돌린 흔적이 있는데 이유 확인 없이 넘어가지 않는다.
+
 - 요구한 목표가 실제 변경에 반영되었는가?
 - URL, public API, 파일명, 데이터 스키마가 의도치 않게 바뀌지 않았는가?
 - agent가 기존 사용자 변경을 되돌리지 않았는가?
@@ -120,6 +133,14 @@ translation_key: ai-agent-operations-templates
 - diff가 리뷰 가능한 크기와 범위에 머무는가?
 - 보안상 민감 파일, secret, credential, 내부 로그가 노출되지 않았는가?
 - 관련 문서나 운영 체크리스트가 필요한 만큼 업데이트되었는가?
+
+### 검증 방법
+
+- 먼저 요청문과 완료 보고를 비교해 목표, 범위, 금지 경계가 유지되었는지 본다.
+- `git diff --check`로 whitespace, conflict marker, 잘못된 패치 흔적을 확인한다.
+- 변경 종류에 맞춰 `bundle exec jekyll build`, 테스트, lint, 링크 점검 중 필요한 명령이 실제 실행되었는지 확인한다.
+- 설정/권한 변경이라면 허용/차단되어야 할 동작이 각각 하나 이상 검증되었는지 확인한다.
+- 미실행 검증이 있으면 이유와 남은 리스크가 결과 보고에 분리되어 있는지 확인한다.
 
 ## Claude Code permissions/settings 점검표
 
