@@ -88,6 +88,7 @@ Kubernetes deployment methods differ across managed services, kubeadm, kops, kub
 - [Docker Containers vs. VMs](/en/devops/docker-containers-vs-vms/)
 - [Dockerfile Basics and Build Context](/en/devops/dockerfile-basics-and-build-context/)
 - [What Jenkins Is and Why It Is Still Used](/en/devops/jenkins-what-and-why-still-used/)
+- [Drawing the Boundary Between Jenkins and Kubernetes Deployment](/en/devops/jenkins-to-kubernetes-deployment-boundary/)
 
 ## References
 

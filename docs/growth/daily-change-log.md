@@ -1,5 +1,61 @@
 # Daily Change Log
 
+## 2026-06-04
+
+### 오늘의 목표
+
+- 목요일 작업으로 `K8S 01` KR/EN pair의 실제 공개 여부를 build 기준으로 확인한다.
+- 아직 공개되지 않은 `K8S 01` public 링크는 보류하고, 이미 공개된 Jenkins 05~10 KR/EN 글을 DevOps 허브에 반영한다.
+- `K8S 01` 예약 글에는 공개된 `Jenkins 10` 경계 글을 연결해 publication-time 관련 링크를 준비한다.
+- 미래 K8S 글은 공개 전까지 허브와 공개 글에서 직접 링크하지 않는다.
+
+### 변경 파일
+
+- `_pages/development-devops.md`: 공개된 Jenkins 05~10 한국어 글을 DevOps 추천 흐름에 추가했다. `K8S 01` public 링크는 build exclusion 확인 후 보류했다.
+- `_pages/en-development-devops.md`: 공개된 Jenkins 05~10 EN 글을 DevOps 추천 흐름에 추가했다. `K8S 01` public 링크는 build exclusion 확인 후 보류했다.
+- `_posts/2026-06-04-kubernetes-what-it-solves-and-does-not.md`: 관련 글에 이미 공개된 `Jenkins 10` 한국어 글을 추가했다.
+- `_posts/2026-06-04-kubernetes-what-it-solves-and-does-not-en.md`: related posts에 이미 공개된 `Jenkins 10` EN 글을 추가했다.
+- `docs/growth/daily-change-log.md`: 오늘 post-publish 링크 작업과 검증 결과를 기록했다.
+
+### 변경 이유
+
+- `docs/growth/weekly-execution-plan.md`는 2026-06-04 작업으로 `K8S 01` 공개 후 public URL이 확인되면 DevOps 허브 반영을 검토하라고 지정했다.
+- 2026-06-04 08:01 KST 기준 `bundle exec jekyll build`는 `K8S 01`을 future-dated post로 제외했다. 따라서 public hub와 이미 공개된 `Jenkins 10` 글에서 `K8S 01`로 연결하지 않았다.
+- DevOps 허브의 Jenkins 추천 흐름은 `Jenkins 04`에서 멈춰 있었으므로, 이미 공개된 Jenkins 05~10까지 보강했다.
+- `K8S 01` 자체는 아직 build output에 없으므로, publication-time 준비로 공개된 `Jenkins 10`으로 향하는 관련 링크만 추가했다.
+
+### 실행한 검증 명령
+
+- `git branch --show-current`: 빈 출력. maintainer temporary worktree가 detached HEAD로 생성되었기 때문이다.
+- `git status --short --branch`: `## HEAD (no branch)`
+- `git rev-parse HEAD`와 `git rev-parse master`: 둘 다 `e46a92f823bdd35a2858ada33dc6a5628a7fe7e5`
+- `date '+%F %T %Z %z'`: `2026-06-04 08:01:29 KST +0900`
+- `git diff --check`: 통과
+- `bundle exec jekyll build`: 성공
+- `npm run check:links:local`: 성공
+
+### 결과
+
+- `/devops/`와 `/en/development/devops/`에서 공개된 Jenkins 05~10을 추천 흐름으로 찾을 수 있게 되었다.
+- `K8S 01` KR/EN 예약 글은 공개 시점에 이미 공개된 `Jenkins 10` 경계 글로 이어진다.
+- `K8S 01`과 미래 글인 `K8S 02` 이후는 공개 허브와 공개 글에 직접 링크하지 않았다.
+
+### 다음 작업
+
+- 2026-06-04 09:00 KST 이후 `K8S 01`이 build output에 포함되는 것을 확인한 뒤 DevOps 허브와 `Jenkins 10` 관련 글에 추가할지 판단한다.
+- 2026-06-05 이후 `K8S 02`가 공개되면 DevOps 허브와 `K8S 01` 관련 글에 추가할지 공개 URL 기준으로 판단한다.
+- 2026-06-08 월요일에는 `K8S 06~10` 발행 전 점검을 다시 수행한다.
+- 2026-06-11 `K8S 08` 공개 후 AI Engineering/templates 연결이 실제로 맞는지 검토한다.
+- Search Console/GA4 데이터가 제공되면 제목/description 리라이트 후보를 데이터 기준으로 재정렬한다.
+
+### 남은 리스크
+
+- Search Console 데이터: 사용자 입력 필요
+- GA4 데이터: 사용자 입력 필요
+- `origin/master` ref는 temporary bare clone에 없어서 비교하지 못했고, local `master`와 detached `HEAD` 일치만 확인했다.
+- 2026-06-04 08:01 KST build에서는 `K8S 01`이 future-dated post로 제외되므로, `K8S 01` public hub 연결은 09:00 KST 이후 재확인이 필요하다.
+- 링크 검증은 local build output 기준이며, 실제 운영 반영은 runner publish 이후 확인해야 한다.
+
 ## 2026-06-01
 
 ### 오늘의 목표
