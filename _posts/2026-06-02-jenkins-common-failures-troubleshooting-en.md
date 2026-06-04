@@ -22,6 +22,8 @@ The first step in Jenkins troubleshooting is not rerun but failure classificatio
 
 This post assumes you already operate the flows from [Jenkins Installation and Initial Setup](/en/devops/jenkins-installation-initial-setup/), [Managing Plugins, Credentials, and Tools](/en/devops/jenkins-plugins-credentials-tools-management/), and [Building Docker Images and Pushing to a Registry in Jenkins](/en/devops/jenkins-docker-image-build-registry-push/), then focuses only on how to narrow the first suspect area: controller, agent, workspace, registry, credential, or Pipeline code.
 
+If your team uses Jenkins as the verification gate for AI agent output, it is safer to read this separation flow together with the verification path in the [AI Engineering Hub](/en/development/ai/) and connect the review stage to [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/).
+
 ## Document Information
 
 - Written on: 2026-04-24
@@ -95,8 +97,9 @@ Jenkins symptoms vary significantly by plugin, agent OS, network, registry, Git 
 ## Related Posts
 
 - [DevOps Operations Flow](/en/development/devops/)
-- [Jenkins Installation and Initial Setup](/en/devops/jenkins-installation-initial-setup/)
-- [Managing Plugins, Credentials, and Tools](/en/devops/jenkins-plugins-credentials-tools-management/)
+- [AI Engineering Hub](/en/development/ai/)
+- [AI agent operations templates](/en/development/ai/templates/)
+- [PR/MR Collaboration Flow and Review Criteria](/en/devops/git-pr-mr-collaboration-review/)
 - [How to Read a Jenkinsfile: agent, stages, steps, and post](/en/devops/jenkinsfile-agent-stages-steps-post/)
 - [Building Docker Images and Pushing to a Registry in Jenkins](/en/devops/jenkins-docker-image-build-registry-push/)
 
