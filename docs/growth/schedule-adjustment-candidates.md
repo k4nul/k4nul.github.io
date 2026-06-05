@@ -1,8 +1,19 @@
 # Schedule Adjustment Candidates
 
-Verification date: 2026-06-01
+Verification date: 2026-06-05
 
 This document records candidates only. Do not change publish date, slug, filename, or permalink unless the user explicitly requests it.
+
+## Friday Quality Candidate Notes: 2026-06-05
+
+No publish-date, slug, filename, or permalink change candidate was recorded from this Friday review. The notes below stay candidate-only.
+
+| Window | Observation | Candidate action | Date change |
+| --- | --- | --- | --- |
+| 2026-06-05~2026-06-13 | The active queue block is K8S 02~10 KR/EN. After the 2026-05-29 pre-publish pass on the 2026-06-16 agent trace pair, there is no nearer scheduled experiment/postmortem-style item to rework today. | Keep dates. Treat this Friday lane as a candidate-only handoff and avoid redundant edits to the already-reviewed trace pair. | none |
+| 2026-06-16 | `What should an agent trace record?` remains the closest AI operations/verification-style pair after the current Kubernetes block. | Keep dates. Use the pre-publish lane on 2026-06-12 or 2026-06-15 for final canonical, hreflang, and meta-output checks only. | none |
+| 2026-06-23 | `Guardrails and approval boundaries from a harness perspective` is the next strong Friday-quality candidate after agent trace. | Keep dates. Prioritize facts/observations/limits separation and KR/EN terminology parity when that Friday lane arrives. | none |
+| 2026-06-30 | `Prompt injection as a harness problem` is the next AI/security crossover candidate after guardrails. | Keep dates. Hold as the following Friday review candidate unless Search Console data or user direction changes priority. | none |
 
 ## Monthly Review Notes: 2026-06-01
 

@@ -1,5 +1,53 @@
 # Daily Change Log
 
+## 2026-06-05
+
+### 오늘의 목표
+
+- 금요일 작업으로 예약 큐에서 실험/postmortem 성격에 가까운 글이 오늘 즉시 보강 대상인지 다시 확인한다.
+- 이미 2026-05-29에 사전 보강한 `2026-06-16` agent trace KR/EN pair를 중복 수정하지 않고, 가까운 후속 후보만 candidate-only로 정리한다.
+- publish date, filename slug, permalink, public 링크 구조는 변경하지 않는다.
+
+### 변경 파일
+
+- `docs/growth/schedule-adjustment-candidates.md`: 오늘 금요일 검토 결과, 즉시 재작업할 가까운 실험/postmortem형 예약 글이 없다는 판단과 다음 후보(`2026-06-16`, `2026-06-23`, `2026-06-30`)를 candidate-only로 기록했다.
+- `docs/growth/daily-change-log.md`: 오늘 문서형 Friday handoff와 검증 결과를 기록했다.
+
+### 변경 이유
+
+- `docs/growth/daily-codex-routine.md`의 금요일 규칙은 예약된 실험/postmortem 글을 보강하되, 맞는 글이 없으면 후보만 기록하도록 한다.
+- 이번 주의 실제 활성 큐는 `K8S 02~10` KR/EN pair 중심이고, 금요일 성격에 더 가까운 `2026-06-16` agent trace pair는 이미 2026-05-29에 description, 요약, 관련 공개 링크 기준으로 사전 보강이 끝나 있다.
+- 따라서 오늘은 같은 예약 글을 반복 수정하지 않고, 다음 품질 점검 후보와 재확인 시점을 문서에 남기는 편이 더 정확하다.
+
+### 실행한 검증 명령
+
+- `git branch --show-current`: `master`
+- `git status --short`: 작업 시작 시 출력 없음.
+- `git diff --check`: 통과
+- `bundle exec jekyll build`: 미실행. `docs/growth/` 문서만 바꾼 documentation-only 작업이라 public build 산출물 영향이 없다.
+- `npm run check:links:local`: 미실행. public 링크 구조 변경이 없다.
+
+### 결과
+
+- 오늘 금요일 lane은 candidate-only 기록 작업으로 마감했다.
+- `2026-06-16` agent trace, `2026-06-23` guardrails, `2026-06-30` prompt injection KR/EN pair를 다음 AI/security 품질 점검 후보로 고정했다.
+- publish date, filename slug, permalink, public 허브 링크는 변경하지 않았다.
+
+### 다음 작업
+
+- 2026-06-06 토요일: 실제 공개된 글만 기준으로 `/devops/`와 `/en/development/devops/`에 `K8S 02` 반영 여부를 확인한다.
+- 2026-06-08 월요일: `K8S 06~10` KR/EN pair의 title tone, description parity, future-link 안전성을 다시 점검한다.
+- 2026-06-12 또는 2026-06-15: `2026-06-16` agent trace KR/EN pair의 canonical, hreflang, meta description 출력값 최종 확인을 준비한다.
+- 2026-06-19 금요일 후보: `2026-06-23` guardrails KR/EN pair의 사실/관찰/한계 분리와 EN terminology parity를 점검한다.
+
+### 남은 리스크
+
+- Search Console 데이터: 사용자 입력 필요
+- GA4 데이터: 사용자 입력 필요
+- 링크 검증 미실행 사유: public 링크 구조 변경 없음
+- build 실패 시 파일/플러그인/오류: 해당 없음. 이번 작업은 build 미실행
+- 오늘 판단은 레포 내 예약 큐 문서와 기존 사전 보강 기록 기준이므로, 실제 우선순위는 사용자 제공 Search Console/GA4 입력이 들어오면 바뀔 수 있다.
+
 ## 2026-06-04
 
 ### 오늘의 목표
