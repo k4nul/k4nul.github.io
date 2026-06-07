@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "project": "k4nul.github.io",
+  "current_phase": "growth-operations",
+  "next_phase": "measured-growth-readiness",
+  "transition": {
+    "intent": "Move from routine growth operations to measured-growth readiness only after content changes are clean, buildable, and supported by supplied analytics evidence.",
+    "mode": "machine-gated-content-growth",
+    "validation_command": "bundle exec jekyll build",
+    "transition_validation_command": "bundle exec jekyll build",
+    "decision_rule": "The site must build, the working tree must be clean, and analytics-dependent gates must not be guessed."
+  },
+  "phase_model": [
+    {
+      "id": "growth-operations",
+      "purpose": "Operate the existing scheduled post queue, improve internal links, and strengthen AI coding agent operation hubs without mass-producing content.",
+      "allowed_work": [
+        "small content revisions",
+        "hub and template improvements",
+        "internal link updates",
+        "growth docs updates",
+        "build and link-check fixes"
+      ],
+      "blocked_work": [
+        "mass new post creation",
+        "future-date permalink changes",
+        "invented Search Console or GA4 data",
+        "large theme changes without explicit request",
+        "branch changes away from master"
+      ],
+      "exit_criteria": [
+        "site builds",
+        "working tree is clean",
+        "priority growth pages are improved",
+        "human-supplied Search Console or GA4 evidence is available"
+      ]
+    },
+    {
+      "id": "measured-growth-readiness",
+      "purpose": "Use supplied query and traffic data to prioritize measured content changes.",
+      "allowed_work": [
+        "Search Console driven revisions",
+        "GA4 landing-page analysis",
+        "targeted title and description changes",
+        "measured hub improvements"
+      ],
+      "blocked_work": [
+        "analytics estimates without data",
+        "broad title churn",
+        "large cannibalization cleanup without scoped evidence"
+      ],
+      "exit_criteria": [
+        "growth metrics are reviewed",
+        "next measurable experiment is selected"
+      ]
+    },
+    {
+      "id": "maintenance-only",
+      "purpose": "Keep the site buildable and policy-aligned when no growth scope is selected.",
+      "allowed_work": [
+        "maintenance-audit",
+        "docs-update",
+        "link check",
+        "build fixes"
+      ],
+      "blocked_work": [
+        "new content generation without a selected topic"
+      ],
+      "exit_criteria": [
+        "a new explicit growth task is selected"
+      ]
+    }
+  ],
+  "required_gates": [
+    {
+      "id": "master-branch-policy",
+      "status": "machine-check",
+      "required_for_transition": true,
+      "description": "Work must remain on master unless the user explicitly requests otherwise.",
+      "evidence": [
+        "git branch --show-current",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "working-tree-clean",
+      "status": "blocked",
+      "required_for_transition": true,
+      "description": "The repository currently has pre-existing uncommitted content changes. Do not transition phases until those are resolved by the owner or automation scope.",
+      "evidence": [
+        "git status --short"
+      ],
+      "on_failure": "Leave existing dirty files untouched and keep growth-operations phase."
+    },
+    {
+      "id": "site-build-passes",
+      "status": "machine-check",
+      "required_for_transition": true,
+      "description": "The Jekyll build must pass before transition.",
+      "evidence": [
+        "bundle exec jekyll build"
+      ]
+    },
+    {
+      "id": "scheduled-queue-policy-retained",
+      "status": "passed",
+      "required_for_transition": true,
+      "description": "Default work should operate the scheduled queue and avoid broad new post volume.",
+      "evidence": [
+        "AGENTS.md",
+        "docs/growth/scheduled-posts-inventory.md"
+      ]
+    },
+    {
+      "id": "analytics-evidence-supplied",
+      "status": "pending",
+      "required_for_transition": true,
+      "description": "Search Console or GA4 data must be supplied before measured-growth decisions.",
+      "evidence": [
+        "docs/growth/search-console-decision-rules.md"
+      ],
+      "on_failure": "Record missing analytics as user input needed instead of estimating."
+    },
+    {
+      "id": "future-link-policy-retained",
+      "status": "passed",
+      "required_for_transition": true,
+      "description": "Public pages must not link to unpublished future-dated posts by default.",
+      "evidence": [
+        "AGENTS.md"
+      ]
+    }
+  ]
+}
