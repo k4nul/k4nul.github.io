@@ -211,6 +211,17 @@ Tags are good for humans, and digests are good for systems and audits. Using onl
 - Multi-architecture images require distinguishing the manifest-list digest from platform-specific image digests.
 - Signed images, provenance, SBOMs, and vulnerability scans are covered in the next post.
 
+## Pre-publication Recheck Required
+
+This is a scheduled post for publication in 2027. The verification date is the date in `Document Info`, not the publication date. Before publishing, recheck the items below.
+
+- Official documentation URLs still resolve.
+- Commands still work with the stable/LTS versions available at publication time.
+- CLI flags, YAML fields, API versions, and default settings have not changed.
+- Container base images, GitHub Actions runners, Kubernetes versions, Rust crate versions, toolchains, and MSRV assumptions are still valid.
+- Security recommendations, EOL schedules, licenses, and platform limits have not changed.
+- The boundary between practice settings and production settings is still safe by current guidance.
+
 ## References
 
 - [GitHub Docs: About releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)

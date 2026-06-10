@@ -200,6 +200,17 @@ Do not rely only on Kubernetes rollout history for release memory. Deployment re
 - A configuration change that does not change the Pod template may not create the revision you expect.
 - Rollback is not always the safest response. Configuration revert, feature flag disablement, traffic draining, or a hotfix may be better.
 
+## Pre-publication Recheck Required
+
+This is a scheduled post for publication in 2027. The verification date is the date in `Document Info`, not the publication date. Before publishing, recheck the items below.
+
+- Official documentation URLs still resolve.
+- Commands still work with the stable/LTS versions available at publication time.
+- CLI flags, YAML fields, API versions, and default settings have not changed.
+- Container base images, GitHub Actions runners, Kubernetes versions, Rust crate versions, toolchains, and MSRV assumptions are still valid.
+- Security recommendations, EOL schedules, licenses, and platform limits have not changed.
+- The boundary between practice settings and production settings is still safe by current guidance.
+
 ## References
 
 - [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)

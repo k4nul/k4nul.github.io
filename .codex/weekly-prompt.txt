@@ -7,18 +7,40 @@ This lane runs every Sunday at 11:00 KST. It is separate from `/home/k4nul/git/a
 Hard boundaries:
 
 - Work only inside `/home/k4nul/git/k4nul.github.io`.
-- Do not read, edit, run checks in, commit, or otherwise operate on sibling repositories.
+- Do not read, edit, run checks in, commit from, push from, or otherwise operate on sibling repositories.
 - Do not modify `/home/k4nul/git/automation-projects`, `/home/k4nul/git/web`, `/home/k4nul/git/app`, `/home/k4nul/git/custom-cli`, `/home/k4nul/git/codex-maintainer`, or `/home/k4nul/codex` unless the user explicitly asks in the current conversation.
-- Do not push, publish manually, delete content, change post dates, change filename slugs, or change permalinks.
+- Do not follow symlinks that point outside `/home/k4nul/git/k4nul.github.io`.
+- Do not publish manually outside the normal automated git commit and `git push origin master` flow for this lane.
+- Do not delete content, change post dates, change filename slugs, change permalinks, change canonical URLs, or modify redirect rules unless the user explicitly asks in the current conversation.
+- Do not run force push, merge, rebase, reset, checkout, clean, stash, or repository-wide rewrite commands.
+- Do not install, update, or remove dependencies. Do not run `bundle install`, `npm install`, `npm update`, or package-manager mutation commands unless the user explicitly asks in the current conversation.
 
 Required start:
 
-1. Run `git branch --show-current`; continue only if it is `master`.
-2. Run `git status --short`; preserve unrelated user changes.
-3. Read `AGENTS.md`.
-4. Read `docs/growth/daily-codex-routine.md`, `docs/growth/prompt-bank.md`, `docs/growth/scheduled-posts-inventory.md`, and `docs/growth/scheduled-posts-calendar.md`.
-5. If editing `_posts/`, also read `_posts/AGENTS.md`, `docs/blog-style.md`, and `templates/post-template.md`.
-6. If editing `content/posts/`, also read `doc/channel-posting/README.md`, `doc/channel-posting/schedule.md`, and `doc/channel-posting/prompts.md`.
+0. Run `cd /home/k4nul/git/k4nul.github.io`.
+1. Run `pwd` and `git rev-parse --show-toplevel`; continue only if both confirm `/home/k4nul/git/k4nul.github.io`.
+2. Run `git branch --show-current`; continue only if it is `master`.
+3. Run `git status --short` and record any pre-existing changed files as protected user changes.
+4. Run `git fetch origin master`.
+5. Check whether local `master` is synchronized with `origin/master`.
+   - If local `master` is behind `origin/master` and the worktree is clean, run `git pull --ff-only`.
+   - If local `master` is behind and the worktree has pre-existing changes, do not pull; stop and report the blocked state.
+   - If local `master` has diverged from `origin/master`, stop and report the blocked state.
+   - If local `master` is ahead before this run starts, stop and report the blocked state. Do not push pre-existing commits.
+6. Save the starting commit hash with `git rev-parse HEAD`.
+7. Read `AGENTS.md`.
+8. Read `docs/growth/daily-codex-routine.md`, `docs/growth/prompt-bank.md`, `docs/growth/scheduled-posts-inventory.md`, and `docs/growth/scheduled-posts-calendar.md`.
+9. If editing `_posts/`, also read `_posts/AGENTS.md`, `docs/blog-style.md`, and `templates/post-template.md` before editing.
+10. If editing `content/posts/`, also read `doc/channel-posting/README.md`, `doc/channel-posting/schedule.md`, and `doc/channel-posting/prompts.md` before editing.
+
+Existing-change handling:
+
+- Preserve all pre-existing user changes.
+- Do not modify files that already had changes before this run unless the selected weekly task specifically requires that exact file.
+- If a required file already has user changes, prefer choosing another weekly task or no-op.
+- Before editing any already-modified file, inspect `git diff -- <file>` and avoid touching unrelated hunks.
+- Do not run broad formatters or repository-wide search-and-replace commands.
+- At commit time, stage only files changed by this run for the selected weekly task.
 
 Weekly task:
 
@@ -26,18 +48,72 @@ Weekly task:
 - Prefer queue readiness, weak-title candidates, KR/EN parity, future-link risk review, template/hub readiness, or one prompt-bank task that is small enough for a single run.
 - Record schedule-change ideas only in `docs/growth/schedule-adjustment-candidates.md`; do not change dates.
 - Keep the change scoped to one queue segment, one post pair, one hub/template, or one growth document.
-- If Search Console or GA4 data is missing, write `사용자 입력 필요`; do not estimate metrics.
+- Do not create new posts unless the repo rules explicitly allow it and the need is clear.
+- Do not rewrite article bodies for style alone.
+- No-op is allowed. If no safe, useful, tightly scoped weekly task is available, do not edit files; report what was checked and why no change was made.
+
+Weekly selection priority:
+
+1. Scheduled posts publishing within the next 7 days with mechanical risk:
+   - missing required metadata
+   - weak or duplicated title
+   - unsafe future link
+   - missing KR/EN pair where parity is expected
+   - broken internal link
+   - template or hub readiness problem
+2. Scheduled posts publishing within the next 8-14 days with queue readiness issues.
+3. One weak-title or weak-description candidate.
+4. One KR/EN parity candidate.
+5. One small prompt-bank task.
+6. One growth-document update.
+
+Do not choose a lower-priority task while a higher-priority mechanical publishing risk exists.
+
+Metrics handling:
+
+- Only use Search Console or GA4 metrics when the selected task explicitly depends on traffic, impressions, clicks, CTR, ranking, users, sessions, or page views.
+- If the selected task requires Search Console or GA4 data and the data is missing, write `사용자 입력 필요`; do not estimate metrics.
+- If the selected task does not require metrics, write `metrics not used` in the completion report.
+
+Scheduled-post safety:
+
+- Do not assume `bundle exec jekyll build` validates future-post links.
+- For scheduled or future posts, inspect source markdown links directly.
+- Do not create links from an earlier scheduled post to a later scheduled post unless the future-link risk is explicitly documented.
+- If the repository provides a future-post link checker, prefer that script.
+- Schedule-change ideas must remain suggestions only. Do not change front matter `date`, filename date prefix, slug, permalink, canonical URL, or redirect rules.
 
 Verification:
 
 - Run `git diff --check`.
 - Run `bundle exec jekyll build` unless the change is prompt-only or documentation-only and build is clearly unnecessary.
 - If link structure changed, run `npm run check:links:local` when dependencies are available.
+- If a verification command cannot run because dependencies are missing, report it as not run with the exact reason.
+- If verification fails, do not commit or push. Leave changes unstaged and report the failure.
+
+Commit and push:
+
+- If no files changed, do not commit or push.
+- If files changed and verification passed:
+  1. Run `git status --short`.
+  2. Stage only the files changed by this run for the selected task using explicit file paths.
+  3. Run `git diff --cached --name-only` and confirm only intended files are staged.
+  4. Run `git diff --cached --check`.
+  5. Commit with a concise message using this format:
+     - `chore(weekly): <short description>`
+  6. Run `git push origin master`.
+- Do not use force push.
+- Do not stage or commit protected pre-existing user changes.
+- If push fails, report the exact failure and do not attempt merge, rebase, reset, or force push.
 
 Completion report:
 
 - Changed files.
 - Weekly focus and why it was selected.
+- Metrics used.
 - Verification commands and results.
+- Commit hash, if committed.
+- Push result.
+- Existing user changes preserved.
 - Remaining risks.
 - Next 5 weekly priorities.

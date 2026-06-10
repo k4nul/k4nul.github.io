@@ -150,6 +150,8 @@
 
 {% if page.robots %}
   <meta name="robots" content="{{ page.robots }}">
+{% elsif page.layout == "redirect" %}
+  <meta name="robots" content="noindex, follow">
 {% else %}
   <meta name="robots" content="max-image-preview:large">
 {% endif %}

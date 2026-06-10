@@ -19,13 +19,110 @@ search: true
 
 GitHub Actions 보안 점검은 workflow YAML 문법 확인에서 끝나지 않는다. trigger, `GITHUB_TOKEN` 권한, secrets, third-party actions, runner, 배포 인증, untrusted input을 각각 따로 확인해야 한다.
 
+## 예시: 최소 권한 CI workflow
+
+이 예시는 실습용 CI workflow다. 목적은 pull request에서 테스트만 실행하고, `GITHUB_TOKEN`에는 repository contents 읽기 권한만 주는 것이다. `<full-length-sha>`는 실제 action commit SHA로 바꿔야 한다.
+
+{% raw %}
+```yaml
+name: ci
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@<full-length-sha>
+      - name: Run tests
+        run: npm test
+```
+{% endraw %}
+
+정상 결과 예시:
+
+```text
+Run npm test
+...
+✓ all tests passed
+```
+
+위 출력은 예시 출력이다. 실제 출력은 프로젝트의 test runner에 따라 달라진다.
+
+## 잘못된 예와 수정된 예
+
+잘못된 예:
+
+{% raw %}
+```yaml
+permissions: write-all
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "${{ github.event.pull_request.title }}" | bash
+```
+{% endraw %}
+
+문제:
+
+- `write-all`은 테스트 job에 필요하지 않은 write 권한까지 준다.
+- `actions/checkout@v4`처럼 tag만 고정하면 해당 tag의 이동 여부와 공급망 리스크를 따로 봐야 한다.
+- PR 제목처럼 외부 사용자가 바꿀 수 있는 값을 shell 코드로 흘려보내면 script injection 위험이 생긴다.
+
+수정된 예:
+
+{% raw %}
+```yaml
+permissions: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@<full-length-sha>
+      - name: Print PR title as data
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          printf '%s\n' "$PR_TITLE"
+```
+{% endraw %}
+
+`<full-length-sha>`는 review한 action commit SHA로 바꾼다. PR 제목은 shell script 본문에 직접 삽입하지 않고 환경 변수 데이터로 넘긴다.
+
+## 실패 로그 예시
+
+권한을 줄인 뒤 기존 workflow가 repository에 write를 시도하면 아래와 비슷한 실패가 날 수 있다.
+
+```text
+remote: Permission to <owner>/<repo>.git denied to github-actions[bot].
+fatal: unable to access 'https://github.com/<owner>/<repo>/': The requested URL returned error: 403
+```
+
+이때 권한을 바로 넓히지 말고 먼저 질문을 나눈다.
+
+- 이 job이 정말 write를 해야 하는가?
+- write가 필요하다면 `contents: write`, `packages: write`, `pull-requests: write` 중 어떤 권한만 필요한가?
+- write 작업을 pull request job이 아니라 release/deploy job으로 분리할 수 있는가?
+
 ## 문서 정보
 
 - 작성일: 2026-04-29
-- 검증 기준일: 2026-04-29
+- 검증 기준일: 2026-06-05
 - 문서 성격: analysis | tutorial
 - 테스트 환경: 실행 테스트 없음. GitHub Actions 공식 보안 문서 기준으로 점검 항목 정리.
-- 테스트 버전: GitHub Docs 2026-04-29 확인본. 특정 runner image나 workflow 실행 버전은 고정하지 않음.
+- 테스트 버전: GitHub Docs 2026-06-05 확인본. 특정 runner image나 workflow 실행 버전은 고정하지 않음.
 - 출처 등급: 공식 문서
 
 ## 문제 정의
@@ -116,12 +213,24 @@ jobs:
 - GitHub Enterprise, organization policy, repository visibility, fork 설정에 따라 세부 동작이 다를 수 있다.
 - 이 글은 GitHub Actions 중심 체크리스트이며 GitLab CI, Jenkins, CircleCI에는 그대로 적용되지 않는다.
 - 실제 공격 대응에는 audit log, secret rotation, runner forensic, dependency review 결과가 추가로 필요하다.
+- 위 workflow와 로그는 예시다. 발행 전에는 GitHub Actions workflow syntax, `GITHUB_TOKEN` 권한 이름, runner image, action pinning 정책을 다시 확인해야 한다.
+
+## 발행 전 재검증 필요
+
+이 글은 예약 글이다. 발행 전에 아래 항목을 다시 확인해야 한다.
+
+- `GITHUB_TOKEN` 권한 이름과 기본 권한 정책이 바뀌지 않았는지
+- workflow syntax의 `permissions`, `pull_request`, `pull_request_target`, `workflow_run` 동작 설명이 유지되는지
+- GitHub Actions secure use reference의 third-party action pinning 권고가 바뀌지 않았는지
+- secrets와 OIDC 관련 공식 문서 URL이 유지되는지
+- `ubuntu-latest` runner image와 기본 도구 구성이 바뀌지 않았는지
 
 ## 참고자료
 
 - [GitHub Actions secure use reference](https://docs.github.com/en/actions/reference/security/secure-use)
 - [GitHub Actions script injections](https://docs.github.com/en/actions/concepts/security/script-injections)
 - [Use GITHUB_TOKEN for authentication in workflows](https://docs.github.com/en/actions/tutorials/authenticate-with-github_token)
+- [GITHUB_TOKEN](https://docs.github.com/actions/concepts/security/github_token)
 - [GitHub Actions secrets reference](https://docs.github.com/en/actions/reference/security/secrets)
 - [OpenID Connect in GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/about-security-hardening-with-openid-connect)
 

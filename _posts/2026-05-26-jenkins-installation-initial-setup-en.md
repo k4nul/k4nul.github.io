@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Jenkins 02. Jenkins Installation and Initial Setup"
-description: "A checklist-style Jenkins installation guide covering Java requirements, JENKINS_HOME, initial password, and first plugin choices."
+description: "A Docker-based Jenkins setup walkthrough covering the initial password, plugins, first admin user, Jenkins URL, validation, cleanup, and common failures."
 date: 2026-05-26 09:00:00 +09:00
 lang: en
 translation_key: jenkins-installation-initial-setup
@@ -22,15 +22,253 @@ Installing Jenkins is less about which button to click and more about deciding w
 
 The conclusion of this post is that Docker is useful for beginner practice, but production installation needs a separate checklist for Java version, storage, backups, network ports, and plugin inventory.
 
+## What You Can Do With This Post
+
+- Start a Jenkins controller with Docker while preserving `/var/jenkins_home` in a named volume.
+- Read the initial administrator password from container logs or `/var/jenkins_home/secrets/initialAdminPassword`.
+- Open `http://localhost:8080` and complete the setup wizard.
+- Choose between suggested plugins and selected plugins, then create the first administrator account and Jenkins URL.
+- Restart Jenkins and verify that configuration persists.
+- Check the first places to look when port 8080, volume permissions, Java requirements, plugin downloads, or the initial password file fail.
+
+## Prerequisites
+
+- Runtime: local Linux, macOS, Windows WSL, or Docker Desktop with Docker available
+- Shell: Bash-style examples
+- Permissions: the current user can run `docker`. On Linux, use `sudo docker ...` if your user is not in the Docker group.
+- Port: host port `8080` should be free. If it is not, change `8080:8080` to something like `18080:8080`.
+- Scope: this is a local practice setup. For production, review the production caveats later in this post.
+
+## Expected Result
+
+After the walkthrough:
+
+- the `jenkins` container is running;
+- the `jenkins_home` Docker volume is mounted at `/var/jenkins_home`;
+- `http://localhost:8080` opens the Jenkins UI;
+- the first admin user and Jenkins URL are configured;
+- Jenkins settings survive a container restart.
+
+## Quick Setup Steps
+
+```bash
+docker volume create jenkins_home
+```
+
+```bash
+docker run \
+  --name jenkins \
+  --detach \
+  --publish 8080:8080 \
+  --publish 50000:50000 \
+  --volume jenkins_home:/var/jenkins_home \
+  jenkins/jenkins:lts
+```
+
+Watch the logs while Jenkins starts.
+
+```bash
+docker logs -f jenkins
+```
+
+Read the initial administrator password.
+
+```bash
+docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+```
+
+You can also check the `docker logs jenkins` output around `Please use the following password to proceed to installation`.
+
+Open Jenkins in a browser.
+
+```text
+http://localhost:8080
+```
+
+Complete the setup wizard in this order.
+
+1. Paste the initial administrator password on the `Unlock Jenkins` screen.
+2. For beginner practice, choose `Install suggested plugins` on the `Customize Jenkins` screen.
+3. For an operations-oriented setup, choose `Select plugins to install` and record each required plugin with a reason.
+4. Create a real first administrator account on the `Create First Admin User` screen, not a disposable temporary account.
+5. On `Instance Configuration`, use `http://localhost:8080/` for local practice. For production, decide the externally reachable URL and reverse proxy boundary first.
+
+## Verify Normal Operation
+
+Check that the container is running.
+
+```bash
+docker ps --filter name=jenkins
+```
+
+Check that Jenkins returns an HTTP response.
+
+```bash
+curl -I http://localhost:8080/login
+```
+
+Check the mounted Docker volume.
+
+{% raw %}
+```bash
+docker inspect jenkins --format '{{ range .Mounts }}{{ .Name }} -> {{ .Destination }}{{ println }}{{ end }}'
+```
+{% endraw %}
+
+Restart Jenkins and verify that configuration persists.
+
+```bash
+docker restart jenkins
+docker exec jenkins test -f /var/jenkins_home/config.xml && echo "JENKINS_HOME persisted"
+```
+
+If the command prints `JENKINS_HOME persisted`, the Jenkins home directory is preserved in the Docker volume.
+
+## Example: Verify a First Build With a Jenkinsfile
+
+This minimal example verifies that Jenkins can accept and run a Pipeline job after setup. It is a practice controller check, not a production pipeline.
+
+Create `Jenkinsfile` at the repository root.
+
+```groovy
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello, Jenkins'
+            }
+        }
+    }
+}
+```
+
+In the UI, choose `New Item` -> `Pipeline`, then use either `Pipeline script from SCM` or the practice-only `Pipeline script` option. After the build, check `Console Output`.
+
+Example output:
+
+```text
+[Pipeline] echo
+Hello, Jenkins
+Finished: SUCCESS
+```
+
+`Finished: SUCCESS` means the controller accepted the job, parsed the pipeline, and ran the stage. For production, avoid treating controller-side builds as the default. Design agent separation and credential scope separately.
+
+## Cleanup
+
+Removing only the container leaves the volume intact.
+
+```bash
+docker stop jenkins
+docker rm jenkins
+```
+
+Remove the volume only when you intentionally want to delete the practice data. Do not run this command for a production or reusable practice controller.
+
+```bash
+docker volume rm jenkins_home
+```
+
+## Common Failures
+
+### Port 8080 Is Already In Use
+
+Symptom: Docker reports `Bind for 0.0.0.0:8080 failed`, or the browser opens another service.
+
+Example error message:
+
+```text
+Bind for 0.0.0.0:8080 failed: port is already allocated
+```
+
+Check:
+
+{% raw %}
+```bash
+docker ps --format 'table {{.Names}}\t{{.Ports}}'
+```
+{% endraw %}
+
+On Linux/macOS, also check which host process owns port 8080.
+
+```bash
+lsof -i :8080
+```
+
+Fix: use a different host port.
+
+```bash
+docker run \
+  --name jenkins \
+  --detach \
+  --publish 18080:8080 \
+  --publish 50000:50000 \
+  --volume jenkins_home:/var/jenkins_home \
+  jenkins/jenkins:lts
+```
+
+The browser URL becomes `http://localhost:18080`.
+
+### Volume Permission Problems
+
+Symptom: Jenkins does not start, or logs say it cannot write to `/var/jenkins_home`.
+
+Check:
+
+```bash
+docker logs jenkins
+```
+
+Fix: for beginner practice, prefer a named volume over a host bind mount. If you must bind a host directory, set ownership and permissions according to your operations policy. Do not use `chmod 777` as a default fix.
+
+### Java Version Problems
+
+Symptom: a non-Docker Jenkins installation fails to start because the Java runtime is unsupported.
+
+Check:
+
+```bash
+java -version
+```
+
+Fix: check the Java Support Policy for the exact Jenkins LTS you plan to run. For practice with the official `jenkins/jenkins:lts` Docker image, the Java runtime inside the image is separate from the host Java version.
+
+### Plugin Installation Fails
+
+Symptom: plugin downloads fail or the setup wizard appears stuck.
+
+Check:
+
+```bash
+docker logs jenkins
+```
+
+Fix: check network, proxy, DNS, and update center access. For production, do not install every suggested plugin by habit. Record the plugin inventory and manage it reproducibly.
+
+### Initial Password File Is Missing
+
+Symptom: `/var/jenkins_home/secrets/initialAdminPassword` does not exist.
+
+Check:
+
+```bash
+docker logs jenkins
+docker exec jenkins ls -la /var/jenkins_home/secrets
+```
+
+Fix: if Jenkins is still initializing, wait and check again. If you are reusing an existing volume that already completed the setup wizard, the first-run password flow may no longer apply. Delete both the container and volume only when you intentionally want to reset a practice environment.
+
 ## Document Information
 
 - Written on: 2026-04-24
-- Verification date: 2026-04-24
+- Verification date: 2026-06-05
 - Document type: tutorial
-- Test environment: verified against the author's Jenkins practice server. As of 2026-04-24, the unauthenticated login response reported `X-Jenkins: 2.541.3` and `Server: Jetty(12.1.5)`. The OS is Linux 22.04; agent details are not fixed in this post.
-- Test version: the author's Jenkins practice server reported Jenkins 2.541.3 in the login response header on 2026-04-24. Documentation checks use the relevant official documents checked on 2026-04-24.
+- Test environment: based on the author's Jenkins practice server response headers checked on 2026-04-24 and the official Jenkins Docker installation documentation checked on 2026-06-05. The OS is Linux 22.04; agent details are not fixed in this post.
+- Test version: the author's Jenkins practice server reported Jenkins 2.541.3 in the login response header on 2026-04-24. Java requirements and Docker setup flow are based on Jenkins official documentation checked on 2026-06-05.
 - Source level: Jenkins official documentation and Jenkins LTS changelog.
-- Note: real Docker command execution and first screen verification should be reproduced in a separate practice environment.
+- Note: the Docker commands in this post are for local practice. Before production use, recheck Jenkins LTS, Java requirements, plugin compatibility, and backup/restore procedures.
 
 ## Problem Definition
 
@@ -41,7 +279,7 @@ First Jenkins installations often fail in predictable ways:
 - Suggested plugins are installed without recording why they are needed.
 - Initial admin account, URL, and port settings are left as temporary values.
 
-This post focuses on what to decide before installation, not on memorizing one installation command.
+This post starts with a Docker-based first installation flow, then separates the decisions that should be made before a production installation.
 
 ## Verified Facts
 
@@ -73,9 +311,9 @@ verify Jenkins URL and basic security settings
 
 ## Directly Reproduced Results
 
-- Direct reproduction: I verified the main commands and configuration flow on the author's Jenkins practice server. On 2026-04-24, the unauthenticated login response reported `X-Jenkins: 2.541.3` and `Server: Jetty(12.1.5)`.
-- Verified through documentation: installation methods, Java requirements, initial password location, and startup parameters were checked in official documentation.
-- Needs reproduction: Jenkins should be started on Docker Desktop or a Linux host, and the first screen plus `JENKINS_HOME` persistence should be checked directly.
+- Direct reproduction: on 2026-04-24, the author's Jenkins practice server login response reported `X-Jenkins: 2.541.3` and `Server: Jetty(12.1.5)`.
+- Verified through documentation: as of 2026-06-05, Jenkins Docker installation documentation describes `/var/jenkins_home` volume mapping, initial administrator password retrieval, and the setup wizard flow.
+- Not rerun in this edit: I did not start a fresh Docker container and complete the setup wizard in the current workspace. The commands above are a local practice flow based on official documentation and the earlier practice environment.
 
 ## Interpretation / Opinion
 
@@ -90,6 +328,18 @@ For beginner practice, Docker is a good path because it connects directly to the
 - Will builds run on the controller or on agents?
 
 After installation, it is safer to verify controller persistence, plugin reproducibility, and non-temporary admin settings before writing a complex Pipeline.
+
+## Production Caveats
+
+Do not promote the local Docker practice setup directly into production. At minimum, verify these items separately:
+
+- TLS and reverse proxy: do not expose the Jenkins HTTP port directly to the internet. Align Jenkins with your authentication, proxy, and TLS boundary.
+- Backup and restore: back up `JENKINS_HOME`, then rehearse restore.
+- Credential management: do not leave secrets in code, logs, or job descriptions.
+- Controller and agent separation: do not make controller-side builds the default operating model.
+- Plugin management: record why each plugin exists, which version is installed, how updates are reviewed, and when a plugin should be removed.
+- Authorization: do not keep operating with the first administrator account. Define roles or an authorization strategy.
+- Upgrade checks: Jenkins LTS, Java requirements, and plugin compatibility can change after publication, so recheck them before production changes.
 
 ## Limits and Exceptions
 

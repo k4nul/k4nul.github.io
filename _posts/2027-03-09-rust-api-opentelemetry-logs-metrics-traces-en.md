@@ -181,6 +181,17 @@ In Rust services, `tracing`-based instrumentation is often connected to OpenTele
 - Organizations differ on whether logs should flow through Kubernetes stdout/stderr logging pipelines or OpenTelemetry logs pipelines.
 - Sampling, tail sampling, PII redaction, and multi-tenant attribute policy are separate operations topics.
 
+## Pre-publication Recheck Required
+
+This is a scheduled post for publication in 2027. The verification date is the date in `Document Info`, not the publication date. Before publishing, recheck the items below.
+
+- Official documentation URLs still resolve.
+- Commands still work with the stable/LTS versions available at publication time.
+- CLI flags, YAML fields, API versions, and default settings have not changed.
+- Container base images, GitHub Actions runners, Kubernetes versions, Rust crate versions, toolchains, and MSRV assumptions are still valid.
+- Security recommendations, EOL schedules, licenses, and platform limits have not changed.
+- The boundary between practice settings and production settings is still safe by current guidance.
+
 ## References
 
 - [OpenTelemetry Signals](https://opentelemetry.io/docs/concepts/signals/)

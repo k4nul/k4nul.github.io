@@ -199,6 +199,17 @@ From the Rust API's point of view, both can become environment variables. That m
 - Mounted ConfigMap and Secret volumes have different update behavior from environment-variable injection. This post's default examples use environment variables.
 - The manifest examples are structural. They are not a recommendation to store real secret values in Git.
 
+## Pre-publication Recheck Required
+
+This is a scheduled post for publication in 2027. The verification date is the date in `Document Info`, not the publication date. Before publishing, recheck the items below.
+
+- Official documentation URLs still resolve.
+- Commands still work with the stable/LTS versions available at publication time.
+- CLI flags, YAML fields, API versions, and default settings have not changed.
+- Container base images, GitHub Actions runners, Kubernetes versions, Rust crate versions, toolchains, and MSRV assumptions are still valid.
+- Security recommendations, EOL schedules, licenses, and platform limits have not changed.
+- The boundary between practice settings and production settings is still safe by current guidance.
+
 ## References
 
 - [Kubernetes ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/)

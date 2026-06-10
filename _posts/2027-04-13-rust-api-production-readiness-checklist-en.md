@@ -147,6 +147,17 @@ This record makes the next incident easier. It stops the team from relying on me
 - Managed Kubernetes, registries, secret managers, and observability backends vary by provider.
 - Passing the checklist does not guarantee there will be no incidents. It checks whether the service can be observed, operated, and rolled back when something goes wrong.
 
+## Pre-publication Recheck Required
+
+This is a scheduled post for publication in 2027. The verification date is the date in `Document Info`, not the publication date. Before publishing, recheck the items below.
+
+- Official documentation URLs still resolve.
+- Commands still work with the stable/LTS versions available at publication time.
+- CLI flags, YAML fields, API versions, and default settings have not changed.
+- Container base images, GitHub Actions runners, Kubernetes versions, Rust crate versions, toolchains, and MSRV assumptions are still valid.
+- Security recommendations, EOL schedules, licenses, and platform limits have not changed.
+- The boundary between practice settings and production settings is still safe by current guidance.
+
 ## References
 
 - [Kubernetes: Production environment](https://kubernetes.io/docs/setup/production-environment/)

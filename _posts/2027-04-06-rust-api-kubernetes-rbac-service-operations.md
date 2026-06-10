@@ -226,6 +226,17 @@ RBAC는 나중에 "빼는" 방식으로 정리하기 어렵다. 허용 규칙이
 - Managed Kubernetes의 클라우드 IAM 연동, OIDC federation, external secret manager 권한 모델은 제품마다 다르므로 별도 검토가 필요하다.
 - `kubectl auth can-i`는 권한 판단을 확인하는 도구이지, 실제 워크로드가 의도한 요청만 한다는 증명은 아니다.
 
+## 발행 전 재검증 필요
+
+이 글은 2027년 발행 예정인 예약 글이다. 검증 기준일은 본문 `문서 정보`의 날짜이며, 발행일과 검증 기준일은 다르다. 발행 전에 아래 항목을 다시 확인해야 한다.
+
+- 공식 문서 URL이 유지되는지
+- 명령어가 발행 시점의 stable/LTS 버전에서도 동작하는지
+- CLI flag, YAML field, API version, 기본 설정값이 바뀌지 않았는지
+- container base image, GitHub Actions runner, Kubernetes version, Rust crate version, toolchain/MSRV가 바뀌지 않았는지
+- 보안 권장사항, EOL 일정, 라이선스, 제한 사항이 변경되지 않았는지
+- 실습용 설정과 운영 설정의 경계가 현재 기준으로도 안전한지
+
 ## 참고자료
 
 - [Kubernetes: Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)

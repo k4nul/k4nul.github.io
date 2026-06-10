@@ -32,6 +32,14 @@ translation_key: page-privacy-policy
 
 이 블로그는 production build에서 Google Analytics gtag 스크립트를 로드하도록 설정되어 있습니다. Google Analytics는 방문 통계 측정을 위해 쿠키 또는 유사 기술을 사용할 수 있습니다. 이용자는 브라우저 설정, 확장 기능, Google이 제공하는 차단 도구 등을 통해 분석 스크립트 또는 쿠키 사용을 제한할 수 있습니다.
 
+## Google AdSense와 광고 쿠키
+
+이 블로그가 Google AdSense 또는 Google이 제공하는 광고를 표시하도록 연결되는 경우, Google과 Google의 파트너는 광고 제공, 광고 개인화, 광고 효과 측정, 부정 사용 방지 등을 위해 쿠키, 웹 비콘, IP 주소 또는 기타 식별자를 사용할 수 있습니다.
+
+Google을 포함한 제3자 광고 제공업체는 이용자의 이 블로그 또는 다른 웹사이트 방문 기록을 바탕으로 광고를 제공하기 위해 쿠키를 사용할 수 있습니다. Google의 광고 쿠키 사용은 Google과 파트너가 이용자의 이 블로그 및 인터넷상의 다른 사이트 방문을 바탕으로 광고를 제공할 수 있게 합니다.
+
+이용자는 [Google 광고 설정](https://adssettings.google.com/)에서 개인 맞춤 광고를 관리하거나 차단할 수 있습니다. Google이 파트너 사이트 또는 앱의 정보를 사용하는 방식은 [Google의 안내](https://policies.google.com/technologies/partner-sites)를 참고할 수 있습니다.
+
 ## Disqus 댓글
 
 게시글 댓글 영역에서는 Disqus 스크립트가 로드될 수 있습니다. 댓글 기능 제공을 위해 제3자 댓글 서비스가 로드되며, 해당 서비스는 쿠키 또는 유사 기술을 사용할 수 있습니다.

@@ -146,6 +146,17 @@ kubectl auth can-i get secrets \
 - Managed Kubernetes, registry, secret manager, observability backend의 세부 기능은 공급자마다 다르다.
 - 체크리스트 통과는 장애가 없다는 보장이 아니다. 다만 장애를 탐지하고 되돌릴 준비가 되어 있는지 확인한다.
 
+## 발행 전 재검증 필요
+
+이 글은 2027년 발행 예정인 예약 글이다. 검증 기준일은 본문 `문서 정보`의 날짜이며, 발행일과 검증 기준일은 다르다. 발행 전에 아래 항목을 다시 확인해야 한다.
+
+- 공식 문서 URL이 유지되는지
+- 명령어가 발행 시점의 stable/LTS 버전에서도 동작하는지
+- CLI flag, YAML field, API version, 기본 설정값이 바뀌지 않았는지
+- container base image, GitHub Actions runner, Kubernetes version, Rust crate version, toolchain/MSRV가 바뀌지 않았는지
+- 보안 권장사항, EOL 일정, 라이선스, 제한 사항이 변경되지 않았는지
+- 실습용 설정과 운영 설정의 경계가 현재 기준으로도 안전한지
+
 ## 참고자료
 
 - [Kubernetes: Production environment](https://kubernetes.io/docs/setup/production-environment/)

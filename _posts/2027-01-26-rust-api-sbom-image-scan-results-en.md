@@ -201,6 +201,17 @@ The SBOM is the starting point for that decision. When a new CVE appears later, 
 - Static Rust binary dependencies and OS packages may be detected differently by different tools.
 - Regulatory compliance, license policy, and VEX operations may require separate policy documents.
 
+## Pre-publication Recheck Required
+
+This is a scheduled post for publication in 2027. The verification date is the date in `Document Info`, not the publication date. Before publishing, recheck the items below.
+
+- Official documentation URLs still resolve.
+- Commands still work with the stable/LTS versions available at publication time.
+- CLI flags, YAML fields, API versions, and default settings have not changed.
+- Container base images, GitHub Actions runners, Kubernetes versions, Rust crate versions, toolchains, and MSRV assumptions are still valid.
+- Security recommendations, EOL schedules, licenses, and platform limits have not changed.
+- The boundary between practice settings and production settings is still safe by current guidance.
+
 ## References
 
 - [CISA: Software Bill of Materials](https://www.cisa.gov/sbom)

@@ -217,6 +217,17 @@ Deployment와 Service는 Kubernetes 배포의 가장 작은 운영 단위다. De
 - LoadBalancer Service 동작은 cloud provider 또는 bare-metal load balancer 구성에 따라 달라진다.
 - private registry image pull은 imagePullSecret과 registry 권한 설정이 필요하며 이 글에서는 다루지 않는다.
 
+## 발행 전 재검증 필요
+
+이 글은 2027년 발행 예정인 예약 글이다. 검증 기준일은 본문 `문서 정보`의 날짜이며, 발행일과 검증 기준일은 다르다. 발행 전에 아래 항목을 다시 확인해야 한다.
+
+- 공식 문서 URL이 유지되는지
+- 명령어가 발행 시점의 stable/LTS 버전에서도 동작하는지
+- CLI flag, YAML field, API version, 기본 설정값이 바뀌지 않았는지
+- container base image, GitHub Actions runner, Kubernetes version, Rust crate version, toolchain/MSRV가 바뀌지 않았는지
+- 보안 권장사항, EOL 일정, 라이선스, 제한 사항이 변경되지 않았는지
+- 실습용 설정과 운영 설정의 경계가 현재 기준으로도 안전한지
+
 ## 참고자료
 
 - [Kubernetes: Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)

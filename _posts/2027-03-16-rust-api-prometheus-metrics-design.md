@@ -163,6 +163,17 @@ Rust API가 OpenTelemetry metric을 내보내고 Collector를 통해 Prometheus 
 - endpoint 수가 많은 서비스에서는 모든 route에 같은 bucket을 쓰는 것이 적절하지 않을 수 있다.
 - metric label은 개인정보와 보안 토큰을 담는 공간이 아니다. 로그보다 오래 보존되고 넓게 복제될 수 있다.
 
+## 발행 전 재검증 필요
+
+이 글은 2027년 발행 예정인 예약 글이다. 검증 기준일은 본문 `문서 정보`의 날짜이며, 발행일과 검증 기준일은 다르다. 발행 전에 아래 항목을 다시 확인해야 한다.
+
+- 공식 문서 URL이 유지되는지
+- 명령어가 발행 시점의 stable/LTS 버전에서도 동작하는지
+- CLI flag, YAML field, API version, 기본 설정값이 바뀌지 않았는지
+- container base image, GitHub Actions runner, Kubernetes version, Rust crate version, toolchain/MSRV가 바뀌지 않았는지
+- 보안 권장사항, EOL 일정, 라이선스, 제한 사항이 변경되지 않았는지
+- 실습용 설정과 운영 설정의 경계가 현재 기준으로도 안전한지
+
 ## 참고자료
 
 - [Prometheus metric types](https://prometheus.io/docs/concepts/metric_types/)

@@ -188,6 +188,17 @@ That final exception log matters. Security settings often decay through small em
 - `fsGroup` behavior can vary with storage drivers and volume types; verify mounted volume ownership in the target cluster.
 - Sidecars and init containers need their own security contexts. A safe API container does not automatically make the whole Pod safe.
 
+## Pre-publication Recheck Required
+
+This is a scheduled post for publication in 2027. The verification date is the date in `Document Info`, not the publication date. Before publishing, recheck the items below.
+
+- Official documentation URLs still resolve.
+- Commands still work with the stable/LTS versions available at publication time.
+- CLI flags, YAML fields, API versions, and default settings have not changed.
+- Container base images, GitHub Actions runners, Kubernetes versions, Rust crate versions, toolchains, and MSRV assumptions are still valid.
+- Security recommendations, EOL schedules, licenses, and platform limits have not changed.
+- The boundary between practice settings and production settings is still safe by current guidance.
+
 ## References
 
 - [Dockerfile reference: USER](https://docs.docker.com/reference/dockerfile/#user)

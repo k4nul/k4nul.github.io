@@ -208,6 +208,17 @@ skill: 반복 가능한 절차와 참고 자료
 
 마지막으로 "하네스 엔지니어링에서 핫하다"는 표현은 커뮤니티 분위기에 대한 인상일 수 있다. 이 글에서는 그 인상 자체를 사실로 증명하지 않고, 공식 문서상 확인되는 `/goal`의 기능 위치가 왜 하네스 설계 관점에서 중요해 보이는지만 다뤘다.
 
+## 공개 전 재검증 필요
+
+이 글은 `published: false` 상태의 미공개 글이다. 또한 `/goal`은 이 글의 검증 기준일에 Experimental 기능으로 확인한 항목이므로 공개 전에 아래 항목을 다시 확인해야 한다.
+
+- OpenAI Codex CLI slash command 문서에서 `/goal` 명령이 여전히 제공되는지
+- `features.goals` 설정 이름과 활성화 방식이 바뀌지 않았는지
+- Codex changelog에서 persisted goal workflow, pause/resume/clear 동작 설명이 바뀌지 않았는지
+- Feature Maturity 문서에서 Experimental의 의미가 바뀌지 않았는지
+- 로컬 Codex CLI 버전에서 `/goal` 입력, 조회, pause/resume/clear 흐름이 실제로 동작하는지
+- goal 상태가 기록될 수 있다는 보안상 주의 문구가 현재 제품 동작과 맞는지
+
 ## 참고자료
 
 - OpenAI, [Slash commands in Codex CLI](https://developers.openai.com/codex/cli/slash-commands) (2026-05-08 확인)
