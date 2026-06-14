@@ -31,7 +31,7 @@ channels:
       - problem_empathy
       - screenshot_guided_follow_along
     content_density: medium
-    style_reference: doc/channel-posting/naver.md
+    style_reference: docs/control/channel-posting/naver.md
     publish_route:
       primary: manual_review
       optional: browser_draft_when_requested
@@ -46,7 +46,7 @@ channels:
       - step_by_step_resolution
       - troubleshooting_reference
     content_density: medium_high
-    style_reference: doc/channel-posting/tistory.md
+    style_reference: docs/control/channel-posting/tistory.md
     publish_route:
       primary: manual_review
       optional: browser_draft_when_requested

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "project_control_docs_index",
+  "projectId": "k4nul.github.io",
+  "directory": "docs/control",
+  "files": [
+    "README.md",
+    "channel-posting/README.md",
+    "channel-posting/automation-parser.md",
+    "channel-posting/channels.md",
+    "channel-posting/naver.md",
+    "channel-posting/prompts.md",
+    "channel-posting/schedule.md",
+    "channel-posting/state.md",
+    "channel-posting/tistory.md",
+    "channel-posting/todo.md",
+    "channel-posting/workflows.md"
+  ]
+}

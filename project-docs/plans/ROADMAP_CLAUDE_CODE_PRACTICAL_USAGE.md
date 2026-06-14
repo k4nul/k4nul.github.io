@@ -49,7 +49,7 @@
 - 각 글은 `검증 기준일`, 공식 문서 확인일, 직접 재현 여부, 한계와 예외를 분리한다.
 - Claude Code 공식 문서의 URL, 설정 키, 기능명은 버전 민감 정보이므로 발행 전 다시 확인한다.
 - 영어 미러는 현재 `_posts/` 일정에 넣지 않는다. 필요해지면 Codex/Git처럼 별도 날짜를 배정하고 `translation_key`를 공유한다.
-- 네이버/티스토리 파생본은 `content/posts/`와 `doc/channel-posting/` 규칙에 맞춰 별도로 관리한다.
+- 네이버/티스토리 파생본은 `content/posts/`와 `docs/control/channel-posting/` 규칙에 맞춰 별도로 관리한다.
 
 ## Update Triggers
 

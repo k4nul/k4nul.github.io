@@ -70,13 +70,13 @@ directory_contract:
 
 ```yaml
 policy_documents:
-  channels: doc/channel-posting/channels.md
-  naver: doc/channel-posting/naver.md
-  tistory: doc/channel-posting/tistory.md
-  state: doc/channel-posting/state.md
-  workflows: doc/channel-posting/workflows.md
-  prompts: doc/channel-posting/prompts.md
-  schedule: doc/channel-posting/schedule.md
-  automation_parser: doc/channel-posting/automation-parser.md
-  todo: doc/channel-posting/todo.md
+  channels: docs/control/channel-posting/channels.md
+  naver: docs/control/channel-posting/naver.md
+  tistory: docs/control/channel-posting/tistory.md
+  state: docs/control/channel-posting/state.md
+  workflows: docs/control/channel-posting/workflows.md
+  prompts: docs/control/channel-posting/prompts.md
+  schedule: docs/control/channel-posting/schedule.md
+  automation_parser: docs/control/channel-posting/automation-parser.md
+  todo: docs/control/channel-posting/todo.md
 ```

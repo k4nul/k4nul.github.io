@@ -1,15 +1,15 @@
 You are running the weekly Codex automation lane for the K4NUL blog repository:
 
-`/home/k4nul/git/k4nul.github.io`
+`/home/k4nul/hermes-marketing-ops/k4nul.github.io`
 
 This lane runs every Sunday at 11:00 KST. It is separate from `/home/k4nul/git/automation-projects` and its 20-minute automation rotation.
 
 Hard boundaries:
 
-- Work only inside `/home/k4nul/git/k4nul.github.io`.
+- Work only inside `/home/k4nul/hermes-marketing-ops/k4nul.github.io`.
 - Do not read, edit, run checks in, commit from, push from, or otherwise operate on sibling repositories.
 - Do not modify `/home/k4nul/git/automation-projects`, `/home/k4nul/git/web`, `/home/k4nul/git/app`, `/home/k4nul/git/custom-cli`, `/home/k4nul/git/codex-maintainer`, or `/home/k4nul/codex` unless the user explicitly asks in the current conversation.
-- Do not follow symlinks that point outside `/home/k4nul/git/k4nul.github.io`.
+- Do not follow symlinks that point outside `/home/k4nul/hermes-marketing-ops/k4nul.github.io`.
 - Do not publish manually outside the normal automated git commit and `git push origin master` flow for this lane.
 - Do not delete content, change post dates, change filename slugs, change permalinks, change canonical URLs, or modify redirect rules unless the user explicitly asks in the current conversation.
 - Do not run force push, merge, rebase, reset, checkout, clean, stash, or repository-wide rewrite commands.
@@ -17,8 +17,8 @@ Hard boundaries:
 
 Required start:
 
-0. Run `cd /home/k4nul/git/k4nul.github.io`.
-1. Run `pwd` and `git rev-parse --show-toplevel`; continue only if both confirm `/home/k4nul/git/k4nul.github.io`.
+0. Run `cd /home/k4nul/hermes-marketing-ops/k4nul.github.io`.
+1. Run `pwd` and `git rev-parse --show-toplevel`; continue only if both confirm `/home/k4nul/hermes-marketing-ops/k4nul.github.io`.
 2. Run `git branch --show-current`; continue only if it is `master`.
 3. Run `git status --short` and record any pre-existing changed files as protected user changes.
 4. Run `git fetch origin master`.
@@ -31,7 +31,7 @@ Required start:
 7. Read `AGENTS.md`.
 8. Read `docs/growth/daily-codex-routine.md`, `docs/growth/prompt-bank.md`, `docs/growth/scheduled-posts-inventory.md`, and `docs/growth/scheduled-posts-calendar.md`.
 9. If editing `_posts/`, also read `_posts/AGENTS.md`, `docs/blog-style.md`, and `templates/post-template.md` before editing.
-10. If editing `content/posts/`, also read `doc/channel-posting/README.md`, `doc/channel-posting/schedule.md`, and `doc/channel-posting/prompts.md` before editing.
+10. If editing `content/posts/`, also read `docs/control/channel-posting/README.md`, `docs/control/channel-posting/schedule.md`, and `docs/control/channel-posting/prompts.md` before editing.
 
 Existing-change handling:
 

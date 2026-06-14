@@ -15,7 +15,7 @@ rule_separation:
       - Minimal Mistakes rendering
       - source article verification structure
   external_channel_variants:
-    path: doc/channel-posting/
+    path: docs/control/channel-posting/
     scope:
       - Naver Blog derivative posts
       - Tistory derivative posts
@@ -29,13 +29,13 @@ rule_separation:
 
 ```yaml
 document_map:
-  external_channel_index: doc/channel-posting/README.md
-  channel_schema: doc/channel-posting/channels.md
-  naver_rules: doc/channel-posting/naver.md
-  tistory_rules: doc/channel-posting/tistory.md
-  state_schema: doc/channel-posting/state.md
-  workflows: doc/channel-posting/workflows.md
-  prompt_policy: doc/channel-posting/prompts.md
-  schedule_policy: doc/channel-posting/schedule.md
-  todo: doc/channel-posting/todo.md
+  external_channel_index: docs/control/channel-posting/README.md
+  channel_schema: docs/control/channel-posting/channels.md
+  naver_rules: docs/control/channel-posting/naver.md
+  tistory_rules: docs/control/channel-posting/tistory.md
+  state_schema: docs/control/channel-posting/state.md
+  workflows: docs/control/channel-posting/workflows.md
+  prompt_policy: docs/control/channel-posting/prompts.md
+  schedule_policy: docs/control/channel-posting/schedule.md
+  todo: docs/control/channel-posting/todo.md
 ```

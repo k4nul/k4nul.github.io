@@ -41,7 +41,7 @@
 | `scheduled` | 0 | 0 | 디렉터리 없음. |
 | `future` | 0 | 0 | 디렉터리 없음. |
 | `_pages` | 48 | 48 | 공개 페이지/허브. 포스트와 별도 분류. |
-| `doc`, `project-docs`, `templates`, `skills`, root docs | 28 | 0 | 운영/템플릿/스킬 문서. 포스팅으로 판단하지 않음. |
+| `docs/control`, `project-docs`, `templates`, `skills`, root docs | 28 | 0 | 운영/템플릿/스킬 문서. 포스팅으로 판단하지 않음. |
 
 ## 공개 상태별 분류
 
