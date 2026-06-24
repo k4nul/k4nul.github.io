@@ -95,6 +95,26 @@ social:
   name                   : "K4NUL" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://github.com/k4nul"
+    - "https://www.instagram.com/k_4nul"
+    - "https://www.facebook.com/profile.php?id=61590645726569"
+    - "https://www.threads.com/@k_4nul"
+
+# Header social icon links shown beside the blog navigation.
+# Add only public profile URLs here; entries without url are not rendered.
+social_nav:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/k4nul"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/k_4nul"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/profile.php?id=61590645726569"
+    - label: "Threads"
+      icon: "fas fa-fw fa-at"
+      url: "https://www.threads.com/@k_4nul"
 
 # Analytics
 analytics:

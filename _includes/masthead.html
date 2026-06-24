@@ -17,6 +17,20 @@
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
+        {% if site.social_nav.links %}
+          <ul class="masthead__social social-icons" aria-label="Social profile links">
+            {% for link in site.social_nav.links %}
+              {% if link.label and link.url %}
+                <li>
+                  <a href="{{ link.url }}" rel="nofollow noopener noreferrer me" title="{{ link.label }}">
+                    <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+                    <span class="visually-hidden">{{ link.label }}</span>
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
         <ul class="visible-links">
           {%- for link in site.data.navigation[navigation_key] -%}
             <li class="masthead__menu-item">
