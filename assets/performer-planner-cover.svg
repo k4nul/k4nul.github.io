@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="480" viewBox="0 0 1600 480">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5a1734"/>
+      <stop offset="0.52" stop-color="#4b1d38"/>
+      <stop offset="1" stop-color="#123c59"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3a102a" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#64243d" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#142f52" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="480" rx="36" fill="url(#bg)"/>
+  <rect width="1600" height="480" rx="36" fill="url(#shade)"/>
+  <path d="M435 0h330L565 480H245z" fill="#160b1d" opacity="0.28"/>
+  <path d="M1150 0H850l180 480h350z" fill="#684137" opacity="0.22"/>
+  <path d="M800 88 612 412h376z" fill="#ad7890" opacity="0.2"/>
+  <circle cx="800" cy="88" r="9" fill="#fff3cf"/>
+  <rect x="25" y="25" width="1550" height="430" rx="30" fill="none" stroke="#c9a85b" stroke-width="3"/>
+  <path d="M155 104h220M1225 104h220M155 376h220M1225 376h220" stroke="#c9a85b" stroke-width="2" opacity="0.8"/>
+  <text x="800" y="214" text-anchor="middle" fill="#fffaf0" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="700" letter-spacing="8">PERFORMER PLANNER</text>
+  <text x="800" y="280" text-anchor="middle" fill="#ffe886" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="7">SHOWS · REHEARSALS · FEEDBACK · GEAR</text>
+  <text x="800" y="346" text-anchor="middle" fill="#e8dbe1" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="2">POWERED BY THE STAGELOOP METHOD</text>
+  <g stroke="#ffe082" fill="none" stroke-width="5">
+    <ellipse cx="775" cy="363" rx="23" ry="19"/>
+    <path d="M775 382v46M725 454l50-30 50 30"/>
+  </g>
+</svg>
