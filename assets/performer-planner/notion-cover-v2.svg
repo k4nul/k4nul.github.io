@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="800" viewBox="0 0 2400 800" role="img" aria-label="Abstract theater stage with warm spotlights, microphone and chair">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#120f18"/>
+      <stop offset="0.45" stop-color="#261225"/>
+      <stop offset="1" stop-color="#0c1824"/>
+    </linearGradient>
+    <linearGradient id="curtainL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#250a18"/>
+      <stop offset="0.62" stop-color="#651a37"/>
+      <stop offset="1" stop-color="#8b2d4d"/>
+    </linearGradient>
+    <linearGradient id="curtainR" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#131b2d"/>
+      <stop offset="0.62" stop-color="#253858"/>
+      <stop offset="1" stop-color="#344f73"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11111a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#090a0f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="18%" r="72%">
+      <stop offset="0" stop-color="#f8dfac" stop-opacity="0.60"/>
+      <stop offset="0.34" stop-color="#d6a85f" stop-opacity="0.23"/>
+      <stop offset="1" stop-color="#d6a85f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff4d3" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#e8b968" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <rect width="2400" height="800" fill="url(#bg)"/>
+  <rect width="2400" height="800" fill="url(#glow)"/>
+
+  <!-- Curtains kept outside the central safe zone -->
+  <path d="M0 0H520C470 170 450 350 475 520C490 630 530 720 590 800H0Z" fill="url(#curtainL)" opacity="0.94"/>
+  <path d="M2400 0H1880C1930 170 1950 350 1925 520C1910 630 1870 720 1810 800H2400Z" fill="url(#curtainR)" opacity="0.94"/>
+  <path d="M120 0C250 170 210 430 350 800" fill="none" stroke="#b64f6f" stroke-opacity="0.20" stroke-width="54"/>
+  <path d="M2280 0C2150 170 2190 430 2050 800" fill="none" stroke="#6789b5" stroke-opacity="0.18" stroke-width="54"/>
+
+  <!-- Center spotlight, safe across responsive crops -->
+  <circle cx="1200" cy="86" r="18" fill="#fff2c8"/>
+  <path d="M1200 102L910 690H1490Z" fill="url(#beam)" opacity="0.55"/>
+  <ellipse cx="1200" cy="675" rx="390" ry="82" fill="#d8ad68" opacity="0.13" filter="url(#blur)"/>
+  <ellipse cx="1200" cy="682" rx="290" ry="44" fill="#f0ce8d" opacity="0.14"/>
+
+  <!-- Microphone stand -->
+  <g stroke="#d9b36c" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="1176" y1="270" x2="1176" y2="616" stroke-width="9"/>
+    <line x1="1176" y1="305" x2="1307" y2="225" stroke-width="9"/>
+    <line x1="1145" y1="616" x2="1072" y2="690" stroke-width="9"/>
+    <line x1="1207" y1="616" x2="1280" y2="690" stroke-width="9"/>
+    <ellipse cx="1325" cy="213" rx="34" ry="20" transform="rotate(-28 1325 213)" fill="#d9b36c" stroke-width="4"/>
+  </g>
+
+  <!-- Chair silhouette -->
+  <g transform="translate(1515 405)" fill="none" stroke="#8799b3" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+    <path d="M0 0V208M122 0V208M0 48H122M14 116H108M14 116L0 208M108 116L122 208"/>
+    <path d="M0 0H122"/>
+  </g>
+
+  <!-- Music stand silhouette -->
+  <g transform="translate(780 350)" fill="none" stroke="#a98978" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.72">
+    <path d="M0 0L150 18L132 106L-18 88Z"/>
+    <line x1="66" y1="106" x2="66" y2="284"/>
+    <line x1="66" y1="284" x2="6" y2="342"/>
+    <line x1="66" y1="284" x2="126" y2="342"/>
+  </g>
+
+  <!-- Quiet proscenium accents -->
+  <path d="M140 74H640M1760 74H2260" stroke="#c9a65f" stroke-opacity="0.58" stroke-width="3"/>
+  <path d="M140 724H640M1760 724H2260" stroke="#c9a65f" stroke-opacity="0.42" stroke-width="3"/>
+  <rect x="42" y="30" width="2316" height="740" rx="50" fill="none" stroke="#c9a65f" stroke-opacity="0.52" stroke-width="4"/>
+  <rect y="640" width="2400" height="160" fill="url(#floor)"/>
+</svg>
