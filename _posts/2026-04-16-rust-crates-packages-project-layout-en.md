@@ -152,6 +152,18 @@ diff = 15
 - Decision rule: keep execution wiring in `main.rs`, and move reusable or testable logic into `lib.rs` and its modules.
 - Interpretation: `pub` should be treated as an API boundary, not as a convenience switch. Keeping most items private by default tends to produce cleaner project structure.
 
+## Project Layout Review Checklist
+
+When a small Cargo project starts to grow, review the layout in this order:
+
+1. Confirm that `Cargo.toml` describes one package and its intended dependencies.
+2. Keep executable wiring at the binary entry point, usually `src/main.rs`.
+3. Move reusable logic behind `src/lib.rs` and modules with explicit visibility.
+4. Expose only the functions and types that need to cross the crate API boundary.
+5. Add tests near the library-facing behavior before adding more files or modules.
+
+This is a review aid, not a requirement that every Rust program must have both `main.rs` and `lib.rs`. A small binary can remain simple; the split becomes useful when logic needs reuse or independent testing.
+
 ## Limits and Exceptions
 
 - This post explains a single-package project and does not cover Cargo workspaces.
@@ -168,3 +180,9 @@ diff = 15
 - [Paths for Referring to an Item in the Module Tree](https://doc.rust-lang.org/book/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html)
 - [Bringing Paths into Scope with the use Keyword](https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html)
 - [Separating Modules into Different Files](https://doc.rust-lang.org/book/ch07-05-separating-modules-into-different-files.html)
+
+## Continue Learning
+
+- [Testing in Rust](/en/rust/testing-in-rust/)
+- [Build a Small Rust CLI Project](/en/rust/build-a-small-cli-project/)
+- [Rust Learning Archive](/en/development/rust/)

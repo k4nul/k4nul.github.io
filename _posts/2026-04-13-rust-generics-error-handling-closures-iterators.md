@@ -193,6 +193,18 @@ doubled_total = 138
 - 선택 기준: 반복문이 여러 변환 단계로 길어진다면 iterator 체인을 고려하고, 실패 가능성이 있으면 반환 타입부터 `Result`로 드러낸다.
 - 해석: `?` 연산자는 문법 자체보다 "실패를 바로 바깥으로 넘긴다"는 제어 흐름으로 이해해야 이후 파일 I/O나 parsing 코드로 확장하기 쉽다.
 
+## 다음에 확인할 항목
+
+이 네 개념을 작은 프로그램에 적용할 때는 아래 순서로 확인하면 된다.
+
+1. 재사용하려는 로직에 실제로 generic type parameter가 필요한지, 아니면 구체 타입 하나가 더 읽기 쉬운지 판단한다.
+2. 실패가 예상되는 경계에서는 출력문으로 숨기지 않고 `Result` 반환으로 성공·실패를 드러낸다.
+3. closure가 바깥 값을 캡처할 때 값의 이동과 borrow가 어떻게 달라지는지 별도로 확인한다.
+4. iterator 체인의 마지막에 `collect`, `sum`, `for` 같은 소비 지점이 있는지 확인한다.
+5. 예제가 커지면 `cargo test`로 성공 경로와 실패 경로를 각각 고정한다.
+
+이 글의 예제는 문법 연결을 위한 입문용이다. 실제 프로젝트에서는 입력 검증, 오류 타입, 공개 API 경계를 함께 설계해야 한다.
+
 ## 한계와 예외
 
 - 이 글은 입문 예제에 맞춘 요약이다. lifetime이 섞인 generic, 고급 trait bound, custom error type, iterator adaptor 전체는 다루지 않는다.
@@ -208,3 +220,9 @@ doubled_total = 138
 - [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
 - [Closures](https://doc.rust-lang.org/book/ch13-01-closures.html)
 - [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)
+
+## 함께 읽을 글
+
+- [Rust 테스트 기초](/rust/rust-testing-basics/)
+- [Rust 파일 I/O와 CLI 입력](/rust/rust-file-io-and-cli-input/)
+- [Rust 학습 가이드](/rust/)

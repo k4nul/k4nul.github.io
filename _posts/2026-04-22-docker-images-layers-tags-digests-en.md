@@ -98,6 +98,17 @@ In practice, this four-part model is enough for a beginner:
 - tag: human-friendly mutable label
 - digest: content-fixed identifier
 
+## A Deployment Reference Checklist
+
+Before turning an image reference into a deployment record, answer these four questions:
+
+1. Which human-readable tag identifies the release for people and CI logs?
+2. Which digest identifies the exact content that was tested?
+3. Where is that tag-to-digest mapping recorded: a deployment manifest, release note, or CI artifact?
+4. If the tag moves later, can the previous digest still identify the image that was actually deployed?
+
+The point is not to replace every tag with a digest during daily development. It is to record both references at the boundary where reproducibility matters.
+
 ## Limits and Exceptions
 
 This post does not cover multi-platform images, manifest lists, OCI layout details, or content trust. The explanation of digests here stays within the scope of beginner-level image references.
@@ -113,3 +124,9 @@ The direct reproduction used a single `alpine:3.20` image reference. I did not s
 - Docker Docs, [docker image pull](https://docs.docker.com/reference/cli/docker/image/pull/)
 - Docker Docs, [docker image tag](https://docs.docker.com/reference/cli/docker/image/tag/)
 - Docker Docs, [Image validation](https://docs.docker.com/build/policies/validate-images/)
+
+## Continue Learning
+
+- [Dockerfile Basics and Build Context](/en/devops/dockerfile-basics-and-build-context/)
+- [Docker Registry Push and Image Management](/en/devops/docker-registry-push-and-image-management/)
+- [DevOps Operations Archive](/en/development/devops/)
