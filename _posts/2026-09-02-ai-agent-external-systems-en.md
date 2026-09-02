@@ -10,7 +10,7 @@ topic_key: ai
 categories: AI
 tags: [ai, agents, tools, mcp, agent-security, agent-evaluation]
 track: agent-interface-engineering
-published: false
+published: true
 permalink: /en/development/ai-agent-external-systems/
 author_profile: false
 sidebar:
