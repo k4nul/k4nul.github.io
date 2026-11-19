@@ -1,0 +1,55 @@
+name: Keep scheduled blog publishing active
+
+# GitHub can disable scheduled workflows in an inactive public repository
+# after 60 days. Refresh repository activity only when no changes were made
+# in the last 45 days. Normal publishing stays in refresh-scheduled-posts.yml.
+on:
+  schedule:
+    - cron: "23 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keep-scheduled-publishing-active
+  cancel-in-progress: false
+
+jobs:
+  preserve-schedule:
+    if: github.repository == 'k4nul/k4nul.github.io'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v5
+        with:
+          ref: master
+          fetch-depth: 1
+
+      - name: Record activity only after 45 days without commits
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Do not write on top of a concurrent user/content automation push.
+          git fetch origin master --quiet
+          if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/master)" ]]; then
+            echo "Default branch advanced; no keepalive commit needed."
+            exit 0
+          fi
+
+          last_commit="$(git log -1 --format=%ct)"
+          now="$(date -u +%s)"
+          age_seconds="$((now - last_commit))"
+          threshold_seconds="$((45 * 24 * 60 * 60))"
+          echo "Most recent commit age: $((age_seconds / 86400)) days."
+
+          if (( age_seconds < threshold_seconds )); then
+            echo "Recent repository activity exists; skipping keepalive."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: maintain scheduled blog publishing"
+          git push origin HEAD:master
